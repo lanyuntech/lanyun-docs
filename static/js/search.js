@@ -26,14 +26,11 @@ $(function(){
         $("#search-query").val(searchQuery);
         executeSearch(searchQuery);
       } else {
-        $('#product-recommendation').hide()
-        
-        $('#search-results').append("<p>请输入搜索内容</p>");
+        $('#product-recommendation').show()
+        $('#loading-mask').hide();
+        $('#search-results').append("<p style='margin: auto; text-align: center; margin-top: 80px'>请输入搜索内容</p>");
       }
 })
-
-
-
 
 
 function executeSearch(searchQuery){
@@ -48,7 +45,7 @@ function executeSearch(searchQuery){
     if(result.length > 0){
       populateResults(result);
     }else{
-      $('#search-results').append("<p>没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</p>");
+      $('#search-results').append("<p style='margin-top: 80px;'>没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</p>");
     }
   });
 }
