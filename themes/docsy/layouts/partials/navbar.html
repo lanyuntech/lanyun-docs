@@ -7,10 +7,15 @@
             alt="logo" style="height: 32px;width: auto;">
         </a>
       </div>
+      <!-- <div class="my-auto" >
+        <form action="{{ "search" | absURL }}">
+          <input id="search-query" name="s"/>
+        </form>
+      </div> -->
       <div class="media-content column is-centered is-5 search-mobile">
-        <form action="/search" method="GET">
+        <form action="{{ "search" | absURL }}">
           <div class="control has-icons-right docs-search-input">
-            <input class="input" id="search-bar" name="q" type="search" placeholder="搜索" autocomplete="off">
+            <input class="input" id="search-query" name="s" type="search" placeholder="搜索" autocomplete="off">
             <span class="icon is-right" id="mobile-search">
               <img src="/images/icons/search.svg">
             </span>
