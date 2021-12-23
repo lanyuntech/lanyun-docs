@@ -8,7 +8,6 @@
 </div>
 {{ end }}
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
-
   {{ with .Params.section }}
   {{ .title}}
   <div class="field has-addons has-addons-centered select-field">
@@ -25,16 +24,14 @@
   {{ end }}
   <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
     <div class="nav-item dropdown d-block ">
-
       {{ $type := .Type}}
-
       {{ if eq $type "videoMain"}}
       {{ $slice := (split .CurrentSection "/") }}
       {{ $type = index $slice 1 }}
       {{ end }}
 
       {{ $root := . }}
-      {{ range (.Site.GetPage "section" $type).Pages }}
+      {{ range .Site.Sections }}
       {{ template "render-menu" (dict "ctx" . "root" $root "depth" 0)}}
       {{ end }}
     </div>
@@ -54,12 +51,11 @@
 {{ $active = or $active (in (split $currentURL "/") $sectionName1) }}
 
 {{ if $ctx.Params.Collapsible }}
-<span class="menu__title--collapse {{ if $active }}active{{ end }} {{ if eq $depth 0 }}display-hide{{ end }}"
-  data-depth="{{ $depth }}">
+<span class="menu__title--collapse {{ if $active }}active{{ end }} "
+  data-depth="{{ $depth }}" title="{{ $ctx.Title }}">
   {{ $ctx.Title }}
   <span
     class="menu__title--icon {{ if $active }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
-
   </span>
 </span>
 <ul class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }} {{ end }}"

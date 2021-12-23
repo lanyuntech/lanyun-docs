@@ -649,8 +649,7 @@ span.menu__title[data-depth='0'] {
 }
 
 .menu__title[data-depth='4'] {
-    font-size: 0.925rem;
-    margin-left: 5rem;
+    font-size: 12px;
 }
 
 .menu__title--collapse {
@@ -677,7 +676,8 @@ span.menu__title[data-depth='0'] {
     -moz-align-items: center;
     -ms-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center;    
+    
 }
 
 span.menu__title--collapse[data-depth='0'] {
@@ -701,6 +701,10 @@ span.menu__title--collapse[data-depth='0'] {
     line-height: 1.71;
     letter-spacing: normal;
     color: #3e464c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
 }
 
 .menu__title--collapse[data-depth='3'] {
