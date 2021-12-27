@@ -4,7 +4,8 @@
   "description": "QingCloud documentation 2.0.",
   "main": "none.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "hugo-lunr"
   },
   "repository": {
     "type": "git",
@@ -16,9 +17,16 @@
     "url": "https://github.com/yunify/qingcloud-docs/issues"
   },
   "homepage": "https://github.com/yunify/qingcloud-docs#readme",
-  "dependencies": {},
+  "dependencies": {
+    "hugo-lunr-diaspora": "^1.0.0",
+    "wkhtmltopdf": "^0.4.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "postcss-cli": "^5.0.1"
+    "grunt": "^1.4.1",
+    "hugo-lunr-zh": "^2.0.0",
+    "postcss-cli": "^5.0.1",
+    "string": "^3.3.3",
+    "toml": "^3.0.0"
   }
 }

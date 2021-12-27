@@ -16,7 +16,9 @@ var fuseOptions = {
     {name:"categories",weight:0.3}
   ]
 };
-
+var lunrIndex = ''
+var pagesIndex
+// var lunr = require("hugo-lunr-zh");
 var searchQuery = param("s").trim();
 
 $(function(){
@@ -34,25 +36,62 @@ $(function(){
 
 
 function executeSearch(searchQuery){
+  console.log('searchQuery: ', searchQuery);
    $.getJSON( "/index.json", function( data ) {
-    var pages = data;
+    pagesIndex = data;
+    lunr.zh = function() {
+      this.pipeline.reset();
+      this.pipeline.add(lunr.zh.trimmer, lunr.stopWordFilter, lunr.stemmer);
+    };
     
-    var fuse = new Fuse(pages, fuseOptions);
-    var result = fuse.search(searchQuery);
-    console.log({"matches":result});
+    lunr.zh.trimmer = function(token) {
+      return token.update(str => {
+        if (/[\u4E00-\u9FA5\uF900-\uFA2D]/.test(str)) return str;
+        return str.replace(/^\W+/, "").replace(/\W+$/, "");
+      });
+    };
+    lunr.Pipeline.registerFunction(lunr.zh.trimmer, "trimmer-zh");
+
+    lunrIndex = lunr(function() {
+        this.field("title", {
+            boost: 10
+        });
+        this.field("tags", {
+            boost: 5
+        });
+        this.field("content");
+        console.log('this: ', this);
+        this.ref("permalink");
+        pagesIndex.forEach((page)=> {
+            this.add(page);
+        });
+    });
+
+    var result = search(searchQuery);
+    console.log('result: ', result);
     $('#loading-mask').hide();
     $('#product-recommendation').show()
-    if(result.length > 0){
-      populateResults(result);
-    }else{
-      $('#search-results').append("<p style='margin-top: 80px;'>没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</p>");
-    }
+    // if(result.length > 0){
+    //   populateResults(result);
+    // }else{
+    //   $('#search-results').append("<p style='margin-top: 80px;'>没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</p>");
+    // }
   });
+}
+
+function search(query) {
+  return lunrIndex.search(query).map(function(result) {
+    console.log('result: ', result);
+      // console.log('result: ', result);
+          return pagesIndex.filter(function(page) {
+              return page.permalink === result.ref;
+          })[0];
+      });
 }
 
 function populateResults(result){
   $.each(result,function(key,value){
-    var contents= value.item.content;
+    var contents= value.content;
     var snippet = "";
     var snippetHighlights=[];
     var tags =[];
