@@ -547,6 +547,27 @@ nav.navbar {
 
 }
 
+.new-nav-item-box {
+    display: flex;
+    align-items: center;
+    .nav-item {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+.ins-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    .ins-section-container {
+       max-height: 80vh;
+       overflow: scroll;
+       z-index: 999;
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     .navbar .search:hover {
         width: 280px;
