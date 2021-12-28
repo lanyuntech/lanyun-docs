@@ -1,15 +1,73 @@
-/**
- * Insight search plugin
- * @author PPOffice { @link https://github.com/ppoffice }
- */
-//  (function ($, CONFIG) {
+ 
+    jQuery.extend({
+        highlight: function (node, re, nodeName, className) {
+            if (node.nodeType === 3) {
+                var match = node.data.match(re);
+                if (match) {
+                    var highlight = document.createElement(nodeName || 'span');
+                    highlight.className = className || 'highlight';
+                    var wordNode = node.splitText(match.index);
+                    wordNode.splitText(match[0].length);
+                    var wordClone = wordNode.cloneNode(true);
+                    highlight.appendChild(wordClone);
+                    wordNode.parentNode.replaceChild(highlight, wordNode);
+                    return 1; //skip added node in parent
+                }
+            } else if ((node.nodeType === 1 && node.childNodes) && // only element nodes that have children
+                    !/(script|style)/i.test(node.tagName) && // ignore script and style nodes
+                    !(node.tagName === nodeName.toUpperCase() && node.className === className)) { // skip if already highlighted
+                for (var i = 0; i < node.childNodes.length; i++) {
+                    i += jQuery.highlight(node.childNodes[i], re, nodeName, className);
+                }
+            }
+            return 0;
+        }
+    });
+    
+    jQuery.fn.unhighlight = function (options) {
+        var settings = { className: 'highlight', element: 'span' };
+        jQuery.extend(settings, options);
+    
+        return this.find(settings.element + "." + settings.className).each(function () {
+            var parent = this.parentNode;
+            parent.replaceChild(this.firstChild, this);
+            parent.normalize();
+        }).end();
+    };
+    
+    jQuery.fn.highlight = function (words, options) {
+        console.log('words: ', words);
+        var settings = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false };
+        jQuery.extend(settings, options);
+        
+        if (words.constructor === String) {
+            words = [words];
+        }
+        words = jQuery.grep(words, function(word, i){
+          return word != '';
+        });
+        words = jQuery.map(words, function(word, i) {
+          return word.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+        });
+        if (words.length == 0) { return this; };
+    
+        var flag = settings.caseSensitive ? "" : "i";
+        var pattern = "(" + words.join("|") + ")";
+        if (settings.wordsOnly) {
+            pattern = "\\b" + pattern + "\\b";
+        }
+        var re = new RegExp(pattern, flag);
+        
+        return this.each(function () {
+            jQuery.highlight(this, re, settings.element, settings.className);
+        });
+    };
     const CONFIG = JSON.parse(JSON.stringify(window.INSIGHT_CONFIG))
     var $main = $('.ins-search');
     var $input = $main.find('.ins-search-input');
     var $wrapper = $main.find('.ins-section-wrapper');
     var $container = $main.find('.ins-section-container');
-    // $main.parent().remove('.ins-search');
-    // $('body').append($main);
+    var summaryInclude = 60;
 
     function section (title) {
         return $('<section>').addClass('ins-section')
@@ -28,13 +86,12 @@
         var sectionTitle;
         var $searchItems;
         if (array.length === 0) return null;
-        sectionTitle = CONFIG.TRANSLATION[type];
+        sectionTitle = `结果(${array?.length})`
         switch (type) {
             case 'POSTS':
             case 'PAGES':
                 $searchItems = array.map(function (item) {
-                    // Use config.root instead of permalink to fix url issue
-                    return searchItem('file', item.title, null, item.text.slice(0, 150), CONFIG.ROOT_URL + item.permalink);
+                    return searchItem('file', item.title, null, item.text.slice(0, 200), CONFIG.ROOT_URL + item.permalink);
                 });
                 break;
             case 'CATEGORIES':
@@ -46,12 +103,13 @@
             default:
                 return null;
         }
+        
         return section(sectionTitle).append($searchItems);
+        
     }
 
     function extractToSet (json, key) {
         var values = {};
-        // var entries = (json?.pages||[]).concat((json?.posts||[]));
         var entries = json?.posts||[];
         entries.forEach(function (entry) {
             if (entry[key]) {
@@ -75,11 +133,6 @@
         });
     }
 
-    /**
-     * Judge if a given post/page/category/tag contains all of the keywords.
-     * @param Object            obj     Object to be weighted
-     * @param Array<String>     fields  Object's fields to find matches
-     */
     function filter (keywords, obj, fields) {
         var result = false;
         var keywordArray = parseKeywords(keywords);
@@ -114,12 +167,6 @@
         };
     }
 
-    /**
-     * Calculate the weight of a matched post/page/category/tag.
-     * @param Object            obj     Object to be weighted
-     * @param Array<String>     fields  Object's fields to find matches
-     * @param Array<Integer>    weights Weight of every field
-     */
     function weight (keywords, obj, fields, weights) {
         var value = 0;
         parseKeywords(keywords).forEach(function (keyword) {
@@ -152,7 +199,6 @@
     }
 
     function search (json, keywords) {
-        console.log('json: ', json);
         var WEIGHTS = weightFactory(keywords);
         var FILTERS = filterFactory(keywords);
         var posts = JSON.parse(JSON.stringify(json?.posts || json));
@@ -160,18 +206,28 @@
         var tags = extractToSet(json, 'tags');
         var categories = extractToSet(json, 'categories');
         return {
-            posts: posts.filter(FILTERS.POST).sort(function (a, b) { return WEIGHTS.POST(b) - WEIGHTS.POST(a); }).slice(0, 20),
+            posts: posts.filter(FILTERS.POST).sort(function (a, b) { return WEIGHTS.POST(b) - WEIGHTS.POST(a); }),
             // pages: pages.filter(FILTERS.PAGE).sort(function (a, b) { return WEIGHTS.PAGE(b) - WEIGHTS.PAGE(a); }).slice(0, 5),
             categories: categories.filter(FILTERS.CATEGORY).sort(function (a, b) { return WEIGHTS.CATEGORY(b) - WEIGHTS.CATEGORY(a); }).slice(0, 5),
             tags: tags.filter(FILTERS.TAG).sort(function (a, b) { return WEIGHTS.TAG(b) - WEIGHTS.TAG(a); }).slice(0, 5)
         };
     }
 
-    function searchResultToDOM (searchResult) {
+    function searchResultToDOM (searchResult, keywords) {
+        console.log('searchResult: ', searchResult);
+        if (!searchResult.posts?.length) {
+            sectionTitle = `结果(0)`;
+            return $container.html(section(sectionTitle));
+        }
         $container.empty();
         for (var key in searchResult) {
             $container.append(sectionFactory(key.toUpperCase(), searchResult[key]));
         }
+        setTimeout(() => {
+            $container.unhighlight();  
+            $container.highlight(keywords); 
+        }, 500)
+        
     }
 
     function scrollTo ($item) {
@@ -206,48 +262,38 @@
             location.href = $item.attr('data-url');
         }
     }
+
     $(function(){
-        // var request = new XMLHttpRequest();
-        // request.open("get", '/index.json');/*设置请求方法与路径*/
-        // request.send(null);/*不发送数据到服务器*/
-        // request.onload = function () {/*XHR对象获取到返回信息后执行*/
-        //     if (request.status == 200) {/*返回状态为200，即为数据获取成功*/
-        //         var json = JSON.parse(request.responseText);
-        //         // for(var i=0;i<json.length;i++){
-        //         //     console.log(json[i].name);
-        //         // }
-        //         console.log('1234', json);
-        //     }
-        // }
-        $.getJSON('/index.json', function (json) {
-            const jsonTemp = JSON.parse(JSON.stringify(json))
-            console.log('jsonTemp: ', jsonTemp);
-            // if (location.hash.trim() === '#ins-search') {
-            //     $main.addClass('show');
-            // }
+        $.getJSON('/index.json',  (json)=> {
+            var jsonTemp = JSON.parse(JSON.stringify(json))
+            if (location.hash.trim() === '#ins-search') {
+                $main.addClass('show');
+            }
             $input.on('input', function () {
                 const keywords = $(this).val();
-                searchResultToDOM(search (jsonTemp, keywords));
+                searchResultToDOM(search (jsonTemp, keywords), keywords);
             });
             $input.trigger('input');
         });
+        
     })
 
     $(document).on('click focus', '.search-field', function () {
-        $wrapper.addClass('show');
+        $container.addClass('show');
         $main.find('.ins-search-input').focus();
     }).on('click focus', '.search-form-submit', function () {
-        $wrapper.addClass('show');
+        $container.addClass('show');
         $main.find('.ins-search-input').focus();
     }).on('click', '.ins-search-item', function () {
         gotoLink($(this));
     }).on('click', '.ins-close', function () {
-        $wrapper.removeClass('show');
+        $container.removeClass('show');
     }).on('keydown', function (e) {
-        if (!$main.hasClass('show')) return;
+        $container.addClass('show');
+        if (!$container.hasClass('show')) return;
         switch (e.keyCode) {
             case 27: // ESC
-                $main.removeClass('show'); break;
+            $container.removeClass('show'); break;
             case 38: // UP
                 selectItemByDiff(-1); break;
             case 40: // DOWN
@@ -256,4 +302,9 @@
                 gotoLink($container.find('.ins-selectable.active').eq(0)); break;
         }
     });
+    $(document).on('click', (e) => {
+        if ($container.hasClass('show')) {
+          $container.removeClass('show');
+        }
+    })
 // })(jQuery, window.INSIGHT_CONFIG);
