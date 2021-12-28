@@ -1,6 +1,6 @@
 <div class="nav-wrapper {{ if eq .Params.LinkTitle "Document" }} nav-wrapper-index {{ end }}">
-  <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none;" {{end}}>
-    <div class="container nav-container with-no-position {{ if and (ne .Params.LinkTitle "Document" ) (ne .Params.type "product")}}doc-container-width {{ end }}">
+  <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none; z-index: 1;" {{end}} >
+    <div style="position: relative;" class="container with-no-position {{ if and (ne .Params.LinkTitle "Document" ) (ne .Params.type "product")}}doc-container-width {{ end }}">
       <div class="navbar-brand" id="search-mobile-logo">
         <a class="navbar-item logo" href="https://www.qingcloud.com">
           <img src="https://www.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508"
@@ -33,53 +33,34 @@
       <div class="ins-search media-content column is-centered is-3 search-mobile">
         <div class="ins-search-mask"></div>
          <div class="ins-search-container">
-              <div class="ins-input-wrapper"> 
+              <div class="ins-input-wrapper control has-icons-right docs-search-input"> 
                   <input type="text" class="ins-search-input input" id="search-query" name="s" type="search" placeholder="请输入关键词..."/> 
-                  <!-- <span class="icon is-right" id="mobile-search">
+                  <span class="icon is-right" id="mobile-search">
                     <img src="/images/icons/search.svg">
-                  </span> -->
-                  <span class="ins-close ins-selectable"><i class="icon-close"></i></span> 
+                  </span>
+                  <!-- <span class="ins-close ins-selectable"><i class="icon-close"></i></span>  -->
                </div> 
                <div class="ins-section-wrapper"> 
-                   <div class="ins-section-container"></div>
+                   <div class="ins-section-container" id="ins-section-container"></div>
                </div>
-       </div> 
-   </div>
-      <!-- <div class="navbar-end is-hidden-mobile header-account">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="nav-item" href="https://docs.qingcloud.com">文档（旧版）</a>
-            </p>
-            <p class="control">
-
-              <a class="nav-item" target="_blank" href="https://www.qingcloud.com/icp">备案</a>
-
-            </p>
-            <p class="control navbar-user">
-              <a class="nav-item" href="https://console.qingcloud.com">登录</a>
-            </p>
-            <div class="navbar-user">
-              <a class="button is-primary j-signup" href="https://console.qingcloud.com/signup/"
-                data-gio="{id:'createPageView',var:{sourceType_var:'导航栏'}}">注册</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
+        </div> 
+      </div>
     </div>
-    <script> (function (window) {
-      var INSIGHT_CONFIG = { 
-          TRANSLATION: { POSTS: '文章', TAGS: '便签', }, 
-          ROOT_URL: '',
-          CONTENT_URL: '/index.json', };
-          window.INSIGHT_CONFIG = INSIGHT_CONFIG; 
-      })
-       (window);
-  </script>
-    <script src="/js/insightSearch.js"></script>
+      <script> (function (window) {
+        var INSIGHT_CONFIG = { 
+            TRANSLATION: { POSTS: '文章', TAGS: '便签', }, 
+            ROOT_URL: '',
+            CONTENT_URL: '/index.json', };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG; 
+        })
+        (window);
+      </script>
+      <script src="/js/insightSearch.js"></script>
+
+   
   </nav>
   {{ if ne .Params.LinkTitle "Document"}}
-  <nav class="navbar navmenu navbar-index">
+  <nav class="navbar navmenu navbar-index" style="z-index: 0;">
     {{ partial "breadcrumb.html" . }}
   </nav>
   {{ end }}

@@ -1,4 +1,4 @@
-{{- $.Scratch.Add "index" slice -}}
+{{- $.Scratch.Set "index" slice -}}
 {{- range .Site.RegularPages -}}
     {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "keyword" .Params.keyword "categories" .Params.categories "text" .Plain "permalink" .Permalink) -}}
 {{- end -}}

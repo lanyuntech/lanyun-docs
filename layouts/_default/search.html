@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0/js/InsightSearch.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js"></script>
-
+<!-- <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script> -->
 <!-- <script src="/js/search.js"></script> -->
 <!-- <link rel="stylesheet"  href="/static/css/search.css" > -->
   
@@ -23,26 +23,34 @@
     </div> 
 </div> -->
 
+<li class="menu-item">
+    <a id="search-btn" style="display: inline-block;" href="javascript:void(0);">123
+    </a>
+    <div id="fastSearch">
+      <input id="searchInput" tabindex="0">
+      <ul id="searchResults">
+      </ul>
+    </div>
+  </li>
 
 
-
-    <div id='search-result' class='is-small'>
+    <!-- <div id='search-result' class='is-small'>
             <div class='columns row'>
-                <!-- <div class="col-sm-12" id="loading-mask" style="margin-top: 100px;">
+                <div class="col-sm-12" id="loading-mask" style="margin-top: 100px;">
                     <div class="loader" style="margin: auto"></div>
-                </div> -->
+                </div>
                 <div class="column col-sm-9 search-result-wrapper" style="position:relative;">
-                    <!-- <div class = 'search-result'>
+                    <div class = 'search-result'>
                         <div id="search-results"></div>
-                    </div> -->
+                    </div>
                     <div class="ins-search">
                         <div class="ins-search-mask"></div>
                          <div class="ins-search-container">
                               <div class="ins-input-wrapper"> 
                                   <input type="text" class="ins-search-input input" id="search-query" name="s" type="search" placeholder="请输入关键词..."/> 
-                                  <!-- <span class="icon is-right" id="mobile-search">
+                                  <span class="icon is-right" id="mobile-search">
                                     <img src="/images/icons/search.svg">
-                                  </span> -->
+                                  </span>
                                   <span class="ins-close ins-selectable"><i class="icon-close"></i></span> 
                                </div> <div class="ins-section-wrapper"> 
                                    <div class="ins-section-container"></div>
@@ -75,7 +83,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+    </div> -->
 
     <!-- <section id='paginations'>
         <div class='container'>
@@ -84,7 +92,7 @@
             </div>
         </div>
     </section> -->
-  <script> (function (window) {
+  <!-- <script> (function (window) {
     var INSIGHT_CONFIG = { 
         TRANSLATION: { POSTS: '文章', TAGS: '便签', }, 
         ROOT_URL: '',
@@ -92,17 +100,18 @@
         window.INSIGHT_CONFIG = INSIGHT_CONFIG; 
     })
      (window);
-</script>
-<script src="/js/insightSearch.js"></script>
+</script> -->
+<!-- <script src="/js/fastsearch.js"></script> -->
+<!-- <script src="/js/insightSearch.js"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0/js/InsightSearch.js"></script> -->
 
 
-<script id="search-result-template" type="text/x-js-template">
+<!-- <script id="search-result-template" type="text/x-js-template">
     <div id="summary-${key}">
       <h4><a href="${link}">${title}</a></h4>
       <p>${snippet}</p>
       ${ isset tags }<p>Tags: ${tags}</p>${ end }
       ${ isset categories }<p>Categories: ${categories}</p>${ end }
     </div>
-</script>
+</script> -->
 {{ end }}
