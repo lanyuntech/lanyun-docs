@@ -36,7 +36,6 @@
     };
     
     jQuery.fn.highlight = function (words, options) {
-        console.log('words: ', words);
         var settings = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false };
         jQuery.extend(settings, options);
         
@@ -214,7 +213,6 @@
     }
 
     function searchResultToDOM (searchResult, keywords) {
-        console.log('searchResult: ', searchResult);
         if (!searchResult.posts?.length) {
             sectionTitle = `结果(0)`;
             return $container.html(section(sectionTitle));
@@ -257,6 +255,7 @@
         $($items[nextPosition]).addClass('active');
         scrollTo($($items[nextPosition]));
     }
+
     function gotoLink ($item) {
         if ($item && $item.length) {
             location.href = $item.attr('data-url');
@@ -269,14 +268,27 @@
             if (location.hash.trim() === '#ins-search') {
                 $main.addClass('show');
             }
-            $input.on('input', function () {
+            $input.on('input', debounce(function () {
                 const keywords = $(this).val();
                 searchResultToDOM(search (jsonTemp, keywords), keywords);
-            });
+            }, 500));
             $input.trigger('input');
-        });
-        
+        });   
     })
+
+    function debounce(fn, delay) {
+        var timer;
+        return function () {
+            var _this = this;
+            var args = arguments;
+            if (timer) {
+                clearTimeout(timer);
+            }
+            timer = setTimeout(function () {
+                fn.apply(_this, args);
+            }, delay);
+        };
+    }
 
     $(document).on('click focus', '.search-field', function () {
         $container.addClass('show');

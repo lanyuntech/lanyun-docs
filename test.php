@@ -164,7 +164,6 @@ class DownLoad {
 		if ($index > 0) {
 
 			// 拼接标题
-
 			// 需要处理的是, 如果是相同文件夹, 需要规划成一类
 			// 思路1 : 就是 处理了之后, 将添加了的文件信息添加进一个数组, 然后数组里
 			// 出现问题, 就是要从其实的位置来获取层级
@@ -172,18 +171,13 @@ class DownLoad {
 			$belong_dir = substr($path, 0, strripos($path, '/'));
 
 			$dir_count = substr_count(substr($path, strlen($this->basic_prefix)), '/');
-			if (!in_array($belong_dir, $this->belong_dir_data) && ($dir_count == 4)) {
+			if (($dir_count == 1)) {
 				$index_file_path = substr($path, 0, strripos($path, '/')) . '/_index.md';
-
 				if (is_file($index_file_path)) {
-
 					$parent_title  = $this->getTitlePath(substr($path, 0, strripos($path, '/')) . '/_index.md');
 					$top_text = PHP_EOL . '# '. $this->title_index. '、' . $parent_title . PHP_EOL;
-
 				}
-
 				$this->belong_dir_data[] = $belong_dir;
-
 				$this->title_index++;
 			}
 
@@ -241,7 +235,6 @@ class DownLoad {
 				}
 			}
 		}
-
 		return $content;
 	}
 
@@ -286,7 +279,7 @@ $download->setConfig($con . '/content');
 $cal_count = substr_count($con .'/content/', '/');
 
 foreach ($filename as $file) {
-	if (count(explode('.', $file)) == 1 && $file != 'pdf') {
+	if (count(explode('.', $file)) == 2 && $file != 'pdf') {
 		// 获取此文件夹里面的文件夹
 		$in_file_arr = scandir($con. '/content/'.$file);
 		foreach ($in_file_arr as $in_file) {
