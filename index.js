@@ -1,91 +1,40 @@
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const path = require('path')
+const fs = require('fs')
+//处理接收request对象的大小限制
+app.use(bodyParser.json({
+  limit: '50mb'
+}));
 
+//处理接收request对象的大小限制
+app.use(bodyParser.urlencoded({
+  limit: '50mb',
+  parameterLimit: 100000,
+  extended: true 
+}));
 
-function walkSync(currentDirPath, callback) {
-    var fs = require('fs'),
-        path = require('path');
-    fs.readdirSync(currentDirPath).forEach(function (name) {
-        var filePath = path.join(currentDirPath, name);
-        var stat = fs.statSync(filePath);
-        if (stat.isFile()) {
-            callback(filePath, stat);
-        } else if (stat.isDirectory()) {
-            walkSync(filePath, callback);
-        }
-    });
-}
-walkSync('/content', function (filePath, stat) {
-    console.log(filePath)
+app.all("/*", function(req, res, next) {
+  // 跨域处理
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length,   Authorization, Accept, X-Requested-With , yourHeaderFeild');
+  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+  res.header("X-Powered-By", ' 3.2.1');
+  res.header("Content-Type", "application/json;charset=utf-8");
+  next(); // 执行下一个路由
 });
 
-// var wkhtmltopdf = require('wkhtmltopdf');
-// var fs = require('fs')
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
-// var stream = wkhtmltopdf(fs.createReadStream('search.html'));
-// console.log('stream: ', stream);
-
-
-// const puppeteer = require('puppeteer')
- 
-// async function printPDF() {
-//   const browser = await puppeteer.launch({ headless: true });
-//   const page = await browser.newPage();
-//   await page.goto('http://139.198.1.69:8080/pdf/compute/vm', {
-//     timeout: 1000000,
-//     waitUntil: 'networkidle2'});
-//   const pdf = await page.pdf({ format: 'A4', path: './test.pdf'});
-//   console.log('pdf: ', pdf);
-//   await browser.close();
-//   return pdf
-// }
-//  printPDF()
-
-
-// const puppeteer = require('puppeteer');
-
-// (async () => {
-//     // Create an instance of the chrome browser
-//     // But disable headless mode !
-//     const browser = await puppeteer.launch({
-//         headless: false
-//     });
-
-//     // Create a new page
-//     const page = await browser.newPage();
-
-//     // Configure the navigation timeout
-//     await page.setDefaultNavigationTimeout(0);
-
-//     // Navigate to some website e.g Our Code World
-//     await page.goto('http://139.198.1.69:8080/pdf/compute/vm/');
-//     const pdf = await page.pdf({ format: 'A4'});
-//     console.log('pdf: ', pdf);
-//     // Do your stuff
-//     // ...
-// })();
-
-// const puppeteer = require('puppeteer');
-
-// (async () => {
-//     // Create an instance of the chrome browser
-//     // But disable headless mode !
-//     const browser = await puppeteer.launch({
-//         headless: false
-//     });
-
-//     // Create a new page
-//     const page = await browser.newPage();
-
-//     // Configure the navigation timeout
-//     await page.goto('http://139.198.1.69:8080/compute/vm/', {
-//         waitUntil: 'load',
-//         // Remove the timeout
-//         timeout: 0
-//     });
-
-//     // Navigate to some website e.g Our Code World
-//     await page.goto('http://139.198.1.69:8080/pdf/compute/vm/');
-//     // const pdf = await page.pdf({ format: 'A4'});
-//     // console.log('pdf: ', pdf);
-//     // Do your stuff
-//     // ...
-// })();
+app.get("/home", function(req, res) {
+  res.send("!");
+});
+    app.get('/test', function(req, res) {
+            fs.readFile(__dirname + '/public/pdf/pdf.html', 'utf8', function(err, text){
+                res.send(text);
+            });
+        })
+app.listen(8787,()=>{
+  console.log('服务端开启在8787端口');
+});

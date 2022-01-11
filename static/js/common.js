@@ -256,3 +256,24 @@ function funScroll() {
     }
   });
 }
+
+
+// $(document).on('click', function () {
+//   console.log('test')
+//   var oReq = new XMLHttpRequest();
+//   // The Endpoint of your server
+//   var URLToPDF = "http://139.198.1.69:8080/pdf/all.pdf";
+//   oReq.open("GET", URLToPDF, true);
+//   oReq.responseType = "blob";
+
+//   oReq.onload = function() {
+
+//       var file = new Blob([oReq.response], {
+//           type: 'application/pdf'
+//       });
+    
+//       saveAs(file, "mypdffilename.pdf");
+//   };
+//   oReq.send();
+
+// });

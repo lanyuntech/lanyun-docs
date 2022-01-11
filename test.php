@@ -161,7 +161,7 @@ class DownLoad {
 		$split_content = substr($content, strpos($content, 'title: ')+8);
 		$title = substr($split_content, 0, strpos($split_content, '"'));
 
-		if ($index > 0) {
+		if ($index >= 0) {
 
 			// 拼接标题
 			// 需要处理的是, 如果是相同文件夹, 需要规划成一类
@@ -171,7 +171,7 @@ class DownLoad {
 			$belong_dir = substr($path, 0, strripos($path, '/'));
 
 			$dir_count = substr_count(substr($path, strlen($this->basic_prefix)), '/');
-			if (($dir_count == 1)) {
+			// if (($dir_count == 1)) {
 				$index_file_path = substr($path, 0, strripos($path, '/')) . '/_index.md';
 				if (is_file($index_file_path)) {
 					$parent_title  = $this->getTitlePath(substr($path, 0, strripos($path, '/')) . '/_index.md');
@@ -179,7 +179,7 @@ class DownLoad {
 				}
 				$this->belong_dir_data[] = $belong_dir;
 				$this->title_index++;
-			}
+			// }
 
 			// 除去掉文件中开头的部分
 			$content = substr_replace($content,
