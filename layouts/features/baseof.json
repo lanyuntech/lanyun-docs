@@ -3,7 +3,7 @@
   "time":{{- .time | jsonify -}}, 
   "content":{{- .content | jsonify -}},
   "tags":{{- .tags | jsonify -}},
-  "url":"{{- .url | absURL -}}",
+  "url": "{{- .url | absURL -}}",
   "href":"{{- $Page.Permalink -}}",
   "zone":{{- .zone | jsonify -}},
   "qingCloudZhiUrl":{{- .qingCloudZhiUrl | jsonify -}},

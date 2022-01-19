@@ -224,7 +224,7 @@
         setTimeout(() => {
             $container.unhighlight();  
             $container.highlight(keywords); 
-        }, 500)
+        }, 300)
         
     }
 
@@ -271,7 +271,7 @@
             $input.on('input', debounce(function () {
                 const keywords = $(this).val();
                 searchResultToDOM(search (jsonTemp, keywords), keywords);
-            }, 500));
+            }, 300));
             $input.trigger('input');
         });   
     })

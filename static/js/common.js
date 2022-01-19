@@ -228,7 +228,6 @@ function funScroll() {
 
   //产品动态的active
   timeLine.each(function (index) {
-    console.log("index: ", index);
     var thisTop = $(this).offset().top;
     $(this).attr("id", `timeline-outer${index}`);
     if (top >= thisTop - 80) {
@@ -257,23 +256,30 @@ function funScroll() {
   });
 }
 
+function saveAs(content, filename) {
+  var link = document.createElement('a');
+  var blob = new Blob([content]);
+  link.download = filename;
+  link.href = URL.createObjectURL(blob);
+  link.click();
+  URL.revokeObjectURL(blob);
+}
 
-// $(document).on('click', function () {
-//   console.log('test')
-//   var oReq = new XMLHttpRequest();
-//   // The Endpoint of your server
-//   var URLToPDF = "http://139.198.1.69:8080/pdf/all.pdf";
-//   oReq.open("GET", URLToPDF, true);
-//   oReq.responseType = "blob";
 
-//   oReq.onload = function() {
+function saveAllPdf () {
+  console.log('test')
+  var oReq = new XMLHttpRequest();
+  var URLToPDF = '/images/all.pdf';
+  oReq.open("GET", URLToPDF, true);
+  oReq.responseType = "blob";
+  oReq.onload = function() {
 
-//       var file = new Blob([oReq.response], {
-//           type: 'application/pdf'
-//       });
+      var file = new Blob([oReq.response], {
+          type: 'application/pdf'
+      });
     
-//       saveAs(file, "mypdffilename.pdf");
-//   };
-//   oReq.send();
+      saveAs(file, "mypdffilename.pdf");
+  };
+  oReq.send();
 
-// });
+}
