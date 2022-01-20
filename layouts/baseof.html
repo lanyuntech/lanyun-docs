@@ -1,6 +1,5 @@
 <!doctype html>
 <html exec=1 lang="{{ .Site.Language.Lang }}" class="no-js">
-
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -28,7 +27,13 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
+       {{ if $has_private }}
+      <div class="nav-link" id="nav-link-box">
+        <a href="#public" class="active">公有云服务</a>
+        <a href="#private">私有云服务</a>
+      </div>
+      {{end}}       -->
       <section>
         {{ end }}
   </header>
