@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yunify/qingcloud-docs.git"
+    "url": "git+https://github.com/yunify/enterprise-cloud-docs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yunify/qingcloud-docs/issues"
+    "url": "https://github.com/yunify/enterprise-cloud-docs/issues"
   },
-  "homepage": "https://github.com/yunify/qingcloud-docs#readme",
+  "homepage": "https://github.com/yunify/enterprise-cloud-docs#readme",
   "dependencies": {
     "axios": "^0.24.0",
     "express": "^4.17.2",
