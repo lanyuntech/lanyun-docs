@@ -20,7 +20,7 @@ git clone https://github.com/<YOUR-GITHUB-ID>/qingcloud-docs.git
 
 ## 第三步：本地调试
 
-1. 进入上一步克隆到本地的 `qingcloud-docs` 文件目录，然后执行下面的命令在本地编译。
+1. 进入上一步克隆到本地的 `enterprise-cloud-docs` 文件目录，然后执行下面的命令在本地编译。
 
 ```
 hugo server -w
