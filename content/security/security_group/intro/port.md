@@ -5,7 +5,7 @@ description: 安全组常用端口介绍
 draft: false
 enableToc: false
 weight: 20
-keyword: 云服务器, QingCloud, 实例, 安全组，常用端口
+keyword: 云服务器, 实例, 安全组，常用端口
 ---
 
 应用通过服务器的端口对外提供服务，通过了解典型应用的默认端口，您可以更准确地添加或修改安全组规则。本章节介绍了云服务器的常用端口及其应用场景。

@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 网络访问控制
-  vice_title: QingCloud 网络访问控制功能包括网络 ACL 和基础网络安全策略。网络 ACL 是私有网络（Vxnet）的进出流量控制表，您可以在这里创建和配置 ACL 规则。
+  vice_title: 云平台网络访问控制功能包括网络 ACL 和基础网络安全策略。网络 ACL 是私有网络（Vxnet）的进出流量控制表，您可以在这里创建和配置 ACL 规则。
 Section2:
   title: 用户指南
   children:
