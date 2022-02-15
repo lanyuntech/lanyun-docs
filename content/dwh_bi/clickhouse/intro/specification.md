@@ -1,14 +1,14 @@
 ---
 title: "产品规格"
 description: 本小节主要介绍 Clickhouse 规格。 
-keyword: Clickhouse, QingCloud，产品规格
+keyword: 产品规格,数据仓库,ClickHouse
 weight: 30
 collapsible: false
 draft: false
 ---
 
 
-QingCloud Clickhouse 根据 QingCloud AppCenter 功能特点，定制`基础版`、`企业版`两个功能系列。
+Clickhouse 服务根据 AppCenter 功能特点，定制`基础版`、`企业版`两个功能系列。
 
 ## 版本介绍
 

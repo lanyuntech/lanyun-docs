@@ -12,7 +12,5 @@ Section1:
     - title: ClickHouse
       url: "/dwh_bi/clickhouse/intro/introduction"
 
-    - title: HashData
-      url: "/dwh_bi/hashdata/intro/hashdata"
 
 ---
