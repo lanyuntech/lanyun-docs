@@ -3,10 +3,10 @@ title: "挂载云平台存储"
 description: 介绍如何创建和挂载存储卷。
 draft: false
 weight: 30
-keyword: 青云, QingCloud, 云计算, 容器, QKE
+keyword: 云平台, 云计算, 容器, QKE
 ---
 
-从 `QKE v1.0.1` 版本起内置了 [QingCloud CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 QingCloud IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。
+从 `QKE v1.0.1` 版本起内置了 [云平台 CSI](https://github.com/yunify/qingcloud-csi) 存储插件，可以动态创建基于 IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。
 
 本小节介绍如何在 KubeSphere 上创建并挂载存储卷。
 

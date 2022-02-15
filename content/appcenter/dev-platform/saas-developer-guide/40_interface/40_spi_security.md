@@ -1,16 +1,16 @@
 ---
 title: "安全设计"
 description: SPI 接口的安全设计
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS 
+keyword: 云平台, AppCenter, 云应用开发平台, SaaS 
 draft: false
 weight: 40
 ---
 
-青云 app 平台会在每次请求中附上 signature、SPI 接口需对 signature 进行校验。若校验失败，则视该通知消息无效。
+AppCenter 平台会在每次请求中附上 signature、SPI 接口需对 signature 进行校验。若校验失败，则视该通知消息无效。
 
 ### 生成签名
 
-青云平台会按照以下步骤生成签名。
+云平台会按照以下步骤生成签名。
 
 1. 获取所有的 http get 请求参数。
 
@@ -28,7 +28,7 @@ weight: 40
 
 ### 示例
 
-用户填写的通知url为：[http://www.isvwebsite.com](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=qingcloud-app-token)
+用户填写的通知 URL 为：[http://www.isvwebsite.com](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=qingcloud-app-token)
 
 SPI 请求：
 

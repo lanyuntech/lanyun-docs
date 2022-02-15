@@ -2,7 +2,7 @@
 title: "修改配置参数"
 draft: false
 description: 介绍如何修改 Harbor 参数。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 参数配置
+keyword: 云平台, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 参数配置
 weight: 8
 ---
 
@@ -12,7 +12,7 @@ weight: 8
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 

@@ -2,7 +2,7 @@
 title: "垃圾清理"
 draft: false
 description: Harbor 镜像仓库垃圾清理。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库
+keyword: 云平台, 云计算, Harbor, 私有镜像仓库, 镜像仓库
 weight: 18
 ---
 

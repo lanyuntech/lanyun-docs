@@ -2,7 +2,7 @@
 title: "部署 Harbor 镜像仓库"
 draft: false
 description: 介绍如何部署 Harbor 镜像仓库。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库，容器
+keyword: 云平台, 云计算, Harbor, 私有镜像仓库，镜像仓库，容器
 weight: 10
 ---
 
@@ -51,7 +51,7 @@ weight: 10
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **Harbor 镜像仓库**，进入 Harbor 镜像仓库部署页面。
 3. 点击**立即部署**开始部署。
 
@@ -63,7 +63,7 @@ weight: 10
 
      > **说明**：
      >
-     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是 QingCloud 提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
+     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是云平台提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
      > * 本地存储不支持高可用，且受单磁盘容量限制，仅建议测试使用。
 
      ![basic-info](/container/harbor/_images/harbor-create-basic-setting.png)
@@ -108,7 +108,7 @@ weight: 10
   >
   > 使用本地存储的用户请跳过以下关于对象存储相关的设置项。
 
-  - **Access_Key_ID** 和 **Secret_Access_Ke**y ：青云提供给用户的授权密钥，可以在 **个人中心** > **API密钥** 中创建，然后点击**下载**，获取 access_key_id 和 secret_access_key。
+  - **Access_Key_ID** 和 **Secret_Access_Ke**y ：云平台提供给用户的授权密钥，可以在 **个人中心** > **API密钥** 中创建，然后点击**下载**，获取 access_key_id 和 secret_access_key。
 
   - <b>对象存储区（Region）</b>：QingStor 存储空间 (Bucket) 的所在区域。
   - <b>对象存储桶（Bucket）</b>：Bucket 名称。
@@ -125,7 +125,7 @@ weight: 10
 
 ### 第5步：用户协议
 
-阅读[《云平台 AppCenter 用户协议》](https://pek3a.qingstor.com/appcenter-docs/terms/qingcloud-appcenter-user-terms.pdf)并勾选确认接受该协议。
+阅读[《云平台 AppCenter 用户协议》并勾选确认接受该协议。
 
 点击**提交**，开始创建 Harbor 集群所需资源。
 

@@ -1,7 +1,7 @@
 ---
 title: "镜像制作"
 description: 介绍如何制作应用镜像。
-keyword: QingCloud, 青云, AppCenter, 云应用开发,  应用, 镜像
+keyword: 云平台, AppCenter, 云应用开发,  应用, 镜像
 draft: false
 collapsible: false
 weight: 3
@@ -9,13 +9,13 @@ weight: 3
 
 ## 介绍
 
-在整个云化应用过程中，制作镜像是最花时间也是最容易出错的一部分，因为每个应用的部署架构不同，需要调试的时间也会差异很大，通常情况少则几个小时，多则一周左右。下面详细解释制作镜像的流程，青云 AppCenter 支持三种镜像类型: KVM, Docker 及 LXC，目前 LXC 暂未开放给用户。
+在整个云化应用过程中，制作镜像是最花时间也是最容易出错的一部分，因为每个应用的部署架构不同，需要调试的时间也会差异很大，通常情况少则几个小时，多则一周左右。下面详细解释制作镜像的流程，云平台 AppCenter 支持三种镜像类型: KVM, Docker 及 LXC，目前 LXC 暂未开放给用户。
 
 提示：请参考[调试指南](/appcenter/dev-platform/cluster-developer-guide/debug/debug)
 
 ## 制作 KVM 镜像
 
-<table><tr style="background-color:rgb(240,240,240);color:red"><td><b>除了允许用户登录的节点(配置文件里定义 user_access 为 true) 之外，其它类型节点如果有持久化数据必须用挂盘，不能保存到系统盘，切记！且在云服务器里不要操作资源比如 halt 云服务器，青云会负责资源调度，用户只需要关注应用即可。</b></td></tr></table>
+<table><tr style="background-color:rgb(240,240,240);color:red"><td><b>除了允许用户登录的节点(配置文件里定义 user_access 为 true) 之外，其它类型节点如果有持久化数据必须用挂盘，不能保存到系统盘，切记！且在云服务器里不要操作资源比如 halt 云服务器，云平台会负责资源调度，用户只需要关注应用即可。</b></td></tr></table>
 
 所谓持久化数据是指跟具体用户有关的数据，如 session、用户自己的数据等，比如说数据库应用，数据库应用程序本身不是持久化数据，因为它可以无差别的重复部署而不影响服务，但用户的数据库信息、用户设置的参数、日志等是持久化数据。
 
@@ -37,16 +37,15 @@ weight: 3
 
 ### 安装 agent
 
-下载青云提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
+下载云平台提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
 [Windows 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-windows-386.zip)，
 解压后运行 ./install.sh (Windows 下双击 install.bat)。此 agent 中包含了自动配置文件程序 confd，
 该程序是在开源 [confd](https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md) 
-的基础上修改了一些 bug 并且增加了一些算术功能，
-详情见 [QingCloud confd](https://github.com/yunify/confd/)。
+的基础上修改了一些 bug 并且增加了一些算术功能，详情见 [confd](https://github.com/yunify/confd/)。
 
 ### 创建模板文件
 
-开发一些必须的模板文件，这些文件会监听青云 metadata service 的变化从而更新自己应用的配置文件。
+开发一些必须的模板文件，这些文件会监听 metadata service 的变化从而更新自己应用的配置文件。
 这些文件后缀名为 toml 和 tmpl，例如，ZooKeeper 有两个配置文件 zoo.cfg 和 myid，
 每个配置文件需要一套相应的 toml 和 tmpl 模板对应，
 详情请见[nextcloud](https://github.com/QingCloudAppcenter/nextcloud/tree/master/nextcloud-nodes/code/conf.d/)。
@@ -63,7 +62,7 @@ weight: 3
   reload_cmd = "/opt/zookeeper/bin/restart-server.sh"
   ```
 
-  toml 文件中 src 代表模板文件名，dest 即应用的配置文件，这个配置文件会根据 src 模板刷新 dest 内容，keys 即进程 confd 监控青云 metadata service 关于该节点所在集群信息的更新，有变化则更新，如果模板中需要用到某个 key 的信息，则需要监听这个 key，也可以直接监听根目录"/"。reload_cmd 则是配置文件被刷新后的操作，脚本开发者自行提供脚本，如果不需要触发动作可以去掉 reload_cmd 这一行。toml 文件里可加上权限控制 比如 uid，gid，mode 等，详情请见 [confd](https://github.com/yunify/confd/blob/master/docs/quick-start-guide.md)
+  toml 文件中 src 代表模板文件名，dest 即应用的配置文件，这个配置文件会根据 src 模板刷新 dest 内容，keys 即进程 confd 监控 metadata service 关于该节点所在集群信息的更新，有变化则更新，如果模板中需要用到某个 key 的信息，则需要监听这个 key，也可以直接监听根目录"/"。reload_cmd 则是配置文件被刷新后的操作，脚本开发者自行提供脚本，如果不需要触发动作可以去掉 reload_cmd 这一行。toml 文件里可加上权限控制 比如 uid，gid，mode 等，详情请见 [confd](https://github.com/yunify/confd/blob/master/docs/quick-start-guide.md)
 
 #### /etc/confd/templates/zoo.cfg.tmpl
 
@@ -78,7 +77,7 @@ weight: 3
   {{$ip := printf "/hosts/%s/ip" $dir}}server.{{getv $sid}}={{getv $ip}}:2888:3888{{end}}{% endraw %}
   ```
 
-  tmpl 模板文件决定应用配置文件内容，confd 读取青云 metadata service 刷新这些变量的值，如此例 range 这一行是读取该节点所在集群节点的 IP 和 server ID 信息，然后刷新为如下信息：
+  tmpl 模板文件决定应用配置文件内容，confd 读取 metadata service 刷新这些变量的值，如此例 range 这一行是读取该节点所在集群节点的 IP 和 server ID 信息，然后刷新为如下信息：
 
   ```toml
   server.1=192.168.100.2:2888:3888
@@ -86,7 +85,7 @@ weight: 3
   server.3=192.168.100.4:2888:3888
   ```
 
-更多模板语法参见 [confd templates](https://github.com/kelseyhightower/confd/blob/master/docs/templates.md)，注意的是青云的 confd 在开源基础上增加了一些对算术的支持，如 add,div,mul,sub,eq,ne,gt,ge,lt,le,mod 等。
+更多模板语法参见 [confd templates](https://github.com/kelseyhightower/confd/blob/master/docs/templates.md)，注意的是云平台的 confd 在开源基础上增加了一些对算术的支持，如 add,div,mul,sub,eq,ne,gt,ge,lt,le,mod 等。
 
 ## 制作 Docker 镜像
 
@@ -94,7 +93,7 @@ AppCenter 的镜像同时支持 kvm 和 docker，但由于需要实现配置变�
 
 ### 镜像仓库
 
-为了方便开发者存储自己的 docker 镜像，平台提供了 docker 镜像仓库。当前镜像仓库的控制台管理功能尚未完成，所以如果需要使用 docker 镜像仓库，请先提工单申请。为了保证用户安装程序时的体验，应用如果使用 docker 镜像，镜像需要放置到 QingCloud 的镜像仓库，以保证拉取速度。镜像仓库域名：dockerhub.qingcloud.com
+为了方便开发者存储自己的 docker 镜像，平台提供了 docker 镜像仓库。当前镜像仓库的控制台管理功能尚未完成，所以如果需要使用 docker 镜像仓库，请先提工单申请。为了保证用户安装程序时的体验，应用如果使用 docker 镜像，镜像需要放置到云平台的镜像仓库，以保证拉取速度。镜像仓库域名：dockerhub.qingcloud.com
 
 ### 镜像制作
 

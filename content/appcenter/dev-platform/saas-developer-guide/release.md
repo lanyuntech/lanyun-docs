@@ -1,7 +1,7 @@
 ---
 title: "应用上架"
 description: 介绍如何创建应用、设置应用信息、设置应用权限、应用价格，以及将应用上架。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台，应用上架
+keyword: 云平台, AppCenter, 云应用开发平台，应用上架
 draft: false
 weight: 3
 ---
@@ -12,7 +12,7 @@ weight: 3
 
 如果需要做账户对接，需开启 【是否免密】开关。
 
-1. 登录[应用开发平台](https://appcenter.qingcloud.com/developer/)，点击“应用”部分的“+”号，开始创建第一个应用。
+1. 登录 AppCenter 应用开发平台，点击“应用”部分的“+”号，开始创建第一个应用。
 
    <img src="/appcenter/dev-platform/_images/um_app_devop.png" style="zoom:50%;" />
 
@@ -80,7 +80,7 @@ weight: 3
 
    <img src="/appcenter/dev-platform/_images/um_app_auth.png" style="zoom:50%;" />
 
-2. 可在左侧菜单栏中选择**服务类别**，然后勾选应用可以使用的青云默认提供的应用接口。
+2. 可在左侧菜单栏中选择**服务类别**，然后勾选应用可以使用的云平台默认提供的应用接口。
 
    勾选之后，应用的使用者将拥有访问对应 API 的权限。
 

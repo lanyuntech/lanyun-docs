@@ -3,14 +3,14 @@ title: "配置参数"
 description: 介绍如何修改 QKE 集群参数。
 draft: false
 weight: 5
-keyword: 青云, QingCloud, 云计算, QKE 参数
+keyword: 云平台, 云计算, QKE 参数
 ---
 
 QKE 支持自定义部分参数的值，您可以根据自己的业务情况对集群运行参数进行调整。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 
@@ -40,7 +40,7 @@ QKE 支持自定义部分参数的值，您可以根据自己的业务情况对�
 
 | 参数                         | 描述                                                         | 注意                                                         |
 | ---------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| API 密钥                     | QingCloud IaaS API 密钥 (https://console.qingcloud.com/access_keys/)，此密钥将被用来创建云平台的资源，比如负载均衡器、PV 挂盘等。 | 集群创建后无法修改。                                         |
+| API 密钥                     | 云平台 IaaS API 密钥，此密钥将被用来创建云平台的资源，比如负载均衡器、PV 挂盘等。 | 集群创建后无法修改。                                         |
 | 安装 KubeSphere              | 选择是否安装 KubeSphere，默认为 true 表示安装 KubeSphere 以及监控组件。<div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b>：<br/><li>安装 KubeSphere 后，其应用商店中的 App 仅限于体验、测试用途。</li><li>公有云工单服务支持仅限于 App 部署，App 自身的业务可用性支持不在工单服务范围内。</li><br/>      </div> | 集群创建后无法修改，请在创建集群前规划好集群用途。           |
 | 选装组件                     | 选装希望安装的组件。QKE 默认仅最小化安装 KubeSphere，此处勾选后将安装所选组件，各组件的功能说明可参考 [KubeSphere 官方文档。](https://kubesphere.com.cn/en/docs/pluggable-components)<div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b>：<br/><li>此选项只有在选项<b>安装 KubeSphere</b> 为 <b>true</b> 时才会生效。</li><li>此选项只负责安装组件，清空此选项并不会执行卸载操作，如需卸载请手动操作。</li><li>安装这些组件可能需要较长时间，请耐心等待。</li><br/>      </div> | -                                                            |
 | KubeSphere 控制台 EIP        | 如果希望通过公网 LoadBalancer 方式访问 KubeSphere 控制台，可在此选择可用的 EIP，将为此 EIP 自动创建一个负载均衡器并绑定；如果没安装 KubeSphere，无需设置此参数 | -                                                            |

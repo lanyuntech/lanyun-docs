@@ -1,7 +1,7 @@
 ---
 title: "查看指标告警"
 description: 本小节介绍如何查看指标告警状态。 
-keyword: 青云, QingCloud, 云计算, QKE, 监控, 告警, 指标
+keyword: 云平台, 云计算, QKE, 监控, 告警, 指标
 weight: 10
 draft: false
 ---
@@ -14,7 +14,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

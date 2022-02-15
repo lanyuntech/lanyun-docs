@@ -3,7 +3,7 @@ title: "节点自动伸缩"
 description: 介绍如何配置集群节点自动增加及减少。
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, QKE, 节点，自动伸缩
+keyword: 云平台, 云计算, QKE, 节点，自动伸缩
 weight: 20
 ---
 
@@ -11,7 +11,7 @@ weight: 20
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **运维与管理** > **自动伸缩**，进入**自动伸缩**页面。
 

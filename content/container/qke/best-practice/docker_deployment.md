@@ -3,7 +3,7 @@ title: "云服务器部署 Docker"
 description: 介绍如何在 Linux 云服务器上部署 Docker。
 draft: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, QKE, 云服务器, Docker
+keyword: 云平台, 云计算, QKE, 云服务器, Docker
 ---
 
 本文介绍了如何在 Linux 云服务器实例中部署 Docker，并提供了 Docker 常用操作命令及简单的镜像制作过程。
@@ -168,7 +168,7 @@ Docker 支持 64 位版本 CentOS 7/8，并且要求内核版本不低于 3.10�
 
    ```
    FROM nginx
-   RUN echo '<h1>QINGCLOUD</h1>' > /usr/share/nginx/html/index.html
+   RUN echo '<h1>Test</h1>' > /usr/share/nginx/html/index.html
    ```
 
    > **说明**
@@ -206,9 +206,8 @@ Docker 支持 64 位版本 CentOS 7/8，并且要求内核版本不低于 3.10�
    docker run -it -d -p 80:80 --name nginx nginx:v1
    ```
 
-6. 在浏览器输入云服务器所绑定的弹性公网IP，访问测试容器运行情况。出现以下内容表示运行成功。
+6. 在浏览器输入云服务器所绑定的弹性公网IP，访问测试容器运行情况。出现“Test”字样以下内容表示运行成功。
 
-   <img src="../../_images/docker_deployment7.png" width="100%" height="40%">
 
 ## Docker 相关术语
 

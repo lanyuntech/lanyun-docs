@@ -1,7 +1,7 @@
 ---
 title: "接口约定"
 description: SPI 接口约定
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS 
+keyword: 云平台, AppCenter, 云应用开发平台, SaaS 
 draft: false
 weight: 20
 ---
@@ -12,5 +12,5 @@ weight: 20
 4. 如果 SPI 接口操作成功
    - 响应状态码必须为 200。
    - 响应体需为 json 格式，响应头中带上 `Content-Type：application/json`
-   - 不同的 action 必须按照青云平台给出的响应体结构返回
-5. **以上 3、4 如未按照规范返回，青云平台即认定为操作失败**。
+   - 不同的 action 必须按照平台给出的响应体结构返回
+5. **以上 3、4 如未按照规范返回，平台即认定为操作失败**。

@@ -4,7 +4,7 @@ description: 介绍如何为 QKE 创建单独的监控图表。
 draft: false
 enableToc: false
 weight: 5
-keyword: 青云, QingCloud, 云计算, 云监控, Dashboard
+keyword: 云平台, 云计算, 云监控, Dashboard
 ---
 
 除了QKE 本身的监控图表外，您还可以使用云监控 CloudSat 的[监控面板 Dashboard](/monitor_service/cloudsat/intro/intro/#dashboard) 功能，为 QKE 创建单独的监控图表。
@@ -17,7 +17,7 @@ keyword: 青云, QingCloud, 云计算, 云监控, Dashboard
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **监控服务** > **云监控 CloudSat**，进入**监控概览**页面。
 

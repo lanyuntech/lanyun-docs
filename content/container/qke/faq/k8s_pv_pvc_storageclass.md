@@ -3,7 +3,7 @@ title: "如何理解 Kubernetes 持久化存储体系"
 description: 介绍 Kubernetes 持久化存储体系的相关知识。
 draft: false
 weight: 10
-keyword: 青云, QingCloud, QKE, Kubernetes, 持久化存储, PVC
+keyword: 云平台, QKE, Kubernetes, 持久化存储, PVC
 ---
 
 PVC 是 Kubernetes 中一种比较常见的持久化存储方案，其后端一般是独立的存储系统如 NFS、iSCSI、cephfs 、glusterfs 等。本文将简单阐述这一套存储体系的大致内容。

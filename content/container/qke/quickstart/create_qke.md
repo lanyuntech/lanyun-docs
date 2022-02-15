@@ -4,7 +4,7 @@ description: 介绍如何创建 QKE 集群
 draft: false
 enableToc: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
+keyword: 云平台, 云计算, 创建, QKE 集群, 节点配置
 ---
 
 本小节介绍如何快速创建 QKE 集群。
@@ -19,7 +19,7 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
   >
   > 在 QKE 服务环境参数设置中，**Docker 网桥地址**默认为`172.30.0.0/16`，故建议创建 VPC 网络时，不要 VPC 地址范围设置为该网断。若必须设置为该网断，则需要在参数设置中修改Docker 默认网段为其他网断地址，避免引起冲突。 
 
-- 通过 [API 密钥管理页面](https://console.qingcloud.com/access_keys/) 创建 API 密钥。存储、网络等插件通过 API 密钥与云平台交互并创建资源。
+- 通过 API 密钥管理页面创建 API 密钥。存储、网络等插件通过 API 密钥与云平台交互并创建资源。
 
 - 请检查硬盘配额。需确保至少 230 GB、14 块硬盘的配额。硬盘的默认类型与 QKE 集群云服务器类型一致。
 
@@ -38,7 +38,7 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**。
    - 如果是首次部署，进入 QKE 应用简介页面，点击**立即部署**进入部署页面。
    - 如果已创建过 QKE 集群，则进入 QKE 集群管理页面，点击**创建**进入部署页面。
@@ -124,13 +124,13 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 
 - **etcd 服务**：Kubernetes 集群使用 etcd 作为后端存储。
 
-  建议使用青云提供的 [etcd 服务](/middware/etcd/) 单独部署和管理，以获得更好的可用性和容错性。点击**快捷创建**即可创建 etcd 服务集群。etcd 集群和 QKE 集群需部署在同一 VPC 下。
+  建议使用云平台提供的 [etcd 服务](/middware/etcd/) 单独部署和管理，以获得更好的可用性和容错性。点击**快捷创建**即可创建 etcd 服务集群。etcd 集群和 QKE 集群需部署在同一 VPC 下。
 
   如果您未单独部署 etcd 服务，系统将使用内置在主节点的 etcd。
 
 - **ELK 服务**：QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elasticsearch) 作为后端存储。
 
-  建议使用青云提供的 [ELK 服务](https://console.qingcloud.com/apps/app-p6au3oyq) 单独部署和管理，以获得更好的可用性和可维护性。点击**快捷创建**即可创建 ELK 服务集群。ELK 集群和 QKE 集群需部署在同一 VPC 下。
+  建议使用云平台提供的 ELK 服务单独部署和管理，以获得更好的可用性和可维护性。点击**快捷创建**即可创建 ELK 服务集群。ELK 集群和 QKE 集群需部署在同一 VPC 下。
 
   如果您没您未单独部署 ELK 服务，系统将使用内置的 Elasticsearch。
 

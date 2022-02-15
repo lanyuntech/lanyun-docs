@@ -3,7 +3,7 @@ title: "监控指标说明"
 description: 本小节介绍如何 Redis 支持的监控指标。 
 weight: 1
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 监控, 告警, 指标
+keyword: 云平台, 云计算, QKE, 监控, 告警, 指标
 ---
 
 QKE 提供了集群服务和资源性能监控数据。

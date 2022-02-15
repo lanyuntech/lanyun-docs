@@ -4,7 +4,7 @@ description: 介绍如何使用 kubectl 工具连接 Kubernetes 集群
 draft: false
 enableToc: false
 weight: 30
-keyword: 青云, QingCloud, 云计算, kubectl, K8s
+keyword: 云平台, 云计算, kubectl, K8s
 ---
 
 本小节将指导您如何在本地使用 kubectl 工具连接到集群。
