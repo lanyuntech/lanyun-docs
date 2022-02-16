@@ -5,7 +5,7 @@ date: 2020-02-28T10:08:56+09:00
 description: 通用管理介绍
 draft: false
 weight: 6
-keyword: 云服务器, QingCloud，安全，云防火墙，通用介绍，服务端口，应用组
+keyword: 云服务器, 安全，云防火墙，通用介绍，服务端口，应用组
 ---
 
 ## 地址簿
