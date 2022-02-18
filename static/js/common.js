@@ -257,7 +257,7 @@ function funScroll() {
 }
 
 function saveAs(content, filename) {
-  var link = document.createElement('a');
+  var link = document.createElement("a");
   var blob = new Blob([content]);
   link.download = filename;
   link.href = URL.createObjectURL(blob);
@@ -265,21 +265,21 @@ function saveAs(content, filename) {
   URL.revokeObjectURL(blob);
 }
 
+function saveAllPdf() {
+  console.log("124");
+  window.open("http://139.198.18.154/files/all.pdf");
+  // console.log('test')
+  // var oReq = new XMLHttpRequest();
+  // var URLToPDF = '/images/all.pdf';
+  // oReq.open("GET", URLToPDF, true);
+  // oReq.responseType = "blob";
+  // oReq.onload = function() {
 
-function saveAllPdf () {
-  console.log('test')
-  var oReq = new XMLHttpRequest();
-  var URLToPDF = '/images/all.pdf';
-  oReq.open("GET", URLToPDF, true);
-  oReq.responseType = "blob";
-  oReq.onload = function() {
+  //     var file = new Blob([oReq.response], {
+  //         type: 'application/pdf'
+  //     });
 
-      var file = new Blob([oReq.response], {
-          type: 'application/pdf'
-      });
-    
-      saveAs(file, "mypdffilename.pdf");
-  };
-  oReq.send();
-
+  //     saveAs(file, "mypdffilename.pdf");
+  // };
+  // oReq.send();
 }
