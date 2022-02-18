@@ -1,20 +1,20 @@
 ---
 title: "设置和更改登录密码"
 description: 介绍如何设置和更改登录密码。
-keyword: 青云,登录密码,青云QingCloud 账号,
+keyword: 登录密码,
 weight: 60
 draft: false
 ---
 
-若您首次登录 QingCloud 管理控制台，可以在**账户设置**的**基本信息**页面为青云QingCloud 账号设置登录密码。
+若您首次登录管理控制台，可以在**账户设置**的**基本信息**页面为云平台账号设置登录密码。
 
 ## 前提条件
 
-已获取 QingCloud 管理控制台登录账号和密码，并登录 QingCloud 管理控制台。
+已获取管理控制台登录账号和密码，并登录管理控制台。
 
 ## 设置登录密码
 
-1. 进入 [基本信息](https://console.qingcloud.com/account/profile/basic/) 页面。
+1. 进入基本信息页面。
 
 2. 在**登录方式**区域，点击**登录密码**右侧的**设置**，弹出身份校验对话框。
 
@@ -32,7 +32,7 @@ draft: false
 
 ## 更改登录密码
 
-1. 进入 [基本信息](https://console.qingcloud.com/account/profile/basic/) 页面。
+1. 进入基本信息页面。
 
 2. 在**登录方式**区域，点击**登录密码**右侧的**更改**，弹出更改登录密码对话框。
 

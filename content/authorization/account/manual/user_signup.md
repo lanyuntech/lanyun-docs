@@ -1,7 +1,7 @@
 ---
-title: "注册青云QingCloud 账号"
-description: 介绍如何注册青云QingCloud 账号。
-keyword: 青云,注册,青云QingCloud账号,微信扫码注册
+title: "注册云平台账号"
+description: 介绍如何注册云平台账号。
+keyword: 注册,云平台账号,微信扫码注册
 weight: 5
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
 
 ## 手机密码注册
 
-1. 进入 [QingCloud](https://www.qingcloud.com/) 官网，点击页面右上方的**注册**，进入手机注册页面。
+1. 进入云平台官网，点击页面右上方的**注册**，进入手机注册页面。
 
    <img src="../../_images/user_signup_phone.png" style="zoom:40%;" />
 
@@ -32,7 +32,7 @@ draft: false
 
 ## 微信扫码注册
 
-1. 进入 [QingCloud](https://www.qingcloud.com/) 官网，点击页面右上方的**注册**，进入手机注册页面。
+1. 进入云平台官网，点击页面右上方的**注册**，进入手机注册页面。
 
    <img src="../../_images/user_signup_weixin.png" style="zoom:40%;" />
 
@@ -40,9 +40,9 @@ draft: false
 
 3. 通过微信扫一扫页面上的二维码，并关注服务号进入注册流程。
 
-4. 若微信已绑定 QingCloud 账号，则弹出注册失败提示信息。
+4. 若微信已绑定云平台账号，则弹出注册失败提示信息。
 
-5. 若微信未绑定 QingCloud 账号，则进入**完善信息**页面。
+5. 若微信未绑定云平台账号，则进入**完善信息**页面。
 
    <img src="../../_images/user_signup_complete_info.png" style="zoom:40%;" />
 
@@ -59,7 +59,7 @@ draft: false
 
    > **注意**
    >
-   > 点击**注册**即代表同意 QingCloud 服务条款和隐私政策。
+   > 点击**注册**即代表同意云平台服务条款和隐私政策。
 
 9. 在注册成功页面，可以设置币种和登录密码。
 
