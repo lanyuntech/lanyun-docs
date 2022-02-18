@@ -1,10 +1,10 @@
 ---
 title: "账户注册问题"
 description: 介绍账户中心的常见问题。
-keyword: 青云, 账户中心, 账户注册, 注册问题
+keyword: 账户中心, 账户注册, 注册问题
 draft: false
 weight: 5
-keyword: 账户中心, QingCloud
+keyword: 账户中心
 ---
 
 ## 注册的时候，应该选择什么币种？

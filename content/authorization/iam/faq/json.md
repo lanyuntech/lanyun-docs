@@ -1,7 +1,7 @@
 ---
 title: "JSON 编辑格式及参数说明"
 description: 介绍 JSON 编辑格式及参数说明。
-keyword: 青云, JSON , JSON 格式, IAM, 参数说明
+keyword: JSON , JSON 格式, IAM, 参数说明
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
@@ -10,7 +10,7 @@ weight: 43
 
 创建或编辑策略时，您可以选择 JSON 选项卡进入 JSON 编辑模式，以便在 JSON 编辑器中键入或粘贴策略。
 
-这种方法一般适用于复制[示例策略](../../faq/json/#策略示例)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
+这种方法一般适用于复制[示例策略](../../faq/json/#策略示例)以方便在您的账户中使用，如果您对下文描述中的云平台 IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
 
 ![demo1_JsonEditor](../../_images/demo1_JsonEditor.png)
 
@@ -78,7 +78,7 @@ weight: 43
     "effect": "allow"
     ```
 
-以上便是 QingCloud IAM 的策略文档构成，建议您在参照文档用 JSON 编辑策略时，随时通过切换到可视化编辑器来比较您填写的这些内容。
+以上便是云平台 IAM 的策略文档构成，建议您在参照文档用 JSON 编辑策略时，随时通过切换到可视化编辑器来比较您填写的这些内容。
 
 ## 策略示例
 

@@ -1,7 +1,7 @@
 ---
 title: "如何使用身份"
 description: 介绍 IAM 如何使用身份。
-keyword: 青云, IAM , 使用身份, 代入身份
+keyword: IAM , 使用身份, 代入身份
 date: 2020-02-28T10:08:56+09:00
 draft: false
 weight: 45
@@ -13,7 +13,7 @@ weight: 45
 
 若您尚未为该实体创建身份，或者尝试代入错误的身份，您在该实体上的任何身份使用操作都将遭到拒绝。
 
-## 代入身份方式一：利用 QingCloud SDK 开发应用
+## 代入身份方式一：利用 SDK 开发应用
 
 > **说明**
 >
@@ -29,7 +29,7 @@ weight: 45
 
     ![demo1_AttachedPolicy](../../_images/demo1_AttachedPolicy.png)
 
-3. 访问该云服务器终端，可使用 pip 安装 SDK: （[点此了解更多 SDK 文档信息](https://docs.qingcloud.com/product/sdk/)）
+3. 访问该云服务器终端，可使用 pip 安装 SDK: （[点此了解更多 SDK 文档信息](../../../../development_docs/sdk/intro/intro/)）
 
    ```bash
    pip install qingcloud-sdk
@@ -93,9 +93,9 @@ weight: 45
 
 Windows 云服务器上配置好路由后，代入身份开发应用的方法与前文描述一致。
 
-## 代入身份方式二：QingCloud 控制台“切换身份”
+## 代入身份方式二：管理控制台“切换身份”
 
-当他人将您的账户 ID 作为[信任载体](../../faq/principal)创建身份后，您可以登录到 QingCloud 控制台使用此方法访问对方的账户以辅助其运维。
+当他人将您的账户 ID 作为[信任载体](../../faq/principal)创建身份后，您可以登录到管理控制台使用此方法访问对方的账户以辅助其运维。
 
 1. 登录控制台，鼠标移至界面右上角头像处，点击“切换身份”即可查看您有权限访问的所有身份列表：
 
