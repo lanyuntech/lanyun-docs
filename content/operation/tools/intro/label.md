@@ -3,7 +3,7 @@ title: "标签"
 description: Test description
 draft: false
 enableToc: false
-keyword: 标签, QingCloud, 青云, 云计算
+keyword: 标签, 云计算
 ---
 
 
