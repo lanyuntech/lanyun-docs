@@ -3,7 +3,7 @@ title: "Windows云服务器蓝屏"
 description: Windows 云服务器蓝屏解决方法
 weight: 16
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，蓝屏
+keyword: 云计算, 云服务器，蓝屏
 ---
 
 Windows云服务器使用过程中出现蓝屏，Windows 10 1903包括这个之前的系统都有这个漏洞

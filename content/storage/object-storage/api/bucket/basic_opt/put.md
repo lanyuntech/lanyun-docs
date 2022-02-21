@@ -2,14 +2,14 @@
 title: "PUT Bucket"
 date: 2021-08-17T10:08:56+09:00
 description: 本小节主要介绍 PUT Bucket 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 collapsible: false
 draft: false
 weight: 1
 ---
 
 
-用于创建一个新的 Bucket。创建成功后，该 Bucket 的所有者就是 API 的调用者。匿名用户默认无法调用此 API，请先注册青云账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+用于创建一个新的 Bucket。创建成功后，该 Bucket 的所有者就是 API 的调用者。匿名用户默认无法调用此 API，请先注册云平台账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
 ## 请求语法
 
@@ -21,7 +21,7 @@ Authorization: <authorization-string>
 ```
 
 **说明**
-- Bucket 名称在 Qingstor 对象存储中是全局唯一的，并且遵守 DNS 规则。
+- Bucket 名称在对象存储中是全局唯一的，并且遵守 DNS 规则。
 - Bucket 的命名规范：由长度为 6 ～ 63 的小写字母、数字、中划线组成的字符串，且以字母或数字开始和结尾。
 - Bucket 配额可通过工单申请调整。
 

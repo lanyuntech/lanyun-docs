@@ -2,7 +2,7 @@
 title: "Windows云服务器搭建FTP并使用对象存储"
 description: 如何在Windows云服务器搭建FTP并使用对象存储
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows， FTP
+keyword: 云计算, 云服务器，Windows， FTP
 ---
 
 # 背景介绍

@@ -2,13 +2,13 @@
 title: "Put Bucket Replication"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Put Bucket Replication 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 collapsible: false
 draft: false
 weight: 3
 ---
 
-该接口用于创建或更新 Bucket 的跨区域复制规则的相关设置。QingStor 对象存储会按照用户所设置的跨区域复制规则，在用户完成某些动作后对匹配规则的对象执行复制操作.
+该接口用于创建或更新 Bucket 的跨区域复制规则的相关设置。对象存储会按照用户所设置的跨区域复制规则，在用户完成某些动作后对匹配规则的对象执行复制操作.
 
 目前会触发跨区域复制的动作如下：
 - 上传对象
@@ -18,7 +18,7 @@ weight: 3
 
 ## 使用说明
 
-- QingStor 对象存储定义跨区域复制规则为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+- 对象存储定义跨区域复制规则为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 - 跨区域复制采用异步复制机制，故，数据复制至目标 Bucket 需要一定的时间，通常为几分钟到几个小时不等。
 
 ## 请求语法
@@ -77,7 +77,7 @@ Authorization: <authorization-string>
 - `id` 用来唯一标记跨区域复制规则，描述该规则的用途。不能与其他跨区域复制规则 `id` 相重复。
 - `prefix` 最大字符长度为 1024。多个规则中的 `prefix` 不能有重叠匹配。比如规则一中 `"prefix": "image"`，那么其它规则中不能出现类似 `"prefix": "image1"`，`"prefix": "image-1"` 这样的设置。默认为空字符串，表示匹配所有对象。不支持正则表达式。
 - 同一条请求中，所有跨区域复制规则中的目标 Bucket，必须指向同一个 Bucket。
-- 为防止用户误操作删除数据，QingStor 对象存储不建议用户在配置规则时开启 `delete_marker` 选项。
+- 为防止用户误操作删除数据，对象存储不建议用户在配置规则时开启 `delete_marker` 选项。
 - 若通过 `storage_class` 设置的存储级别在目标 Bucket 所在区域不被支持，系统会返回设置失败。
 - 若设置 `sync_marker` 为 `enabled`，则历史数据会在规则生效 30 分钟之后开始同步。
 

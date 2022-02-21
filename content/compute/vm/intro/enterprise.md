@@ -4,7 +4,7 @@ date: 2020-01-30T00:40:25+09:00
 description: 企业级云服务器介绍
 draft: false
 weight: 15
-keyword: 云计算, 青云, QingCloud, 云服务器，企业级
+keyword: 云计算, 云服务器，企业级
 ---
 
 ## 计算型 ec3
@@ -285,7 +285,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，企业级
 
 - 采用英特尔®至强®Platinum 8168 CPU @ 2.70GHz 高主频处理器 ，并支持英特尔睿频加速技术，最高可达 3.7GHz 主频；
 - 支持1:1、1:2、1:4、1:8多种处理器内存配比
-- 基于 QingCloud 优化的 SSD Hyper 全闪存存储架构；
+- 基于云平台优化的 SSD Hyper 全闪存存储架构；
 - I/O优化
 - 网络性能与规格对应，规格越高网络转发性能强，最高可支持25Gbps内网带宽
 - 支持 VPC 私有网络和基础网络

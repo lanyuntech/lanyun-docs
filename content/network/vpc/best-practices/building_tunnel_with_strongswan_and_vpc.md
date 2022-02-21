@@ -1,6 +1,6 @@
 ---
 title: "strongswan 与 VPC 共同搭建隧道"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, strongswan, 隧道
+keyword: 云计算, VPC, VPC 网络, strongswan, 隧道
 description: strongswan 与 VPC 共同搭建隧道。
 draft: false
 weight: 5
@@ -8,7 +8,7 @@ weight: 5
 
 ## 项目介绍
 
-客户业务在往青云迁移的过程中，因为两边的数据需要同步，所以需要建立站点到站点ipsec隧道，由于本地IDC设备不支持vpn服务，所以采用自建ipsec的方式互联，采用的是strongswan的方式，以下是模拟客户业务环境，成功搭建ipsec隧道的案例，供参考。
+客户业务在往云平台迁移的过程中，因为两边的数据需要同步，所以需要建立站点到站点ipsec隧道，由于本地IDC设备不支持vpn服务，所以采用自建ipsec的方式互联，采用的是strongswan的方式，以下是模拟客户业务环境，成功搭建ipsec隧道的案例，供参考。
 
 ### qingcloud ap2a （vpc自身具备ipsec服务）
 

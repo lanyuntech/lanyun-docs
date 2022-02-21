@@ -2,7 +2,7 @@
 title: "nginx配置SSL"
 description: nginx如何配置ssl
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，nginx，ssl
+keyword: 云计算, 云服务器，nginx，ssl
 ---
 
 ## 背景
@@ -12,7 +12,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，nginx，ssl
 ## 准备事项
 
 * 云服务器已安装nginx
-* 已经申请并签发了SSL证书，如没有证书，请[购买SSL证书](https://console.qingcloud.com/ssl_certificates)
+* 已经申请并签发了SSL证书，如没有证书，请购买SSL证书
 * 申请SSL证书时绑定的域名已解析到服务器IP
 * 站点文件已上传至云服务器目录
 

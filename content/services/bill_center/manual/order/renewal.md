@@ -3,7 +3,7 @@ title: "续费管理"
 weight: 7
 description: 介绍如何进行续费项查询及续费操作。
 draft: false
-keyword: QingCloud, 青云, 云计算, 续费管理, 续费查询, 费用
+keyword: 云计算, 续费管理, 续费查询, 费用
 ---
 
 

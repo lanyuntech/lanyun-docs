@@ -2,12 +2,12 @@
 title: "Bucket Policy 白名单和黑名单使用实例"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍 Bucket Policy 白名单和黑名单使用实例相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 10
 ---
 
-ACL 提供了 Bucket 级别的读写权限设置，包括可读、可写和可读写。用户可以将不同的访问权限分别授予不同的青云用户，也可以选择所有用户整体设置。Bucket Policy 允许用户更细粒度的控制 Bucket 的访问。其语义主要由用户、 资源、动作及条件运算符组合定义。例如仅允许指定用户以指定站点为 Referer 以下载 Bucket 中的某单个 Object，或者防止外链等。
+ACL 提供了 Bucket 级别的读写权限设置，包括可读、可写和可读写。用户可以将不同的访问权限分别授予不同的云平台用户，也可以选择所有用户整体设置。Bucket Policy 允许用户更细粒度的控制 Bucket 的访问。其语义主要由用户、 资源、动作及条件运算符组合定义。例如仅允许指定用户以指定站点为 Referer 以下载 Bucket 中的某单个 Object，或者防止外链等。
 
 ACL 过于广域，对于一些更细粒度的控制无法实现，需要用 Policy 来实现访问控制。
 

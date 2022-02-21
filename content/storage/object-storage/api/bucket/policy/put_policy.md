@@ -1,10 +1,10 @@
 ---
 title: "PUT Bucket Policy"
 description: 本小节主要介绍 PUT Bucket Policy 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 ---
 
-该接口用于设置 Bucket 的访问策略。QingStor 对象存储定义访问策略为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该API。
+该接口用于设置 Bucket 的访问策略。对象存储定义访问策略为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该API。
 
 ## 请求语法
 
@@ -36,7 +36,7 @@ Authorization: <authorization-string>
 | --- | --- | --- | --- |
 | statement | List | 访问策略，字典类型。访问策略的匹配规则根据规则的定义顺序依次生效，如：一个请求匹配上两条 `statment`，定义在前的 `statment` 生效。 |是 |
 | id | String | 策略的标识符，可用来描述策略的用途。可为任意字符，且长度不超过 100。在一个 Bucket Policy 中，策略的标识符必须唯一。 |是 |
-| user | String or List | 策略所应用到的用户，其值可为字符串，也可为列表。规则如下：<br>- 当策略所应用到的用户为单一用户时，可用字符串表示，否则应该用列表表示。<br>- 每个用户必须为青云 QingCloud 用户，可用青云 QingCloud 用户 ID 表示。 <br>- 总体长度不能超过 300 个字符。 <br>- 该字段不能省略，如果要匹配所有用户，可设置值为 `*`。 |是 |
+| user | String or List | 策略所应用到的用户，其值可为字符串，也可为列表。规则如下：<br>- 当策略所应用到的用户为单一用户时，可用字符串表示，否则应该用列表表示。<br>- 每个用户必须为云平台用户，可用云平台用户 ID 表示。 <br>- 总体长度不能超过 300 个字符。 <br>- 该字段不能省略，如果要匹配所有用户，可设置值为 `*`。 |是 |
 | effect | String | 当策略成功匹配用户的请求时，是否允许该请求。可选值为：<br>- `allow` 表示允许； <br>- `deny` 表示拒绝。 <br>- 如果请求与策略不匹配，则认为策略对于该请求不生效。 |是 |
 | action | String or List | 资源所支持操作。 其值可为列表或字符串。包括 Bucket action 与 Object action。 规则如下：<br>- 当为单一操作时，可用字符串表示，否则应该用列表表示。<br>- 总长度不能超过 500 个字符。<br>- Bucket action 包括，`list_objects`，`head_bucket` 及 `get_bucket_stats`。<br/>- Object action 包括 `get_object`，`create_object`，`delete_object`，`head_object`，`list_objects`，`list_object_parts`，`upload_object_part`，`abort_multipart_upload`，`initiate_multipart_upload` 及 `complete_multipart_upload`。<br>- 其中 `list_objects` 既属于 Bucket action 也属于 Object action |是 |
 | resource | List |  允许或拒绝权限的对象资源。必须为列表或字符串。总长度不能超过 2048 个字符。 <br/>- 对于 Bucket action，`resource` 需为 Bucket 名称或者缺省。 <br/>- 对于 Object action，`resource` 须为以 `bucketname/` 为前缀的通配 Object 资源的表达式， 如 `resource: ["mybucket/dir_a/*", "mybucket/dir_b/*"]` <br/>- 对于 `list_objects`，若指定 `resource: [mybucket/dir/*]`，则匹配前缀为 `mybucket/dir/` 的所有对象，可用于控制特定路径下的对象列取权限。 <br>- 当 `action` 包含了 Object action， 则 `resource` 不可缺省，并且须以 Object 资源的形式设置。|是 |

@@ -53,7 +53,7 @@ section3:
 section4:
   children:
     - title: 了解：什么是 VPC 网络
-      content: VPC 网络是 QingCloud 环境内用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
+      content: VPC 网络是 云平台 环境内用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
       vice_title: 了解的第一步
       children:
         - title: 产品简介

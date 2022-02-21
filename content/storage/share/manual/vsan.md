@@ -4,19 +4,19 @@ date: 2020-01-30T00:38:25+09:00
 description: 本小节主要介绍Virtual SAN。
 draft: false
 weight: 2
-keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
+keyword: 云计算, 共享存储, Virtual SAN, NeonSAN
 ---
 
 # 简介
 
-通过青云的 SDS（软件定义存储）技术，您可以快速地搭建您专属的基于 iSCSI 协议的 Virtual SAN 服务。 首先需要创建一个 Virtual SAN 服务器；然后再在其上创建一个或多个目标； 最后在云服务器客户端登录这些目标即可使用。
+通过云平台的 SDS（软件定义存储）技术，您可以快速地搭建您专属的基于 iSCSI 协议的 Virtual SAN 服务。 首先需要创建一个 Virtual SAN 服务器；然后再在其上创建一个或多个目标； 最后在云服务器客户端登录这些目标即可使用。
 
 本指南旨在介绍如何配置 Virtual SAN 和目标，以及如何设置客户端来访问 Virtual SAN。
 
 
 > 注解
 > 
-> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](/storage/vnas/intro/introduction) 。
+> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用云平台已经推出的 [_NAS 服务_](/storage/vnas/intro/introduction) 。
 
 ## 创建 Virtual SAN 服务器
 
@@ -52,7 +52,7 @@ keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 | <div style="width: 50pt">参数名称</div> | 参数说明                                                     |
 | --------------------------------------- | ------------------------------------------------------------ |
 | 目标类型                                | 默认为iSCSI。                                                |
-| iSCSI标识                               | 根据实际情况为目标指定 iSCSI 标识，也可以输入一个短名（中间不允许有空格，下划线等），青云会自动帮您生成合法的 iSCSI 标识。<br /> 格式是：“iqn” + “.” + “年月” + “.” + “域名的颠倒” + “:” + “设备的具体名称”，颠倒域名是为了避免可能的冲突。 |
+| iSCSI标识                               | 根据实际情况为目标指定 iSCSI 标识，也可以输入一个短名（中间不允许有空格，下划线等），云平台会自动帮您生成合法的 iSCSI 标识。<br /> 格式是：“iqn” + “.” + “年月” + “.” + “域名的颠倒” + “:” + “设备的具体名称”，颠倒域名是为了避免可能的冲突。 |
 
 2. 创建成功后，点击**添加存储**，进入如下界面。
 
@@ -187,7 +187,7 @@ vi /var/lib/iscsi/nodes/<目标IQN>/<Virtual SAN 服务器IP>/default
 
 ## 部署 Oracle RAC
 
-青云提供的 Virtual SAN 比较典型的应用场景就是 Oracle RAC。以下介绍如何在青云上部署这样的服务。
+云平台提供的 Virtual SAN 比较典型的应用场景就是 Oracle RAC。以下介绍如何在云平台上部署这样的服务。
 
 ### Oracle RAC 部署拓扑
 
@@ -222,7 +222,7 @@ vi /var/lib/iscsi/nodes/<目标IQN>/<Virtual SAN 服务器IP>/default
 
 ### 网络配置
 
-Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务，和对内数据同步。在青云可以让云服务器同时加入受管，和自管私有网络来满足这个要求。
+Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务，和对内数据同步。在云平台可以让云服务器同时加入受管，和自管私有网络来满足这个要求。
 
 **网络规划**
 
@@ -236,7 +236,7 @@ Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务
 
 由于需要预留一些 IP 段，请修改路由器 DHCP 配置，减少自动分配的 IP 段。具体操作是:
 
-1.  打开青云路由器
+1.  打开云平台路由器
 2.  点击“关闭DHCP服务”，并再次启动
 3.  弹出对话框如图。把254改成100, 然后提交
 
@@ -248,7 +248,7 @@ Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务
 
 **配置云服务器网络和地址**
 
-用户需要在青云中做如下操作:
+用户需要在云平台中做如下操作:
 
 1.  云服务器 node1 和 node2 加入连接了路由器的受管私有网络（通常这一步创建云服务器时已经完成)
 2.  点击私有网络–创建， 在对话框中点击高级选项 ，选择“自管”，创建一个新的自管网络
@@ -266,7 +266,7 @@ Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务
 
 **配置私网 DNS 域名**
 
-Oracle RAC 对外提供的地址是 scan-cluster 域名，Oracle 会管理 scan-cluster IP 地址，但是要求它能被 DNS 解析。青云路由器提供了私网 DNS 功能，可以方便地在私网里面定义 DNS 记录，用于配置 scan-cluster 域名。
+Oracle RAC 对外提供的地址是 scan-cluster 域名，Oracle 会管理 scan-cluster IP 地址，但是要求它能被 DNS 解析。云平台路由器提供了私网 DNS 功能，可以方便地在私网里面定义 DNS 记录，用于配置 scan-cluster 域名。
 
 启动私网DNS，并为scan-cluster和每个节点定义私网域名。
 
@@ -595,7 +595,7 @@ Press ENTER key to continue after execution of "/tmp/CVU_12.1.0.1.0_grid/runfixu
 
 **安装 Grid Infrastructure**
 
-从此步骤开始正式安装 Grid 软件，请使用青云的 web terminal 登录 node1 的桌面，执行以下安装步骤。
+从此步骤开始正式安装 Grid 软件，请使用云平台的 web terminal 登录 node1 的桌面，执行以下安装步骤。
 
 以 grid 用户登录图形界面，执行 “grid/runInstaller”进入 OUI 图形安装界面。请按以下截图选择:
 

@@ -3,7 +3,7 @@ title: "云服务器 /dev/loop0 磁盘100%监控告警处理方法"
 description: 云服务器磁盘监控告警处理
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，磁盘，监控告警
+keyword: 云计算, 云服务器，磁盘，监控告警
 ---
 
 ## 问题背景

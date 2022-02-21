@@ -2,20 +2,20 @@
 title: "Python SDK"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍 Python SDK 快速指南相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 collapsible: false
 draft: false
 weight: 2
 ---
 
 
-QingStor 对象存储的新版 Python SDK，已在 GitHub 开源。本文为简要使用文档，更多详细信息请参见 [GitHub 项目](https://github.com/qingstor/qingstor-sdk-python) 
+对象存储的新版 Python SDK，已在 GitHub 开源。本文为简要使用文档，更多详细信息请参见 [GitHub 项目](https://github.com/qingstor/qingstor-sdk-python) 
 和 [Python SDK API 文档](https://qingstor-sdk-python.readthedocs.io/en/latest/)。
 
-Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口的调用均与 QingStor 对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Qingstor Restful API 文档](/storage/object-storage/api/)。
+Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口的调用均与对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Restful API 文档](/storage/object-storage/api/)。
 
 
-使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
+使用 SDK 之前请先在 管理控制台 申请 Access key。
 
 ## 安装
 qingstor-sdk 自 v2.3.0 后，仅支持 python v3.6 及以上的版本。

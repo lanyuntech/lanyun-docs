@@ -1,17 +1,17 @@
 ---
 title: "Java SDK"
 description: 本小节主要介绍 Java SDK 快速指南相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-QingStor 对象存储的 Java SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-java) 和 [Java SDK API 文档](https://github.com/qingstor/qingstor-sdk-java/blob/master/README_zh-CN.md)。
+对象存储的 Java SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-java) 和 [Java SDK API 文档](https://github.com/qingstor/qingstor-sdk-java/blob/master/README_zh-CN.md)。
 
-Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口调用的均与 QingStor 对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Qingstor Restful API 文档](/storage/object-storage/api/)。
+Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口调用的均与对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Restful API 文档](/storage/object-storage/api/)。
 
 SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md)。
 
-使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
+使用 SDK 之前请先在 管理控制台 申请 Access key。
 
 ## 安装
 
@@ -21,7 +21,7 @@ SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/
 > git clone git@github.com:qingstor/qingstor-sdk-java.git
 ```
 
-2. 在 gradle/maven 中将版本替换为您需要的版本，QingStor 对象存储推荐使用最新的版本。
+2. 在 gradle/maven 中将版本替换为您需要的版本，对象存储推荐使用最新的版本。
 
 Gradle:
 
@@ -55,7 +55,7 @@ QingStor stor = new QingStor(env);
 
 **说明：**
 - 代码行中的 `env` 承载了用户的认证信息及 SDK 配置；
-- 代码行中的 `stor` 用于操作 QingStor 对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
+- 代码行中的 `stor` 用于操作对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
 
 ## 代码示例
 

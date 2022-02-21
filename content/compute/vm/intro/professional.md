@@ -4,7 +4,7 @@ date: 2020-01-30T00:40:25+09:00
 description: 专业级云服务器介绍
 draft: false
 weight: 20
-keyword: 云计算, 青云, QingCloud, 云服务器，专业级
+keyword: 云计算, 云服务器，专业级
 ---
 
 ## GPU云服务器 g2

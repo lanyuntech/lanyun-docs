@@ -4,14 +4,14 @@ linkTitle: "客户端工具"
 weight: 2
 collapsible: true
 description: 本小节主要介绍 客户端工具 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
-QingStor 对象存储提供了多种命令行和 GUI 工具，便于用户高效操作、管理对象存储资源，迁移数据至 QingStor 对象存储。
+对象存储提供了多种命令行和 GUI 工具，便于用户高效操作、管理对象存储资源，迁移数据至对象存储。
 
 ## qsctl 
 
-QingStor 对象存储服务的高级命令行工具。详情可参考 [文档](./qsctl)。
+对象存储服务的高级命令行工具。详情可参考 [文档](./qsctl)。
 
 ## qscamel 
 
@@ -19,7 +19,7 @@ QingStor 对象存储服务的高级命令行工具。详情可参考 [文档](.
 
 ## qsftpd 
 
-Qingstor 对象存储提供的 FTP 服务。详情可参考 [文档](./qsftpd)。
+对象存储提供的 FTP 服务。详情可参考 [文档](./qsftpd)。
 
 ## Mountain Duck
 

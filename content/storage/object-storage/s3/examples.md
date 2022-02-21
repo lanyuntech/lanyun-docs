@@ -1,11 +1,11 @@
 ---
 title: "使用示例"
 description: 本小节主要介绍常用工具使用示例相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-大多数基于 AWS S3 开发的工具都有其自定义访问地址的方法，下面以一些常用工具为例，说明如何对接 QingStor 对象存储。
+大多数基于 AWS S3 开发的工具都有其自定义访问地址的方法，下面以一些常用工具为例，说明如何对接对象存储。
 
 ### AWS SDK for Python
 
@@ -161,7 +161,7 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
    host_bucket = %(bucket)s.s3.pek3a.qingstor.com
    ```
 
-3. 执行如下命令行，上传文件至 QingStor 对象存储:
+3. 执行如下命令行，上传文件至对象存储:
 
    ```bash
    > s3cmd put /tmp/hello.txt s3://mybucket/

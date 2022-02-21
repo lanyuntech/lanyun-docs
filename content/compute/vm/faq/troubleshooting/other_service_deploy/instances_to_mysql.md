@@ -4,7 +4,7 @@ date: 2021-01-30T00:38:25+09:00
 description: 活动云服务器内网连接活动数据库
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，数据库
+keyword: 云计算, 云服务器，数据库
 ---
 
 ## 概述
@@ -21,7 +21,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，数据库
 
    ![instances_to_mysql02](../../../_images/instances_to_mysql02.jpg)
 
-3. 通过登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+3. 通过登录 管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 4. 在左侧的**计算基础服务**导航栏选择 **计算**  >  **云服务器**，找到购买的云服务器
 

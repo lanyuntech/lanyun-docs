@@ -2,13 +2,13 @@
 title: "Logstash Input QingStor"
 date: 2021-08-16T10:08:56+09:00
 description: 本小节主要介绍 Logstash Input QingStor 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 1
 collapsible: false
 ---
 
-Logstash Input QingStor 是 Logstash 的 一个 Input 插件，它用于对接 QingStor 对象存储服务。用户通过该插件，可下载存储于 QingStor 对象存储上的日志文件，并将其导入至 Logstash 中，方便用户进一步的处理分析。
+Logstash Input QingStor 是 Logstash 的 一个 Input 插件，它用于对接对象存储服务。用户通过该插件，可下载存储于对象存储上的日志文件，并将其导入至 Logstash 中，方便用户进一步的处理分析。
 
 该插件已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/logstash-input-qingstor)。
 
@@ -22,7 +22,7 @@ Logstash Input QingStor 是 Logstash 的 一个 Input 插件，它用于对接 Q
 
 ## 配置
 
-1. 在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access Key。
+1. 在 管理控制台 申请 Access Key。
 
 2. 创建配置文件 qs_input.conf，并填写如下内容：
 
@@ -44,7 +44,7 @@ input {
 
 ## 使用
 
-配置完成之后执行如下命令行启动 Logstash，即可读取 QingStor 对象存储指定 Bucket 中的日志文件。
+配置完成之后执行如下命令行启动 Logstash，即可读取对象存储指定 Bucket 中的日志文件。
 
 ```bash
 $./bin/logstash -f qs_input.conf

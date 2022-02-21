@@ -1,16 +1,16 @@
 ---
 title: "JavaScript SDK"
 description: 本小节主要介绍 JavaScript SDK 快速指南相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-QingStor 对象存储的 JavaScript SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-js)。
+对象存储的 JavaScript SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-js)。
 
 
 ## 安装
 
-QingStor 对象存储提供若干安装方式，用户可根据需求进行选用。
+对象存储提供若干安装方式，用户可根据需求进行选用。
 
 **方式一：** 使用 npm 安装 SDK：
 
@@ -24,7 +24,7 @@ npm install qingstor-sdk
 yarn add qingstor-sdk
 ```
 
-**方式三：** 也可以请前往 [Release](https://github.com/yunify/qingstor-sdk-js/releases) 页面下载打包好的 SDK 文件，然后在 HTML 中加上如下格式的 Script 标签引入 SDK，QingStor 对象存储建议用户在开发时使用未压缩的版本，方便调试，在生产环境中使用 `qingstor-sdk.min.js` 版本。
+**方式三：** 也可以请前往 [Release](https://github.com/yunify/qingstor-sdk-js/releases) 页面下载打包好的 SDK 文件，然后在 HTML 中加上如下格式的 Script 标签引入 SDK，对象存储建议用户在开发时使用未压缩的版本，方便调试，在生产环境中使用 `qingstor-sdk.min.js` 版本。
 
 ```html
 <script src="https://example.com/path/to/qingstor-sdk.js"></script>
@@ -39,7 +39,7 @@ yarn add qingstor-sdk
 
 ## 快速开始
 
-QingStor SDK 使用 ES6 的语法编写，所以使用前请确保你配置了合适的构建环境。
+SDK 使用 ES6 的语法编写，所以使用前请确保你配置了合适的构建环境。
 
 ### 浏览器环境
 
@@ -131,7 +131,7 @@ node -r esm index.js
 
 ### 请求签名
 
-发往 QingStor 对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [青云控制台](https://console.qingcloud.com/access_keys/) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
+发往对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 云平台控制台 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
 
 ``` plain_text
 access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
@@ -149,7 +149,7 @@ const config = new Config({
 });
 ```
 
-如果在浏览器 Browser 环境中使用 SDK，QingStor 对象存储强烈建议用户部署一个签名服务器，专门用来对请求做签名，这样的好处是不会将 `access_key_id` 和 `secret_access_key` 暴露在客户端。
+如果在浏览器 Browser 环境中使用 SDK，对象存储强烈建议用户部署一个签名服务器，专门用来对请求做签名，这样的好处是不会将 `access_key_id` 和 `secret_access_key` 暴露在客户端。
 
 签名服务器的代码非常简单，请参考 [Express 示例](https://github.com/yunify/qingstor-sdk-js/blob/master/docs/examples/signaure_server.js)。签名服务器部署好之后，请采用如下方式初始化 Config 对象:
 
@@ -284,7 +284,7 @@ listObjects();
 
 ## 请求返回格式说明
 
-QingStor 对象存储的 SDK 使用 [axios](https://github.com/axios/axios) 作为 HTTP 客户端，所有请求的返回都是一个 Promise。axios 的 Response 结构如下:
+对象存储的 SDK 使用 [axios](https://github.com/axios/axios) 作为 HTTP 客户端，所有请求的返回都是一个 Promise。axios 的 Response 结构如下:
 
 ```javascript
 // copied from https://github.com/axios/axios/blob/master/README.md

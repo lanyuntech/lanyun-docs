@@ -2,7 +2,7 @@
 title: "qscamel"
 date: 2021-08-10T10:08:56+09:00
 description: 本小节主要介绍 qscamel 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 collapsible: false
 weight: 6
@@ -201,7 +201,7 @@ destination:
 ```
 
 **说明**
-- 该任务即为：将本地目录 `/path/to/source` 下的文件 copy 至 QingStor 对象存储的 `example_bucket` 下的 `/path/to/destination` 目录。
+- 该任务即为：将本地目录 `/path/to/source` 下的文件 copy 至对象存储的 `example_bucket` 下的 `/path/to/destination` 目录。
 - `access_key_id` 与 `secret_access_key` 可参考 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
 
@@ -333,7 +333,7 @@ options:
 
 ### Endpoint qingstor
 
-QingStor 是[青云](https://www.qingcloud.com/products/qingstor)提供的对象存储服务。能够用做 qscamel 数据迁移任务中的 **source** 与 **destination** 端点。
+对象存储服务，能够用做 qscamel 数据迁移任务中的 **source** 与 **destination** 端点。
 
 使用 qingstor 作为端点时，可添加如下配置内容:
 
@@ -351,15 +351,15 @@ options:
 ```
 
 **说明**
-- `protocol` 用于控制访问 QingStor 对象存储的协议类型。可选值: https, http；默认值: https。
-- `host` 标识访问 QingStor 对象存储的云服务器名。默认值: qingstor.com。
-- `port` 标识访问 QingStor 对象存储的端口号。默认值: 443。
-- `zone` 标识访问 QingStor 对象存储的区域.自动检测，无需手动配置。
-- `bucket_name` 标识操作的 QingStor 对象存储的 Bucket 名称。无默认值，须手动配置。
-- `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
-- `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
-- `storage_class` 标识 QingStor 对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
-- `multipart_boundary_size` 用于控制 QingStor 对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
+- `protocol` 用于控制访问对象存储的协议类型。可选值: https, http；默认值: https。
+- `host` 标识访问对象存储的云服务器名。默认值: qingstor.com。
+- `port` 标识访问对象存储的端口号。默认值: 443。
+- `zone` 标识访问对象存储的区域.自动检测，无需手动配置。
+- `bucket_name` 标识操作的对象存储的 Bucket 名称。无默认值，须手动配置。
+- `access_key_id` 对象存储的 access_key_id。无默认值，须手动配置。
+- `secret_access_key` 对象存储的 secret_access_key。无默认值，须手动配置。
+- `storage_class` 标识对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
+- `multipart_boundary_size` 用于控制对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
 - 综上，除 `bucket_name`，`access_key_id` 与 `secret_access_key` 以外，均有默认值，故除此三个参数外，其他参数均为可选参数。
 
 

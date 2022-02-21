@@ -3,7 +3,7 @@ title: "管理 DNAT 规则"
 descriptipn: 介绍如何进行 DNAT 规则的添加、修改、删除等操作。
 draft: false
 weight: 30
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: 云计算, NAT网关, NAT, SNAT, DNAT
 ---
 
 ## 前提条件
@@ -19,7 +19,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 
 ##  添加 DNAT 规则
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 在 NAT 网关列表中，点击目标 NAT 网关的 ID，进入详情页面。
 
@@ -42,7 +42,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 
 ## 修改 DNAT 规则
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 在 NAT 网关列表中，点击目标 NAT 网关的 ID，进入详情页面。
 
@@ -58,7 +58,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 
 ## 禁用/启用 DNAT 规则
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 2. 在 NAT 网关列表中，点击目标 NAT 网关的 ID，进入详情页面。
 3. 在 **DNAT 规则**标签页，点击**操作**列的**禁用**/**启用**。
 4. 在弹出的确认窗口中，点击**确定**。
@@ -72,7 +72,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 
 ## 删除 DNAT 规则
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 在 NAT 网关列表中，点击目标 NAT 网关的 ID，进入详情页面。
 

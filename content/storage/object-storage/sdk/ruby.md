@@ -2,20 +2,20 @@
 title: "Ruby SDK"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Ruby SDK 快速指南相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 collapsible: false
 draft: false
 weight: 13
 ---
 
 
-QingStor 对象存储的 Ruby SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/qingstor/qingstor-sdk-ruby)。
+对象存储的 Ruby SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/qingstor/qingstor-sdk-ruby)。
 
-使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
+使用 SDK 之前请先在 管理控制台 申请 Access key。
 
 ## 安装
 
-QingStor 对象存储提供两个安装方式，用户可根据需求选用。
+对象存储提供两个安装方式，用户可根据需求选用。
 
 **方式一：** 直接 Ruby Gem 安装:
 

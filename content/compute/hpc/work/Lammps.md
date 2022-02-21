@@ -3,7 +3,7 @@ title: "Lammps"
 linkTitle: "Lammps应用场景最佳实践"
 date: 2020-02-28T10:08:56+09:00
 description: Lammps应用场景最佳实践
-keyword: 云计算, 青云, QingCloud, hpc，Lammps，应用场景最佳实践
+keyword: 云计算, hpc，Lammps，应用场景最佳实践
 draft: false
 weight: 2
 ---

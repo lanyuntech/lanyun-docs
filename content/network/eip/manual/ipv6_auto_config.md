@@ -1,7 +1,7 @@
 ---
 title: "开启云服务器 IPv6 自动化配置"
 description: 介绍如何开启云服务器 IPv6 自动化配置。
-keyword: QingCloud, 青云, 云计算, 公网IP, IPv6
+keyword: 云计算, 公网IP, IPv6
 weight: 40
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 
 对于使用不支持 IPv6 自动化配置的镜像所启动的云服务器，通过对云服务器进行手动配置，也可以开启 IPv6 自动化配置。
 
-青云的网络采用了 DHCPv6，用户云服务器需要以 DHCPv6 的方式获取到 IPv6 地址，并通过[Network Discovery Protocol](https://tools.ietf.org/html/rfc4861)里的 **Router Advertisement** 机制来自动路由寻址。
+云平台的网络采用了 DHCPv6，用户云服务器需要以 DHCPv6 的方式获取到 IPv6 地址，并通过[Network Discovery Protocol](https://tools.ietf.org/html/rfc4861)里的 **Router Advertisement** 机制来自动路由寻址。
 
 ## 操作要点
 
@@ -18,7 +18,7 @@ draft: false
 
 1. 需要配置 [DUID](https://en.wikipedia.org/wiki/DHCPv6#DHCP_Unique_Identifier)的类型为 [DUID-LLT](https://tools.ietf.org/html/rfc3315#section-9.2)。
 2. 需要在关闭网络时，及时清理 lease 文件，确保切换网络时 duid 不会缓存在 lease 文件里。
-3. 配置 sysctl `accept_dad` 为 0。[DAD](https://tools.ietf.org/html/rfc4429)功能会避免 IPv6 地址重复分配。在青云，会通过 DHCP 机制避免地址重复分配；且底层实现有对 IPv6 实现地址代答功能，可能会导致云服务器内 IPv6
+3. 配置 sysctl `accept_dad` 为 0。[DAD](https://tools.ietf.org/html/rfc4429)功能会避免 IPv6 地址重复分配。在云平台，会通过 DHCP 机制避免地址重复分配；且底层实现有对 IPv6 实现地址代答功能，可能会导致云服务器内 IPv6
    地址变为 'duplicated'，所以需要关闭 DAD。
 4. 配置完成后，需要重启云服务器，以确保您的配置生效。
 

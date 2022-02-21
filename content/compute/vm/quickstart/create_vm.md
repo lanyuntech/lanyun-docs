@@ -3,14 +3,14 @@ title: "云服务器快速创建流程"
 description: 如何进行快速创建云服务器
 draft: false
 weight: 10
-keyword: 云计算, 青云, QingCloud, 云服务器，快速创建
+keyword: 云计算, 云服务器，快速创建
 ---
 
-青云支持快速创建并购买云服务器，详情请参考[云服务器创建指南](../../manual/vm_instance/)。
+云平台支持快速创建并购买云服务器，详情请参考[云服务器创建指南](../../manual/vm_instance/)。
 
 ## 前提条件
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入**云服务器**页签。
+1. 登录 管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入**云服务器**页签。
 2. 在**云服务器**页签中，点击**创建**进入购买界面。
 
 <img src="../../quickstart/_images/vm_1.png" style="zoom: 33%;" />
@@ -39,7 +39,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，快速创建
 
 <img src="../../quickstart/_images/storage.png" alt="storage" style="zoom: 33%;" />
 
-青云 QingCloud 平台为云服务器提供硬盘作为块存储设备，支持多种规格和类型，并可弹性扩展，可满足不同场景的业务需求，并且支持对云服务器和硬盘进行备份。
+云平台为云服务器提供硬盘作为块存储设备，支持多种规格和类型，并可弹性扩展，可满足不同场景的业务需求，并且支持对云服务器和硬盘进行备份。
 
 硬盘可以用作系统盘和数据盘，更多信息，请参见[硬盘简介](/storage/disk/intro/introduction/)。
 
@@ -92,7 +92,7 @@ b. 新建公网 IP
 
 | <span style="display:inline-block;width:100px">登录方式</span> | 说明                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| SSH密钥                                                      | 新建一个密钥对，并下载私钥，私钥用于远程登录身份认证，为保证云服务器安全， QingCloud 不会保存用户的私钥。如何使用私钥登录云服务器请参考[密钥文档](/compute/ssh/manual/ssh/)。 |
+| SSH密钥                                                      | 新建一个密钥对，并下载私钥，私钥用于远程登录身份认证，为保证云服务器安全， 云平台不会保存用户的私钥。如何使用私钥登录云服务器请参考[密钥文档](/compute/ssh/manual/ssh/)。 |
 | 密码                                                         | 自主设定root密码。                                           |
 
 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">

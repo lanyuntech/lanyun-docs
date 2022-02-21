@@ -1,7 +1,7 @@
 ---
 title: "Multipart 分段"
 description: 本小节主要介绍 Multipart 分段接口相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Multipart
+keyword: 云计算, 对象存储, Multipart
 ---
 
 - [Initiate Multipart Upload 初始化分段上传](initiate/)
@@ -13,11 +13,11 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Multipart
 
 ## 功能概述
 
-QingStor 对象存储的 Multipart 接口，提供了多个 API 来实现 Object 分段上传。除了支持客户端上传超过 5G 的大文件以外，还能实现客户端的断点续传，分段并发上传等高级特性。
+对象存储的 Multipart 接口，提供了多个 API 来实现 Object 分段上传。除了支持客户端上传超过 5G 的大文件以外，还能实现客户端的断点续传，分段并发上传等高级特性。
 
 完整的分段上传过程为:
 
-1. 客户端调用 [Initiate Multipart Upload](initiate/) 来初始化一个 Object 分段上传。QingStor 对象存储返回该 Object 分段上传的唯一 Upload Id。
+1. 客户端调用 [Initiate Multipart Upload](initiate/) 来初始化一个 Object 分段上传。对象存储返回该 Object 分段上传的唯一 Upload Id。
 2. 客户端根据 Object 内容偏移依次读取文件数据，并为每个分段标上大于等于 0 的整数标识后，调用 [Upload Multipart Part](upload/) 对每个分段进行上传。
 3. 客户端使用 [List Multipart Parts](list/) 来查看指定 Upload Id 对应的已经上传的分段，以便实现断点续传。
 4. 在所有分段上传完毕后，客户端调用 [Complete Multipart Upload](complete/) 将指定 Upload Id 对应的分段进行合并并得到完整 Object。
@@ -26,7 +26,7 @@ QingStor 对象存储的 Multipart 接口，提供了多个 API 来实现 Object
 - 在上传分段过程中未完成的分段会增加 Bucket 的空间使用量，所以如果要取消上传过程，需要调用 [Abort Multipart Upload](abort/) 来清除没用的分段数据。
 - 在 Bucket 中所有未完成的分段上传过程，可以通过 [List Multipart Uploads](/storage/object-storage/api/bucket/basic_opt/list_multipart_uploads/) 进行查看。
 - 若指定 Upload Id 的同一分段多次上传，则最后一次调用会覆盖之前的上传数据。
-- 若指定的 Bucket 中已存在同名的 Object，QingStor 对象存储会在该 Object 完整上传完成后，替换已有 Object。
+- 若指定的 Bucket 中已存在同名的 Object，对象存储会在该 Object 完整上传完成后，替换已有 Object。
 
 ## 并发操作
 
@@ -39,7 +39,7 @@ QingStor 对象存储的 Multipart 接口，提供了多个 API 来实现 Object
 
 ## 大文件的拷贝
 
-大于 5G 的 Object，QingStor 对象存储不支持直接拷贝。客户端需要为目标位置 Object 调用 [Initiate Upload](initiate/)，然后参照 [Copy Object Part](copy/) 并附带 `x-qs-copy-range` 请求头逐段拷贝数据，最后使用 [Complete Multipart Upload](complete/) 合并得到目标位置 Object。
+大于 5G 的 Object，对象存储不支持直接拷贝。客户端需要为目标位置 Object 调用 [Initiate Upload](initiate/)，然后参照 [Copy Object Part](copy/) 并附带 `x-qs-copy-range` 请求头逐段拷贝数据，最后使用 [Complete Multipart Upload](complete/) 合并得到目标位置 Object。
 
 ## 分段上传限制
 
@@ -52,6 +52,6 @@ QingStor 对象存储的 Multipart 接口，提供了多个 API 来实现 Object
 
 因此，在使用 5GB 大小进行分段的时候，10000 个分段能支持上传最大为 50TB 的 Object；在使用最小分段 4MB 进行分段的时候，10000 个分段能支持上传最大 40GB 的 Object。
 
-客户端可以根据实际需求选择分段大小。比如在外网环境，由于公网传输速度是由多种因素决定，其大小可能受到限制，考虑到保证服务端和客户端的交互，QingStor 对象存储建议，此时，客户端可以采用较小的长度来进行分段。
+客户端可以根据实际需求选择分段大小。比如在外网环境，由于公网传输速度是由多种因素决定，其大小可能受到限制，考虑到保证服务端和客户端的交互，对象存储建议，此时，客户端可以采用较小的长度来进行分段。
 
-目前 [管理控制台](https://console.qingcloud.com/) 上传大文件是采用 64MB 来作为分段大小。
+目前 管理控制台 上传大文件是采用 64MB 来作为分段大小。

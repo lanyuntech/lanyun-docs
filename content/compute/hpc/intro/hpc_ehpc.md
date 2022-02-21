@@ -3,12 +3,12 @@ title: "HPC 及 EHPC"
 linkTitle: "HPC 简介"
 date: 2021-10-15T10:08:56+09:00
 description: HPC 和 EHPC 的区别
-keyword: 云计算, 青云, QingCloud, HPC, EHPC
+keyword: 云计算, HPC, EHPC
 draft: false
 weight: 30
 ---
 
-HPC 和 EHPC 是青云 QingCloud 提供的两种不同的高性能计算模式。
+HPC 和 EHPC 是 云平台 提供的两种不同的高性能计算模式。
 
 HPC 是经典模式的高性能计算，平台提供共享队列，用户通过创建HPC登录节点集群去提交作业到共享队列中，系统根据该作业的运行核时来进行结算，同时用户也可以购买专属队列，包含2-3个物理节点，独享计算资源，按节点配置进行计费
 

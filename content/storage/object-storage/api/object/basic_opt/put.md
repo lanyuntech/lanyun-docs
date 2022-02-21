@@ -2,7 +2,7 @@
 title: "Put Object"
 date: 2020-11-26T10:08:56+09:00
 description: 本小节主要介绍 Put Object 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Object
+keyword: 云计算, 对象存储, Object
 collapsible: false
 draft: false
 weight: 3
@@ -15,11 +15,11 @@ weight: 3
 - 该操作要求请求者对指定的 Bucket 拥有可写权限。
 - Bucket 中的文件夹是模拟概念，控制台展现文件列表时，会自动根据 Object 名中的 `/` 生成文件夹。
 - 用户可以调用此接口上传空的 Object，并指定 Object 名以 `/` 结尾，来创建一个空文件夹。
-- 若指定的 Bucket 中已存在同名的 Object，QingStor 对象存储会在该 Object 完整上传完成后，替换已有 Object。
-- 若同时有多个上传请求写入同一个 Object Key，则最后一个被 QingStor 对象存储处理的请求会覆盖之前上传的 Object 内容。
-- 在用户调用该 API 上传数据之前，用户可以只发送 HTTP 请求头，不携带请求实体，并在请求头中添加 `Expect: 100-continue`，来提前得知该请求是否能被 QingStor 对象存储正确接受与处理。当用户上传的对象实体非常庞大时，可以通过该方式提前知道该上传请求中的认证信息是否正确，请求域名是否需要重定向等，从而减少不必要的数据传输。
+- 若指定的 Bucket 中已存在同名的 Object，对象存储会在该 Object 完整上传完成后，替换已有 Object。
+- 若同时有多个上传请求写入同一个 Object Key，则最后一个被对象存储处理的请求会覆盖之前上传的 Object 内容。
+- 在用户调用该 API 上传数据之前，用户可以只发送 HTTP 请求头，不携带请求实体，并在请求头中添加 `Expect: 100-continue`，来提前得知该请求是否能被对象存储正确接受与处理。当用户上传的对象实体非常庞大时，可以通过该方式提前知道该上传请求中的认证信息是否正确，请求域名是否需要重定向等，从而减少不必要的数据传输。
 - 若指定的 Bucket 被设置为匿名用户可写，则请求中可不携带用户认证信息；
-- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则 QingStor 对象存储仍然会对该用户进行认证，当 QingStor 对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
+- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则对象存储仍然会对该用户进行认证，当对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
 
 ## 请求语法
 
@@ -36,7 +36,7 @@ Authorization: <authorization-string>
 
 ## 请求头
 
-QingStor 对象存储上传 Object 时，支持标准 HTTP 请求头和自定义请求头。若用户上传 Object 时设置了这些请求头，则下载该 Object 时，相应的请求头的值会自动使用上传 Object 时设置的值。各请求头字段说明如下：
+对象存储上传 Object 时，支持标准 HTTP 请求头和自定义请求头。若用户上传 Object 时设置了这些请求头，则下载该 Object 时，相应的请求头的值会自动使用上传 Object 时设置的值。各请求头字段说明如下：
 
 ### 标准 HTTP 头
 

@@ -4,7 +4,7 @@ date: 2021-03-08T21:37:25+09:00
 description: 如何解决云服务器被非法域名恶意指向
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，非法域名
+keyword: 云计算, 云服务器，非法域名
 ---
 
 ## 背景

@@ -5,7 +5,7 @@ description: 本小节主要介绍如何对文件存储 EPFS 进行文件管理
 draft: false
 enableToc: false
 weight: 15
-keyword: 云计算, 青云, QingCloud, 文件存储, EPFS
+keyword: 云计算, 文件存储, EPFS
 ---
 
 对 EPFS 挂载点的文件进行操作。

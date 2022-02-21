@@ -3,14 +3,14 @@ title: "编辑共享单元"
 description: test
 weight: 10
 draft: false
-keyword: 编辑共享单元, QingCloud, 青云, 云计算
+keyword: 编辑共享单元, 云计算
 ---
 
 资源所有者可以在共享单元列表中编辑已创建的共享单元详情。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**资源** ，进入**资源**页签。
+1. 登录 管理控制台，选择**资源** ，进入**资源**页签。
 
 2. 选择**我的共享**，点击共享单元名称，进入共享单元详情。
 

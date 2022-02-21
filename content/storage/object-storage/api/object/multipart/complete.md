@@ -2,7 +2,7 @@
 title: "Complete Multipart Upload"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Complete Multipart Upload 接口相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Multipart
+keyword: 云计算, 对象存储,  Multipart
 collapsible: false
 draft: false
 weight: 3
@@ -15,7 +15,7 @@ weight: 3
 
 - 该操作要求请求者对指定的 Bucket 拥有可读权限。
 - 若指定的 Bucket 被设置为匿名用户可写，则请求中可不携带用户认证信息；
-- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则 QingStor 对象存储仍然会对该用户进行认证，当 QingStor 对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
+- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则对象存储仍然会对该用户进行认证，当对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
 
 ## 请求语法
 
@@ -38,7 +38,7 @@ Authorization: <authorization-string>
 
 ### 标准 HTTP 头
 
-读取分段上传合并后的 Object 全部内容所需时间较长，为了避免阻塞，QingStor 对象存储服务不会自动为合并后的文件计算 ETag 值，需要用户自行在调用此接口时设置。此处设置的 ETag 值会在用户调用 HEAD Object 接口时，通过响应头返回。
+读取分段上传合并后的 Object 全部内容所需时间较长，为了避免阻塞，对象存储服务不会自动为合并后的文件计算 ETag 值，需要用户自行在调用此接口时设置。此处设置的 ETag 值会在用户调用 HEAD Object 接口时，通过响应头返回。
 
 | 字段名 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |

@@ -2,13 +2,13 @@
 title: "HEAD Bucket"
 date: 2021-08-17T10:08:56+09:00
 description: 本小节主要介绍 HEAD Bucket 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 collapsible: false
 draft: false
 weight: 2
 ---
 
-用于判断一个 Bucket 是否存在，以及用户是否有权限访问这个 Bucket。匿名用户默认无法调用此 API，请先注册青云账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+用于判断一个 Bucket 是否存在，以及用户是否有权限访问这个 Bucket。匿名用户默认无法调用此 API，请先注册云平台账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
 ## 请求语法
 

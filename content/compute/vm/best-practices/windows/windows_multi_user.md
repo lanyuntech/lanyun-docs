@@ -3,7 +3,7 @@ title: "Windows 云服务器多用户配置管理"
 description: 如何在 Windows 云服务器上配置多用户管理
 weight: 60
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，多用户配置
+keyword: 云计算, 云服务器，Windows，多用户配置
 ---
 
 ## 项目概览
