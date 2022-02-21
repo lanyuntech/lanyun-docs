@@ -3,7 +3,7 @@ title: "全栈资源监控统一展示"
 date: 2020-12-01T00:38:25+09:00
 description: test
 draft: false
-keyword: 全栈资源监控统一展示, QingCloud, 青云, CloudSat
+keyword: 全栈资源监控统一展示,  CloudSat
 ---
 
 
@@ -15,7 +15,7 @@ keyword: 全栈资源监控统一展示, QingCloud, 青云, CloudSat
 
 ### 解决方案：
 
-1. 利用监控Dashboard的自定义监控面板创建所有IaaS、PaaS资源的统一监控界面。
+1. 利用监控 Dashboard 的自定义监控面板创建所有 IaaS、PaaS 资源的统一监控界面。
 2. 对资源进行分组监控，根据业务系统的不同分组，实施精准高效的故障处理流程，迅速追溯到故障资源组。
 3. 针对云资源中不同数据类型的监控告警服务进行统一管理，快速对关键事件和核心指标进行告警策略的设置。
 
