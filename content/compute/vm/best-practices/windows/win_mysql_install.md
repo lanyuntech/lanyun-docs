@@ -2,7 +2,7 @@
 title: "Windows云服务器配置MySQL"
 description: 如何在Windows云服务器上配置MySQL
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，MySQL
+keyword: 云计算, 云服务器，Windows，MySQL
 ---
 
 ## 背景介绍

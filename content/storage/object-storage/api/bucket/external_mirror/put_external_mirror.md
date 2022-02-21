@@ -2,7 +2,7 @@
 title: "Put Bucket External Mirror"
 date: 2020-11-26T10:08:56+09:00
 description: 本小节主要介绍 Put Bucket External Mirror 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 collapsible: false
 draft: false
 weight: 3
@@ -10,13 +10,13 @@ weight: 3
 
 该接口用于设置 Bucket 的外部镜像源站（External Mirror Source Site），只有 Bucket 的所有者才能调用该 API。
 
-对于设置了外部镜像源站的 Bucket，当请求的对象在 Bucket 中不存在时，QingStor 服务端会把对象名称（Object Key）拼接在外部镜像源站末尾后作为抓取的源链接，再从源站抓取，并将抓取到的结果写入至 QingStor 对象存储 Bucket 中。
+对于设置了外部镜像源站的 Bucket，当请求的对象在 Bucket 中不存在时，服务端会把对象名称（Object Key）拼接在外部镜像源站末尾后作为抓取的源链接，再从源站抓取，并将抓取到的结果写入至对象存储 Bucket 中。
 
-从源站抓取数据，称之为回源。在回源的过程中，请求该对象的客户端，可能会下载到源站文件，也可能收到重定向到源站相应路径的 302 请求。在回源完成后，客户端就能够直接从 QingStor 对象存储的 Bucket 中获取该对象。
+从源站抓取数据，称之为回源。在回源的过程中，请求该对象的客户端，可能会下载到源站文件，也可能收到重定向到源站相应路径的 302 请求。在回源完成后，客户端就能够直接从对象存储的 Bucket 中获取该对象。
 
 **注意:**
-- 在 QingStor 对象存储完成回源后，源站的相应文件内容发生变化时，QingStor 对象存储并不会自动更新该对象。
-- QingStor 对象存储的 [Put Object](/storage/object-storage/api/object/basic_opt/put/) 接口需要输入文件大小，故，源站在提供下载文件时需返回 `Content-Length` 头，否则回源将失败。
+- 在对象存储完成回源后，源站的相应文件内容发生变化时，对象存储并不会自动更新该对象。
+- 对象存储的 [Put Object](/storage/object-storage/api/object/basic_opt/put/) 接口需要输入文件大小，故，源站在提供下载文件时需返回 `Content-Length` 头，否则回源将失败。
 
 ## 请求语法
 
@@ -52,7 +52,7 @@ Authorization: <authorization-string>
 - `protocol` 的值为 `http` 或 `https`，默认值为 `http`。
 - `port` 默认为 `protocol` 对应的端口。
 - `path` 可为空。
-- 若同一 QingStor 对象存储的 Bucket 多次设置不同的源站，则该 Bucket 的源站采用最后一次设置的值。
+- 若同一对象存储的 Bucket 多次设置不同的源站，则该 Bucket 的源站采用最后一次设置的值。
 
 ## 响应头
 

@@ -4,7 +4,7 @@ date: 2021-02-04T20:38:25+09:00
 description: Linux系统升级内核版本
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，内核版本
+keyword: 云计算, 云服务器，Linux，内核版本
 ---
 
 ## 背景

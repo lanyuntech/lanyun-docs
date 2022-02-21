@@ -3,7 +3,7 @@ title: "使用 IIS 搭建网站服务"
 description: 如何使用 IIS 搭建网站服务
 draft: false
 weight: 39
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，IIS 
+keyword: 云计算, 云服务器，Windows，IIS 
 ---
 
 ## 背景

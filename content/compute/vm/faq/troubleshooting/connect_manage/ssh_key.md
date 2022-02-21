@@ -5,12 +5,12 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何通过ssh密钥登录云服务器
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，SSH
+keyword: 云计算, 云服务器，SSH
 ---
 
 ## 前提条件
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+1. 登录 管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 2. 在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥**里面创建一个 SSH 密钥， 然后加载到你的云服务器上并下载私钥文件（例如 ``kp-1234abcd`` ）。
 
 >注解
@@ -35,7 +35,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 
 2. 转换密钥格式
 
-   启动 puttygen，点击 ``Conversions -> Import key``，选中您在青云中创建并下载的 SSH 密钥，文件名形如``kp-1234abcd``。然后点击 ``Save private key``，您将得到 PuTTY 格式的私钥，如kp-1234abcd.ppk
+   启动 puttygen，点击 ``Conversions -> Import key``，选中您在云平台中创建并下载的 SSH 密钥，文件名形如``kp-1234abcd``。然后点击 ``Save private key``，您将得到 PuTTY 格式的私钥，如kp-1234abcd.ppk
 
 3. 配置登录
 
@@ -52,7 +52,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 >注解
 推荐使用 SecureCRT 6.5 及以上版本，低版本会出现私钥无法导入的情况
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 在左上方的控制台导航栏中，选择**产品与服务** > **安全** > **SSH 密钥**，进入 SSH 密钥页面。
 3. 创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如 kp-12345678；
 4. 在 SecureCRT 上创建一个新连接，protocol 是 SSH2，hostname 是 公网IP 地址，username 为 root；
@@ -62,7 +62,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 
 较低版本的 SecureCRT 可能会遇到无法导入私钥的问题，因为低版本的 SecureCRT 会严格要求私钥需要和公钥共同存在，这种情况下，操作步骤如下：
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 在左上方的控制台导航栏中，选择**产品与服务** > **安全** > **SSH 密钥**，进入 SSH 密钥页面。
 3. 创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如放置于 /path/to/kp-1234abcd ；
 4. 在路径 `/path/to/` 下创建新文件 kp-1234abcd.pub；
@@ -78,7 +78,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 >
 > 推荐使用 Xshell 5 及以上版本
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 在左上方的控制台导航栏中，选择**产品与服务** > **安全** > **SSH 密钥**，进入 SSH 密钥页面。
 3. 创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如 kp-12345678；
 4. 在 Xshell 上 创建(New) 一个新 会话(Session) ，协议(Protocol) 是 SSH，云服务器(Host) 是公网 IP 地址；

@@ -3,7 +3,7 @@ title: "Linux云服务器ext4文件系统损坏"
 description: Linux 云服务器 ext4文件系统损坏
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，ext4
+keyword: 云计算, 云服务器，Linux，ext4
 ---
 
 ## 问题背景

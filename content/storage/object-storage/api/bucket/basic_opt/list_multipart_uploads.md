@@ -1,7 +1,7 @@
 ---
 title: "List Multipart Uploads"
 description: 本小节主要介绍 List Multipart Uploads 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 该接口用于获取 Bucket 内正在进行的分段上传对象的列表。列表按照对象名称的 `alphanumeric` 顺序从小到大排序。
@@ -32,7 +32,7 @@ Authorization: <authorization-string>
 | limit | Integer | 此次返回的分段对象的最大数量，默认值为 200，最大允许设置 1000 | 否 |
 
 **说明**
-- 用户第一次发送该请求时，`key_marker` 与 `upload_id_marker` 均为空。QingStor 对象存储收到请求后，返回字段 `next_key_marker` 与  `next_upload_id_marker`。
+- 用户第一次发送该请求时，`key_marker` 与 `upload_id_marker` 均为空。对象存储收到请求后，返回字段 `next_key_marker` 与  `next_upload_id_marker`。
 - 用户第二次发送该请求时，将返回字段 `next_key_marker` 与  `next_upload_id_marker` 依次填入 `key_marker` 与 `upload_id_marker`，从而获取列表下一页内容。
 - 若同名对象有多个分段上传，翻页被截断后只显示了一部分，下次翻页可通过 `upload_id_marker` 参数，获取剩下的分段上传。
 - 用户通过传递 `prefix` 与 `delimiter` 参数，指定获取某个目录下面正在进行的分段上传。

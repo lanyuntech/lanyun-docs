@@ -1,7 +1,7 @@
 ---
 title: "负载均衡器如何支持多证书"
 description: 指导用户通过 HTTPS 和 SSL 监听器绑定多个 SSL 证书。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器,证书
+keyword: 云计算, 网络, 负载均衡器,证书
 weight: 50
 draft: false
 ---
@@ -12,7 +12,7 @@ draft: false
 
 ## 前提条件
 
-* 已创建负载均衡器和 HTTPS 监听器，具体步骤可已参考[负载均衡器操作指南](https://docsv3.qingcloud.com/network/loadbalancer/manual/lb_user_guide/)。
+* 已创建负载均衡器和 HTTPS 监听器，具体步骤可已参考[负载均衡器操作指南](/network/loadbalancer/manual/lb_user_guide/)。
 
 * 已创建 SSL 证书并完成验证，具体步骤可以参考 SSL 证书[购买指南](/site/ssl/manual/user_guide/)、[验证指南](/site/ssl/manual/manualq/)。
 

@@ -1,7 +1,7 @@
 ---
 title: "API 概览"
 description: 本小节主要介绍 NAT 网关所提供的 API。 
-keyword: QingCloud, 青云, 云计算, NAT, API 概览
+keyword: 云计算, NAT, API 概览
 draft: false
 weight: 06
 ---

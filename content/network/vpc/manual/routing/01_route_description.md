@@ -1,6 +1,6 @@
 ---
 title: "路由表概述"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 路由表
+keyword: 云计算, VPC, VPC 网络, 路由表
 description: 路由表包括默认路由表及自定义路由表。
 draft: false
 weight: 1

@@ -3,7 +3,7 @@ title: "作业命令文件编写"
 linkTitle: "作业命令文件编写"
 date: 2020-02-28T10:08:56+09:00
 description: 作业命令文件编写
-keyword: 云计算, 青云, QingCloud, hpc，作业命令文件
+keyword: 云计算, hpc，作业命令文件
 draft: false
 weight: 5
 ---

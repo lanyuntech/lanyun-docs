@@ -3,7 +3,7 @@ title: "安全公告"
 date: 2020-01-30T00:38:25+09:00
 description: 云服务器的安全公告
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，安全公告
+keyword: 云计算, 云服务器，安全公告
 ---
 
 ## 漏洞公告

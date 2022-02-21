@@ -2,7 +2,7 @@
 title: "Windows 云服务器文件共享"
 description: 如何对Windows云服务器的文件进行共享操作
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，文件共享
+keyword: 云计算, 云服务器，文件共享
 ---
 
 ## Windows  Server端配置

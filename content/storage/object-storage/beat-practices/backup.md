@@ -2,15 +2,15 @@
 title: "实时增量数据备份解决方案"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍实时增量数据备份解决方案相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 2
 ---
 
 
-实时且增量地对数据进行备份是用户的普遍需求，本方案将描述如何在 Linux 下将本地业务数据实时备份至 QingStor 对象存储的 Bucket 中。
+实时且增量地对数据进行备份是用户的普遍需求，本方案将描述如何在 Linux 下将本地业务数据实时备份至对象存储的 Bucket 中。
 
-本方案采用 lsyncd 实时地监控指定目录在文件系统层次的变化，当该目录下发生文件创建、重命名、删除等操作时，[qsctl](/storage/object-storage/manual/tool/qsctl/) 便会被自动调用以将数据同步至指定的 QingSor 对象存储的 Bucket 中。因为 qsctl 支持增量同步，所以整个方案可以做到实时且增量的数据备份。
+本方案采用 lsyncd 实时地监控指定目录在文件系统层次的变化，当该目录下发生文件创建、重命名、删除等操作时，[qsctl](/storage/object-storage/manual/tool/qsctl/) 便会被自动调用以将数据同步至指定的对象存储的 Bucket 中。因为 qsctl 支持增量同步，所以整个方案可以做到实时且增量的数据备份。
 
 下面介绍完整的配置步骤。
 
@@ -56,7 +56,7 @@ CONFIG_INOTIFY_USER=y
 
 ## 使用方法
 
-假设需要同步的目录为 `/tmp/example`， 待同步的 QingStor 对象存储的 Bucket 为 `example-bucket`，lsyncd 的配置文件为 `~/qingstor-backup.conf`
+假设需要同步的目录为 `/tmp/example`， 待同步的对象存储的 Bucket 为 `example-bucket`，lsyncd 的配置文件为 `~/qingstor-backup.conf`
 
 ### 编辑配置文件
 

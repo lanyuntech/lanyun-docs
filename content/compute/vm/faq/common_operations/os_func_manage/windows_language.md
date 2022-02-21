@@ -4,7 +4,7 @@ date: 2021-04-09T21:37:25+09:00
 description: 如何更改Windows云服务器系统语言
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，系统语言
+keyword: 云计算, 云服务器，系统语言
 ---
 
 ## 背景信息

@@ -1,13 +1,13 @@
 ---
 title: "C/C++ SDK"
 description: 本小节主要介绍 C/C++ SDK 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-QingStor 对象存储的 C/C++ SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-cpp)。
+对象存储的 C/C++ SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-cpp)。
 
-本 SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口的调用均与 QingStor 对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Qingstor Restful API 文档](/storage/object-storage/api/)。
+本 SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口的调用均与对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Restful API 文档](/storage/object-storage/api/)。
 
 
 本SDK提供了 C 和 C++ 两套接口，这两套接口在使用上方式上有所差别，请您阅读相应的使用说明文档，了解具体细节。

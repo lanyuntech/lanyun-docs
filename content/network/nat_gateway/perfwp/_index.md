@@ -5,6 +5,6 @@ _build:
  render: false 
 weight: 82
 collapsible: true
-keyword: QingCloud, 云计算, 青云, NAT网关
+keyword: 云计算, NAT网关
 ---
 

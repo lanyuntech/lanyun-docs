@@ -1,14 +1,14 @@
 ---
-title: "青云 VPC 端口转发至非青云云服务器"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 端口转发
-description: 使用 VPC 端口转发功能将流量转发至非青云云服务器。
+title: "云平台 VPC 端口转发至非云平台云服务器"
+keyword: 云计算, VPC, VPC 网络, 端口转发
+description: 使用 VPC 端口转发功能将流量转发至非云平台云服务器。
 draft: false
 weight: 15
 ---
 
 ## **背景介绍**
 
-客户通过专线打通青云的vpc和数据中心的网段，需求是数据中心内网的TCP服务，从外网也可以访问，即从青云的vpc的公网ip直接访问数据中心的服务。本文通过vpc的端口转发的功能来实现该需求。
+客户通过专线打通云平台的vpc和数据中心的网段，需求是数据中心内网的TCP服务，从外网也可以访问，即从云平台的vpc的公网ip直接访问数据中心的服务。本文通过vpc的端口转发的功能来实现该需求。
 
 ## 测试场景
 
@@ -34,7 +34,7 @@ weight: 15
 
 ### 1、两vpc之间通过ipsec隧道打通
 
-​	可以参考文档配置：[搭建ipsec隧道](https://docs.qingcloud.com/product/network/ipsec)
+可以参考文档配置：[搭建ipsec隧道](/network/vpc/manual/tunnel/ipsec)
 
 ![](../_images/private_network_1.png)
 

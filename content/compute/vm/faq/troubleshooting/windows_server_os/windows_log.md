@@ -3,7 +3,7 @@ title: "查看Windows云服务器系统日志"
 description: 如何查看windows云服务器系统日志
 draft: false
 weight: 13
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，日志
+keyword: 云计算, 云服务器，Windows，日志
 ---
 
 ## 背景介绍

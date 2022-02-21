@@ -3,7 +3,7 @@ title: "删除 NAT 网关"
 descriptipn: 介绍如何删除 NAT 网关。
 draft: false
 weight: 30
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT
+keyword: 云计算, NAT网关, NAT
 ---
 
 在确定无需使用 NAT 网关后，您可以随时将其删除。<!--，包年包月类型的NAT网关不支持删除操作-->。
@@ -14,7 +14,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 
 ##  操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 右键点击待删除的 NAT 网关，选择**删除**。
 

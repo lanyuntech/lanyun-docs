@@ -1,7 +1,7 @@
 ---
 title: "错误码"
 description: 介绍 API 错误码说明。 
-keyword: QingCloud, 青云, 云计算, VPC, API 错误码
+keyword: 云计算, VPC, API 错误码
 draft: false
 weight: 200
 ---
@@ -16,7 +16,7 @@ weight: 200
   
 - 若报**配置文件错误**，说明配置文件中的某项存在问题；
   
-- 若报 **License　错误**，说明授权证书存在错误。
+- 若报 **License 错误**，说明授权证书存在错误。
 
 ## 客户端错误
 

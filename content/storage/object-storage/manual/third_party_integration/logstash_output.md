@@ -2,13 +2,13 @@
 title: "Logstash Output QingStor"
 date: 2021-08-16T10:08:56+09:00
 description: 本小节主要介绍 Logstash Output QingStor 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 2
 collapsible: false
 ---
 
-Logstash Output QingStor 是 Logstash 的一个 Output 插件，它用于对接 QingStor 对象存储服务。用户通过该插件，将 Logstash 的输出结果归档至 QingStor 对象存储的 Bucket 中。
+Logstash Output QingStor 是 Logstash 的一个 Output 插件，它用于对接对象存储服务。用户通过该插件，将 Logstash 的输出结果归档至对象存储的 Bucket 中。
 
 该插件已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/logstash-output-qingstor)。
 
@@ -44,7 +44,7 @@ output {
 
 ## 使用
 
-配置完成之后执行如下命令行启动 Logstash，即可在 QingStor 对象存储指定的 Bucket 中查看到输出的日志文件。
+配置完成之后执行如下命令行启动 Logstash，即可在对象存储指定的 Bucket 中查看到输出的日志文件。
 
 ```bash
 $./bin/logstash -f qs_output.conf

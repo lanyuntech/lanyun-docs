@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何对云服务器进行磁盘扩容
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，扩容磁盘
+keyword: 云计算, 云服务器，扩容磁盘
 ---
 
 ## 问题现象
@@ -15,7 +15,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，扩容磁盘
 
 ### 控制台扩容
 
-登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，右键硬盘的资源id---扩容，调整业务所需要的容量并提交，此处扩容为100G。
+登录 管理控制台，右键硬盘的资源id---扩容，调整业务所需要的容量并提交，此处扩容为100G。
 
 ![](../../../_images/disk_expansion1.png) 
 

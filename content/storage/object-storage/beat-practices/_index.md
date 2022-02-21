@@ -4,7 +4,7 @@ linkTitle: "最佳实践"
 weight: 7
 collapsible: true
 description: 本小节主要介绍最佳实践相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 最佳实践
+keyword: 云计算, 对象存储, 最佳实践
 ---
 
 
@@ -23,7 +23,7 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 最佳实践
     * [使用方法](backup/#id4)
 * [移动 App 接入方案](app_integration/)
     * [准备工作](app_integration/#id1)
-    * [使用 QingStor SDK](app_integration/#qingstor-sdk)
+    * [使用 SDK](app_integration/#qingstor-sdk)
     * [开发者实现签名服务器](app_integration/#id2)
     * [表单 POST 上传](app_integration/#post)
     * [请求参数签名](app_integration/#id3)

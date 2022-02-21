@@ -3,7 +3,7 @@ title: "捕获镜像"
 date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
-keyword: 云计算, 青云, QingCloud, 镜像，捕获镜像
+keyword: 云计算, 镜像，捕获镜像
 ---
 
 
@@ -40,7 +40,7 @@ keyword: 云计算, 青云, QingCloud, 镜像，捕获镜像
 
 
 ### 操作步骤
-示例 1: 将本地的 20G 系统盘的镜像上传到青云环境上。 务必确保本地系统盘上的 /etc/fstab，/etc/network/ 等文件信息正确。
+示例 1: 将本地的 20G 系统盘的镜像上传到云平台环境上。 务必确保本地系统盘上的 /etc/fstab，/etc/network/ 等文件信息正确。
 
 1. 云服务器创建新的硬盘，大小也为 20G (和本地系统盘的大小一致；如果系统盘的大小小于 20G，也需要创建 20G 的云硬盘)；
 

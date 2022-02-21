@@ -5,7 +5,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何关闭SeLinux
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，SeLinux
+keyword: 云计算, 云服务器，SeLinux
 ---
 
 ## 问题背景

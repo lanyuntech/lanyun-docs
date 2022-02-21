@@ -2,7 +2,7 @@
 title: "更新 SSL 证书"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍更新 SSL 证书相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 collapsible: false
 draft: false
 weight: 3
@@ -10,9 +10,9 @@ weight: 3
 
 ## 事件说明
 
-SSL 证书是超文本传输安全协议 HTTPS 的基石，由受信任的根证书颁发机构颁发。而 QingStor 对象存储选用的 SSL 证书由全球使用最为广泛的根证书机构 Let's Encrypt 签发。
+SSL 证书是超文本传输安全协议 HTTPS 的基石，由受信任的根证书颁发机构颁发。而对象存储选用的 SSL 证书由全球使用最为广泛的根证书机构 Let's Encrypt 签发。
 
-近期 Let's Encrypt 机构新增了根证书，使得老的根证书在 2021年9月30号 过期。由于 OpenSSL，GnuTLS 等 SSL 库实现问题，Let's Encrypt 提供的交叉签名根证书可能会导致您的应用在访问 QingStor 对象存储时出现形如 `certificate has expired` 或证书过期的报错，常见的形式如下：
+近期 Let's Encrypt 机构新增了根证书，使得老的根证书在 2021年9月30号 过期。由于 OpenSSL，GnuTLS 等 SSL 库实现问题，Let's Encrypt 提供的交叉签名根证书可能会导致您的应用在访问对象存储时出现形如 `certificate has expired` 或证书过期的报错，常见的形式如下：
 
 ```plain_text
 # wget https://qingstor.com
@@ -26,7 +26,7 @@ To connect to qingstor.com insecurely, use `--no-check-certificate'.
 
 ## 解决方案
 
-针对以上问题，QingStor 对象存储团队提供了详细的解决方案。分别说明如下：
+针对以上问题，对象存储团队提供了详细的解决方案。分别说明如下：
 
 ### 升级系统
 

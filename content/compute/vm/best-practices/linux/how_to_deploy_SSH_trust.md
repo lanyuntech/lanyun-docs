@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: Linux的ssh互信
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，ssh互信
+keyword: 云计算, 云服务器，Linux，ssh互信
 ---
 
 ## 操作场景

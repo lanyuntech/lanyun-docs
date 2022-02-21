@@ -3,7 +3,7 @@ title: "Linux实例系统总体负载查询及分析"
 description: Linux实例系统总体负载查询及分析
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，负载
+keyword: 云计算, 云服务器，Linux，负载
 ---
 
 本文主要对Linux实例总体负载情况的查询和分析进行说明。

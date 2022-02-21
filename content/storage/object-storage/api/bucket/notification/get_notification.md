@@ -2,13 +2,13 @@
 title: "Get Bucket Notification"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Get Bucket Notification 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 collapsible: false
 draft: false
 weight: 2
 ---
 
-该接口用于获取 Bucket 的事件通知及处理策略。QingStor 对象存储定义事件通知为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+该接口用于获取 Bucket 的事件通知及处理策略。对象存储定义事件通知为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
 
 ## 请求语法
@@ -46,7 +46,7 @@ Authorization: <authorization-string>
 | id | String | 配置的标识 | 是 |
 | event_types | Array | 事件的类型，每当该类型的事件被触发时，发出通知。目前支持的类型为: <br> - `create_object`: 创建对象完成 <br> - `delete_object`: 删除对象完成 <br> - `abort_multipart`: 终止分段上传 <br> - `complete_multipart`: 完成分段上传 | 是 |
 | object_filter | String | 对象名匹配规则 | 是 |
-| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](/storage/object-storage/manual/console/data_process/tupu_porn/) <br> - notifier: 通知服务，将 QingStor 事件推送到 `notify_url` | 是 |
+| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](/storage/object-storage/manual/console/data_process/tupu_porn/) <br> - notifier: 通知服务，将事件推送到 `notify_url` | 是 |
 | cloudfunc_args | Object | 提供给 `cloudfunc` 的自定义参数 | 否 |
 | notify_url | String | 通知事件处理结果的 URL，当事件处理完成后，会将处理结果以 POST 方式向 `notify_url` 请求。如果 POST 超时，将会重试，超时时间是 5s， 重试间隔为 1s。| 否 |
 

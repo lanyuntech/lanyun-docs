@@ -3,12 +3,12 @@ title: "云服务器重启后自动挂载 Virtual SAN"
 description: Test description
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，重启挂载 Virtual SAN
+keyword: 云计算, 云服务器，重启挂载 Virtual SAN
 ---
 
 ## 背景
 
-用户使用青云 Virtual SAN，按照文档[Virtual SAN 共享存储](/storage/share/manual/vsan/#linux)可以正常挂载使用了，但是当云服务器重启后，发现 Virtual SAN无法自动进行挂载。
+用户使用云平台 Virtual SAN，按照文档[Virtual SAN 共享存储](/storage/share/manual/vsan/#linux)可以正常挂载使用了，但是当云服务器重启后，发现 Virtual SAN无法自动进行挂载。
 
 ## 解决办法
 
