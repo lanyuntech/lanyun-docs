@@ -28,7 +28,7 @@ draft: false
 
 **Example**
 
-以应用[QingCloud MySQL Plus](https://appcenter.qingcloud.com/apps/app-00r26u27/QingCloud%20MySQL%20Plus)为例
+以应用 MySQL Plus 为例
 
 _Example Request_:
 

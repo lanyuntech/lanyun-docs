@@ -8,7 +8,7 @@ draft: false
 
 创建新的共享存储服务器。
 
-青云目前仅支持VSAN类型的共享存储服务器， 及基于iSCSI协议的存储服务。
+云平台目前仅支持VSAN类型的共享存储服务器， 及基于iSCSI协议的存储服务。
 
 **Request Parameters**
 

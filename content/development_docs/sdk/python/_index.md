@@ -9,11 +9,11 @@ Section2:
   title: Python
   children:
     - title: 安装指南
-      content: 通过pip安装青云SDK。
+      content: 通过pip安装云平台SDK。
       url: "install/install/"
 
     - title: 快速入门
-      content: 如何使用青云SDK
+      content: 如何使用云平台SDK
       url: "manual/manual_guide/"
 
 section3:

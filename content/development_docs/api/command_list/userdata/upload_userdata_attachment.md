@@ -27,7 +27,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| attachment_id | String | 上传至青云的压缩包 ID |
+| attachment_id | String | 上传至云平台的压缩包 ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

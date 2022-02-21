@@ -2,7 +2,7 @@
 title: "ICMP 类型及代码"
 description: test
 draft: false
-keyword: ICMP, QingCloud, 青云, API, 云计算
+keyword: ICMP,  云平台, API, 云计算
 ---
 
 

@@ -15,7 +15,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | s2_server | String | 共享存储服务器ID | Yes |
-| export_name | String | 共享存储目标名称，或IQN<br/>也可以输入短名，QingCloud会自动帮你补全IQN。<br/>NFS类型，需要以/mnt/开头定义目录名称，SMB类型，只输入名称，不能包含路径。 | Yes |
+| export_name | String | 共享存储目标名称，或IQN<br/>也可以输入短名，云平台会自动帮你补全IQN。<br/>NFS类型，需要以/mnt/开头定义目录名称，SMB类型，只输入名称，不能包含路径。 | Yes |
 | target_type | String | 共享存储目标类型，类型：ISCSI（vsan），NFS 和 SMB（vnas） | Yes |
 | description | String | 共享存储目标描述 | No |
 | volumes.n | String | 添加硬盘作为backstore | No |

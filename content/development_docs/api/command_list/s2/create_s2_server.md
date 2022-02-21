@@ -8,7 +8,7 @@ draft: false
 
 创建新的共享存储服务器。
 
-青云目前支持 VSAN 和 NAS 类型的共享存储服务器， 及基于 iSCSI 协议（ VSAN 类型），NFS 和 CIFS 协议（ NAS 类型）的存储服务。
+云平台目前支持 VSAN 和 NAS 类型的共享存储服务器， 及基于 iSCSI 协议（ VSAN 类型），NFS 和 CIFS 协议（ NAS 类型）的存储服务。
 
 **Request Parameters**
 

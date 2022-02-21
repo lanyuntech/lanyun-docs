@@ -2,7 +2,7 @@
 title: "Response without Jobd"
 description: test
 draft: false
-keyword: API, QingCloud, 青云, 云计算
+keyword: API, 云平台, 云计算
 ---
 
 | Name | Type | Description |

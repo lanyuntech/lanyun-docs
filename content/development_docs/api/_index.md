@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: API文档
-  vice_title: 青云向用户开放所有资源操作相关的API。青云API是通过 HTTPS GET方式来调用的。 
+  vice_title: 云平台向用户开放所有资源操作相关的API。云平台API是通过 HTTPS GET方式来调用的。 
 
 section2:
   title: 用户指南
@@ -46,7 +46,7 @@ section3:
 section4:
   children:
     - title: 了解：什么是API
-      content: 青云向用户开放所有资源操作相关的API。
+      content: 云平台向用户开放所有资源操作相关的API。
       vice_title: 了解的第一步
       children:
         - title: API概述

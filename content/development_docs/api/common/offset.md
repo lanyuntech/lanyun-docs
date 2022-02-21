@@ -4,7 +4,7 @@ description: test
 date: 2021-05-26T15:08:56+09:00
 weight: 20
 draft: false
-keyword: offset, limit, QingCloud, 青云, API
+keyword: offset, limit, 云平台, API
 ---
 
 参数说明：

@@ -1,8 +1,8 @@
 ---
-title: "安装青云SDK"
+title: "安装云平台SDK"
 description: test
 draft: false
-keyword: 安装青云SDK, QingCloud, 青云, SDK, 云计算
+keyword: 安装云平台SDK, 云平台, SDK, 云计算
 ---
 
 

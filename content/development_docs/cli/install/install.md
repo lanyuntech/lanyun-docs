@@ -2,12 +2,12 @@
 title: "CLI安装"
 description: test
 draft: false
-keyword: CLI安装, QingCloud, 青云, CLI
+keyword: CLI安装, 云平台, CLI
 ---
 
 
 
-qingcloud-cli 是管理青云资源的命令行接口 (_Command Line Interface_)， 可以通过它对资源进行查看、创建和操作。目前支持 Linux, Mac 及 Windows。 当前最新版本是 1.0.1
+qingcloud-cli 是管理云平台资源的命令行接口 (_Command Line Interface_)， 可以通过它对资源进行查看、创建和操作。目前支持 Linux, Mac 及 Windows。 当前最新版本是 1.0.1
 
 警告
 

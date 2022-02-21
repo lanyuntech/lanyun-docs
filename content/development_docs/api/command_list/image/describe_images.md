@@ -18,7 +18,7 @@ draft: false
 | processor_type | String | 镜像支持的处理器类型，有效值为 64bit 和 32bit | No |
 | os_family | String | 镜像操作系统发行版，有效值为 centos，ubuntu，debian，fedora 和 windows 等 | No |
 | visibility | String | 镜像的可见范围，有效值为 public 和 private | No |
-| provider | String | 镜像提供者。初始青云系统会提供一系列默认镜像，其 provider 为 system 。 当用户捕获云服务器后，被捕获的“自有”镜像的 provider 为 self 。<br/>参见<br/>[_CaptureInstance_](../capture_instance/) | No |
+| provider | String | 镜像提供者。初始云平台系统会提供一系列默认镜像，其 provider 为 system 。 当用户捕获云服务器后，被捕获的“自有”镜像的 provider 为 self 。<br/>参见<br/>[_CaptureInstance_](../capture_instance/) | No |
 | status.n | String | 镜像状态: pending, available, deprecated, suspended, deleted, ceased | No |
 | search_word | String | 搜索关键词，支持镜像ID，镜像名称 | No |
 | verbose | Integer | 是否返回冗长的信息，目前 verbose 只支持为 0。 | No |
@@ -49,7 +49,7 @@ draft: false
 | platform | String | 镜像操作系统平台，有效值为 linux 和 windows |
 | os_family | String | 镜像操作系统发行版，有效值为 centos，ubuntu，debian，fedora 和 windows 等 |
 | visibility | String | 镜像的可见范围，有效值为 public 和 private<br/>public: 对所有人可见，例如系统提供的镜像<br/>private: 只对镜像所有者可见，例如用户的自有镜像 |
-| provider | String | 镜像提供者，有效值为 system 和 self<br/>system: 镜像提供者为青云系统<br/>self: 镜像提供者为用户自己 |
+| provider | String | 镜像提供者，有效值为 system 和 self<br/>system: 镜像提供者为云平台系统<br/>self: 镜像提供者为用户自己 |
 | owner | String | 镜像提供者ID |
 | recommended_type | String | 运行该镜像的推荐云服务器配置 |
 | status | String | 镜像状态，有效值为pending, available, deprecated, suspended, deleted, ceased。<br/>pending： 等待被创建<br/>available： 可用状态，此时可以基于该镜像创建云服务器。<br/>deprecated： 已被弃用，此时不再可以基于该镜像创建新的云服务器，但不影响已有云服务器的正常使用。<br/>suspended： 由于欠费，已被暂停使用<br/>deleted： 已被删除，但处于此状态的镜像在2小时之内仍可以被恢复为 available 状态<br/>ceased： 已被彻底删除，处于此状态的镜像无法恢复 |

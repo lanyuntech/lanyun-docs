@@ -3,12 +3,12 @@ title: "SDK文档简介"
 description: Test description
 draft: false
 enableToc: false
-keyword: SDK文档, QingCloud, 青云, SDK, 云计算
+keyword: SDK文档, 云平台, SDK, 云计算
 ---
 
 
 
-青云为开发者提供软件开发包 SDK (Software Development Kit)， 可以利用它对青云的资源进行查看、创建和操作，借此开发出更富创造力的产品。
+云平台为开发者提供软件开发包 SDK (Software Development Kit)， 可以利用它对云平台的资源进行查看、创建和操作，借此开发出更富创造力的产品。
 
 警告
 

@@ -28,7 +28,7 @@ draft: false
 
 **Example**
 
-以应用[Redis Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，获取应用部署集群的环境变量
+以应用 Redis Cluster 为例，获取应用部署集群的环境变量
 
 _Example Request_:
 

@@ -9,9 +9,9 @@ weight: 3
 
 当你创建云服务器时，云服务器会先进入 pending 状态，直到创建完成后，变为 running 状态。 你可以使用 [_DescribeInstances_](../describe_instances/) 检查云服务器状态。
 
-创建云服务器时，一旦参数 vxnets.n 包含基础网络（即： vxnet-0 ），则需要指定防火墙 security_group，如果没有指定，青云会自动使用缺省防火墙。
+创建云服务器时，一旦参数 vxnets.n 包含基础网络（即： vxnet-0 ），则需要指定防火墙 security_group，如果没有指定，云平台会自动使用缺省防火墙。
 
-青云给云服务器定义了几种经典配置，可通过参数 instance_type 指定，配置列表请参考 [_Instance Types_](../../../common/instance_type/) 。 如果经典配置不能满足你的需求，可通过参数 cpu, memory 自定义云服务器配置。
+云平台给云服务器定义了几种经典配置，可通过参数 instance_type 指定，配置列表请参考 [_Instance Types_](../../../common/instance_type/) 。 如果经典配置不能满足你的需求，可通过参数 cpu, memory 自定义云服务器配置。
 
 如果参数中既指定 instance_type ，又指定了 cpu 和 memory ， 则以指定的 cpu 和 memory 为准。
 
@@ -19,7 +19,7 @@ weight: 3
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| image_id | String | 镜像ID，此镜像将作为云服务器的模板。可传青云提供的镜像ID，或自己创建的镜像ID | Yes |
+| image_id | String | 镜像ID，此镜像将作为云服务器的模板。可传云平台提供的镜像ID，或自己创建的镜像ID | Yes |
 | instance_type | String | 云服务器类型，有效值请参考 [_Instance Types_](../../../common/instance_type/)<br/>如果使用弹性裸金属服务器, 该参数必填。<br/>如果请求中指定了 instance_type，cpu 和 memory 参数可略过。<br/>如果请求中没有 instance_type，则 cpu 和 memory 参数必须指定。<br/>如果请求参数中既有 instance_type，又有 cpu 和 memory，则以 cpu, memory 的值为准。 | No |
 | cpu | Integer | CPU core，有效值为: 1, 2, 4, 8, 16 | No |
 | memory | Integer | 内存，有效值为: 1024, 2048, 4096, 6144, 8192, 12288, 16384, 24576, 32768 | No |
