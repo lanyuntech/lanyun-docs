@@ -2,7 +2,7 @@
 title: "高防IP计费"
 description: 高防IP计费方式
 draft: false
-keyword: 青云, QingCloud, 云计算, 高防IP计费模式, 防护贷款
+keyword: 云计算, 高防IP计费模式, 防护贷款
 ---
 
 

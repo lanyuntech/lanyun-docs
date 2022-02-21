@@ -2,20 +2,20 @@
 title: "媒体转码"
 date: 2021-07-28T10:08:56+09:00
 description: 本小节主要介绍媒体转码相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 2
 ---
 
 ## 概述
 
-QingStor 对象存储的媒体转码服务，是对储存在 QingStor 对象存储 Bucket 中的音视频提供转码计算，并将处理结果仍然保存至 QingStor 对象存储中。该功能还支持对音视频进行裁剪。
+对象存储的媒体转码服务，是对储存在对象存储 Bucket 中的音视频提供转码计算，并将处理结果仍然保存至对象存储中。该功能还支持对音视频进行裁剪。
 
 ## 操作步骤
 
 ### 创建转码任务
 
-1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
+1. 进入对象存储的主页面，点击对应的 Bucket 名：
 
  ![](/storage/object-storage/_images/console_main.png)
 
@@ -41,7 +41,7 @@ QingStor 对象存储的媒体转码服务，是对储存在 QingStor 对象存�
 
 在媒体转码详情页面，可以添加转码任务，查看收费标准，消费记录以及任务统计等信息。可对转码任务进行精确的管理。
 
-1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
+1. 进入对象存储的主页面，点击对应的 Bucket 名：
 
  ![](/storage/object-storage/_images/console_main.png)
 

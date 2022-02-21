@@ -1,6 +1,6 @@
 ---
 title: "管理网络流量镜像"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 网络流量镜像, SPAN 
+keyword: 云计算, VPC, VPC 网络, 网络流量镜像, SPAN 
 description: 介绍如何创建 SPAN 及添加 SPAN 成员。
 draft: false
 weight: 60

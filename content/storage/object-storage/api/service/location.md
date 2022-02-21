@@ -1,15 +1,15 @@
 ---
 title: "List Locations"
 description: 本小节主要介绍 List Locations 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
-该 API 用于获取 QingStor 对象存储所有部署区域的列表。
+该 API 用于获取对象存储所有部署区域的列表。
 
 ## 使用限制
 
 - 该 API 支持匿名请求。
-- 使用该 API 时，请求只能发送至 QingStor 对象存储服务的 Globan Endpoint，即：`qingstor.com`。
+- 使用该 API 时，请求只能发送至对象存储服务的 Globan Endpoint，即：`qingstor.com`。
 
 ## 请求语法
 

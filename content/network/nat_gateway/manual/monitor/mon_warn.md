@@ -3,14 +3,14 @@ title: "查看监控数据"
 descriptipn: 介绍如何查看 NAT 监控信息并导出数据。
 draft: false
 weight: 2
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: 云计算, NAT网关, NAT, SNAT, DNAT
 ---
 
 创建 NAT 网关后，您可以通过控制台查看监控信息并导出数据。
 
 ##  操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入**NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入**NAT 网关**页面。
 2. 在 NAT 网关列表，点击需要查看的 NAT 网关 ID，进入详情页。
 
 ### 查看监控数据

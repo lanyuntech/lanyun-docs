@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: Linux 云服务器 gapd服务异常
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，gapd
+keyword: 云计算, 云服务器，gapd
 ---
 ## 背景介绍
 

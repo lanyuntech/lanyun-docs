@@ -2,7 +2,7 @@
 title: "安装 S3 Browser"
 date: 2021-03-07T10:08:56+09:00
 description: 本小节主要介绍安装 S3 Browser 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 39
 ---
@@ -17,7 +17,7 @@ weight: 39
 
 ![s3-browser-1](/storage/object-storage/_images/s3-browser-1.png)
 
-## 获取青云的 API 秘钥
+## 获取云平台的 API 秘钥
 
 操作步骤可参考 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
@@ -49,7 +49,7 @@ weight: 39
 
 - Account Name: 任意
 - Account Type: 选择S3 compatible Storage
-- Rest Endpoint: s3.<Zone_id>.qingstor.com ，QingStor 对象存储区域包括：pek3a/pek3b/sh1a/gd2/ap3
+- Rest Endpoint: s3.<Zone_id>.qingstor.com ，对象存储区域包括：pek3a/pek3b/sh1a/gd2/ap3
 - Access Key ID: 前文获取的 API 秘钥的 `qy_acccess_key_id` 的值
 - Secret Access Key: 前文获取的 API 秘钥的 `qy_secret_access_key` 的值
 - Use Secure transfer（SSl/TLS): 勾选

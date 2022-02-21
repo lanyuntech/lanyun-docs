@@ -3,7 +3,7 @@ title: "修改健康检测配置"
 descriptipn: 如何修改 NAT 网关的健康检测阈值。
 draft: false
 weight: 21
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT
+keyword: 云计算, NAT网关, NAT
 ---
 
 NAT 网关支持自动进行健康检测，您可以根据实际需求修改需要检测的域名/地址及健康阈值。
@@ -32,7 +32,7 @@ NAT 网关支持自动进行健康检测，您可以根据实际需求修改需�
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 在 NAT 网关列表中，目标 NAT 网关的 ID，进入详情页面。
 

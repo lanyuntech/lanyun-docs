@@ -2,7 +2,7 @@
 title: "Mountain Duck"
 date: 2021-08-12T10:08:56+09:00
 description: 本小节主要介绍 Mountain Duck 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 collapsible: false
 weight: 18
@@ -12,7 +12,7 @@ weight: 18
 
 Mountain Duck 是 Windows 平台上用于挂载访问对象存储的第三方客户端软件。目前也支持 MAC 平台。
 
-QingStor 对象存储推荐用户使用 Mountain Duck 来挂载由 QingStor 对象存储为其提供的无限容量的在线文件存储空间，从而节省本地磁盘空间。用户通过 Mountain Duck 可以像操作本地磁盘(例如 C 盘、D 盘等)一样方便、快捷地访问或存取 QingStor 对象存储 Bucket 中的各种类型文件。
+对象存储推荐用户使用 Mountain Duck 来挂载由对象存储为其提供的无限容量的在线文件存储空间，从而节省本地磁盘空间。用户通过 Mountain Duck 可以像操作本地磁盘(例如 C 盘、D 盘等)一样方便、快捷地访问或存取对象存储 Bucket 中的各种类型文件。
 
 目前支持以下平台：
 - Windows 7、Windows 8、Windows 10 的 32/64 位平台。
@@ -25,7 +25,7 @@ QingStor 对象存储推荐用户使用 Mountain Duck 来挂载由 QingStor 对�
 
 ## 使用
 
-通过 Mountain Duck 成功挂载 QingStor 对象存储中的 Bucket 后，用户即可像操作本地磁盘一样对 QingStor 对象存储 Bucket 中的文件进行读写、存取等操作，同时可通过托盘菜单对缓存设置、版本更新、帐户信息等进行查看或操作。
+通过 Mountain Duck 成功挂载对象存储中的 Bucket 后，用户即可像操作本地磁盘一样对对象存储 Bucket 中的文件进行读写、存取等操作，同时可通过托盘菜单对缓存设置、版本更新、帐户信息等进行查看或操作。
 
 详细操作步骤如下：
 
@@ -39,16 +39,16 @@ QingStor 对象存储推荐用户使用 Mountain Duck 来挂载由 QingStor 对�
 
    **说明：**
    - 协议下拉框里，选择 `Amazon S3`，如上图所示。
-   - `服务器名`，填写 QingStor 对象存储的域名，格式为：`s3.<zone_id>.qingstor.com`。其中 `zone_id` 须根据实际情况进行修改。公有云环境，可参考 [公有云开放区域](/storage/object-storage/intro/object-storage/#zone)。
+   - `服务器名`，填写对象存储的域名，格式为：`s3.<zone_id>.qingstor.com`。其中 `zone_id` 须根据实际情况进行修改。公有云环境，可参考 [公有云开放区域](/storage/object-storage/intro/object-storage/#zone)。
    - `访问密钥 ID` 与 `访问私钥`，即 AK/SK 须根据实际情况进行填写。具体可参考[获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
-   - `盘符` 即 QingStor 对象存储 Bucket 成功挂载至本地后的磁盘盘符。
+   - `盘符` 即对象存储 Bucket 成功挂载至本地后的磁盘盘符。
 
-3. 成功挂载后，本地可直接查看 QingStor 对象存储的 Bucket，如下图所示：
+3. 成功挂载后，本地可直接查看对象存储的 Bucket，如下图所示：
 
 ![](/storage/object-storage/_images/mountain-duck3.png)
 
    **说明：**
-   - 成功挂载的 QingStor 对象存储 Bucket，可像本地磁盘一样进行操作。
+   - 成功挂载的对象存储 Bucket，可像本地磁盘一样进行操作。
    - 由于新建链接时，没有指定路径，故这里显示了根目录下的所有 Bucket。
    - 若用户须操作指定 Bucket，可在新建链接时，指定对应的目录即可。
 

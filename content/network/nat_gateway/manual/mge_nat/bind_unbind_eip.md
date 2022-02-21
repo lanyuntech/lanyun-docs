@@ -3,7 +3,7 @@ title: "绑定和解绑公网 IP"
 descriptipn: NAT 网关如何绑定公网 IP。
 draft: false
 weight: 5
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 公网
+keyword: 云计算, NAT网关, NAT, 公网
 ---
 
 您可以在创建 NAT 网关时绑定公网 IP，也可以在创建 NAT 网关后绑定或解绑公网 IP。
@@ -16,7 +16,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 公网
 
 ### NAT 网关页面
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 您可以通过以下几种方式进行绑定公网 IP 操作：
    
@@ -36,17 +36,17 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 公网
 
 ### 公网 IP 页面
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **公网IP**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **公网IP**，进入 **NAT 网关**页面。
 
 2. 右键点击公网 IP 条目，选择**关联 NAT 网关**。
 
-​	![](../../../_images/bind_eip_4.png)
+   ![](../../../_images/bind_eip_4.png)
 
 3. 选择需要关联的 NAT 网关，点击**提交**。
 
 ## 解绑公网 IP
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入**NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入**NAT 网关**页面。
 
 2. 在 NAT 网关页面，点击目标 NAT 网关 ID，进入 NAT 详情页。
 

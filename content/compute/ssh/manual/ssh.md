@@ -3,7 +3,7 @@ title: "SSH密钥"
 date: 2020-01-30T00:38:25+09:00
 description: 密钥连接云服务器
 draft: false
-keyword: 云计算, 青云, QingCloud, SSH，密钥操作
+keyword: 云计算, SSH，密钥操作
 ---
 
 
@@ -13,7 +13,7 @@ keyword: 云计算, 青云, QingCloud, SSH，密钥操作
 
 ### 1. 准备密钥
 
-首先，需要在 QingCloud 控制台创建密钥，您也可以使用自己原有的密钥。
+首先，需要在云平台控制台创建密钥，您也可以使用自己原有的密钥。
 
 ![](/compute/ssh/manual/_images/creat-sshkey.png)
 
@@ -29,7 +29,7 @@ keyword: 云计算, 青云, QingCloud, SSH，密钥操作
 
 ### 3. 配置好弹性 IP 和防火墙
 
-在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，防火墙放行 TCP 22 端口。
 
 ### 4. 将密钥转换为正确的格式
 

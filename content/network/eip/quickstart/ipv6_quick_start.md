@@ -1,7 +1,7 @@
 ---
 title: "搭建 IPv6 网络并开通公网访问"
 description: 介绍如何搭建 IPv6 网络并开通公网访问。
-keyword: QingCloud, 青云, 云计算, 公网IP, IPv6 网络
+keyword: 云计算, 公网IP, IPv6 网络
 draft: false
 ---
 
@@ -19,7 +19,7 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 - [隧道](https://tools.ietf.org/html/rfc3053)指将 IPv6 的数据包封装在现有协议（IPv4）里面，通过隧道封装实现互通。
 - [转换](https://tools.ietf.org/html/rfc2529)指在 IPv6 的网络和 IPv4 的网络之间建立转换机制，以实现两张网络的设备之间的互通。
 
-青云QingCloud主要提供 IPv4 / IPv6 双栈的产品和服务。无论是普通用户还是应用程序，双栈是最简单最便捷的，客户端和服务端可以选择自己倾向的网络。
+云平台主要提供 IPv4 / IPv6 双栈的产品和服务。无论是普通用户还是应用程序，双栈是最简单最便捷的，客户端和服务端可以选择自己倾向的网络。
 
 ## 创建支持 IPv4/ IPv6 双栈的网络
 
@@ -106,7 +106,7 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 
 <img src="../../_images/IPv6_inbind_ip_create.png" style="zoom:70%;" />
 
-手动申请的 IPv6 弹性 IP 的使用与[内部绑定](https://docs.qingcloud.com/product/network/eip#%E4%BD%BF%E7%94%A8%E5%86%85%E9%83%A8%E7%BB%91%E5%AE%9A%E5%85%AC%E7%BD%91-ip)的公网 IP 类似，将 IPv6 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的公网网卡。以镜像 centos75x64b 为例，如下图所示
+手动申请的 IPv6 弹性 IP 的使用与内部绑定的公网 IP 类似，将 IPv6 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的公网网卡。以镜像 centos75x64b 为例，如下图所示
 
 ![IPv6_inbind_nic](../../_images/IPv6_inbind_nic.png)
 

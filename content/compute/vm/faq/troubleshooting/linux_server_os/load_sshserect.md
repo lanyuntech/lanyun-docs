@@ -3,12 +3,12 @@ title: " 云服务器加载 SSH 密钥失败"
 description: 云服务器加载 SSH 密钥失败
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，SSH
+keyword: 云计算, 云服务器，SSH
 ---
 
 ## 问题介绍
 
-使用[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器加载 SSH 密钥失败
+使用管理控制台云服务器加载 SSH 密钥失败
 
 ![load_sshserect01](../../../_images/load_sshserect01.png)
 

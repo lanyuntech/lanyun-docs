@@ -3,14 +3,14 @@ title: "公网IP带宽占用高"
 description: 公网IP带宽占用高怎么解决
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，公网IP，带宽
+keyword: 云计算, 云服务器，公网IP，带宽
 ---
 
 ## 解决方法
 
 ### 检查公网IP带宽
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)，在公网IP监控中开启实时数据，查看当前一小时实时监控数据是否有异常升高，带宽被占满的情况。
+1. 登录管理控制台，在公网IP监控中开启实时数据，查看当前一小时实时监控数据是否有异常升高，带宽被占满的情况。
 
     **![eip](../../../_images/EIP1.png)**
 

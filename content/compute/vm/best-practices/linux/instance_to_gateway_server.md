@@ -2,7 +2,7 @@
 title: "配置云服务器为网关服务器"
 description: 如何配置云服务器为网关服务器
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，网关服务器
+keyword: 云计算, 云服务器，网关服务器
 ---
 
 ## 项目概览

@@ -4,7 +4,7 @@ date: 2020-01-30T00:39:25+09:00
 description: 80端口无法访问
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，80端口
+keyword: 云计算, 云服务器，80端口
 ---
 
 ## 概述
@@ -13,13 +13,13 @@ keyword: 云计算, 青云, QingCloud, 云服务器，80端口
 
 >**说明**
 >
->以下文档是基于用户已经在青云完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](https://docsv3.qingcloud.com/compute/vm/faq/high_requency_problem/port_80_disabled/)。
+>以下文档是基于用户已经在云平台完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](/compute/vm/faq/high_requency_problem/port_80_disabled/)。
 
 ## 排查思路
 
 如果云服务器无法对外提供HTTP服务，可以按以下思路检查Web服务的端口（默认为80端口）是否正常工作。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **安全服务** > **安全组**，进入域名列表页。确认云服务器绑定的安全组已经放行该端口。（如云服务器是通过vpc网络进行访问，则修改vpc绑定的安全组，并添加端口转发规则）
+1. 登录 管理控制台，选择**产品与服务** > **安全服务** > **安全组**，进入域名列表页。确认云服务器绑定的安全组已经放行该端口。（如云服务器是通过vpc网络进行访问，则修改vpc绑定的安全组，并添加端口转发规则）
 2. 远程连接进入云服务器，确认Web服务已经开启。
 3. 确认端口正常被监听。如没有，请修改监听地址。
 4. 确认云服务器内部防火墙已经放行服务或端口。
@@ -66,7 +66,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，80端口
    ![](/compute/vm/_images/check_port_worked6.png)
    ![](/compute/vm/_images/check_port_worked7.png)
 
-5. 如上述操作都已检查仍无法连接，可以[提交工单](https://console.qingcloud.com/tickets/)咨询。
+5. 如上述操作都已检查仍无法连接，可以提交工单咨询。
 
 ### CentOS7.2
 >示例以nginx服务为例
@@ -114,4 +114,4 @@ keyword: 云计算, 青云, QingCloud, 云服务器，80端口
       firewall-cmd --reload  #重载生效
       ```
 
-5. 如上述操作都已检查仍无法连接，可以[提交工单](https://console.qingcloud.com/tickets/)咨询。
+5. 如上述操作都已检查仍无法连接，可以提交工单咨询。

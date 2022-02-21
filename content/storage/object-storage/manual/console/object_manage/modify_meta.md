@@ -2,7 +2,7 @@
 title: "修改元数据"
 date: 2021-07-14T10:08:56+09:00
 description: 本小节主要介绍修改元数据相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 3
 ---
@@ -14,11 +14,11 @@ weight: 3
 对象的元数据可分为两类，一类为标准的 HTTP 头；另一类，是以 `x-qs-meta-` 为前缀的键值对，称为自定义元数据。在创建对象时，用户可以在请求头中附带标准 HTTP 头和自定义的元数据。当用户在获取对象时，服务端会返回（和创建对象时）相同的标准 HTTP 头和前缀为 `x-qs-meta-` 的响应头。同时，当复制与移动源对象时，其元数据也会同步给目标对象。
 
 
-QingStor 对象存储支持修改的对象元数据包括部分标准 HTTP 头和自定义元数据。
+对象存储支持修改的对象元数据包括部分标准 HTTP 头和自定义元数据。
 
 ## 操作步骤
 
-1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
+1. 进入对象存储的主页面，点击对应的 Bucket 名：
 
  ![](/storage/object-storage/_images/console_main.png)
 

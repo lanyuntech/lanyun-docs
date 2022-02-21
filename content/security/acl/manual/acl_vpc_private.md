@@ -3,7 +3,7 @@ title: "VPC 和私有网络 Vxnet 的网络 ACL 配置和操作"
 description: VPC 和私有网络 Vxnet 的网络 ACL 配置和操作
 draft: false
 weight: 30
-keyword: 青云, QingCloud, 云计算, 私有网络Vxnet, 绑定和解绑网络ACL
+keyword: 云计算, 私有网络Vxnet, 绑定和解绑网络ACL
 ---
 
 为了方便您使用网络 ACL，我们在 VPC 和私有网络 Vxnet 页面中也增加了网络 ACL ，您可以查看相关的网络 ACL 配置，并进行一定的操作。因为网络 ACL 可以绑定多个私有网络 Vxnet，所以在网络 ACL 绑定给多个私有网络时，请您谨慎增删或者修改规则，建议您在复制后的网络 ACL 中修改。
@@ -14,7 +14,7 @@ keyword: 青云, QingCloud, 云计算, 私有网络Vxnet, 绑定和解绑网络A
 
 在 VPC 的**私有网络**界面下，每个私有网络都新增了**网络 ACL** 页面，您可以在资源列表中查看当前 ACL 中的全部资源。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络** > **VPC 网络**，进入**VPC 网络**页签。
+1. 登录管理控制台，选择**产品与服务** > **网络** > **VPC 网络**，进入**VPC 网络**页签。
 
 2. 在**VPC 网络**页签中，选择**私有网络**界面，每个私有网络都新增了**网络 ACL** 页面，您可以在资源列表中查看当前 ACL 中的全部资源。
 
@@ -30,7 +30,7 @@ keyword: 青云, QingCloud, 云计算, 私有网络Vxnet, 绑定和解绑网络A
 
 ## 在私有网络页面中绑定和解绑网络 ACL
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络** > **VPC 网络**，进入**VPC 网络**页签。
+1. 登录管理控制台，选择**产品与服务** > **网络** > **VPC 网络**，进入**VPC 网络**页签。
 
 2. 在**VPC 网络**页签中，选择**私有网络**界面，每个私有网络都新增了**网络 ACL** 页面，您可以在资源列表中查看当前 ACL 中的全部资源。
 

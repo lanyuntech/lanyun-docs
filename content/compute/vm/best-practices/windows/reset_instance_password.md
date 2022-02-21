@@ -2,7 +2,7 @@
 title: "重置Windows云服务器密码"
 description: 如何重置Windows云服务器的密码
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，密码
+keyword: 云计算, 云服务器，Windows，密码
 ---
 
 
@@ -27,7 +27,6 @@ keyword: 云计算, 青云, QingCloud, 云服务器，Windows，密码
 
 <img src="../../_images/homer/window reset password_01.png" width="60%" height="60%">
 
- ![0_1529737241980_12.png](https://community.qingcloud.com/assets/uploads/files/1529737242254-12.png)
 
 ###  3.这个文件由于属主不是administrator而是Trustedintaller，所以无法修改，需要把这个文件的属主更改为administrator,更改的步骤如下:
 

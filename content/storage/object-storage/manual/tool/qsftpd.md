@@ -2,13 +2,13 @@
 title: "qsftpd"
 date: 2020-11-24T10:08:56+09:00
 description: 本小节主要介绍 qsftpd 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 collapsible: false
 weight: 16
 ---
 
-qsftpd 是 QingStor 对象存储提供的 FTP Server。用户通过简单的配置，即可通过 FTP 协议使用 QingStor 对象存储服务。该工具已在 GitHub 开源，更多详情可参见 [https://github.com/qingstor/qsftpd](https://github.com/qingstor/qsftpd)。
+qsftpd 是对象存储提供的 FTP Server。用户通过简单的配置，即可通过 FTP 协议使用对象存储服务。该工具已在 GitHub 开源，更多详情可参见 [https://github.com/qingstor/qsftpd](https://github.com/qingstor/qsftpd)。
 
 ## 安装
 qsftpd 支持 Linux、macOS 和 Windows 操作系统。用户可访问 GitHub 项目的 [Releases](https://github.com/qingstor/qsftpd/releases) 页面查看和下载相应版本。
@@ -50,14 +50,14 @@ cache_path: /var/cache/qsftpd
 ```
 
    **说明：**
-   - `qingstor` 用于标识后续字段为 QingStor 对象存储的基本信息。
-   - `access_key_id` 与 `secret_access_key` 用于访问 QingStor 对象存储的 AK 与 SK，须根据实际情况进行填写。具体可参照 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
-   - `host` QingStor 对象存储的域名。公有云环境无需修改。
-   - `port` 访问 QingStor 对象存储的端口号。公有云环境无需修改。
-   - `protocol` 访问 QingStor 对象存储的协议。公有云环境无需修改。
-   - `log_level` QingStor 对象存储的日志级别。日志内容显示从多到少依次可设置为：debug，info，warn，error，fatal，panic。
-   - `bucket_name` 待访问的 QingStor 对象存储的 Bucket 名。须根据实际情况进行填写。
-   - `zone` 待访问的 QingStor 对象存储的 Zone。
+   - `qingstor` 用于标识后续字段为对象存储的基本信息。
+   - `access_key_id` 与 `secret_access_key` 用于访问对象存储的 AK 与 SK，须根据实际情况进行填写。具体可参照 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+   - `host` 对象存储的域名。公有云环境无需修改。
+   - `port` 访问对象存储的端口号。公有云环境无需修改。
+   - `protocol` 访问对象存储的协议。公有云环境无需修改。
+   - `log_level` 对象存储的日志级别。日志内容显示从多到少依次可设置为：debug，info，warn，error，fatal，panic。
+   - `bucket_name` 待访问的对象存储的 Bucket 名。须根据实际情况进行填写。
+   - `zone` 待访问的对象存储的 Zone。
    - `listen_host listen_port public_host max_connections` FTP Server 配置，监听的端口号以及最大连接数。
    - `start_port end_port` FTP 数据连接建立方式为被动模式时，将会随机在 `start_port` 与 `end_port` 之间选择端口号进行数据传输。默认值是从 6000 至 7000。
    - `log_level` FTP Server 的日志等级。日志内容显示从多到少依次可设置为：debug，info，warn，error，fatal，panic。

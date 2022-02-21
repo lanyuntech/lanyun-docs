@@ -1,7 +1,7 @@
 ---
 title: "负载均衡后端不可用排查方法"
 description: 介绍负载均衡后端不可用排查方法。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 排查
+keyword: 云计算, 网络, 负载均衡器, 排查
 weight: 40
 ---
 
@@ -30,4 +30,4 @@ weight: 40
 
 ![](../../_images/ping_telnet.png)
 
-如均未问题可[提交工单](https://console.qingcloud.com/tickets/)找青云工程师协助排查。
+如均未问题可提交工单找云平台工程师协助排查。

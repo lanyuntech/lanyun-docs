@@ -4,7 +4,7 @@ date: 2021-05-07T00:38:25+09:00
 description: 本小节主要介绍备份的相关操作。
 draft: false
 weight: 7
-keyword: 云计算, 青云, QingCloud, 备份, 备份操作
+keyword: 云计算, 备份, 备份操作
 ---
 
 ## 进入备份页面

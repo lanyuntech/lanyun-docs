@@ -22,7 +22,7 @@ keyword: DDOS, 创建DDOS防护
 
 注解
 
-该域名是主域名 如：我们为 ddos.qingcloud.com 添加防护，他的主域名是 qingcloud.com 。
+该域名是主域名 如：我们为 ddos.test.com 添加防护，他的主域名是 test.com 。
 
 ![](../../_images/create_cdn_2.png)
 
@@ -45,7 +45,7 @@ keyword: DDOS, 创建DDOS防护
 
 注解
 
-子域名指除去主域名的部分 如: ddos.qingcloud.com 中的 ddos
+子域名指除去主域名的部分 如: ddos.test.com 中的 ddos
 
 ![](../../../_images/add_record.png)
 
@@ -71,7 +71,7 @@ keyword: DDOS, 创建DDOS防护
 
 ![](../../../_images/dnspod_stopped.png)
 
-在 DNSPod 重新配置 www 的 CNAME 记录，记录值则指向青云提供的 CNAME 值。如下图：
+在 DNSPod 重新配置 www 的 CNAME 记录，记录值则指向云平台提供的 CNAME 值。如下图：
 
 ![](../../../_images/dnspod_add.png)
 
@@ -109,5 +109,5 @@ CNAME接入优点：生效时间更快，且操作简单，适合正在遭受攻
 
 1.  为您的域名购买防护服务
 2.  将原 IP 解绑，申请并绑定新的 IP
-3.  在青云控制台添加相应的记录与 IP
+3.  在管理控制台添加相应的记录与 IP
 4.  修改旧的域名解析到新的 CNAME 上

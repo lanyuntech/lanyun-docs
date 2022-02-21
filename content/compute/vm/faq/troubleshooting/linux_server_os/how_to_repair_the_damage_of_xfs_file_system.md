@@ -3,7 +3,7 @@ title: "Linux云服务器xfs文件系统损坏"
 description: Linux云服务器xfs文件损坏解决
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，xfs
+keyword: 云计算, 云服务器，Linux，xfs
 ---
 
 ## 问题现象

@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级，为用户提供实时日志处理、全文搜索和数据分析等基础能力。QingCloud OpenSearch 提供与开源版本 Elasticsearch OSS 7.10 的广泛兼容性。
+OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级，为用户提供实时日志处理、全文搜索和数据分析等基础能力。OpenSearch 服务提供与开源版本 Elasticsearch OSS 7.10 的广泛兼容性。
 
 - OpenSearch 是一个全面开源搜索和分析引擎，用例包括日志分析、实时应用程序监控、点击流分析等，更多说明请参考[原生 OpenSearch](https://opensearch.org/docs/)。
 

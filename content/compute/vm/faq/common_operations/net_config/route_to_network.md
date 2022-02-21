@@ -4,7 +4,7 @@ date: 2020-06-05T00:38:25+09:00
 description: 如何自定义路由表并且配置网关服务器
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，自定义路由表，网关服务器
+keyword: 云计算, 云服务器，自定义路由表，网关服务器
 ---
 
 ## 概述

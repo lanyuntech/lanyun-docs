@@ -4,7 +4,7 @@ date: 2021-02-19T00:38:25+09:00
 description: 如何修改Windows云服务器的远程桌面的访问端口
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，远程桌面，端口
+keyword: 云计算, 云服务器，Windows，远程桌面，端口
 ---
 
 ## 1.打开windows云服务器远程桌面，关闭系统自带防火墙
@@ -35,7 +35,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，Windows，远程桌面，�
 
 右键云服务器-重启
 
-## 4.放行青云安全组的对应端口，并点击应用修改
+## 4.放行云平台安全组的对应端口，并点击应用修改
 
 安全-安全组-找到云服务器对应的安全组sg-xxxxxx，放行修改后的端口，并应用修改安全组
 

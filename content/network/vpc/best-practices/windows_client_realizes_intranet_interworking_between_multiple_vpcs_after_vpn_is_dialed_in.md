@@ -1,6 +1,6 @@
 ---
 title: "Windows 客户端拨入 VPN 实现跨 VPC 内网互通"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 
+keyword:  云计算, VPC, VPC 网络, 
 description: Windows 客户端拨入 VPN 实现跨 VPC 内网互通
 draft: false
 weight: 20
@@ -35,7 +35,7 @@ VPC B
 
 ### 2.VPC A与 VPC B之间通过GRE隧道打通，配置步骤参考以下链接
 
-https://docs.qingcloud.com/product/network/gre
+可以参考文档配置：[GRE隧道](/network/vpc/manual/tunnel/gre)
 
 ```
 172.20.0.0/16<==>172.21.0.0/16

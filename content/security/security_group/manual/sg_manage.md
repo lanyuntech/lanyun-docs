@@ -3,7 +3,7 @@ title: "管理安全组"
 description: 如何管理安全组
 draft: true
 weight: 30
-keyword: 云服务器, QingCloud，安全，管理安全组
+keyword: 云服务器, 安全，管理安全组
 ---
 
 ### 创建安全组策略

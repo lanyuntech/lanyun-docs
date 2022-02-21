@@ -2,7 +2,7 @@
 title: "Upload Object Part"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Upload Object Part 接口相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Multipart
+keyword: 云计算, 对象存储, Multipart
 collapsible: false
 draft: false
 weight: 3
@@ -14,7 +14,7 @@ weight: 3
 - 该操作要求请求者对指定的 Bucket 拥有可写权限。
 - 关于分段大小的规定，请参看 [分段上传限制](../#分段上传限制)。
 - 若指定的 Bucket 被设置为匿名用户可写，则请求中可不携带用户认证信息；
-- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则 QingStor 对象存储仍然会对该用户进行认证，当 QingStor 对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
+- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则对象存储仍然会对该用户进行认证，当对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
 
 ## 请求语法
 
@@ -42,7 +42,7 @@ Authorization: <authorization-string>
 | --- | --- | --- | --- |
 | Content-Length | String | 对象实体的大小 | 是 |
 | Content-MD5 | String | 分段实体的预期 MD5 值，用于检查 Object 在传输过程中字符是否出错或被篡改 | 否 |
-| Expect | String | 若请求头附加这个参数，则该请求中无需附带请求消息体，QingStor 对象存储服务端可接受此请求，并返回状态码： 100  | 否 |
+| Expect | String | 若请求头附加这个参数，则该请求中无需附带请求消息体，对象存储服务端可接受此请求，并返回状态码： 100  | 否 |
 
 此接口还需要包含 Host、Date 等公共请求头。详细内容可参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 

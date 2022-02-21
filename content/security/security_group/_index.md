@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 安全组 (Security Group)
-  vice_title: QingCloud 安全组(Security Group) 系统为每个用户提供了访问策略统一管理功能，您可以通过安全组管理网络中上行、下行端口访问策略，并且对策略进行备份和回滚。
+  vice_title: 云平台 安全组(Security Group) 系统为每个用户提供了访问策略统一管理功能，您可以通过安全组管理网络中上行、下行端口访问策略，并且对策略进行备份和回滚。
 
 Section2:
   title: 用户指南

@@ -3,7 +3,7 @@ title: "通过 SNAT 功能实现访问公网服务"
 descriptipn: 通过 NAT 网关的 SNAT 功能云服务器访问公网。
 draft: false
 weight: 10
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: 云计算, NAT网关, NAT, SNAT, DNAT
 ---
 
 您可以使用 NAT 网关的 SNAT 功能，为 VPC 中无公网 IP 的云服务器提供访问互联网的代理服务。
@@ -24,7 +24,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 
 ### 步骤1：创建 NAT 网关
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择**产品与服务** > **网络服务** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 点击**创建**，进入**创建 NAT 网关**页面。
 
@@ -96,7 +96,7 @@ SNAT 规则配置成功后，您可以测试云服务器的网络连通性。
 
 1. 登录[步骤3](#步骤3添加-snat-规则)中已配置 SNAT 规则的云服务器（或已配置 SNAT 规则的私有网络下任一云服务器）。
 
-2. 执行`ping`命令，`ping`青云的域名`www.qingcloud.com`验证公网连通性。 如果能接收到回复报文，表示连接成功。
+2. 执行`ping`命令，`ping`域名`www.qingcloud.com`验证公网连通性。 如果能接收到回复报文，表示连接成功。
 
    <img src="../../_images/ping.png" alt="ping" style="zoom:50%;" />
 

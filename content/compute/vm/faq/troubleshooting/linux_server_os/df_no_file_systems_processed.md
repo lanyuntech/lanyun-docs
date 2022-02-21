@@ -3,7 +3,7 @@ title: "解决 df: no file systems processed"
 date: 2020-05-14T17:08:56+09:00
 description: 解决 df no file systems processed
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，file，system
+keyword: 云计算, 云服务器，file，system
 ---
 
 ## 背景介绍

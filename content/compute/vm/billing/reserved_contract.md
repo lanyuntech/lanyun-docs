@@ -2,7 +2,7 @@
 title: "计费模式"
 description: 云服务器的计费模式
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，计费模式
+keyword: 云计算, 云服务器，计费模式
 ---
 
 ## 计费模式
@@ -20,7 +20,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，计费模式
 - 停止计费：
   - 按包年包月收费的云服务器在退订成功后，直接删除资源并停止计费；
   - 按需计费的云服务器，在资源被删除成功后停止计费。
-- 价格计算：详情可参考[价格计算器](https://www.qingcloud.com/pricing#/Volume) 。
+- 价格计算：详情可参考价格计算器。
 
 ## 变更计费模式
 

@@ -4,11 +4,11 @@ title: "自建MySQL无法远程访问排查思路"
 description: 自建MySQL无法远程访问排查思路
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，MySQL
+keyword: 云计算, 云服务器，MySQL
 ---
 
 ## 概述
-使用青云平台云服务器安装的MySQL无法远程访问，可通过本文检查处理
+使用云平台云服务器安装的MySQL无法远程访问，可通过本文检查处理
 
 ### Liunx云服务器排查思路
 
@@ -24,7 +24,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，MySQL
 
    ![mysql_problem03](../../../_images/mysql_problem03.png)
 
-4. 查看[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  -> **安全组**
+4. 查看管理控制台云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  -> **安全组**
 
    ![mysql_problem04](../../../_images/mysql_problem04.jpg)
 
@@ -54,7 +54,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，MySQL
 
    ![mysql_problem10](../../../_images/mysql_problem10.jpg)
 
-4. 查看 [QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  > **安全组**
+4. 查看 管理控制台云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  > **安全组**
 
    ![mysql_problem04](../../../_images/mysql_problem04.jpg)
 

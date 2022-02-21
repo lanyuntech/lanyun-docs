@@ -2,13 +2,13 @@
 title: "Put Bucket Lifecycle"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Put Bucket Lifecycle 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 collapsible: false
 draft: false
 weight: 2
 ---
 
-该接口用于创建或更新 Bucket 的生命周期（Lifecycle）设置。QingStor 对象存储会按照用户所设置的生命周期（Lifecycle）规则，定期对所匹配的对象执行相应的操作。
+该接口用于创建或更新 Bucket 的生命周期（Lifecycle）设置。对象存储会按照用户所设置的生命周期（Lifecycle）规则，定期对所匹配的对象执行相应的操作。
 
 目前支持的操作有：
 - Expiration：过期删除对象
@@ -17,8 +17,8 @@ weight: 2
 
 ## 注意事项
 
-- QingStor 对象存储定义生命周期为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
-- QingStor 对象存储以防用户误操作，对于新增或修改的生命周期规则，将于 24 小时后生效。
+- 对象存储定义生命周期为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+- 对象存储以防用户误操作，对于新增或修改的生命周期规则，将于 24 小时后生效。
 
 ## 请求语法
 

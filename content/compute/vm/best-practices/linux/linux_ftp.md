@@ -3,7 +3,7 @@ title: "Linux部署FTP服务"
 description: linux如何部署ftp服务
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，ftp
+keyword: 云计算, 云服务器，Linux，ftp
 ---
 
 ## 准备环境
@@ -52,7 +52,7 @@ netstat -antup | grep ftp
 
 ### 1.3  主动模式设置
 
-● **主动模式适用于局域网（内网）环境下，青云云平台使用公网FTP服务，请使用被动模式**
+● **主动模式适用于局域网（内网）环境下，云平台使用公网FTP服务，请使用被动模式**
 
 ●**主动模式下vsftpd.conf参数设置**
 

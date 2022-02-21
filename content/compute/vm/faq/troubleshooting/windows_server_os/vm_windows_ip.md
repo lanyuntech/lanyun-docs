@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何为 Windows 云服务器配置静态 IP
 draft: false
 weight: 90
-keyword: 云计算, 青云, QingCloud, 云服务器，静态IP
+keyword: 云计算, 云服务器，静态IP
 ---
 
 请注意，只有当主机位于自管私有网络之中时，您才需要自行配置 IP 地址。

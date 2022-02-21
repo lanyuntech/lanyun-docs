@@ -1,13 +1,13 @@
 ---
 title: "PHP SDK"
 description: 本小节主要介绍 PHP SDK 快速指南相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-QingStor 对象存储的 PHP SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-php)。
+对象存储的 PHP SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-php)。
 
-使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
+使用 SDK 之前请先在 管理控制台 申请 Access key。
 
 ## 安装
 

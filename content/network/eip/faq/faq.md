@@ -3,12 +3,12 @@ title: "连接问题"
 draft: false
 weight: 10
 description: 公网 IP 连接问题
-keyword: QingCloud, 青云, 云计算, 公网IP, 弹性EIP
+keyword: 云计算, 公网IP, 弹性EIP
 ---
 
 ## 云服务器绑定了公网 IP 之后，为什么我无法通过 IP SSH 登录，也不能 ping 通该 IP？ {#ip-ip-ssh-ping-ip}
 
-为了加强位于基础网络 vxnet-0 中的云服务器的安全性， 青云在云服务器之前放置了一个防火墙（Security Group）。 初始状态下，每个防火墙都不包含任何规则，即，全部端口都是封闭的， 您需要建立规则以打开相应的端口。
+为了加强位于基础网络 vxnet-0 中的云服务器的安全性， 云平台在云服务器之前放置了一个防火墙（Security Group）。 初始状态下，每个防火墙都不包含任何规则，即，全部端口都是封闭的， 您需要建立规则以打开相应的端口。
 
 >**说明**
 >
