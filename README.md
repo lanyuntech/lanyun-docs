@@ -1,6 +1,6 @@
-# QingCloud 新版文档项目说明
+# enterprise-cloud-docs 新版文档项目说明
 
-QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
+enterprise-cloud-docs 官方文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
 
 ## 第一步：安装前置工具 
 
@@ -11,10 +11,10 @@ QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/install
 
 ## 第二步：Fork 与 Clone 仓库
 
-请点击右上角 **Fork** 将 qingcloud-docs 仓库 Fork 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
+请点击右上角 **Fork** 将 enterprise-cloud-docs 仓库 Fork 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
 
 ```
-git clone https://github.com/<YOUR-GITHUB-ID>/qingcloud-docs.git
+git clone https://github.com/<YOUR-GITHUB-ID>/enterprise-cloud-docs.git
 ```
 
 

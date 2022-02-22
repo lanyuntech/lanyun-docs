@@ -1,7 +1,7 @@
 {
-  "name": "qingcloud-docs",
+  "name": "enterprise-cloud-docs",
   "version": "0.0.1",
-  "description": "QingCloud documentation 2.0.",
+  "description": "enterprisecloud documentation 2.0.",
   "main": "none.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,20 +18,10 @@
   },
   "homepage": "https://github.com/yunify/enterprise-cloud-docs#readme",
   "dependencies": {
-    "axios": "^0.24.0",
-    "express": "^4.17.2",
-    "hugo-lunr-diaspora": "^1.0.0",
-    "nodemon": "^2.0.15",
-    "pdf-lib": "^1.17.1",
-    "puppeteer": "^13.0.1",
-    "wkhtmltopdf": "^0.4.0"
+    "nodemon": "^2.0.15"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "grunt": "^1.4.1",
-    "hugo-lunr-zh": "^2.0.0",
-    "postcss-cli": "^5.0.1",
-    "string": "^3.3.3",
-    "toml": "^3.0.0"
+    "postcss-cli": "^5.0.1"
   }
 }
