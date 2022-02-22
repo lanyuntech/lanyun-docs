@@ -2,7 +2,7 @@
 title: "Put Bucket Logging"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Put Bucket Logging 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
+keyword: 云计算, 对象存储, Bucket
 collapsible: false
 draft: false
 weight: 3
@@ -10,7 +10,7 @@ weight: 3
 
 该接口用于开启并设置 Bucket 的日志功能，也可用于更新 Bucket 的日志功能相关设置，只有 Bucket 的所有者才能调用该 API。
 
-开启该功能后，QingStor 对象存储会将 Bucket 的访问日志进行保存，并按照固定的规则，以小时为单位上传至用户指定的 Bucket 中。
+开启该功能后，对象存储会将 Bucket 的访问日志进行保存，并按照固定的规则，以小时为单位上传至用户指定的 Bucket 中。
 
 ## 请求语法
 

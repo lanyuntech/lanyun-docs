@@ -1,7 +1,7 @@
 ---
 title: "使用负载均衡器实现跨公网的高可用网络服务"
 description: 介绍如何使用负载均衡器实现跨公网的高可用网络服务。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 跨公网
+keyword: 云计算, 网络, 负载均衡器, 跨公网
 draft: false
 ---
 
@@ -9,7 +9,7 @@ draft: false
 
 ## 借助 NAT 网关及路由表
 
-NAT 网关为私有网络的云服务器提供了复用公网 IP 的能力，目前支持 SNAT 功能，云服务器可以共用 NAT 网关绑定的公网 IP 地址访问互联网。查看[详情](https://docs.qingcloud.com/product/network/nat_gateway)
+NAT 网关为私有网络的云服务器提供了复用公网 IP 的能力，目前支持 SNAT 功能，云服务器可以共用 NAT 网关绑定的公网 IP 地址访问互联网。
 
 
 ### 创建一个vpc网络以及私有网络并完成绑定

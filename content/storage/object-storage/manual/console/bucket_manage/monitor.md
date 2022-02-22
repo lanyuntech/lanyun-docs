@@ -2,7 +2,7 @@
 title: "监控与报表"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍监控与报表相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 3
 ---
@@ -15,7 +15,7 @@ weight: 3
 
 ## 操作步骤
 
-1. 进入 QingStor 对象存储的主页面，点击待查看监控信息的 Bucket 名：
+1. 进入对象存储的主页面，点击待查看监控信息的 Bucket 名：
 
  ![](/storage/object-storage/_images/bucket_monitor1.png)
 
@@ -49,11 +49,11 @@ weight: 3
      </tr>
      <tr>
         <td>zone内出流量</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源下载 Bucket 文件所产生的流量。</td>
+        <td>从与 Bucket 相同区域的云平台其他资源下载 Bucket 文件所产生的流量。</td>
      </tr>
      <tr>
         <td>zone内进流量</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源上传文件至 Bucket 所产生的流量。</td>
+        <td>从与 Bucket 相同区域的云平台其他资源上传文件至 Bucket 所产生的流量。</td>
      </tr>
      <tr>
         <td rowspan="1">低频存储流量</td>
@@ -71,11 +71,11 @@ weight: 3
      </tr>
      <tr>
         <td>zone内读请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的云平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
      </tr>
      <tr>
         <td>zone内写请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的云平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
      </tr>
      <tr>
         <td rowspan="4">低频存储API请求</td>
@@ -88,11 +88,11 @@ weight: 3
      </tr>
      <tr>
         <td>zone内读请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的云平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
      </tr>
      <tr>
         <td>zone内写请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的云平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
      </tr>
      <tr>
         <td>存储</td>

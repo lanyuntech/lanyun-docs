@@ -1,14 +1,14 @@
 ---
 title: "如何检查负载均衡器会话保持是否生效"
 description: 介绍如何检查负载均衡器会话保持是否生效。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 会话保持
+keyword: 云计算, 网络, 负载均衡器, 会话保持
 weight: 50
 draft: false
 ---
 
 ## 负载均衡器（LB）支持的会话保持类型
 
-负载均衡器（Load Balancer，简称 LB）支持源 IP 地址、负载均衡器 Cookie 、植入 Cookie 前缀、重写 Cookie 、后端 Cookie 实现会话保持，详细信息见[LB会话保持](https://docsv3.qingcloud.com/network/loadbalancer/faq/lb_session_hold/)。
+负载均衡器（Load Balancer，简称 LB）支持源 IP 地址、负载均衡器 Cookie 、植入 Cookie 前缀、重写 Cookie 、后端 Cookie 实现会话保持，详细信息见[LB会话保持](/network/loadbalancer/faq/lb_session_hold/)。
 
 顺带一提，长连接和会话保持没有必然联系。长连接是指在一个连接上可以连续发送多个数据包，在连接保持期间，如果没有数据包发送，需要双方发链路检测包。会话保持是指弹性负载均衡将属于同一个会话的请求都转发到同一个服务器进行处理。
 

@@ -2,7 +2,7 @@
 title: "计费说明"
 description: kms计费说明
 draft: true
-keyword: 云服务器, QingCloud，安全，kms，计费说明
+keyword: 云服务器, 安全，kms，计费说明
 ---
 
 密钥管理服务计费由CMK存储费用及 API 调用费用两部分组成，如下表所示：

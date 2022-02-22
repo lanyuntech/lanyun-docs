@@ -3,12 +3,12 @@ title: "共享效果"
 description: test
 weight: 20
 draft: false
-keyword: 共享效果, QingCloud, 青云, 云计算
+keyword: 共享效果, 云计算
 ---
 
 ## **共享资源拥有者**
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络服务** > **VPC 网络** ，进入**VPC 网络**页签。
+1. 登录 管理控制台，选择**产品与服务** > **网络服务** > **VPC 网络** ，进入**VPC 网络**页签。
 
 2. 进入 VPC 详情，可见共享 VPC 中共享资源的使用者添加的主机，无编辑权限。
 
@@ -20,7 +20,7 @@ keyword: 共享效果, QingCloud, 青云, 云计算
 
 ## **资源使用者（被共享者）**
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络服务** > **VPC 网络** ，进入**VPC 网络**页签。
+1. 登录 管理控制台，选择**产品与服务** > **网络服务** > **VPC 网络** ，进入**VPC 网络**页签。
 
 2. VPC网络中可查看共享给我的VPC。
 

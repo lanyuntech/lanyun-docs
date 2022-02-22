@@ -1,6 +1,6 @@
 ---
 title: "使用虚拟 IP "
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 虚拟 IP
+keyword: 云计算, VPC, VPC 网络, 虚拟 IP
 description: 介绍如何使用虚拟 IP 搭建高可用主备集群。
 draft: false
 weight: 50
@@ -18,7 +18,7 @@ weight: 50
 
 ## 虚拟IP 管理
 
-青云控制台提供了虚拟 IP 管理功能，用户创建虚拟 IP 后，将在控制台中展示出来虚拟 IP 被占用的情况。
+管理控制台提供了虚拟 IP 管理功能，用户创建虚拟 IP 后，将在控制台中展示出来虚拟 IP 被占用的情况。
 
 
 在 VPC 网络和私有网络中，都可以创建虚拟IP
@@ -37,7 +37,7 @@ weight: 50
 
 ## 应用操作示例
 
-青云 VPC 网络一直支持虚拟 IP（Virtul_IP）的功能，只需要您采用支持虚拟 IP的软件 (如 keepalived) 就可以将 VPC 内的任何 IP 地址作为虚拟 IP 使用，即便未在青云控制台中指定创建虚拟 IP。
+云平台 VPC 网络一直支持虚拟 IP（Virtul_IP）的功能，只需要您采用支持虚拟 IP的软件 (如 keepalived) 就可以将 VPC 内的任何 IP 地址作为虚拟 IP 使用，即便未在管理控制台中指定创建虚拟 IP。
 
 ### Keepalived 为例 ( Centos 7.6)
 

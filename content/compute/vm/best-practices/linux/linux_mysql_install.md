@@ -2,7 +2,7 @@
 title: "Linux云服务器配置MySQL"
 description: Linux配置mysql
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，mySQL
+keyword: 云计算, 云服务器，Linux，mySQL
 ---
 
 ## 背景介绍

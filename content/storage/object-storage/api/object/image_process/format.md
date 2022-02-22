@@ -1,14 +1,14 @@
 ---
 title: "图片格式转换"
 description: 本小节主要介绍图片格式转换接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 图片格式转换
+keyword: 云计算, 对象存储, 图片格式转换
 ---
 
 用户可以调用该 API 接口将原始图片转换为目标格式。根据 [前文](/storage/object-storage/api/object/image_process/#图片格式) 相关内容，我们知道，该操作支持的图片格式为：`jpeg`，`png`，`webp`，`tiff`。
 
 ## 注意事项
 
-QingStor 对象存储对被转图片的分辨率作出了限制，详细内容如下：
+对象存储对被转图片的分辨率作出了限制，详细内容如下：
 
 - `webp` 格式的被转图片，分辨率限制为：16383 x 16383，单位为：14-bit unsigned
 - `jpeg/tiff` 格式的被转图片，分辨率限制为：65535 x 65535，单位为：16-bit unsigned

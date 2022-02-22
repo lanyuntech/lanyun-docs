@@ -3,7 +3,7 @@ title: "如何配置 NTP 服务"
 description: 如何配置NTP服务
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，ntp
+keyword: 云计算, 云服务器，ntp
 ---
 
 

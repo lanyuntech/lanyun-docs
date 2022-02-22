@@ -4,7 +4,7 @@ date: 2020-0-30T00:38:25+09:00
 description: 本小节主要介绍对Windows系统下的数据盘进行扩容。
 draft: false
 weight: 30
-keyword: 云计算, 青云, QingCloud, 云硬盘, Windows, 扩容,数据盘
+keyword: 云计算, 云硬盘, Windows, 扩容,数据盘
 ---
 
 ## 前提条件
@@ -15,7 +15,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, Windows, 扩容,数据盘
 
 Windows 系统下的数据盘扩容主要包括两部分：
 
-1. 云硬盘存储容量的扩展，该操作步骤需登录 QingCloud 管理控制台.
+1. 云硬盘存储容量的扩展，该操作步骤需登录管理控制台.
 
 2. 卷容量的扩展，该操作步骤需登录至云硬盘所挂载的服务器进行。
 

@@ -4,7 +4,7 @@ date: 2021-02-04T20:38:25+09:00
 description: 如何在Windows云服务器上同步网络时间
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，时间
+keyword: 云计算, 云服务器，时间
 ---
 
 ## 问题背景

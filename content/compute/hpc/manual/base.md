@@ -3,7 +3,7 @@ title: "创建集群"
 linkTitle: "创建集群"
 date: 2021-11-24T10:08:56+09:00
 description: 创建集群
-keyword: 云计算, 青云, QingCloud, HPC，创建集群
+keyword: 云计算, HPC，创建集群
 draft: false
 weight: 1
 ---
@@ -39,7 +39,7 @@ weight: 1
 
 ## 2. 创建 EHPC 集群
 
-EHPC 集群是青云 QingCloud 提供的弹性高性能计算模式。第一次使用需要开通 HPC 的服务权限，然后开始创建集群。
+EHPC 集群是 云平台 提供的弹性高性能计算模式。第一次使用需要开通 HPC 的服务权限，然后开始创建集群。
 
 > **说明**
 >

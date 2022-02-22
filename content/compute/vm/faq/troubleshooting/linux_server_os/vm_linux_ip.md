@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何给 Linux 云服务器配置静态 IP
 draft: false
 weight: 80
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，静态IP
+keyword: 云计算, 云服务器，Linux，静态IP
 ---
 
 请注意，只有当云服务器位于自管私有网络之中，或者受管私有网络的路由器关闭了 DHCP 时，您才需要自行配置 IP 地址。
@@ -15,7 +15,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，Linux，静态IP
 
 ## 操作步骤
 
-青云官方提供的 Linux 镜像使用 NetworkManager 来自动化云服务器的网络配置，其默认配置是通过 DHCP 方式来获取 IP 地址。以下步骤描述了如何配置静态地址。
+云平台官方提供的 Linux 镜像使用 NetworkManager 来自动化云服务器的网络配置，其默认配置是通过 DHCP 方式来获取 IP 地址。以下步骤描述了如何配置静态地址。
 
 1. 用指令 ``ip link`` 或者 ``ifconfig -a`` 找到网卡在云服务器中的设备名， 通常名为 ``eth0``、``eth1`` 等，以下以 ``eth0`` 名字为例。
 

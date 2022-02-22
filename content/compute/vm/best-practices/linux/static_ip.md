@@ -4,7 +4,7 @@ date: 2021-03-27T21:37:25+09:00
 description: 如何在Linux云服务器上配置静态IP
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，静态IP
+keyword: 云计算, 云服务器，Linux，静态IP
 ---
 
 ## 问题背景：

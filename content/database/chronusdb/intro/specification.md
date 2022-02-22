@@ -1,14 +1,14 @@
 ---
 title: "产品规格"
 description: 本小节主要介绍 ChronusDB 规格。 
-keyword: ChronusDB, 产品规格
+keyword: 产品规格,时序数据库,ChronusDB,数据库
 weight: 25
 collapsible: false
 draft: false
 ---
 
 
-时序数据库 ChronusDB 基于 ClickHouse 定制，并根据QingCloud AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
+时序数据库 ChronusDB 基于 ClickHouse 定制，并根据 AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
 
 ## 版本规格
 

@@ -3,7 +3,7 @@ title: "文件系统只读的处理方法"
 description: 文件系统只读如何处理
 weight: 50
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，文件系统，只读
+keyword: 云计算, 云服务器，Linux，文件系统，只读
 ---
 
 ## 问题背景

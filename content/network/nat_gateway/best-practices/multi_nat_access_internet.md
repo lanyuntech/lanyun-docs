@@ -3,14 +3,14 @@ title: "多 NAT 网关实现外网访问分流"
 descriptipn: 私有网络内主机，通过不同的公网IP访问不同的外部公网地址。
 draft: false
 weight: 10
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT
+keyword: 云计算, NAT网关, NAT
 ---
 
 本文介绍如何根据私有网络的目标地址让私有网络内的云服务器走不同的出口，以满足境内境外流量分流等场景需求。
 
 ## 操作场景
 
-私有网络内的云服务器，通过不同的青云公网地址访问不同的外部公网地址，实现双公网 IP 分流。
+私有网络内的云服务器，通过不同的云平台公网地址访问不同的外部公网地址，实现双公网 IP 分流。
 
 <img src="../../_images/multi_nat_access_net.png" style="zoom:50%;" />
 
@@ -20,7 +20,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 
 按照以下操作方法分别建立两个 NAT 网关，两个 NAT 网关绑定不同的公网 IP。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 点击**创建**，进入**创建 NAT 网关**页面。
 

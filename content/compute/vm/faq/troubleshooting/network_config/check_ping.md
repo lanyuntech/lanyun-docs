@@ -3,7 +3,7 @@ title: "ping 不通或丢包时如何进行链路测试"
 description: ping 不通或丢包时如何进行链路测试
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，ping不通
+keyword: 云计算, 云服务器，ping不通
 ---
 
 ## 问题描述
@@ -178,4 +178,4 @@ StDev：标准偏差，偏差值越高，说明各个数据包在该节点的响
      9 1XX.XX.XX.XX                              0.0%    10    0.0   0.0   0.0   0.0   0.0
      ```
 
-如上述操作都已检查仍无法排除问题，可以[提交工单](https://console.qingcloud.com/tickets/)咨询。
+如上述操作都已检查仍无法排除问题，可以提交工单咨询。

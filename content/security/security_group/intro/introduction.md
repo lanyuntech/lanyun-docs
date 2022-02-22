@@ -5,7 +5,7 @@ description: 安全组介绍
 draft: false
 enableToc: false
 weight: 10
-keyword: 云服务器, QingCloud, 实例, 安全组
+keyword: 云服务器, 实例, 安全组
 ---
 
 

@@ -1,12 +1,12 @@
 ---
 title: "Linux 使用对象存储作为本地盘"
 description: 本小节主要介绍 Linux 使用对象存储作为本地盘相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 3
 ---
 
-本文介绍如何通过 goofys 将 QingStor 对象存储挂载到文件系统使用。项目地址：[Github 项目](https://github.com/kahing/goofys)。
+本文介绍如何通过 goofys 将对象存储挂载到文件系统使用。项目地址：[Github 项目](https://github.com/kahing/goofys)。
 
 ## 操作步骤
 1. 创建 Bucket，若已经有可使用的 Bucket，可略过该步骤。详细操作可参考 [创建 Bucket](/storage/object-storage/manual/console/bucket_manage/basic_opt/#创建-bucket)。

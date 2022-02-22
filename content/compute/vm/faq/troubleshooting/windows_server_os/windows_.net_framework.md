@@ -4,7 +4,7 @@ date: 2021-04-09T21:37:25+09:00
 description: 无法安装 NET Framework 3.5怎么解决
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Framework
+keyword: 云计算, 云服务器，Framework
 ---
 
 ## 问题背景

@@ -2,7 +2,7 @@
 title: "API 参考"
 date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 API 参考相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 collapsible: true
 weight: 8

@@ -4,7 +4,7 @@ title: "步骤2：加载硬盘"
 description: 本小节主要介绍将云硬盘加载到云服务器的相关操作。
 draft: false
 weight: 30
-keyword: 云计算, 青云, QingCloud, 云硬盘,云服务,加载
+keyword: 云计算, 云硬盘,云服务,加载
 ---
 
 ## 操作场景
@@ -19,7 +19,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,云服务,加载
 
 ## 在硬盘页面加载
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
 
@@ -36,7 +36,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,云服务,加载
 
 ## 在云服务器页面加载
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **计算** > **云服务器**，进入**云服务器**页面。
 

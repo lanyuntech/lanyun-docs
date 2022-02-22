@@ -1,7 +1,7 @@
 ---
 title: "操作指南"
 description: 介绍如何搭建常见的四种负载均衡。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 监听器
+keyword: 云计算, 网络, 负载均衡器, 监听器
 draft: false
 ---
 
@@ -304,7 +304,7 @@ service rsyslog restart
 >注解
 >在这个云服务器的防火墙放行 udp 514 端口。
 
-准备好云服务器以后，在青云控制台，右击负载均衡器，选择“配置rsyslog”，输入云服务器IP，并应用修改就可以生效。
+准备好云服务器以后，在管理控制台，右击负载均衡器，选择“配置rsyslog”，输入云服务器IP，并应用修改就可以生效。
 
 ![](../_images/lb_rsyslog.png)
 

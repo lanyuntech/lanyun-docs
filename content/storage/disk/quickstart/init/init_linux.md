@@ -4,7 +4,7 @@ description: 本小节主要介绍如何对Linux系统下的数据盘进行初�
 draft: false
 enableToc: false
 weight: 105
-keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,linux,数据盘
+keyword: 云计算, 云硬盘,初始化,linux,数据盘
 ---
 
 ## 直接初始化
