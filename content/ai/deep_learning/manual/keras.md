@@ -63,7 +63,7 @@ jupyter notebook 默认端口号为 `8888`，启动上述命令后会输出 toke
 
 > **说明**
 >
-> 如果需要通过公网访问这些信息您需要先申请一个公网 IP 绑定在路由器上，在路由器上设置端口转发，同时打开防火墙相应的下行端口。为了方便使用 jupyter notebook，也可参考[VPN 隧道指南](https://docs.qingcloud.com/product/network/vpn#vpn) 配置 VPN。
+> 如果需要通过公网访问这些信息您需要先申请一个公网 IP 绑定在路由器上，在路由器上设置端口转发，同时打开防火墙相应的下行端口。为了方便使用 jupyter notebook，也可参考[VPN 隧道指南](/network/vpn#vpn) 配置 VPN。
 
 jupyter notebook 开发环境浏览项目代码
 

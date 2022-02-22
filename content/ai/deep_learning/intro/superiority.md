@@ -11,7 +11,7 @@ draft: false
 
 即使是有经验的深度学习开发者，想部署构建一套深度学习开发环境也需要大量时间完成复杂的配置工作。
 
-Deep Learning on QingCloud 通过 AppCenter 交付，可一键完成云端部署，并提供应用全生命周期管理能力（创建、扩容、监控、健康监测等），助力开发者极速搭建深度学习开发环境。
+Deep Learning 通过 AppCenter 交付，可一键完成云端部署，并提供应用全生命周期管理能力（创建、扩容、监控、健康监测等），助力开发者极速搭建深度学习开发环境。
 
 ## 支持 CPU、GPU 多种部署模式
 
@@ -27,7 +27,7 @@ Deep Learning on QingCloud 通过 AppCenter 交付，可一键完成云端部署
 
 ## 预置主流科学工具包，加速深度学习开发
 
-为加速深度学习开发与模型训练，Deep Learning on QingCloud 预置 CUDA8.0 和 cuDNN5 驱动，并安装有 numpy、scipy、pandas、matplotlib、nltk、scikit-learn 等众多数据科学工具包。
+为加速深度学习开发与模型训练，Deep Learning 预置 CUDA8.0 和 cuDNN5 驱动，并安装有 numpy、scipy、pandas、matplotlib、nltk、scikit-learn 等众多数据科学工具包。
 
 ## 按需计费，灵活掌握开发成本
 

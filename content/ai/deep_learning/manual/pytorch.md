@@ -73,7 +73,7 @@ python mnist_dist.py
 
 ![PyTorch 分布式训练结果](../_images/pytorchdist_result.png)
 
-跨区分布式：青云深度学习平台支持跨区分布式 PyTorch 训练，首先使用 IPSec 或 GRE 方式，连通两个集群的路由器。参考[IPSec隧道](https://docs.qingcloud.com/product/network/ipsec)。如果是异地路由器，则要求两个路由器都有公网 IP 地址，并为公网 IP 分配足够的带宽，依据实际训练数据交互的带宽需求，调整带宽到合适的值。两个路由器连通之后，集群中的深度学习节点将会在不同的网段，例如 192.168.1.2 和 192.168.2.2，但是相互之间的连通性和在一个局域网没有差别。
+跨区分布式：青云深度学习平台支持跨区分布式 PyTorch 训练，首先使用 IPSec 或 GRE 方式，连通两个集群的路由器。如果是异地路由器，则要求两个路由器都有公网 IP 地址，并为公网 IP 分配足够的带宽，依据实际训练数据交互的带宽需求，调整带宽到合适的值。两个路由器连通之后，集群中的深度学习节点将会在不同的网段，例如 192.168.1.2 和 192.168.2.2，但是相互之间的连通性和在一个局域网没有差别。
 
 进行 Pytorch 分布式训练时，需要在分布式参数中指定 init_method 为 env 方式，参考代码[pytorch_mnist_dist.py](https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/pytorch_multi_gpu_test.py)下载。以一台主机和一台从机为例，在两区节点都下载好分布式训练文件之后，启动命令如下：
 

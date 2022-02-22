@@ -12,12 +12,12 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码。
+- 已获取管理控制台登录账号和密码。
 - 已创建 [VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在左上方的控制台导航栏中，选择**产品与服务** > **人工智能（AI）** > **Inference Engine**，进入 Inference Engine 管理页面。
 
