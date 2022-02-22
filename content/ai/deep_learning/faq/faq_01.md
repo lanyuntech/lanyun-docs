@@ -20,5 +20,5 @@ sudo nvidia-docker run -it --rm -p host_port:8888 image_id /bin/bash
 
 - 方法2(建议)：
 
-	无需修改防火墙策略，在 VPC 网络中[配置VPN服务](https://docs.qingcloud.com/product/network/vpn)，则可以轻松访问云端私有网络中的主机。
+	无需修改防火墙策略，在 VPC 网络中[配置VPN服务](/network/vpn)，则可以轻松访问云端私有网络中的主机。
 	在浏览器中输入 host_ip:host_port 便可以访问。
