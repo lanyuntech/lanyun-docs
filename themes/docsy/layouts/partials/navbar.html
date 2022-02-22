@@ -1,7 +1,6 @@
-<div class="nav-wrapper {{ if eq .Params.LinkTitle " Document" }} nav-wrapper-index {{ end }}">
-  <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none; z-index: 1;" {{end}}>
-    <div style="position: relative;" class="container with-no-position {{ if and (ne .Params.LinkTitle " Document" ) (ne
-      .Params.type "product" )}}doc-container-width {{ end }}">
+<div class="nav-wrapper {{ if eq .Params.LinkTitle "Document" }} nav-wrapper-index {{ end }}">
+  <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none; z-index: 1;" {{end}} >
+    <div style="position: relative;" class="container with-no-position {{ if and (ne .Params.LinkTitle "Document" ) (ne .Params.type "product")}}doc-container-width {{ end }}">
       <div class="navbar-brand" id="search-mobile-logo">
         <a class="navbar-item logo" href="https://www.qingcloud.com">
           <img src="https://www.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508"
@@ -19,7 +18,7 @@
         <a class="nav-item" href="">API参考</a>
         <a class="nav-item" href="">常见问题</a>
         <a class="nav-item" href="">软件下载</a>
-        <span class="nav-item" onclick="saveAllPdf()" style="cursor: pointer;">整本下载</span>
+        <span class="nav-item"  onclick="saveAllPdf()" style="cursor: pointer;">整本下载</span>
       </div>
       <!-- <div class="media-content column is-centered is-3 search-mobile">
         <form action="{{ "search" | absURL }}">
@@ -34,34 +33,32 @@
       </div> -->
       <div class="ins-search media-content column is-centered is-3 search-mobile">
         <div class="ins-search-mask"></div>
-        <div class="ins-search-container">
-          <div class="ins-input-wrapper control has-icons-right docs-search-input">
-            <input type="text" class="ins-search-input input" id="search-query" name="s" type="search"
-              placeholder="请输入关键词" />
-            <span class="icon is-right" id="mobile-search">
-              <img src="/images/icons/search.svg">
-            </span>
-            <!-- <span class="ins-close ins-selectable"><i class="icon-close"></i></span>  -->
-          </div>
-          <div class="ins-section-wrapper">
-            <div class="ins-section-container" id="ins-section-container"></div>
-          </div>
-        </div>
+         <div class="ins-search-container">
+              <div class="ins-input-wrapper control has-icons-right docs-search-input"> 
+                  <input type="text" class="ins-search-input input" id="search-query" name="s" type="search" placeholder="请输入关键词"/> 
+                  <span class="icon is-right" id="mobile-search">
+                    <img src="/images/icons/search.svg">
+                  </span>
+                  <!-- <span class="ins-close ins-selectable"><i class="icon-close"></i></span>  -->
+               </div> 
+               <div class="ins-section-wrapper"> 
+                   <div class="ins-section-container" id="ins-section-container"></div>
+               </div>
+        </div> 
       </div>
     </div>
-    <script> (function (window) {
-        var INSIGHT_CONFIG = {
-          TRANSLATION: { POSTS: '文章', TAGS: '便签', },
-          ROOT_URL: '',
-          CONTENT_URL: '/index.json',
-        };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-      })
+      <script> (function (window) {
+        var INSIGHT_CONFIG = { 
+            TRANSLATION: { POSTS: '文章', TAGS: '便签', }, 
+            ROOT_URL: '',
+            CONTENT_URL: '/index.json', };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG; 
+        })
         (window);
-    </script>
-    <script src="/js/insightSearch.js"></script>
+      </script>
+      <script src="/js/insightSearch.js"></script>
 
-
+   
   </nav>
   {{ if ne .Params.LinkTitle "Document"}}
   <nav class="navbar navmenu navbar-index" style="z-index: 0;">
