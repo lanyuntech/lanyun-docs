@@ -3,7 +3,7 @@ title: "回收站"
 description: Test description
 draft: false
 enableToc: false
-keyword: 回收站, QingCloud, 删除云服务器, 恢复云服务器, 云计算
+keyword: 回收站, 删除云服务器, 恢复云服务器, 云计算
 ---
 
 
@@ -12,7 +12,7 @@ keyword: 回收站, QingCloud, 删除云服务器, 恢复云服务器, 云计算
 
 ## 删除一台云服务器
 
-在青云控制台，打开“计算”->“云服务器”页面，选中要删除的云服务器，然后点击删除：
+在控制台，打开“计算”->“云服务器”页面，选中要删除的云服务器，然后点击删除：
 
 ![](../../_images/delete_instance.png)
 

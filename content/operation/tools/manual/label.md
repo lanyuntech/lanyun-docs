@@ -3,18 +3,16 @@ title: "标签"
 description: Test description
 draft: false
 enableToc: false
-keyword: 标签, QingCloud, 创建和管理标签, 云计算
+keyword: 标签, 创建和管理标签, 云计算
 ---
 
 ## 快速上手
-
-<video src="https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_label.mp4" controls="controls" width="1000" height="400">您的浏览器不支持播放该视频！</video>
 
 下面为一组云服务器贴标签为例，来描述标签的使用方式。
 
 ## 创建和管理标签
 
-在青云控制台，打开“运维与管理”->“标签”页面，点击“创建”：
+在控制台，打开“运维与管理”->“标签”页面，点击“创建”：
 
 ![](../../_images/create_tag_1.png)
 
