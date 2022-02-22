@@ -1,7 +1,7 @@
 ---
 title: "应用管理"
 description: 介绍如何创建、发布、管理、删除应用。
-keyword: QingCloud, 青云, AppCenter, 云应用
+keyword: 云平台, AppCenter, 云应用
 draft: false
 collapsible: false
 weight: 1
@@ -18,7 +18,7 @@ weight: 1
 ## 应用管理
 
 ### 创建应用
-首先登录[应用管理平台](https://appcenter.qingcloud.com/developer)，点击**应用**部分的**+**号按钮，开始创建第一个应用。
+首先登录应用管理平台，点击**应用**部分的**+**号按钮，开始创建第一个应用。
 
 ![应用管理首页](/appcenter/dev-platform/cluster-images/home.png)
 
@@ -58,7 +58,7 @@ weight: 1
 
 ### 发布应用
 
-应用(版本)通过审核之后，您可以选择适当的时间发布应用，发布之后用户便可通过 [AppCenter](https://appcenter.qingcloud.com/) 浏览、搜索查看到此款应用，并购买应用从而部署自己的应用实例。
+应用(版本)通过审核之后，您可以选择适当的时间发布应用，发布之后用户便可通过 AppCenter 浏览、搜索查看到此款应用，并购买应用从而部署自己的应用实例。
 
 ### 管理应用
 

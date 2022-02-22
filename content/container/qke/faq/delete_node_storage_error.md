@@ -3,7 +3,7 @@ title: "删除节点后挂载存储卷的容器组迁移失败"
 description: 介绍如何处理删除节点后挂载存储卷的容器组迁移失败的问题。
 weight: 20
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 容器, 存储卷
+keyword: 云平台, 云计算, QKE, 容器, 存储卷
 ---
 
 ## 问题场景
@@ -48,7 +48,7 @@ keyword: 青云, QingCloud, 云计算, QKE, 容器, 存储卷
    ...
    ```
 
-4. 找到未挂载上的存储卷对应的 PV `pvc-93e24c1d88d711e9`, 到 QingCloud 控制台查看硬盘名为 `pvc-93e24c1d88d711e9` 的硬盘应为可用状态。
+4. 找到未挂载上的存储卷对应的 PV `pvc-93e24c1d88d711e9`, 到云平台管理控制台查看硬盘名为 `pvc-93e24c1d88d711e9` 的硬盘应为可用状态。
 
    ```
    # kubectl get pvc nginx-neonsan-pvc-nginx-perf-7 -n demo-project

@@ -4,7 +4,7 @@ description: 介绍如何更改 QKE 集群节点配置
 draft: false
 enableToc: false
 weight: 30
-keyword: 青云, QingCloud, 云计算, QKE, 节点, 扩容
+keyword: 云平台, 云计算, QKE, 节点, 扩容
 ---
 
 您可以随时按照实际需给节点增强配置或降低配置。
@@ -17,7 +17,7 @@ keyword: 青云, QingCloud, 云计算, QKE, 节点, 扩容
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

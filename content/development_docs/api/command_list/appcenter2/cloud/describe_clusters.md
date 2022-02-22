@@ -82,12 +82,12 @@ Cluster的格式
 | auto_scale_step | Dict | 集群各角色各项配置参数的自动伸缩步长值，格式为`{"master": {"count": 1}, "slave": {"volume_size": 20}}`，count的值表示该角色每次自动伸缩的节点数量，volume_size的值表示该角色每次自动伸缩的磁盘大小 |
 | backup_policy| String | 集群备份的策略，具体参考开发者文档 |
 | endpoints | Dict | 集群的endpoints设置，具体参考开发者文档 |
-| app_version_info | Dict | 集群所属的应用版本信息，格式为`{ "status_time":"2017-04-21T02:34:24Z", "upgrade_policy":[], "resource_kit":"ca-nx8rerlv", "version_id":"appv-70gegwmp", "name":"QingCloud 1.0 - ZooKeeper 3.4.9" } `|
+| app_version_info | Dict | 集群所属的应用版本信息，格式为`{ "status_time":"2017-04-21T02:34:24Z", "upgrade_policy":[], "resource_kit":"ca-nx8rerlv", "version_id":"appv-70gegwmp", "name":"ZooKeeper 3.4.9" } `|
 
 
 **Example**
 
-下列返回结果为应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)所创建的集群
+下列返回结果为应用 ZooKeeper 所创建的集群
 
 _Example Request_:
 
@@ -139,7 +139,7 @@ _Example Response_:
       "description":"",
       "tags":[],
       "app_info":{
-        "app_name":"ZooKeeper on QingCloud",
+        "app_name":"ZooKeeper",
         "app_id":"app-tg3lbp0a",
         "icon":"ca-iwg9qvsx"
       },
@@ -182,7 +182,7 @@ _Example Response_:
         "upgrade_policy":[],
         "resource_kit":"ca-nx8rerlv",
         "version_id":"appv-70gegwmp",
-        "name":"QingCloud 1.0 - ZooKeeper 3.4.9"
+        "name":"ZooKeeper 3.4.9"
       }
     }
   ],

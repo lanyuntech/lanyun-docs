@@ -2,7 +2,7 @@
 title: "登录 Harbor 镜像仓库"
 draft: false
 description: 介绍如何登录部署的 Harbor 镜像仓库。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库
+keyword: 云平台, 云计算, Harbor, 私有镜像仓库，镜像仓库
 weight: 18
 ---
 

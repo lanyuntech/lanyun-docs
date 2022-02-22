@@ -1,14 +1,14 @@
 ---
 title: "接口概述"
 description: SPI 接口概述
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS 
+keyword: 云平台, AppCenter, 云应用开发平台, SaaS 
 draft: false
 weight: 10
 ---
 
-第三方 SaaS 应用接入青云云市场需要实现相关的接口定义，服务商通过提供接口，获得应用订购成功的信息，从而为购买者开通应用。
+第三方 SaaS 应用接入云平台云市场需要实现相关的接口定义，服务商通过提供接口，获得应用订购成功的信息，从而为购买者开通应用。
 
-青云saas提供了以下几个 SPI 接口，如下所示。
+云平台 SaaS 提供了以下几个 SPI 接口，如下所示。
 
 | 使用场景 | 事件名称           |
 | -------- | ------------------ |
@@ -19,6 +19,6 @@ weight: 10
 | 实例删除 | DeleteAppInstance  |
 | 测试连接 | TestConnection     |
 
-实现 SPI 接口需要开发者在配置应用时填入通知 URL，青云 app 平台将通过此 url 调用接入的 SaaS 应用。
+实现 SPI 接口需要开发者在配置应用时填入通知 URL，AppCenter 平台将通过此 url 调用接入的 SaaS 应用。
 
 **一个简单的 SPI 实现示例：** https://github.com/xiaoli9965/saas-demo

@@ -1,7 +1,7 @@
 ---
 title: "云应用常见问题"
 description: 介绍 AppCenter 云应用开发的常见问题。
-keyword: QingCloud, 青云, AppCenter, 云应用开发
+keyword: 云平台, AppCenter, 云应用开发
 draft: false
 collapsible: false
 weight: 1
@@ -17,11 +17,11 @@ weight: 1
 
 ### 2. app agent 是什么？如何安装 app agent 程序？   
 
-下载青云提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
+下载云平台提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
 [Windows 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-windows-386.zip)，
 解压后运行 ./install.sh (Windows 下双击 install.bat)。    
 此 agent 中包含了自动配置文件程序 confd，该程序是在开源 confd 的基础上修改了一些 bug 并且增加了一些算术功能，
-详情见 [QingCloud confd](https://github.com/yunify/confd/)。  
+详情见 [confd](https://github.com/yunify/confd/)。  
 > 具体配置请参考文档 [制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)  
 
 ### 3. 如何创建 toml 和 tmpl 的模板文件？  
@@ -32,9 +32,9 @@ weight: 1
 
 ### 4. 什么是 Metadata 服务，如何查询 Metadata 上的值？  
 
-青云 AppCenter 的 metadata service 是在 etcd 基础之上进行了二次开发，主要增加了 self 属性，
+云平台 AppCenter 的 metadata service 是在 etcd 基础之上进行了二次开发，主要增加了 self 属性，
 即每个节点只能从该服务获取到自身相关的信息，如本机 IP、server ID 等， 此项目已在 github 上开源。   
-在创建好一个集群后，登录到任意一个节点，在文件 /etc/confd/confd.toml 里找到 nodes 这一行(这个文件是青云调度系统在用户创建集群的时候自动生成的)，
+在创建好一个集群后，登录到任意一个节点，在文件 /etc/confd/confd.toml 里找到 nodes 这一行(这个文件是云平台调度系统在用户创建集群的时候自动生成的)，
 这一行定义的是 metadata server 的 IP 地址，任取一个 IP，运行下面命令即可看到所有信息。   
 > 注明：同一 VPC 里所有集群这个文件内容相同。   
 
@@ -60,13 +60,13 @@ App有以下几种日志信息需要开发者关注。
     > 其他操作是指修改了 confd 相关的 .toml 和 .tmpl 文件后,执行了 service confd restart 命令之后重新生成新的 confd 相关的日志。
 
 2. 应用本身服务调用的日志     
-    应用本身服务的初始化、启动、停止等指令，青云 AppCenter 调度系统会发送这些命令到指定节点执行，非必填项。  
-    在 [AppCenter 云应用开发平台](https://appcenter.qingcloud.com/developer/) 上可以查到相关日志。
+    应用本身服务的初始化、启动、停止等指令，云平台 AppCenter 调度系统会发送这些命令到指定节点执行，非必填项。  
+    在AppCenter 云应用开发平台上可以查到相关日志。
     ![faq_applog.png](/appcenter/dev-platform/cluster-images/faq_applog.png)
 
 3. 监控日志
     监控日志主要是指用户开发的健康检查和监控命令调用的日志。   
-    在 [AppCenter 云应用开发平台](https://appcenter.qingcloud.com/developer/) 上可以查到相关日志。  
+    在 AppCenter 云应用开发平台上可以查到相关日志。  
     ![faq_applog.png](/appcenter/dev-platform/cluster-images/faq_appmonitorlog.png)
 
 ### 6. 如何理解数据持久化和挂盘，该如何配置？如何检查数据持久化是否配置成功？
@@ -247,7 +247,7 @@ exit code 为 0 则健康，非 0 则不健康。action_cmd 的内容为在服�
             "label": "DBname",
             "description": "DB name to create",
             "type": "string",
-            "default": "qingcloud",
+            "default": "cloud",
             "required": "yes",
             "changeable": false
         },
@@ -384,9 +384,9 @@ data标示表格里面每行数据，要求data是个list，list下是多个子l
 }
 ```
 
-如果配置了此参数，在控制台上集群的节点列表下会有一个VNC的小图标，点击该图标可以登录该节点。
+如果配置了此参数，在控制台上集群的节点列表下会有一个 VNC 的小图标，点击该图标可以登录该节点。
 ![faq_vnc.png](/appcenter/dev-platform/cluster-images/faq_vnc.png)    
-同时，在 [AppCenter应用开发](https://appcenter.qingcloud.com/apps/) 搜索找到你需要的应用，打开`资源` tab 页，右侧有一个 VNC 小图标。    
+同时，在 AppCenter应用开发平台搜索找到你需要的应用，打开`资源` tab 页，右侧有一个 VNC 小图标。    
 ![faq_vnc2.png](/appcenter/dev-platform/cluster-images/faq_vnc2.png)   
 >具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
 
@@ -569,7 +569,7 @@ incremental_backup_supported
 }			
 ```
 
-config.json 定义用户在 QingCloud 控制台部署应用时需要填写的表单。
+config.json 定义用户在管理控制台部署应用时需要填写的表单。
 >具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
 
 **关键字**：国际化		
@@ -740,7 +740,7 @@ config.json 定义用户在 QingCloud 控制台部署应用时需要填写的表
 ### 25. 如何获取依赖其他集群的服务的 AppID 和 AppVersionID？
 
 在配置依赖服务的时候，配置参数需要知道所依赖的服务的 AppID 和 AppVersionID。     
-在[AppCenter应用开发](https://appcenter.qingcloud.com/apps/)搜索找到你需要的应用，打开可以看到相关信息。  
+在 AppCenter 应用开发平台搜索找到你需要的应用，打开可以看到相关信息。  
 ![faq_appid.png](/appcenter/dev-platform/cluster-images/faq_appid.png)
 
 ### 26. 能否提供一些 confd templates（即 tmpl 文件）的使用例子？
@@ -885,7 +885,7 @@ cd /tmp
 
 ### 33. 如果只想用云应用开发框架管理纯云服务器集群
 
-可以不用装青云提供的 App agent，以下是样例。
+可以不用装云平台提供的 App agent，以下是样例。
 
 ```json
 # config.json

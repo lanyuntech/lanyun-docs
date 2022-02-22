@@ -3,7 +3,7 @@ title: "配置指标告警策略"
 description: 本小节介绍如何查配置指标告警。 
 weight: 15
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 监控, 告警, 指标
+keyword: 云平台, 云计算, QKE, 监控, 告警, 指标
 ---
 
 QKE 监控告警是通过云监控服务 CloudSat 为集群服务器的资源和服务提供监控告警管理。当绑定的监控项超过阈值时将触发告警，并通过短信、邮件等形式发送告警通知。
@@ -17,7 +17,7 @@ QKE 监控告警是通过云监控服务 CloudSat 为集群服务器的资源和
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 
@@ -85,4 +85,4 @@ QKE 监控告警是通过云监控服务 CloudSat 为集群服务器的资源和
 
    > **说明**
    >
-   > 若需要删除或修改告警策略，请点击**管理告警策略**进入云监控 CloudSat 的**平台告警策略**页面进行操作，具体说明请参见**云监控 CloudSat** [告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
+   > 若需要删除或修改告警策略，请点击**管理告警策略**进入云监控 CloudSat 的**平台告警策略**页面进行操作，具体说明请参见**云监控 CloudSat** [告警服务](/monitor_service/cloudsat/manual/alarm_service/)。

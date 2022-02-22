@@ -1,7 +1,7 @@
 ---
 title: "Metadata 服务"
 description: 介绍 AppCenter 的 metadata 服务。
-keyword: QingCloud, 青云, AppCenter, metadata
+keyword: 云平台, AppCenter, metadata
 draft: false
 collapsible: false
 weight: 4
@@ -9,7 +9,7 @@ weight: 4
 
 ## 基本信息
 
-青云 AppCenter 的 metadata service 是在 etcd 基础之上进行了二次开发，主要增加了 self 属性，即每个节点只能从该服务获取到自身相关的信息，如本机 IP、server ID 等，
+AppCenter 的 metadata service 是在 etcd 基础之上进行了二次开发，主要增加了 self 属性，即每个节点只能从该服务获取到自身相关的信息，如本机 IP、server ID 等，
 此项目已在 [github](https://github.com/yunify/metad) 上开源。
 
 ## 元数据结构
@@ -200,11 +200,11 @@ hosts|hosts 分角色保存节点信息，如果没有角色，就直接保存�
 ip|节点私有 IP 地址
 eip|节点绑定的公网 IP 地址，默认为空
 mac|节点 mac 地址
-sid|节点 server ID，青云调度系统自动为每个节点分配的从1开始的整数。
-gid|节点 group ID，青云调度系统自动为每个组分配的从1开始的整数，每一个节点和它的 replica 组成一个 group，即它们的 gid 相同，这个是为分片式分布式系统(多主多从，每个主和它的从为同一个组)提供的特性。
-gsid|节点 global server ID，青云调度系统自动为每个节点分配的全球唯一的9位随机整数 ID。
-node_id|节点 node ID，青云调度系统自动为每个节点分配的节点 ID，是一个以 cln- 开头的唯一标识，此 ID 不会变更。
-instance_id|节点云服务器 ID，青云调度系统自动为每个节点分配的云服务器 ID，是一个以i-开头的唯一标识，此 ID 是云服务器的 hostname，每次启动都会变更，如关闭集群然后启动集群，该节点 instance ID 可能会变更。
+sid|节点 server ID，云平台调度系统自动为每个节点分配的从1开始的整数。
+gid|节点 group ID，云平台调度系统自动为每个组分配的从1开始的整数，每一个节点和它的 replica 组成一个 group，即它们的 gid 相同，这个是为分片式分布式系统(多主多从，每个主和它的从为同一个组)提供的特性。
+gsid|节点 global server ID，云平台调度系统自动为每个节点分配的全球唯一的9位随机整数 ID。
+node_id|节点 node ID，云平台调度系统自动为每个节点分配的节点 ID，是一个以 cln- 开头的唯一标识，此 ID 不会变更。
+instance_id|节点云服务器 ID，云平台调度系统自动为每个节点分配的云服务器 ID，是一个以i-开头的唯一标识，此 ID 是云服务器的 hostname，每次启动都会变更，如关闭集群然后启动集群，该节点 instance ID 可能会变更。
 cpu|节点 CPU 核数
 memory|节点内存大小， 单位 MiB。
 volume_size |节点数据盘大小， 单位 GiB。
@@ -261,7 +261,7 @@ reserved_ips |本节点预留 ip 地址. 这个目录下开发者可以定义多
 参数 | 描述         
 | - | - |
 app_id|集群所属的应用 ID
-cluster_id|集群 ID，用户在创建应用的时候青云调度系统自动生成的一个以 cl- 开头的唯一标识，如 cl-0u0a6u1j。
+cluster_id|集群 ID，用户在创建应用的时候云平台调度系统自动生成的一个以 cl- 开头的唯一标识，如 cl-0u0a6u1j。
 user_id |用户 ID，创建该集群的用户，如 usr-5DJhqhIN。
 global_uuid|集群全球唯一 ID，用户在进入部署应用页面时自动生成的全球唯一标识，这个 ID 可用于需要生成 licence 的应用使用。
 cluster_tag|集群以及通过 api 创建的资源所绑定的 tag_id
@@ -277,7 +277,7 @@ upgrade-audit|升级操作时，临时保存升级版本信息，from_app_versio
   env 保存用户可修改的应用参数，key 为参数名，value 为具体参数值。<br>
   例：Redis 节点可通过 /env/maxclients 获取用户配置的 maxclients 数值来更新 redis.conf<br>
   
-  对于参数类型是 accesskey 的参数，在其原来目录下，青云调度系统会添加 /access_key_id 和 /secret_access_key 两个子目录，分别存储 API 密钥ID 和私钥。
+  对于参数类型是 accesskey 的参数，在其原来目录下，云平台调度系统会添加 /access_key_id 和 /secret_access_key 两个子目录，分别存储 API 密钥ID 和私钥。
 ### adding-hosts
 
   adding-hosts 临时保存新加入的节点信息，当 scale out (添加节点)操作完成之后这个子目录下的信息会随之消失。云服务器信息参见 [hosts](#host)。
@@ -292,7 +292,7 @@ upgrade-audit|升级操作时，临时保存升级版本信息，from_app_versio
 
 ### cmd
 
-  cmd 表示本节点需要执行的命令。开发者不需要用到这类信息，这是青云调度系统转发并执行应用命令，如启动应用命令等。
+  cmd 表示本节点需要执行的命令。开发者不需要用到这类信息，这是云平台调度系统转发并执行应用命令，如启动应用命令等。
   > 开发者只需要在模板中定义命令即可，详情参见[云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 参数 | 描述         
@@ -301,7 +301,7 @@ vertical-scaling-roles |表示当前正在进行纵向扩容的角色节点名�
 
 ## 测试
 
-在创建好一个集群后，登录到任意一个节点，在文件 /etc/confd/confd.toml 里找到 nodes 这一行(这个文件是青云调度系统在用户创建集群的时候自动生成的)，这一行定义的是 metadata server 的 IP 地址，任取一个 IP，运行下面命令即可看到所有信息。注明：同一 VPC 里所有集群这个文件内容相同。
+在创建好一个集群后，登录到任意一个节点，在文件 /etc/confd/confd.toml 里找到 nodes 这一行(这个文件是云平台调度系统在用户创建集群的时候自动生成的)，这一行定义的是 metadata server 的 IP 地址，任取一个 IP，运行下面命令即可看到所有信息。注明：同一 VPC 里所有集群这个文件内容相同。
 
 `curl http://[IP]/self`
 

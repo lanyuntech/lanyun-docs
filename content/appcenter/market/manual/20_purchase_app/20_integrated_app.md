@@ -1,28 +1,21 @@
 ---
 title: "购买 SaaS 应用"
-description: 介绍如何在青云上开通 SaaS 应用。
-keyword: QingCloud, 青云, AppCenter, 云市场, SaaS 应用
+description: 介绍如何开通 SaaS 应用。
+keyword: 云平台AppCenter, 云市场, SaaS 应用
 weight: 20
 draft: false
 ---
 
-## 查找 SaaS 应用
 
-青云 QingCloud 为青云用户和 QingCloud AppCenter 服务商提供了以下方式进行应用查看。
+用户和服务商可以在应用中心购买 SaaS 应用。
 
-- 登录[云市场](https://marketplace.qingcloud.com/)，进入云市场，可查看 QingCloud 出品的 SaaS 应用。
+## 操作步骤
 
-  ![](../../../_images/um_saas_app.png)
+1. 登录管理控制台。
 
-- 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需的 SaaS 应用。
+2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
 
-  <img src="../../../_images/um_saas_appcenter.png" style="zoom:50%;" />
-
-## 购买 SaaS 应用
-
-如下**以登录 QingCloud 管理控制台开通 SaaS 应用为例**进行说明。
-
-1. 在应用详情中，点击**立即开通** (或 **立即购买**），进入应用开通或应用购买页面。
+3. 找到需要购买的 SaaS 应用，在应用详情中，点击**立即开通** (或 **立即购买**），进入应用开通或应用购买页面。
 
    <img src="../../../_images/um_open_saasapp.png" style="zoom:40%;" />
 

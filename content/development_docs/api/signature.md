@@ -4,14 +4,14 @@ description: Test description
 draft: false
 weight: 6
 collapsible: false
-keyword: 秘钥签名, QingCloud, 青云, 签名方法, API
+keyword: 秘钥签名, 云平台, 签名方法, API
 ---
 
 这里介绍 API 请求中签名 ( signature ) 的生成方法。您可以根据实际情况选择使用 **API 密钥** 或 [IAM](../../../authorization/iam/) **身份** 来完成签名。
 
 ## API 密钥签名
 
-您需要先在控制台创建[API密钥](https://console.qingcloud.com/access_keys/)，获得 accesss_key_id 和 secret_access_key，这里我们假设
+您需要先在控制台创建 API 密钥，获得 accesss_key_id 和 secret_access_key，这里我们假设
 
 ```
 access_key_id = 'QYACCESSKEYIDEXAMPLE'
@@ -203,7 +203,7 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunIns
 
 您需要先到IAM控制面板创建一个基于特定信任载体类型的身份，并将身份绑定到 API 执行设备上。
 
-这里我们假设您的 API 执行设备为 QingCloud 广东 2 区 id 为 i-7lchv5u3 的云服务器：
+这里我们假设您的 API 执行设备为广东 2 区 id 为 i-7lchv5u3 的云服务器：
 
 ![iam_role](../../../authorization/iam/_images/iam_role.png)
 

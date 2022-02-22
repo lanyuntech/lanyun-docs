@@ -1,28 +1,20 @@
 ---
 title: "购买 License 应用"
 description: 购买 License 应用
-keyword: QingCloud, 青云, AppCenter, 云市场, License 应用
+keyword: 云平台AppCenter, 云市场, License 应用
 weight: 30
 draft: false
 ---
 
-## 查找 License 应用
+用户和服务商可以在应用中心购买 License 应用。
 
-青云QingCloud 为青云用户和 QingCloud AppCenter 服务商提供了以下方式进行应用查看。
+## 操作步骤
 
-- 登录[云市场](https://marketplace.qingcloud.com/)，进入云市场，可查看 QingCloud 出品的 License 应用。
+1. 登录管理控制台。
 
-  <img src="../../../_images/um_license_appmarket.png" style="zoom:50%;" />
+2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
 
-- 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需的集成应用。
-
-  <img src="../../../_images/um_license_app.png" style="zoom:50%;" />
-
-## 购买 License 应用
-
-如下**以登录 QingCloud 管理控制台开通 License 应用为例**进行说明。
-
-1. 在应用详情中，点击**立即购买**，进入**应用购买**页面。
+1. 找到需要购买的 License 应用，在应用详情中，点击**立即购买**，进入**应用购买**页面。
 
    <img src="../../../_images/um_app_license.png" style="zoom:50%;" />
 

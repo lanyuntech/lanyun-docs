@@ -33,7 +33,7 @@ draft: false
 
 **Response Item**
 
-https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
+[应用开发模版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications/)
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 | env | String | JSON格式的环境变量值，具体参见开发者文档mustache　|
 | vertical_scaling_policy | String | 节点纵向扩容配置，sequential表示依次扩容，parallel表示同时扩容 |
 | advanced_actions | String | 节点支持的操作，change_vxnet表示切换私网，scael_horizontal表示横向扩容 |
-| agent_installed | boolen | 节点是否安装青云的agent |
+| agent_installed | boolen | 节点是否安装云平台的agent |
 | user_access | Integer | 节点是否支持用户VNC登录，0表示不支持 |
 | gpu_class | Integer | 节点是否支持gpu，0表示不支持，1表示支持 |
 | gpu | Integer | 节点的gpu数量，0表示当前节点没有gpu |
@@ -87,7 +87,7 @@ https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 
 **Example**
 
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)创建的集群为例
+以应用 ZooKeeper 创建的集群为例
 
 _Example Request_:
 

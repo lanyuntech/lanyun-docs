@@ -1,18 +1,18 @@
 ---
 title: "调用流程"
-description: SaaS 应用调用青云平台接口主要流程。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
+description: SaaS 应用调用云平台接口主要流程。
+keyword: 云平台, AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 10
 ---
 
-您可以参照如下方式调用青云平台接口。
+您可以参照如下方式调用云平台接口。
 
 <img src="/appcenter/dev-platform/_images/um_spi_call.png">
 
-访问青云平台，操作步骤如下所示。
+访问云平台，操作步骤如下所示。
 
-1. 进入青云 [SSO](https://account.qingcloud.com/sso/oauth2) 登录页， 登录后获得授权码 code。
+1. 进入云平台 SSO 登录页， 登录后获得授权码 code。
 
    SaaS 实例创建时 SPI 会带上 `cloud_info` 参数，cloud_info 中是访问云环境的地址。
 

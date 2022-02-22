@@ -4,7 +4,7 @@ description: 介绍如何登录 QKE 集群节点
 draft: false
 enableToc: false
 weight: 20
-keyword: 青云, QingCloud, 云计算, QKE, 登录
+keyword: 云平台, 云计算, QKE, 登录
 ---
 
 本小节介绍如何通过客户端节点登录 QKE 集群的主节点及工作节点。

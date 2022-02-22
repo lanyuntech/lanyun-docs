@@ -1,7 +1,7 @@
 ---
 title: "产品动态"
 description: 介绍 AppCenter 云应用开发品台的动态。
-keyword: QingCloud, 青云, AppCenter, 云应用开发
+keyword: 云平台, AppCenter, 云应用开发
 collapsible: false
 weight: 10
 
@@ -21,7 +21,7 @@ product:
 
     - time: 2017-03-23
       title: AppCenter 2.0 正式上线
-      content: 青云QingCloud推出AppCenter 2.0 以应用为中心的全新云服务体系，向企业级用户、应用提供商及开发者提供一整套高效完整的应用交付与运营管理平台，可显著降低云端应用开发、部署及运维的复杂度，帮助企业实现应用交付与管理的标准化。
+      content: AppCenter 2.0 以应用为中心的全新云服务体系，向企业级用户、应用提供商及开发者提供一整套高效完整的应用交付与运营管理平台，可显著降低云端应用开发、部署及运维的复杂度，帮助企业实现应用交付与管理的标准化。
       url: /appcenter/dev-platform/introduction/introduction/
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "应用管理"
 description: 介绍如何管理应用。
-keyword: QingCloud, 青云, AppCenter, 应用管理 
+keyword: 云平台AppCenter, 应用管理 
 weight: 40
 draft: false
 ---
@@ -10,11 +10,9 @@ draft: false
 
 ## 查看已安装的应用
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 点击**应用管理**，进入**应用管理**的**已安装的应用**页面。
 
@@ -26,11 +24,9 @@ draft: false
 
 ## 查看分享给我的应用
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 点击**应用管理**，进入**应用管理**页面。
 
@@ -44,11 +40,9 @@ draft: false
 
 ## 查看我开发的应用
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 点击**应用管理**，进入**应用管理**页面。
 

@@ -3,14 +3,14 @@ title: "配置负载均衡器访问服务"
 description: 介绍如何为服务配置负载均衡器访问方式。
 draft: false
 weight: 20
-keyword: 青云, QingCloud, 云计算, 容器, QKE
+keyword: 云平台, 云计算, 容器, QKE
 ---
 
 您可以为您部署在集群的服务指定通过负载均衡器的方式提供外网访问。
 
 ## 背景信息
 
-QKE 从 `v1.0.1` 版本起集成了 [QingCloud 负载均衡器插件](https://github.com/yunify/qingcloud-cloud-controller-manager) ，支持将 KubeSphere 内部的服务和 QingCloud IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。
+QKE 从 `v1.0.1` 版本起集成了 [云平台负载均衡器插件](https://github.com/yunify/qingcloud-cloud-controller-manager) ，支持将 KubeSphere 内部的服务和 IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。
 
 LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud-controller-manager/blob/v1.3.4/docs/configure.md)。
 
@@ -20,7 +20,7 @@ LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud
 
 ## 准备工作
 
-您需要在 QingCloud 管理控制台，创建一个用于外部绑定的公网 IP，用于绑定负载均衡器。
+您需要在管理控制台创建一个用于外部绑定的公网 IP，用于绑定负载均衡器。
 
 ## 操作步骤
 
@@ -62,7 +62,7 @@ LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud
 
    - `service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids`
 
-     该 annotation 表示要创建公网类型的负载均衡器。在值输入框中填写您在青云上创建好的公网 IP ID 号，系统会自动创建负载均衡器并绑定此公网 IP。公网 IP 必须是可用状态。
+     该 annotation 表示要创建公网类型的负载均衡器。在值输入框中填写您在云平台上创建好的公网 IP ID 号，系统会自动创建负载均衡器并绑定此公网 IP。公网 IP 必须是可用状态。
 
    - `service.beta.kubernetes.io/qingcloud-load-balancer-type`
 

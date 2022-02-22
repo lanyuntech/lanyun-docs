@@ -1,7 +1,7 @@
 ---
 title: "日志管理"
 description: 介绍如何查看操作日志及错误日志。
-keyword: QingCloud, 青云, AppCenter, 日志
+keyword: 云平台, AppCenter, 日志
 draft: false
 collapsible: false
 weight: 10

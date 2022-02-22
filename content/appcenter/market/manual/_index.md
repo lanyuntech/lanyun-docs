@@ -1,7 +1,8 @@
 ---
-title: "买家操作指南"
+title: "操作指南"
+linkTitle: "操作指南"
 _build:
   render: false
-weight: 50
+weight: 40
 collapsible: true
 ---

@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 应用开发平台
-  vice_title: AppCenter 应用开发平台是一个企业应用标准化开发平台，该平台对青云的合作伙伴及个人都开放，但个人用户不能发布应用到商店供公众使用。
+  vice_title: AppCenter 应用开发平台是一个企业应用标准化开发平台，该平台对合作伙伴及个人都开放，但个人用户不能发布应用到商店供公众使用。
 
 section2:
   title: 应用开发指南

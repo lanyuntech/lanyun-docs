@@ -13,7 +13,7 @@ draft: false
 *   要删除的防火墙已加载规则到云服务器，则需要先调用 [_ApplySecurityGroup_](../apply_security_group/) 将其他防火墙的规则应用到对应云服务器，之后才能被删除。
 *   要删除的防火墙已加载规则到路由器，则需要先调用 [_ModifyRouterAttributes_](../../router/modify_router_attributes/) 并 [_UpdateRouters_](../../router/update_routers/) 将其他防火墙的规则应用到对应路由器，之后才能被删除。
 
-青云系统提供的缺省防火墙不能被删除。
+云平台系统提供的缺省防火墙不能被删除。
 
 **Request Parameters**
 

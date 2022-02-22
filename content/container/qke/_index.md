@@ -7,9 +7,8 @@ type: "product"
 
 section1:
   title: "QKE"
-  vice_title: QKE（QingCloud KubeSphere Engine）集成了云平台的云服务器、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，支持集群自动巡检和修复，支持一键升级到新版本，工单 24 小时随时响应，并由 KubeSphere 核心团队提供专业支持和服务。
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_qke.mp4"
-  video_img: "/images/video.png"
+  vice_title: QKE（Kubernetes Engine）集成了云平台的云服务器、存储、网络等资源，可以在云平台一键部署高可用的 KubeSphere 集群，支持集群自动巡检和修复，支持一键升级到新版本，工单 24 小时随时响应，并由 KubeSphere 核心团队提供专业支持和服务。
+
 
 section2:
   title: 用户手册
@@ -40,13 +39,11 @@ section2:
 section4:
   children:
   - title: 了解：什么是 QKE
-    content: QKE 集成了云平台的云服务器、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，具有简单易用、自动运维、一键扩容等特点。
+    content: QKE 集成了云平台的云服务器、存储、网络等资源，可以在云平台一键部署高可用的 KubeSphere 集群，具有简单易用、自动运维、一键扩容等特点。
     vice_title: 了解的第一步
     children:
     - title: 产品简介
       url: "intro/main/"
-    - title: 产品主页
-      url: "https://www.qingcloud.com/products/kubesphereqke/"
 
   - title: 上手：使用 QKE
     content: 通过易用的 KubeSphere 浏览器界面进行容器创建与管理。

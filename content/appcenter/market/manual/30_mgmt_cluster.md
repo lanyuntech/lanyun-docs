@@ -1,7 +1,7 @@
 ---
 title: "集群管理"
 description: 介绍如何进行集群管理操作。
-keyword: QingCloud, 青云, AppCenter, 集群
+keyword: 云平台AppCenter, 集群
 weight: 30
 draft: false
 ---
@@ -10,11 +10,9 @@ draft: false
 
 ## 管理集群
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**集群管理**，进入**集群管理**页面。
 
@@ -36,11 +34,9 @@ draft: false
 
 ### 基本属性
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**集群管理**，进入**集群管理**页面。
 
@@ -168,7 +164,7 @@ draft: false
 
    > **说明：**
    >
-   > 若您没有创建指标告警策略，点击**创建指标告警策略**，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
+   > 若您没有创建指标告警策略，点击**创建指标告警策略**，创建新的指标告警策略，详细操作请参见[告警服务](/monitor_service/cloudsat/manual/alarm_service/)。
 
    ![](../../_images/choose_mark_alarm.png)
 

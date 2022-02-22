@@ -1,7 +1,7 @@
 ---
 title: "工单管理"
 description: 介绍如何管理云应用工单。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台
+keyword: 云平台, AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 3
@@ -9,7 +9,7 @@ weight: 3
 
 ## 工单管理
 
-工单系统在应用开发平台做了全面升级，开发者或用户可向青云提交工单的同时，也支持用户直接向开发者提交工单。开发者既可以做为用户向青云提交工单，同时也能够接收用户针对开发者所开发的应用接收用户提交的工单。
+工单系统在应用开发平台做了全面升级，开发者或用户可向云平台提交工单，也支持用户直接向开发者提交工单。开发者既可以做为用户向云平台提交工单，同时也能够接收用户针对开发者所开发的应用接收用户提交的工单。
 
 ![工单菜单](/appcenter/dev-platform/platform-manage/_image/ticket-menu.png)
 

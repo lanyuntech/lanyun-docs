@@ -51,7 +51,7 @@ draft: false
 
 **Example**
 
-下列返回结果为应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)
+下列返回结果为应用 ZooKeeper
 
 _Example Request_:
 
@@ -79,7 +79,7 @@ _Example Response_:
       "visibility":"public",
       "status_time":"2017-04-21T02:34:24Z",
       "console_id":"qingcloud",
-      "name":"QingCloud 1.0 - ZooKeeper 3.4.9"
+      "name":"ZooKeeper 3.4.9"
     }
   ],
   "ret_code":0

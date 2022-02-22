@@ -37,7 +37,7 @@ draft: false
 
 **Example**
 
-下列返回结果为应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)
+下列返回结果为应用 ZooKeeper 为例
 
 _Example Request_:
 
