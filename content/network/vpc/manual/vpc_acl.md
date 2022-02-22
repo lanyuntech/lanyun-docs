@@ -1,6 +1,6 @@
 ---
 title: "网关过滤控制(ACL)"
-keyword: QingCloud, 青云, 云计算, VPC, 网关过滤控制, ACL
+keyword: 云计算, VPC, 网关过滤控制, ACL
 description: 介绍如何使用网关过滤控制功能。
 draft: false
 weight: 70
@@ -22,4 +22,4 @@ weight: 70
 
 通过上述配置，可实现拒绝192.168.2.2这个IP地址对192.168.5.0/24这个子网内IP，1000-10000端口范围的访问。
 
-​    
+

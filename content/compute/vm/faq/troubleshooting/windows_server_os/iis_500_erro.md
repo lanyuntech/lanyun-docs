@@ -4,7 +4,7 @@ date: 2021-03-30T00:38:25+09:00
 description: IIS搭建的网站显示“500 - 内部服务器错误”
 weight: 12
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，IIS
+keyword: 云计算, 云服务器，IIS
 ---
 
 ## 概述

@@ -2,13 +2,13 @@
 title: "WordPress QingStor "
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍 WordPress QingStor 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 3
 collapsible: false
 ---
 
-wp-qingstor 是 QingStor 对象存储服务的 WordPress 插件，用于定时备份，自动同步媒体库。
+wp-qingstor 是对象存储服务的 WordPress 插件，用于定时备份，自动同步媒体库。
 
 该插件已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见：[GitHub 项目](https://github.com/yunify/wp-qingstor)。
 
@@ -24,9 +24,9 @@ wp-qingstor 是 QingStor 对象存储服务的 WordPress 插件，用于定时�
 
 ## 前期准备
 
-1. 在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access Key。可参考[获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+1. 在 管理控制台 申请 Access Key。可参考[获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
-2. 在 QingStor 对象存储中，创建一个用于 WrodPress 的 Bucket。详细操作可参考 [创建 Bucket](/storage/object-storage/manual/console/bucket_manage/basic_opt/#创建-bucket)。
+2. 在对象存储中，创建一个用于 WrodPress 的 Bucket。详细操作可参考 [创建 Bucket](/storage/object-storage/manual/console/bucket_manage/basic_opt/#创建-bucket)。
 
 ## 配置
 

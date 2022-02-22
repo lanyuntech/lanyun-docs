@@ -3,7 +3,7 @@ title: "仅对白名单 IP 开放公网访问"
 description: Test descrIPtion
 weight: 20
 draft: false
-keyword: QingCloud, 云计算, 青云, NAT网关, DNAT
+keyword: 云计算, NAT网关, DNAT
 ---
 
 本文介绍如何通过配置安全组规则实现向指定 IP 提供公网访问服务。

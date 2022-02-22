@@ -3,7 +3,7 @@ title: "Liunx 云服务器重启后无法获取 IP"
 description: 解决 Linux 云服务器重启后无法获取 IP 的问题
 weight: 10
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Linux，重启
+keyword: 云计算, 云服务器，Linux，重启
 ---
 
 ## 问题描述

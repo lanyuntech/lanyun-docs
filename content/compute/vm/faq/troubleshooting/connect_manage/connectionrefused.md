@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 端口无法连接如何解决
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，端口连接
+keyword: 云计算, 云服务器，端口连接
 ---
 
 ## 背景信息
@@ -57,7 +57,7 @@ https://www.cnblogs.com/zxg-blog/p/9835263.html
 
 **查看安全组规则是否添加**
 
-登录青云console，选择访问云服务器所属安全组：
+登录云平台console，选择访问云服务器所属安全组：
 
 ![](/compute/vm/_images/anquanzu.png)
 

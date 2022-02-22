@@ -4,18 +4,18 @@ date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 4
 draft: false
-keyword: Dashboard, QingCloud, 青云, 监控面板, CloudSat
+keyword: Dashboard,  监控面板, CloudSat
 ---
 
-Dashboard提供了多资源类型、跨指标类型、跨分区的自定义集中监控服务，用户可根据业务需求，将各类维度的数据集中在同一个面板下，进行统一可视化监控。
+Dashboard 提供了多资源类型、跨指标类型、跨分区的自定义集中监控服务，用户可根据业务需求，将各类维度的数据集中在同一个面板下，进行统一可视化监控。
 
-## Dashboard操作步骤
+## Dashboard 操作步骤
 
-点击导航栏“云监控CloudSat”，选择“监控Dashboard”即可进入。
+点击导航栏“云监控 CloudSat”，选择“监控 Dashboard”即可进入。
 
 ## 创建监控面板
 
-进入监控Dashborad后，系统默认为用户创建一个面板，用户可直接在该面板上进行监控图表的创建。如下图：
+进入监控 Dashborad 后，系统默认为用户创建一个面板，用户可直接在该面板上进行监控图表的创建。如下图：
 
 ![](../_images/create_dashboard.png) 
 
@@ -24,7 +24,7 @@ Dashboard提供了多资源类型、跨指标类型、跨分区的自定义集�
 
 ## 修改监控面板
 
-进入监控Dashboard内，在左侧监控Dashboard面板目录管理列内，可对需要修改的面板进行操作。 如下图，鼠标悬浮在需要修改的面板名称上，点击右侧按钮，可选择具体要执行的修改操作 – 重命名。
+进入监控 Dashboard 内，在左侧监控 Dashboard 面板目录管理列内，可对需要修改的面板进行操作。 如下图，鼠标悬浮在需要修改的面板名称上，点击右侧按钮，可选择具体要执行的修改操作 – 重命名。
 
 ![](../_images/modify_dashboard.png)
 

@@ -2,14 +2,14 @@
 title: "跨区域复制"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍跨区域复制相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 9
 ---
 
 ## 功能介绍
 
-跨区域复制 (Bucket Cross-Region Replication) 允许用户开启跨不同的 QingStor 对象存储区域的 Bucket 自动、异步的复制 Object。它将会对源 Bucket 中的 Object 的改动，包括新建、更新、删除等操作，同步到目标 Bucket。该功能能够很好的提供 Bucket 跨区容灾或满足用户数据复制的需求。
+跨区域复制 (Bucket Cross-Region Replication) 允许用户开启跨不同的对象存储区域的 Bucket 自动、异步的复制 Object。它将会对源 Bucket 中的 Object 的改动，包括新建、更新、删除等操作，同步到目标 Bucket。该功能能够很好的提供 Bucket 跨区容灾或满足用户数据复制的需求。
 
 目标 Bucket 中的 Object 是源 Bucket 中 Object 的精确副本，他们具有相同的对象名、元数据以及数据实体，比如创建时间、所有者以及用户自定义的元数据等.
 
@@ -22,7 +22,7 @@ weight: 9
 - 跨区域复制不会复制 Bucket 级别的子资源，比如 ACL、Policy、Lifecycle、Notification 等。
 
 ## 操作步骤
-1. 进入 QingStor 对象存储的主页面，选择待设置跨区域复制的 Bucket，点击 **右键** > **设置**：
+1. 进入对象存储的主页面，选择待设置跨区域复制的 Bucket，点击 **右键** > **设置**：
 
  ![](/storage/object-storage/_images/set_bucket_replication1.png)
 

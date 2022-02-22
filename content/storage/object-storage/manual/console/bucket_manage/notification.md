@@ -2,14 +2,14 @@
 title: "事件通知"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍事件通知相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 10
 ---
 
 ## 功能介绍
 
-事件通知 (Bucket Notification) 服务，它提供了一种机制，使得当某些指定的事件在 QingStor 对象存储中发生时，能够触发通知或者事件处理。
+事件通知 (Bucket Notification) 服务，它提供了一种机制，使得当某些指定的事件在对象存储中发生时，能够触发通知或者事件处理。
 
 用户可以通过配置该功能，规定当指定对象被删除时，系统发送通知；或者当某图片上传完成时，对该图片进行相关处理，并将处理结果发送至指定 URL 等。
 
@@ -17,10 +17,10 @@ weight: 10
 
 - 配置事件通知规则的用户必须是 Bucket 的所有者。
 
-- 若设置多个事件通知规则，QingStor 对象存储会对每条规则逐一进行检查匹配，最终将可能触发多个事件。
+- 若设置多个事件通知规则，对象存储会对每条规则逐一进行检查匹配，最终将可能触发多个事件。
 
 ## 操作步骤
-1. 进入 QingStor 对象存储的主页面，选择待设置事件通知的 Bucket，点击 **右键** > **设置**：
+1. 进入对象存储的主页面，选择待设置事件通知的 Bucket，点击 **右键** > **设置**：
 
  ![](/storage/object-storage/_images/set_bucket_replication1.png)
 
@@ -63,7 +63,7 @@ weight: 10
 
 ## 消息格式
 
-当触发事件通知时，QingStor 对象存储发出的消息格式如下：
+当触发事件通知时，对象存储发出的消息格式如下：
 
 ```plain_txt
 {
@@ -110,8 +110,8 @@ user_identify |	object |	user_identify 配置	| 是
 user_identify.principal_id |	string |	用户 ID，如 `usr-xxxx`	| 是
 response_elements	| object |	response_elements 的配置 |	是
 response_elements.request_id |	string	| 发起该事件的请求 ID |	是
-qingstor	| object |	QingStor 配置 |	是
-qingstor.schema_version	 | string |	QingStor Schema 的版本 |	是
+qingstor	| object |	 配置 |	是
+qingstor.schema_version	 | string |	 Schema 的版本 |	是
 qingstor.notification_id |	string |	相关联的事件通知规则的 ID |	是
 qingstor.bucket	| object |	 该事件所描述 Object 的所在 Bucket 信息 |	是
 qingstor.bucket.name	 | string	| 该事件所描述 Object 的所在 Bucket 名称 |	是

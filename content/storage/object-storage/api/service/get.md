@@ -1,16 +1,16 @@
 ---
 title: "GET Service"
 description: 本小节主要介绍 GET Service 相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 该 API 用于获取请求者名下的所有 Bucket 列表。
 
 ## 使用限制
 
-- 该 API 不支持匿名请求，请先注册青云账号并 [创建 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key) 后才能调用此 API。
-- 该请求可以用于查询 QingStor 对象存储的 Global Endpoint 下所有区域的 Bucket。Global Endpoint 为：`qingstor.com`。
-- 该请求也可以用于查询 QingStor 对象存储某个区域的 [Zone Endpoint](/storage/object-storage/intro/object-storage/#zone) (如 pek3.qingstor.com)，列出特定区域的 Bucket。
+- 该 API 不支持匿名请求，请先注册云平台账号并 [创建 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key) 后才能调用此 API。
+- 该请求可以用于查询对象存储的 Global Endpoint 下所有区域的 Bucket。Global Endpoint 为：`qingstor.com`。
+- 该请求也可以用于查询对象存储某个区域的 [Zone Endpoint](/storage/object-storage/intro/object-storage/#zone) (如 pek3.qingstor.com)，列出特定区域的 Bucket。
 
 ## 请求语法
 

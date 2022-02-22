@@ -3,7 +3,7 @@ title: "其他"
 description: test
 weight: 30
 draft: false
-keyword: AppCenter, QingCloud, 青云, 云计算
+keyword: AppCenter, 云计算
 ---
 
 ## 运维与监控
@@ -16,5 +16,5 @@ keyword: AppCenter, QingCloud, 青云, 云计算
 
 ## AppCenter
 
-青云支持部署多可用区的APP，前提是该APP集群能支持多可用区部署模式，并且创建APP集群时需要加入多可用区的私有网络， 具体配置方法见[创建VPC网络](/network/vpc/manual/vpcnet/10_create_vpc)。
+云平台支持部署多可用区的APP，前提是该APP集群能支持多可用区部署模式，并且创建APP集群时需要加入多可用区的私有网络， 具体配置方法见[创建VPC网络](/network/vpc/manual/vpcnet/10_create_vpc)。
 

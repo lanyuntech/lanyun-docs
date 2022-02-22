@@ -3,14 +3,14 @@ title: "查看共享给我的资源"
 description: test
 weight: 15
 draft: false
-keyword: 查看共享给我的资源, QingCloud, 青云, 云计算
+keyword: 查看共享给我的资源, 云计算
 ---
 
 资源使用者查看自己参与的资源共享详情。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**资源** ，进入**资源**页签。
+1. 登录 管理控制台，选择**资源** ，进入**资源**页签。
 
 2. 进入**共享给我**，点击共享给我的共享单元名称。
 

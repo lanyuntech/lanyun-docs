@@ -3,7 +3,7 @@ title: "创建文件存储 EPFS"
 date: 2020-01-30T00:39:25+09:00
 description: 本小节主要介绍如何创建文件存储 EPFS
 draft: false
-keyword: 云计算, 青云, QingCloud, 文件存储, EPFS
+keyword: 云计算, 文件存储, EPFS
 weight: 1
 ---
 
@@ -12,7 +12,7 @@ weight: 1
 
 ### 开通 EPFS 服务
 
-1. 登录 [管理控制台](https://console.qingcloud.com/login)，选择 **产品与服务** > **存储** > **文件存储 EPFS**，进入 **文件存储 EPFS** 页面：
+1. 登录 管理控制台，选择 **产品与服务** > **存储** > **文件存储 EPFS**，进入 **文件存储 EPFS** 页面：
 
    ![](/storage/epfs/_images/epfs1.png)
 

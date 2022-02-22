@@ -1,7 +1,7 @@
 ---
 title: "构造请求"
 description: 本小节主要介绍如何构造 VPC 网络相关的 API 请求。 
-keyword: QingCloud, 青云, 云计算, VPC, 请求, api 请求, 构造请求
+keyword: 云计算, VPC, 请求, api 请求, 构造请求
 draft: false
 weight: 10
 collapsible: false
@@ -15,7 +15,7 @@ collapsible: false
 
 | <span style="display:inline-block;width:100px">参数</span> | 描述                                                   | 说明                                      |
 | :--------------------------------------------------------- | :----------------------------------------------------- | :---------------------------------------- |
-| API 入口                                                   | API 调用的 webservice 入口。                           | 统一为：`https://api.qingcloud.com/iaas/` |
+| API 入口                                                   | API 调用的 webservice 入口。                           | - |
 | 公共参数                                                   | 每个 API 调用都需要包含公共参数 。                     | 详见 [公共参数](../parameters)            |
 | 指令名称                                                   | API **action** 指令的名称，例如 `DescribeInstances` 。 | -                                         |
 | 指令参数                                                   | 指令相关配置参数。                                     | -                                         |

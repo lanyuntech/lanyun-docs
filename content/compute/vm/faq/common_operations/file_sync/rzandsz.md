@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何安装使用rz/sz工具
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，rz/sz
+keyword: 云计算, 云服务器，rz/sz
 ---
 
 ## 概述

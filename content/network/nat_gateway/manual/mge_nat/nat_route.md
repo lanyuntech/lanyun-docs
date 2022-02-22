@@ -3,7 +3,7 @@ title: "配置指向 NAT 网关的路由"
 descriptipn: 配置路由表，路由到NAT网关。
 draft: false
 weight: 3
-keyword: QingCloud, 云计算, 青云, NAT网关, NAT
+keyword: 云计算, NAT网关, NAT
 ---
 
 创建 NAT 网关后，需要配置路由规则，将私有网络流量指向 NAT 网关。
@@ -18,7 +18,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入 **NAT 网关**页面。
+1. 登录 管理控制台，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**，进入 **NAT 网关**页面。
 
 2. 在左侧导航中，选择**网络** > **路由表**。
 

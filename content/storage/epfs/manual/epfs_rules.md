@@ -4,7 +4,7 @@ date: 2020-01-30T00:39:25+09:00
 description: 本小节主要介绍如何添加文件存储 EPFS 规则
 draft: false
 weight: 2
-keyword: 云计算, 青云, QingCloud, 文件存储, EPFS
+keyword: 云计算, 文件存储, EPFS
 ---
 
 ## 操作步骤

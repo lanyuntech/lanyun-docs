@@ -1,11 +1,11 @@
 ---
 title: "GET Bucket Statistics"
 description: 本小节主要介绍 GET Bucket Statistics 接口相关操作。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-获取 Bucket 的统计信息 (Statistics)。QingStor 对象存储定义统计信息是 Bucket 的子资源，只有 Bucket 的所有者才能调用。
+获取 Bucket 的统计信息 (Statistics)。对象存储定义统计信息是 Bucket 的子资源，只有 Bucket 的所有者才能调用。
 
 ## 请求语法
 

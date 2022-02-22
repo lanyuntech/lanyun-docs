@@ -2,18 +2,18 @@
 title: "日志归档"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍日志归档相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 draft: false
 weight: 6
 ---
 
 ## 功能概述
 
-QingStor 对象存储日志服务可以将 Bucket 的访问日志以 Object 的形式存储至指定 Bucket 下的指定目录。只有 Bucket 的所有者才有权限设置或关闭该功能。
+对象存储日志服务可以将 Bucket 的访问日志以 Object 的形式存储至指定 Bucket 下的指定目录。只有 Bucket 的所有者才有权限设置或关闭该功能。
 
 ## 操作步骤
 
-1. 进入 QingStor 对象存储的主页面，选择待设置跨区域复制的 Bucket，点击 **右键** > **设置**：
+1. 进入对象存储的主页面，选择待设置跨区域复制的 Bucket，点击 **右键** > **设置**：
 
  ![](/storage/object-storage/_images/set_bucket_logging1.png)
 
@@ -88,7 +88,7 @@ QingStor 对象存储日志服务可以将 Bucket 的访问日志以 Object 的�
 - 推荐设置前缀，避免用户 Object 名与日志文件命名冲突。
 - 如果日志量比较大，一个小时可能会有多个日志文件，则日志文件会按照 `OrderString` 唯一序列号区分。
 - 正常情况下，日志会以 Object 的形式延迟 1-2 小时归档至指定位置。
-- 开启该功能后，归档存储的日志文件会占用存储空间，故，QingStor 对象存储会对其所占存储进行收费。
+- 开启该功能后，归档存储的日志文件会占用存储空间，故，对象存储会对其所占存储进行收费。
 - 日志生成后，用户可以按照普通的 Object 来操作这些文件。
 
 

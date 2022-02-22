@@ -1,13 +1,13 @@
 ---
 title: "Cpp SDK 快速指南"
 description: 本小节主要介绍 Cpp SDK 快速指南相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
 
-在开始使用 SDK 之前，请确认您已经了解 [QingStor 对象存储基本概念](/storage/object-storage/intro/object-storage/#基本概念)，如 Zone，Service，Bucket，Object 等。
+在开始使用 SDK 之前，请确认您已经了解 [对象存储基本概念](/storage/object-storage/intro/object-storage/#基本概念)，如 Zone，Service，Bucket，Object 等。
 
-使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 管理控制台 申请 access key 。
 
 ## 配置文件
 
@@ -32,7 +32,7 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ``` c
     // 由入参分别指定 SDK 输出日志的路径、日志级别、 SDK 的 init 过程和 shutdown 过程是否自动初始化和清理 curl 库的全局资源。
     // 其中，有效的日志级别为 None, Fatal, Error, Warning, Info, Debug, Verbose ，默认日志级别为 None ，即不输出日志。
-    // 如果在程序中的另外的模块使用了 curl 库，QingStor SDK 自动初始化和清理 curl 库的全局资源，可能会引起这些模块功能产生异常。
+    // 如果在程序中的另外的模块使用了 curl 库， SDK 自动初始化和清理 curl 库的全局资源，可能会引起这些模块功能产生异常。
     // 这种情况下如果你希望统一管理 curl 全局资源的初始化及清理工作，请将参数设置为 0 ,否则请设置成 1 .
     QingStor::SDKOptions sdkOptions;
     sdkOptions.logLevel = LogLevel::Verbose;
@@ -42,7 +42,7 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
     QingStor::InitializeSDK(sdkOptions);
 ```
 
-2. 调用 SDK 接口前，需要先指定访问的 Bucket 和 Zone 信息，创建访问句柄。QingStor 对象存储提供两种创建访问句柄的方式:
+2. 调用 SDK 接口前，需要先指定访问的 Bucket 和 Zone 信息，创建访问句柄。对象存储提供两种创建访问句柄的方式:
 
  **方式一：** 通过指定配置文件地址，来创建访问句柄。
 
@@ -67,7 +67,7 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
     qsConfig.timeout_period = 10;
 
     // 在私有云环境中,你可以指定实际配置的 host 地址 和服务端口
-    // 访问 QingStor 公有云服务, 通常无需更改 host 地址 和服务端口.
+    // 访问公有云服务, 通常无需更改 host 地址 和服务端口.
     qsConfig.host = "api.private.com";
     qsConfig.port = 4433;
 
@@ -362,7 +362,7 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 
 ### 获取 Bucket 的访问控制列表
 
-QingStor 对象存储支持 Bucket ACL，是 Bucket 级别的访问控制，用户可将 Bucket 的读、写、或读写权限开放给单个或多个青云 QingCloud 用户。下面我们将演示如何通过 API 接口来获取和设置 Bucket ACL。
+对象存储支持 Bucket ACL，是 Bucket 级别的访问控制，用户可将 Bucket 的读、写、或读写权限开放给单个或多个云平台用户。下面我们将演示如何通过 API 接口来获取和设置 Bucket ACL。
 
 ``` c
     GetBucketACLInput input;
@@ -419,4 +419,4 @@ QingStor 对象存储支持 Bucket ACL，是 Bucket 级别的访问控制，用�
 
 ### 更多操作
 
-所有的 API 调用接口均与上面的示例相似，用户可以查看 [QingStor 对象存储API 文档](/storage/object-storage/api/) 来了解更多信息。
+所有的 API 调用接口均与上面的示例相似，用户可以查看 [对象存储API 文档](/storage/object-storage/api/) 来了解更多信息。

@@ -3,7 +3,7 @@ title: "Windows云服务器内部绑定公网IP"
 description: 如何使用Windows云服务器内部绑定公网IP
 draft: false
 weight: 20
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，公网IP
+keyword: 云计算, 云服务器，Windows，公网IP
 ---
 
 #### 内部绑定方式与外部绑定方式的差异

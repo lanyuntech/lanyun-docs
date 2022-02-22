@@ -4,7 +4,7 @@ date: 2021-02-04T20:38:25+09:00
 description: CentOS6更新yum源
 weight: 40
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，centS6
+keyword: 云计算, 云服务器，centS6
 ---
 
 ## 问题背景

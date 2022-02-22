@@ -1,10 +1,10 @@
 ---
 title: "Append Object"
 description: 本小节主要介绍 Append Object 接口相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
+keyword: 云计算, 对象存储
 ---
 
-用户可以调用该 API 接口以追加写的方式上传对象到 QingStor 对象存储。通过该接口创建的 Object 类型为 `appendable`。
+用户可以调用该 API 接口以追加写的方式上传对象到对象存储。通过该接口创建的 Object 类型为 `appendable`。
 
 ## 使用限制
 
@@ -47,7 +47,7 @@ Authorization: <authorization-string>
 
 ## 响应头
 
-调用该接口后，QingStor 对象存储会返回如下自定义响应头：
+调用该接口后，对象存储会返回如下自定义响应头：
 
 | 名称 | 类型 | 说明 | 是否必选 |
 | ------------------------- | -------- | ------------------------------------------------ | -------- |

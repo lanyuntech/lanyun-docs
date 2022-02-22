@@ -3,7 +3,7 @@ title: "webhook 配置钉钉通知"
 date: 2020-12-01T00:38:25+09:00
 description: test
 draft: false
-keyword: webhook 配置钉钉通知, QingCloud, 青云, CloudSat
+keyword: webhook 配置钉钉通知,  CloudSat
 ---
 
 
@@ -15,7 +15,7 @@ keyword: webhook 配置钉钉通知, QingCloud, 青云, CloudSat
 在钉钉群组中—群设置—智能群助手—添加机器人，群机器人选择“自定义”。  
 ![](../best-practices.assets/webhook_dtalk1.png)  
 
-`在安全设置中需添加自定义关键词“QingCloud”、“告警”、“自动伸缩” 、“定时器”。`  
+`在安全设置中需添加自定义关键词“告警”、“自动伸缩” 、“定时器”。`  
 ![](../best-practices.assets/webhook_dtalk2.png)
 
 ### 二、获取 webhook 地址
@@ -25,13 +25,13 @@ keyword: webhook 配置钉钉通知, QingCloud, 青云, CloudSat
 ![](../best-practices.assets/webhook_dtalk4.png)
 
 ### 三、设置 webhook 通知地址
-在青云控制台—消息中心—消息接收管理—接收人管理中，添加消息接收人，将钉钉机器人的 webhook 地址填写进去后保存。  
+在管理控制台—消息中心—消息接收管理—接收人管理中，添加消息接收人，将钉钉机器人的 webhook 地址填写进去后保存。  
 ![](../best-practices.assets/webhook_dtalk5.png)
-验证 webhook 通知地址  
+验证 webhook 通知地址。 
 ![](../best-practices.assets/webhook_dtalk6.png)
 
 ### 四、配置告警服务
-参照文档[告警服务](/monitor_service/cloudsat/manual/alarm_service/)，配置监控告警项。
+参照文档 [告警服务](/monitor_service/cloudsat/manual/alarm_service/)，配置监控告警项。
 
 ## 验证效果
 ![](../best-practices.assets/webhook_dtalk7.png)

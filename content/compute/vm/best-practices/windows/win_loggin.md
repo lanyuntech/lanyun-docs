@@ -5,7 +5,7 @@ date: 2020-01-30T00:38:25+09:00
 description: 如何在Windows云服务器上配置多用户同时登录
 weight: 20
 draft: false
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，多用户登录
+keyword: 云计算, 云服务器，Windows，多用户登录
 ---
 
 ## Windows云服务器配置多用户同时登录

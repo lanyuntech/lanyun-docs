@@ -3,7 +3,7 @@ title: " Windows 开启音频功能"
 description: 如何在Windows 云服务器上开启音频功能
 draft: false
 weight: 40
-keyword: 云计算, 青云, QingCloud, 云服务器，Windows，音频
+keyword: 云计算, 云服务器，Windows，音频
 ---
 
 ## 适用场景

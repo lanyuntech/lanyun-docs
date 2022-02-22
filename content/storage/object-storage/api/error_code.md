@@ -2,7 +2,7 @@
 title: "错误信息"
 date: 2020-02-28T10:08:56+09:00
 description: 本小节主要介绍错误信息相关内容。
-keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 错误信息
+keyword: 云计算, 对象存储, 错误信息
 draft: false
 weight: 4
 ---
