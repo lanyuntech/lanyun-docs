@@ -27,11 +27,10 @@ keyword: 云计算, 跨区域迁移
 
 ## 镜像迁移
 
-利用跨区复制功能将镜像迁移到新区，如北京3区。
+利用跨区复制功能将镜像迁移到新区。
 
 将已有的自有镜像利用跨区复制到新区。
 
-<img src="../../manual/_images/mirror.png" style="zoom:30%;" />
 
 ## 资源迁移
 
@@ -47,17 +46,13 @@ keyword: 云计算, 跨区域迁移
 
 3. 将新区的**云服务器关机**。
 
-4. 将资源对应关系通过工单告知云平台，需要将老区和新区的资源一一对应，工单标题：[老区迁移]，工单里内容示例：例如：
+4. 将资源对应关系通过工单告知云平台，需要将老区和新区的资源一一对应，工单标题：[老区迁移]，工单里内容示例：
 
-   北京2区资源   迁移到  北京3区C资源
+   例如：
 
-   i-adf12sdfd                    i-sdr12drf
+   ![](/compute/migration/_images/migration_1.png)
 
-   vol-xj2mpzo2               vol-sr2mqjo2
-
-   <img src="../_images/migration_006.png" style="zoom:60%;" />
-
-   通过云平台控制台在新区查看迁移过来的资源，并验证数据完整性。
+   通过管理控制台在新区查看迁移过来的资源，并验证数据完整性。
 
    > **注意**
    >
@@ -71,19 +66,19 @@ keyword: 云计算, 跨区域迁移
 
 1. 创建模板。
 
-   <img src="../_images/topology.png" style="zoom:23%;" />
+   ![](/compute/migration/_images/migration_2.png)
 
 2. 选择**从当前资源抽取模板**。
 
-    <img src="../_images/topology02.png" style="zoom:27%;" />
+   ![](/compute/migration/_images/migration_3.png)
 
 3. 查看生成的网络拓扑（在新旧区均可查看该网络拓扑）。
 
-    ![](../_images/migration_012.png)
+   ![](/compute/migration/_images/migration_4.png)
 
 4. 基于模板在新区一键创建新的资源。
 
-   ![img](../_images/migration_014.png)
+   ![](/compute/migration/_images/migration_5.png)
 
 5. 将新区的**主机关机**；
 
@@ -91,9 +86,8 @@ keyword: 云计算, 跨区域迁移
 
    工单里内容示例：
 
-   请协助将北京2区的资源迁移到北京3区C，资源已经基于资源编排工具创建了，并且所有资源都已经关机，请将北京2区的资源迁移到北京3区C，拓扑ID：tp-65v3jzve。 
+   “请协助将北京2区的资源迁移到北京3区C，资源已经基于资源编排工具创建了，并且所有资源都已经关机，请将北京2区的资源迁移到北京3区C，拓扑ID：tp-65v3jzve。 ”
 
-   <img src="../_images/migration_018.png" alt="img" style="zoom:50%;" />
 
 7. 通过云平台控制台在新区查看迁移过来的资源，并验证数据完整性。
 

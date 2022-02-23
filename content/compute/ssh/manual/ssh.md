@@ -13,19 +13,29 @@ keyword: 云计算, SSH，密钥操作
 
 ### 1. 准备密钥
 
-首先，需要在云平台控制台创建密钥，您也可以使用自己原有的密钥。
+1. 登录 管理控制台。
 
-![](/compute/ssh/manual/_images/creat-sshkey.png)
+2. 选择 **产品与服务** > **云服务器**，在左侧导航栏选择 **SSH密钥**，进入 **SSH密钥** 页面：
+   
+   ![](/compute/ssh/_images/ssh_1.png)
+ 
+3. 点击 **创建**，弹出 **创建SSH密钥** 页面：
+
+    ![](/compute/ssh/_images/ssh_2.png)
+
+    **说明：**
+    - 可选择”创建新密钥对“和”使用已有公钥“。
+
 
 ### 2. 云服务器加载上密钥
 
 您可以在创建云服务器时选择密钥
 
-![](/compute/ssh/manual/_images/creat-instance-key.png)
+![](/compute/ssh/_images/ssh_3.png)
 
-也可以给现有云服务器加载密钥,选择云服务器右键 - ssh 密钥 - 加载
+也可以给现有云服务器加载密钥，选择云服务器，点击右键，选择 **ssh密钥** > **加载**:
 
-![](/compute/ssh/manual/_images/add-instance-key.png)
+![](/compute/ssh/_images/ssh_4.png)
 
 ### 3. 配置好弹性 IP 和防火墙
 
@@ -35,19 +45,19 @@ keyword: 云计算, SSH，密钥操作
 
 如果您用的是 PuTTY ，您需要用 PuTTYgen 将私钥转换为 PuTTY 支持的格式 ( .ppk ) ，点击 Load 加载您的私钥
 
-![](/compute/ssh/manual/_images/putty-key-transmit.png)
+![](/compute/ssh/_images/ssh_5.png)
 
 ### 5. 打开软件，选择密钥
 
 然后在 PuTTY 的配置页面 `Connection` 的 `Auth` 选择您的私钥
 
-![](/compute/ssh/manual/_images/putty-ssh.png)
+![](/compute/ssh/_images/ssh_6.png)
 
 ### 6. 输入 IP 地址
 
 最后，在 `Session` 页面输入 IP 地址，点击 Open
 
-![](/compute/ssh/manual/_images/putty-session.png)
+![](/compute/ssh/_images/ssh_7.png)
 
 
 

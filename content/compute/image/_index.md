@@ -23,15 +23,8 @@ Section2:
 
     
 
+
 section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/image/capture_image_from_snapshot"
-
-
-section4:
   children:
     - title: 了解：什么是镜像
       content: 镜像是一个包含了软件及必要配置的机器模版。

@@ -20,7 +20,7 @@ keyword: 云计算, 镜像
 
 在创建云服务器时，第一步就是选择您青睐的操作系统，如下图所示：
 
-![](/compute/vm/intro/_images/create_instance_choose_image.png)
+![](/compute/image/_images/intro_1.png)
 
 ## 云平台提供的内网镜像源代理
 
