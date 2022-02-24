@@ -10,12 +10,12 @@ keyword: 云计算, 云服务器，数据库集群
 
 ## 配置连接云数据库
 云数据库在购买时，会要求加入到私有网络环境中，因此，同VPC下的云服务器和云数据库都是可以通过内网地址进行连接。
-![](../../../_images/instance_connect_cluster1.png)
+![](/compute/vm/faq/_images/instance_connect_cluster1.png)
 
 ### 私有网络云服务器连接
 **情形一：云服务器和云数据库在同一私有网络，不需要修改配置即可通过内网地址连接。**
 
-![](../../../_images/instance_connect_cluster2.png)
+![](/compute/vm/faq/_images/instance_connect_cluster2.png)
 
 **情形二：云服务器和云数据库在不同私有网络，但是在同一个VPC下面，不需要修改配置即可通过内网地址进行连接。**
 

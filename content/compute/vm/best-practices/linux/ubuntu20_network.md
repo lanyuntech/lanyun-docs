@@ -37,10 +37,6 @@ sudo apt-get update
 
 登录控制台申请网卡，并添加到主机
 
-
-![图片](../../_images/ubuntu20_1.png)
-![图片](../../_images/ubuntu20_2.png)
-
 登录到主机查看网卡 IP 信息，eth1此时没有获取到 IP，需要配置下面网卡信息后才会获取到。
 
 ```

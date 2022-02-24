@@ -15,7 +15,6 @@ bcdedit  /store d:\boot\bcd /set {default} device partition=E:
 bcdedit  /store d:\boot\bcd /set {default} osdevice partition=E:
 ```
 
-![rescue-vm-instance01](/compute/vm/_images/rescue-vm-instance01.png)
 
 ## 操作步骤
 

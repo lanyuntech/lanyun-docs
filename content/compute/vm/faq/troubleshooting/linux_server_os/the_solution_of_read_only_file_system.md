@@ -20,7 +20,6 @@ keyword: 云计算, 云服务器，Linux，文件系统，只读
 
 <img src="../../../_images/the_solution_of_read_only_file_system_2.png" style="zoom:43%;" />
 
-<img src="../../../_images/the_solution_of_read_only_file_system_3.png" style="zoom:55%;" />
 
 ### 重新挂载
 
