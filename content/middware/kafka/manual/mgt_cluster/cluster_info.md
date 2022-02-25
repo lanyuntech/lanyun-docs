@@ -1,7 +1,7 @@
 ---
 title: "查看集群信息"
 description: 在集群创建完毕后，可以在控制台查看已创建的集群信息。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,集群信息
+keyword: 云计算,大数据,消息队列,中间件,Kafka,集群信息
 weight: 10
 draft: false
 ---
@@ -10,16 +10,16 @@ draft: false
 
 ## 前提条件
 
-已获取 QingCloud 管理控制台登录账号和密码，且已获取集群查看权限。
+已获取管理控制台登录账号和密码，且已获取集群查看权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **消息队列与中间件** > **Kafka 服务**，进入 Kafka 集群列表页面。
    
    可查看当前区域集群列表，以及集群基本信息。
 
-    ![](../../../_images/cluster_list.png)
+    ![](../../../_images/kafka_cluster_list.png)
 
 3. 选择目标集群，点击**集群 ID**，进入集群详情页面。
    

@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-HBase on QingCloud AppCenter 集群服务包含 HBase 数据库服务、HDFS 分布式文件系统、Phoenix 查询引擎。压缩格式方面支持 GZIP、BZIP2、LZO、SNAPPY。
+HBase on AppCenter 集群服务包含 HBase 数据库服务、HDFS 分布式文件系统、Phoenix 查询引擎。压缩格式方面支持 GZIP、BZIP2、LZO、SNAPPY。
 
 - 关于 HBase 更多的详细信息，可参阅 [HBase 官方文档](http://hbase.apache.org/book.html)。
 - 关于 Phoenix 查询引擎的详细信息，可参阅
@@ -17,6 +17,5 @@ HBase on QingCloud AppCenter 集群服务包含 HBase 数据库服务、HDFS 分
 
 | 版本   | HBase | Hadoop | Phoenix |
 | :------ | :------ | :------| :------ |
-| QingCloud 1.1 - HBase 1.2.6 | 1.2.6 | 2.7.3 | 4.11.0 |
-| QingCloud 2.0.1 - HBase 2.0.6 | 2.0.6 | 2.7.7 | 5.0.0 |
-| QingCloud 2.1.0 - HBase 2.0.6 | 2.0.6 | 2.7.7 | 5.0.0 |
+| HBase 1.2.6 - v1.1.0 | 1.2.6 | 2.7.3 | 4.11.0 |
+| HBase 2.0.6 - v2.1.0 | 2.0.6 | 2.7.7 | 5.0.0 |

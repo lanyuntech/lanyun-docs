@@ -1,7 +1,7 @@
 ---
 title: "什么是 RocketMQ"
 description: 本小节主要介绍什么是 RocketMQ。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,产品简介
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,产品简介
 draft: false
 enableToc: false
 ---
@@ -10,7 +10,7 @@ enableToc: false
 
 RocketMQ和其他流行的消息系统之间的对比，请查阅[RocketMQ官网](https://rocketmq.apache.org/docs/motivation/#rocketmq-vs-activemq-vs-kafka)。
 
-`RocketMQ on QingCloud AppCenter`将RocketMQ通过云应用的形式在QingCloud AppCenter部署，具有如下特性:
+`RocketMQ on AppCenter`将 RocketMQ 通过云应用的形式在AppCenter部署，具有如下特性:
 
 - 开箱即用
 - 支持横向与纵向在线伸缩
@@ -18,6 +18,6 @@ RocketMQ和其他流行的消息系统之间的对比，请查阅[RocketMQ官网
 - 系统自动运维，降低企业使用成本
 - 提供了[监控告警](https://docs.qingcloud.com/product/operation/alarm)功能更好的管理集群
 - 可通过网页控制台[RocketMQ Console](https://github.com/apache/rocketmq-dashboard)对集群进行可视化管理
-- 自`RocketMQ 4.7.1 - QingCloud 1.1.0`版本开始，新增日志自助获取机制，详情请查阅**文末[FAQ](/middware/rocketmq/faq/how_get_log/)部分**
+- 自`RocketMQ 4.7.1 - v1.1.0`版本开始，新增日志自助获取机制，详情请查阅**文末[FAQ](/middware/rocketmq/faq/how_get_log/)部分**
 
 

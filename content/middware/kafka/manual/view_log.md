@@ -1,12 +1,12 @@
 ---
 title: "查看日志及数据文件"
 description: 在线查看 Kafka 日志、文件
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,查看日志
+keyword: 云计算,大数据,消息队列,中间件,Kafka,查看日志
 weight: 70
 draft: false
 ---
 
-为了更好的查看节点运行情况，青云提供了方便快捷的日志文件获取服务。
+为了更好的查看节点运行情况，提供了方便快捷的日志文件获取服务。
 
 ## 前提条件
 
@@ -14,7 +14,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **消息队列与中间件** > **Kafka 服务**，进入 Kafka 集群管理页面。
 3. 点击集群 ID，进入集群详情页面，可以看到集群每个节点的信息，如节点角色、节点 IP。
 4. 查看 Kafka Manager 日志。
@@ -23,7 +23,7 @@ draft: false
 
    > **说明**  
    > 
-   > Kafka 1.0.0 - QingCloud 1.1.6 及后续新版本：Kafka Manager 安装在客户端节点上，此处**节点 IP** 为**客户端节点 IP 地址**。
+   > Kafka 1.0.0 - v1.1.6 及后续新版本：Kafka Manager 安装在客户端节点上，此处**节点 IP** 为**客户端节点 IP 地址**。
 
    <img src="../../_images/file_viewer_1.png" alt="Kafka Manager 节点日志列表" style="zoom:50%;" /> 
 

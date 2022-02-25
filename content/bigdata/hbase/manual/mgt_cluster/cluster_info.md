@@ -1,6 +1,6 @@
 ---
 title: "集群信息"
-description: 本小节主要介绍如何查看 QingCloud HBase 集群信息。 
+description: 本小节主要介绍如何查看HBase 集群信息。 
 keyword: 云计算,大数据,HBase,HBase 集群信息
 weight: 10
 collapsible: false
@@ -15,7 +15,7 @@ draft: false
 
 - 当每个节点都启动正常后 HBase 集群显示为`活跃`状态，服务状态由`获取中`变为`活跃`状态，表示可正常使用 HBase 服务。
 
-![创建成功](../../../_images/cluster_info.png)
+![创建成功](../../../_images/cluster_list.png)
 
 ## 服务目录
 

@@ -1,7 +1,7 @@
 ---
 title: "步骤一：创建 Kafka 集群"
 description: 通过管理控制台快速创建 Kafka 集群。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,创建集群,快速入门
+keyword: 云计算,大数据,消息队列,中间件,Kafka,创建集群,快速入门
 weight: 10
 draft: false
 ---
@@ -17,7 +17,7 @@ draft: false
       > **说明**
       >
       > 为了保障数据安全，Kafka 集群需要运行在受管私有网络中。
-  + 在 QingCloud AppCenter 中创建一个 Zookeeper 集群，且 Kafka 与 ZooKeeper 需要在同一个 VPC 中。
+  + 创建一个 Zookeeper 集群，且 Kafka 与 ZooKeeper 需要在同一个 VPC 中。
       > **说明**
       >
       > 其他地方创建的 ZooKeeper 集群可能无法识别。
@@ -86,8 +86,8 @@ CPU、内存、节点数量、节点类型和存储容量根据自己实际需�
 
 > **说明**
 > 
-> + Kafka 2.3.1 -QingCloud 2.0.1（包含）之前版本：客户端节点用户名为 ubuntu，初始密码为 kafka。
-> + Kafka 2.3.1 -QingCloud 2.0.1之后版本：客户端节点用户名为 client，初始密码为 client。
+> - Kafka 2.3.1 - v2.0.1（包含）之前版本：客户端节点用户名为 `ubuntu`，初始密码为 `kafka`。
+> - Kafka 2.3.1 - v2.0.1 之后版本：客户端节点用户名为 `client`，初始密码为 `client`。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
