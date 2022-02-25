@@ -16,7 +16,7 @@ keyword: 云计算, 云服务器，连接实例
 
 每个实例 ID （名称）右侧有个显示屏的图标，点击图标将打开一个远程连接 ( VNC ) 的会话
 
-![](/compute/vm/manual/_images/web-signin.png)
+![](/compute/vm/manual/_images/connect_instance_1.png)
 
 ### 输入用户信息
 
@@ -71,17 +71,17 @@ keyword: 云计算, 云服务器，连接实例
 
 在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥** 页面, 点击**创建**，创建SSH 密钥，您也可以使用自己原有的密钥。
 
-<img src="../_images/creat-sshkey.png" style="zoom:33%;" />
+![](/compute/vm/manual/_images/connect_instance_2.png)
 
 #### 2. 云服务器加载上密钥
 
 您可以在创建云服务器时选择密钥。
 
-<img src="../_images/creat-instance-key1.png" style="zoom:40%;" />
+![](/compute/vm/manual/_images/connect_instance_3.png)
 
 也可以给现有云服务器加载密钥,右键点击云服务器 ID，选择**SSH 密钥** > **加载**。
 
-<img src="../../_images/add-instance-key.png" style="zoom:33%;" />
+![](/compute/vm/manual/_images/connect_instance_4.png)
 
 #### 3. 配置好弹性 IP 和防火墙
 

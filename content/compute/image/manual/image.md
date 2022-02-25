@@ -8,17 +8,17 @@ keyword: 云计算, 镜像，捕获镜像
 
 
 ## 通过云服务器备份捕获的镜像
-用户在 "计算" - "云服务器" 先将自己的某个云服务器关机，右键选择"创建备份"，创建可以制作为镜像的备份。 
+点击 **计算** > **云服务器** ，关闭任一云服务器，右键选择 **创建备份**，创建可以制作为镜像的备份。 
 
-![](/compute/vm/intro/_images/create_instance_snapshot.png)
+![](/compute/image/_images/image_1.png)
 
-待备份完成之后，在控制台上选择 "存储" - "备份"，找到之前的备份，并右键选择"制作新镜像"。 
+待备份完成之后，在控制台上选择 **存储** > **备份**，找到之前的备份，并右键选择 **制作新镜像**。 
 
-![](/compute/vm/intro/_images/capture-instance-from-snapshot.png)
+![](/compute/image/_images/image_2.png)
 
-待完成之后，可以在 "计算" - "镜像" - "自有" 中看到刚才创建的镜像。
+待完成之后，可以在 **计算** > **镜像** > **自有** 中看到刚才创建的镜像。
 
-![](/compute/vm/intro/_images/user_defined_image.png)
+![](/compute/image/_images/image_3.png)
 
 
 ## 通过数据盘备份捕获的镜像
@@ -81,9 +81,9 @@ keyword: 云计算, 镜像，捕获镜像
 
 9. 根据云硬盘备份创建用户自定义镜像。 
 
-![](/compute/vm/intro/_images/capture-image-from-vol-snapshot.png)
+![](/compute/image/_images/image_4.png)
 
-创建镜像完成之后，可以在 "计算" - "镜像" - "自有" 中看到刚才创建的镜像。 选择镜像， 并点击 "基于镜像创建云服务器"　可以创建新的云服务器。 
+创建镜像完成之后，可以在 **计算** > **镜像** > **自有** 中看到刚才创建的镜像。 选择镜像， 并点击 **基于镜像创建云服务器** 可以创建新的云服务器。 
 
 
 用户也可以自己制作云硬盘中的分区， 并将已有的镜像的分区逐个上传到云硬盘中；之后再安装好grub和引导文件。

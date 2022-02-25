@@ -21,18 +21,8 @@ Section2:
       content: SSH密钥操作指南
       url: "/compute/ssh/manual/ssh"
 
-    
 
 section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/keypair/attach_key_pairs"
-
-
-
-section4:
   children:
     - title: 了解：什么是SSH密钥
       content: SSH密钥提供更安全的登录方式。

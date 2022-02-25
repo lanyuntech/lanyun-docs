@@ -20,13 +20,10 @@ keyword: 云计算, 云服务器，Linux，多网卡
 
 <span style="color:red">注意事项</span>：申请网卡前需有vpc和私有网络，通过控制台---计算---网卡---申请网卡
 
-![](../../_images/ipwhiz/ipwhiz1.png)
 
 **2、网卡绑定到云服务器**
 
 右键网卡，分配到云服务器，选择云服务器。
-
-![](../../_images/ipwhiz/ipwhiz2.png)
 
 **3、登录云服务器查看网卡**
 

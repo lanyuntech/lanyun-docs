@@ -18,9 +18,6 @@ Section2:
       content: 云服务器简介
       url: "/compute/vm/intro/instance"
 
-    - title: 计费指南
-      content: 云服务器计费指南
-      url: "/compute/vm/billing/reserved_contract"
 
     - title: 快速入门
       content: 云服务器快速入门
@@ -40,17 +37,8 @@ Section2:
       url: "/compute/vm/faq/faq_linkpage/"
 
 
+
 section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/instance/describe_instances"
-
-
-
-
-section4:
   children:
     - title: 了解：什么是云服务器
       content: 云服务器为用户提供开箱即用的操作系统与工具。

@@ -1,8 +1,8 @@
 ---
-title: "自定义数据"
-description: 自定义数据介绍
+title: "用户数据"
+description: 用户数据介绍
 draft: false
-keyword: 云计算, 云服务器，自定义数据
+keyword: 云计算, 云服务器，用户数据
 ---
 
 # User Data 指南
@@ -24,7 +24,7 @@ MetaData 是云平台定义的一组关于云服务器运行参数的字段，�
 1.  JSON 格式：参数与参数值写成 JSON 格式，与目前云平台 API 的提供方式类似。
 2.  ENV 格式：参数与参数值写成类似于系统环境变量的形式，方便 bash 等的读取。
 
-这两个文件，分别命名为 metadata.json 和 metadata.env，默认会放在云服务器 /etc/qingcloud/userdata 目录下（可通过自定义路径更改），用户可自行选择使用其中一种。
+这两个文件，分别命名为 metadata.json 和 metadata.env，默认会放在云服务器的相应目录下（可通过自定义路径更改），用户可自行选择使用其中一种。
 
 目前 MetaData 提供的字段如下：
 
@@ -75,13 +75,13 @@ User Data 为用户自定义的任何格式、任何内容的配置文本或脚�
 
 1） 提供单一字符串。字串长度的最大限制为 4K。 此情况适用于用户的执行逻辑已固定在镜像中，需上传的灵活配置文件较小较简单时。
 
-对于字符串类的 User Data，该字符串默认会被写入云服务器 ```/etc/qingcloud/userdata``` 目录下（可通过自定义路径更改）的 userdata.string 文件供访问。
+对于字符串类的 User Data，该字符串默认会被写入云服务器的相应目录下（可通过自定义路径更改）的 userdata.string 文件供访问。
 
 2） 提供文件打包，添加或覆盖云服务器文件系统内的若干个文件。 压缩包数量限定为一个。压缩包的最大限制为 2M。压缩包格式限定为 zip、tar、tgz 或 tbz。 此情况适用于较大复杂度的 User Data 使用时；或有若干个与 User Data 相关的脚本需共同使用时。
 
 用户打包时需从云服务器的根目录位置开始打包，如此才可包含全路径。云平台系统会将文件从云服务器的根目录起解包至对应位置。
 
-对于包内的内容， 若云服务器为 Linux 则不做限定。 Windows 云服务器必须包含一特别命名的 vbs 脚本，作为执行 User Data 相关任务的入口，此文件为 /etc/qingcloud/userdata 目录下的 userdata.vbs
+对于包内的内容， 若云服务器为 Linux 则不做限定。 Windows 云服务器必须包含一特别命名的 vbs 脚本，作为执行 User Data 相关任务的入口，此文件为 相应目录下的 userdata.vbs
 
 3） 提供可执行脚本代码。内容长度的最大限制为 4K。 此情况适用于开机时自动执行脚本完成软件部署和配置。
 
@@ -89,29 +89,23 @@ User Data 为用户自定义的任何格式、任何内容的配置文本或脚�
 
 ## 操作
 
-1.  操作步骤
+### 操作步骤
 
-想要创建有 User Data 功能的云服务器，首先和创建普通云服务器一样点击“新建”按钮，并选择镜像和云服务器配置。若第二步“选择类型”中选择了挂载硬盘，则硬盘 ID 会反映在 MetaData 的字段中。
+1. 若想使用 User Data 功能，需在新建云服务器的配置高级设置时设置。
 
-<img src="../_images/userdata01.png" style="zoom:25%;" />
+![](/compute/vm/manual/_images/userdate_1.png)
 
-若想使用 User Data 功能，需在新建云服务器的第四步“基本设置”中选择“显示高级选项”。
+2. 在随后显示的 User Data 设置中，若选择“无”，则不使用 User Data 功能。若选择“文本”，则可以手动输入文本或从一个文本文件中读取。metadata 和 userdata.string 文件都会放在默认目录下。用户可以通过输入自定义路径更改其位置。只需在输入文本或上传压缩包时同时指定路径即可。 若路径不合法，则依然使用默认路径。
 
-<img src="../_images/userdata02.png" style="zoom:25%;" />
+![](/compute/vm/manual/_images/userdate_2.png)
 
-在随后显示的 User Data 设置中，若选择“无”，则不使用 User Data 功能。若选择“文本”，则可以手动输入文本或从一个文本文件中读取。
+3. 若选择“执行文件”，则需填入脚本代码。
 
-<img src="../_images/userdata03.png" style="zoom:30%;" />
-
-默认的，metadata 和 userdata.string 文件都会放在 /etc/qingcloud/userdata 目录下。用户可以通过输入自定义路径更改其位置。只需在输入文本或上传压缩包时同时指定路径即可。 若路径不合法，则依然使用默认路径。
-
-若选择“执行文件”，则需填入脚本代码。
-
-<img src="../_images/userdata04.png" style="zoom:50%;" />
+![](/compute/vm/manual/_images/userdate_3.png)
 
 若选择“压缩包”，则需上传一个压缩包。
 
-<img src="../_images/userdata05.png" style="zoom:40%;" />
+![](/compute/vm/manual/_images/userdate_4.png)
 
 最后点击“创建”，就可以创建带有 MetaData 和 User Data 的云服务器。
 

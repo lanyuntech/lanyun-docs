@@ -85,7 +85,7 @@ systemctl disable firewalld.service  #禁用防火墙
 
 远程客户端连接，需要在主机绑定的安全组处添加相应的规则，添加之后点击上方的应用修改。点击主机id进入主机详情页，点击绑定资源的安全组，即可跳转至安全组。
 
-![](../../_images/mysql_install/mysql_install1.png)
+![](/compute/vm/best-practices/_images/mysql_install/mysql_install1.png)
 
 点击添加规则，添加端口并提交后，点击应用修改。
 
