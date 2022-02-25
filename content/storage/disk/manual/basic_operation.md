@@ -13,7 +13,7 @@ keyword: 云计算, 云硬盘, 基本操作指南
 
 ## 创建硬盘
 
-请参见[购买硬盘](/storage/disk/quickstart/create_disk/)。
+请参见[创建硬盘](/storage/disk/quickstart/create_disk/)。
 
 ## 修改硬盘属性
 
@@ -112,19 +112,6 @@ keyword: 云计算, 云硬盘, 基本操作指南
 2. 在弹出的提示框中，单击**确认**。硬盘资源删除后2小时内可在回收站进行恢复。
    ![basic_operation_11](/storage/disk/_images/basic_operation_11.png)
 
-## 硬盘预留合约
-
->**说明**：
->
->该页面仅对以往签署预留合约并且合约状态处于“生效中”或“OPEN 期”的用户可见。
-
-在硬盘列表，单击硬盘 ID 后的预留资源图标<img src="/storage/disk/_images/reserve_resource.png" alt="预留资源" style="zoom:50%;" />，进入硬盘绑定的预留合约详情页。
-
-![basic_operation_12](/storage/disk/_images/basic_operation_12.png)
-
-- 在页面上方，可查看合约生命周期，以及进行合约的续订、退订、配置调整等操作。
-
-- 在页面下方的**预留资源**页签，可从合约中解绑现有硬盘资源或绑定其他硬盘资源。
 
   
 

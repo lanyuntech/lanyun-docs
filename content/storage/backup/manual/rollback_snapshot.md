@@ -17,12 +17,20 @@ keyword: 云计算, 备份, 备份操作
 
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **备份**，进入**备份**页面。
 
+   ![](/storage/backup/_images/rollback_snapshot_1.png)
+
 3. 在备份链列表，点击需要操作的备份链ID，进入备份链详情页面。
 
-4. 在链路的结构示意图中，点击想要删除的增量备份点右侧的 **···**，选择**回滚**，弹出提示框。
+   ![](/storage/backup/_images/rollback_snapshot_2.png)
 
-5. 点击**继续**。
+4. 在链路的结构示意图中，点击想要删除的增量备份点右侧的 **···**，选择**回滚**。
+
+   ![](/storage/backup/_images/rollback_snapshot_3.png)
+
+5. 弹出提示框，点击**继续**。
+
+   ![](/storage/backup/_images/rollback_snapshot_4.png)
 
 6. 选择要回滚的备份点，点击**提交**，开始回滚并应用备份，待回滚完成即可。
 
-   ![回滚应用备份](../_images/回滚应用备份.png)
+   ![](/storage/backup/_images/rollback_snapshot_5.png)

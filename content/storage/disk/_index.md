@@ -8,8 +8,7 @@ type: "product"
 section1:
   title: 硬盘
   vice_title: 云平台提供了多种规格和类型的硬盘，并支持弹性扩展，满足不同场景的业务需求。
-  video: "https://workshop.pek3a.qingstor.com/CloudOperation_100P002C201908_%E8%99%9A%E6%8B%9F%E7%A1%AC%E7%9B%98%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
-  video_img: "/images/video.png"
+  
  
 Section2:
   title: 用户指南
@@ -17,10 +16,6 @@ Section2:
     - title: 产品简介
       content: 硬盘简介
       url: "/storage/disk/intro/introduction/"
-
-    - title: 计费指南
-      content: 硬盘计费指南
-      url: "/storage/disk/billing/price/"
 
     - title: 快速入门
       content: 硬盘快速入门
@@ -44,14 +39,12 @@ section4:
         - title: 产品优势
           url: "/storage/disk/intro/introduction/#产品优势"
 
-        - title: 产品类型
-          url: "/storage/disk/intro/introduction/#产品类型"
 
     - title: 上手：创建硬盘与部署应用
       content: 硬盘为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
-        - title: 购买硬盘
+        - title: 创建硬盘
           url: "/storage/disk/quickstart/create_disk/"
 
         - title: 硬盘扩容

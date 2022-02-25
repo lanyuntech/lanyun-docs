@@ -39,7 +39,7 @@ keyword: 云计算, 云硬盘, linux, 扩容,系统盘
 
    ![expan_linux_sys_1](/storage/disk/_images/expan_linux_sys_1.png)
 
-2. 关闭操作系统，选择要扩容系统盘的云服务器，在**更多操作**中选择**调整规格**。点击“+”或直接输入容量值，对系统磁盘进行扩容操作：
+2. 关闭操作系统，选择要扩容系统盘的云服务器，在**更多操作**中选择**更改配置**。点击“+”或直接输入容量值，对系统磁盘进行扩容操作：
 
    ![expan_linux_sys_2](/storage/disk/_images/expan_linux_sys_2.png)
 

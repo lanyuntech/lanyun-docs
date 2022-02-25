@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 共享存储
-  vice_title: 云平台提供两种共享存储：企业级分布式 SAN（NeonSAN）和 Virtual SAN（vSAN）以匹配不同业务场景，实现稳定高效、安全可靠、灵活便捷的存储服务
+  vice_title: 云平台提供Virtual SAN（vSAN），实现稳定高效、安全可靠、灵活便捷的存储服务
  
 
 Section2:
@@ -17,9 +17,6 @@ Section2:
       content: Virtual SAN 共享存储产品用户使用文档
       url: "/storage/share/manual/vsan"
 
-    - title: NeonSAN
-      content: 企业级分布式 SAN (NeonSAN)使用文档
-      url: "/storage/share/manual/neonsan_volume"
 
 section4:
   children:

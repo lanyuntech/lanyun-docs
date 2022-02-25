@@ -22,14 +22,6 @@ Section2:
       url: "/storage/backup/manual/create_snapshot/"
 
 section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/snapshot/apply_snapshots"
-
-
-section4:
   children:
     - title: 了解：什么是备份
       content: 备份为用户提供开箱即用的操作系统与工具。
