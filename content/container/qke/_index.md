@@ -13,15 +13,12 @@ section1:
 section2:
   title: 用户手册
   children:
-  - title: 最新动态
-    content: 版本发布动态
-    url: "news/prodoct_news/"
-  - title: 计费指南
-    content: 介绍 QKE 集群价格
-    url: "pricing/main/"
   - title: 产品简介
     content: 介绍 QKE 集群
     url: "intro/main/"
+  - title: 计费指南
+    content: 介绍 QKE 集群价格
+    url: "pricing/main/"
   - title: 快速入门
     content: 介绍如何创建及访问 QKE 集群
     url: "quickstart/create_qke/"
