@@ -1,6 +1,5 @@
 ---
 title: "计费说明"
-date: 2020-12-01T00:38:25+09:00
 description: test
 draft: false
 keyword: 计费说明, CloudSat

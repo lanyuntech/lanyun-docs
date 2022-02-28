@@ -1,6 +1,5 @@
 ---
 title: "监控概览"
-date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 3
 draft: false

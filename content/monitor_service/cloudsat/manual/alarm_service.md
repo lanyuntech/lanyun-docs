@@ -1,6 +1,5 @@
 ---
 title: "告警服务"
-date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 7
 draft: false

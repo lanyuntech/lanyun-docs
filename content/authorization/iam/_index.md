@@ -13,10 +13,6 @@ section1:
 section2:
   title: IAM 用户文档
   children:
-    - title: 最新动态
-      content: 2020-11-12 产品资源类身份支持[上海1区]<br>2020-09-13 产品资源类身份支持[亚太2区-A]
-      url: "news/product_news"
-  
     - title: 产品介绍
       content: 访问鉴权管理相关产品介绍。
       url: "introduction/glossary"

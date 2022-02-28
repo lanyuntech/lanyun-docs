@@ -1,6 +1,5 @@
 ---
 title: "自定义监控上报数据规范"
-date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 10
 draft: false

@@ -2,7 +2,6 @@
 title: "如何使用身份"
 description: 介绍 IAM 如何使用身份。
 keyword: IAM , 使用身份, 代入身份
-date: 2020-02-28T10:08:56+09:00
 draft: false
 weight: 45
 ---

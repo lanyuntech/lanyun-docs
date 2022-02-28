@@ -1,6 +1,5 @@
 ---
 title: "自定义监控"
-date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 8
 draft: false

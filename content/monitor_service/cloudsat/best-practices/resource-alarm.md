@@ -1,6 +1,5 @@
 ---
 title: "通过分组管理和告警功能构建大批量资源监控告警机制"
-date: 2020-12-01T00:38:25+09:00
 description: test
 draft: false
 keyword: 分组管理, 监控告警机制, CloudSat
