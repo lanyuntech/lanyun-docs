@@ -12,9 +12,6 @@ section1:
 section2:
   title: 用户指南
   children:
-  - title: 动态与公告
-    content: etcd 产品动态
-    url: "/middware/etcd/news/product_news"
   - title: 产品简介
     content: 什么是 etcd 集群
     url: "/middware/etcd/intro/introduction"

@@ -3,7 +3,7 @@ title: "动态与公告"
 _build:
  render: false 
 description:
-draft: false
+draft: true
 collapsible: true
 weight: 10
 ---

@@ -6,7 +6,7 @@ weight: 12
 draft: false
 ---
 
-在配置[VPN](https://docs.qingcloud.com/product/network/vpn)或[端口转发](https://docs.qingcloud.com/product/network/appcenter_network_config/config_portmapping)后，用户可在浏览器中打开控制台进行操作。比如控制台节点的IP地址是`172.23.5.18`，则打开：`http://172.23.5.18:8080/`，默认用户密码为`admin/password`。
+在配置[VPN](/network/vpc/manual/vpn/)或[端口转发](/network/vpc/faq/methods_of_port_forwarding/)后，用户可在浏览器中打开控制台进行操作。比如控制台节点的IP地址是`172.23.5.18`，则打开：`http://172.23.5.18:8080/`，默认用户密码为`admin/password`。
 
 ![](../../_images/console_login.png)
 
