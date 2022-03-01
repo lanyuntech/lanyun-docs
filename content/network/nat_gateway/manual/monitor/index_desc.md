@@ -1,7 +1,7 @@
 ---
 title: "监控指标说明"
 descriptipn: 介绍 NAT 网关支持的监控指标。
-draft: false
+draft: true
 weight: 1
 keyword: 云计算, NAT网关, NAT, SNAT, DNAT
 ---

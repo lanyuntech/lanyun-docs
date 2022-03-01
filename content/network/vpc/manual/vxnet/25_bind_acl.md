@@ -23,19 +23,22 @@ weight: 25
 
 4. 在页面左侧的私有网络列表中，右键单击待绑定网络ACL的私有网络，选择 **网络 ACL**  > **绑定**，便可绑定已创建的网络 ACL。
 
-   <img src="/network/vpc_2.0/_images/502025_bind_acl.png" alt="bind_acl" style="zoom:50%;" />
+   ![](/network/vpc/_images/25_bind_acl_1.png)
 
 5. 点击私有网络列表右侧 **网络 ACL** 页签，便可查看到具体的 ACL 规则。
 
-   <img src="/network/vpc_2.0/_images/502025_acl_page.png" alt="acl_page" style="zoom:50%;" />
 
 ## 后续操作
 
 根据需要，您还可在当前页面执行如下操作：
 
 - 切换网络 ACL：点击**切换 ACL**，选择需要绑定的其他网络 ACL，点击**提交**。
+
 - 解绑网络 ACL：点击**解除绑定**，在提示框中点击**确认**。
+
 - 添加 ACL 规则：点击**添加 ACL 规则**，可创建新的网络 ACL 规则。
+
 - 修改 ACL 规则：勾选待修改的网络 ACL 规则，点击**更多操作** > **修改 ACL** 规则，可修改所选 ACL 规则。
+
 - 删除 ACL 规则：勾选待删除的网络 ACL 规则，点击**更多操作** > **删除 ACL** 规则，可删除所选 ACL 规则。
 

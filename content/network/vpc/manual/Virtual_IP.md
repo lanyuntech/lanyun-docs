@@ -25,15 +25,9 @@ weight: 50
 
 可以展示出当前虚拟 IP 被哪台云服务器占用，并且点击跳转到云服务器详情页
 
-![](../_images/vip_3.png)
-
-![](../_images/vip_4.png)
-
-![](../_images/vip_2.png)
+![](/network/vpc/_images/virtual_ip_1.png)
 
 可以随时删除虚拟 IP 而不会影响网络转发，即便当前虚拟 IP 被占用
-
-![](../_images/vip_5.png) 
 
 ## 应用操作示例
 

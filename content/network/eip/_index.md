@@ -21,10 +21,6 @@ Section2:
       content: 计费指南
       url: "billing/price/"
 
-    - title: 快速入门
-      content: 快速入门
-      url: "quickstart/ipv6_quick_start/"
-
     - title: 操作指南
       content: 操作指南
       url: "manual/ipv4/inband_ipv4/"
