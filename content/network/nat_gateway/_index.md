@@ -21,10 +21,6 @@ section2:
       content: NAT 网关计费说明
       url: "billing/nat_price/"
 
-    - title: 快速入门
-      content: 快速上手使用 NAT 网关
-      url: "quickstart/snat_qs/"
-      
     - title: 操作指南
       content: NAT 网关详细操作指导
       url: "manual/mge_nat/create_nat/"
@@ -63,15 +59,6 @@ section4:
         - title: 产品简介
           url: "intro/nat_gateway/"
 
-    - title: 上手：NAT 网关操作
-      content: 多台云服务器可以通过 NAT 网关的公网 IP 访问互联网或提供公网服务。
-      vice_title: 上手的第一步
-      children:
-        - title: 通过 SNAT 功能实现访问公网服务
-          url: "quickstart/snat_qs/" 
-
-        - title: 通过 DNAT 功能实现提供公网服务
-          url: "quickstart/dnat_qs/" 
 
 ---
 
