@@ -23,7 +23,7 @@ Section2:
 
     - title: 操作指南
       content: 操作指南
-      url: "manual/ipv4/inband_ipv4/"
+      url: "manual/ipv4/outband_ipv4/"
 
     #- title: 最佳实践
     #  content: 最佳实践
@@ -64,12 +64,7 @@ section4:
       children:
         - title: 外部绑定 IPv4 公网 IP
           url: "manual/ipv4/outband_ipv4/" 
-        - title: 内部绑定 IPv4 公网 IP
-          url: "manual/ipv4/inband_ipv4/"  
-        - title: 外部绑定 IPv6 公网 IP
-          url: "manual/ipv6/outband_ipv6/"      
-        - title: 内部绑定 IPv6 公网 IP
-          url: "manual/ipv6/inband_ipv6/"  
+
 
 ---
 
