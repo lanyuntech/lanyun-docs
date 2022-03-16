@@ -63,8 +63,9 @@
 
   <!-- {{ partial "footer.html" . }} -->
   {{ partialCached "scripts.html" . }}
+
   <script>
-    window.location.replace('/compute/vm/intro/instance/')
+    window.location.href = window?.LOCATIONURL
   </script>
 </body>
 

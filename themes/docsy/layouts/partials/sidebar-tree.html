@@ -33,7 +33,7 @@
       {{ $root := . }}
       {{ range .Site.Sections }}
       {{ if not .Params.not_show}}
-      {{ template "render-menu" (dict "ctx" . "root" $root "depth" 0)}}
+      {{ template "render-menu" (dict "ctx" . "root" $root "depth" 0 "lastTitle" .Title)}}
       {{ end }}
       {{ end }}
     </div>
@@ -43,6 +43,7 @@
 {{ $root := .root }}
 {{ $ctx := .ctx }}
 {{ $depth := .depth }}
+{{ $lastTitle := .lastTitle}}
 {{ $currentURL := $root.Permalink }}
 
 {{ $sectionName1 := index (last 2 (split $ctx "/")) 0 }}
@@ -55,25 +56,26 @@
 {{ if not $ctx.Params.not_show }}
 {{ if $ctx.Params.Collapsible }}
 <span class="menu__title--collapse {{ if $active }}active{{ end }} "
-  data-depth="{{ $depth }}" title="{{ $ctx.Title }}">
-  {{ $ctx.Title }}
+  data-depth="{{ $depth }}" title="{{ $ctx.Title }}" data-title="{{ $lastTitle }}">
+   {{ $ctx.Title }}
   <span
     class="menu__title--icon {{ if $active }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
   </span>
 </span>
-<ul class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }} {{ end }}"
-  data-data={{ print "/" $sectionName1 "/"}} data-link={{ .root.Permalink }} >
+<ul  class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }} {{ end }}"
+  data-data={{ print "/" $sectionName1 "/"}} data-link={{ .root.Permalink }} data-title="{{ $lastTitle }}" >
   {{ range $ctx.Pages.ByWeight }}
   {{ if .Params.Collapsible }}
-  {{ template "render-menu" (dict "ctx" . "root" $root "depth" (add $depth 1)) }}
+  {{ $currentTitle := add $lastTitle .Title}}
+  {{ template "render-menu" (dict "ctx" . "root" $root "depth" (add $depth 1) "lastTitle" ($currentTitle)) }}
   {{ else }}
   {{ $lastUrlElement1 := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
   {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
   {{ $length := len .Title}}
-  <li>
+  <li data-t="{{ $lastUrlElement1 }}{{$lastUrlElement2}}">
     <a href="{{ .Permalink }}"
       class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }} {{ if ge $length 50 }}more-space{{end}}"
-      data-depth="{{ $depth }}" title="{{ .Title }}">{{ .Title }}</a>
+      data-depth="{{ $depth }}" title="{{ .Title }}" data-title="{{ .Title }}">{{ .Title }}</a>
   </li>
   {{ end }}
   {{ end }}
@@ -91,5 +93,4 @@
 {{ end }}
 {{ end }}
 {{ end }}
-
 <script src="/js/sidebar-tree.js"></script>
