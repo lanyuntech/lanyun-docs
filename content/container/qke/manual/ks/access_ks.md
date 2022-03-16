@@ -3,7 +3,7 @@ title: "登录 KubeSphere"
 description: 本小节介绍如何在本地通过公网访问 KubeSphere。
 draft: false
 weight: 10
-keyword: 云平台, 云计算, 容器, QKE, KubeSphere
+keyword: 云平台, 容器, QKE, KubeSphere
 ---
 
 如果您安装了 KubeSphere，则可以使用浏览器登录 KubeSphere 控制台。
@@ -79,5 +79,4 @@ KubeSphere 控制台以 NodePort 的形式暴露在端口 30880。
    配置完成后，您就可以使用 `http://VPC公网IP:端口/` 地址来访问 KubeSphere 了。登录页面如下图：
 
    ​	![](../../../_images/kubesphere-login.png)
-
 
