@@ -17,7 +17,7 @@ keyword: 主备回切, 灾备管理
 
    ![](/operation/disaster_recovery/_images/switch_back_1.png)
 
-2. 点击 **开始反向同步**，返回灾备组详情页面，根据页面提示，点击灾备中心下 **准备回切，停止备区业务运行**：
+2. 点击 **开始反向同步**，返回灾备组详情页面，根据页面提示，点击灾备中心下方 **准备回切，停止备区业务运行**：
 
    ![](/operation/disaster_recovery/_images/switch_back_2.png)
 
