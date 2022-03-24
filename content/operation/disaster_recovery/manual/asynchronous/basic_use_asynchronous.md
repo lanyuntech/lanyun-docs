@@ -1,11 +1,14 @@
 ---
-title: "灾备管理基本操作"
+title: "异步灾备基本操作"
 date: 2021-05-21T00:38:25+09:00
-description: 本小节主要介绍灾备管理的基本操作。
+description: 本小节主要介绍同步灾备管理的基本操作。
 draft: false
 weight: 1
-keyword: 灾备管理
+keyword: 灾备管理 , 同步灾备
 ---
+## 前提条件
+
+异步灾备系统由主站点、备站点以及分别部署在主备站点的 MRGW 三部分构成。主站点与备站点是两个相互独立的 NeonSAN 集群，其配置可不同，如节点数量、服务器型号等。MRGW 用于接收主站点发来的数据，并将数据写入备站点的 NeonSAN 集群。
 
 ## 创建灾备组
 
@@ -17,7 +20,7 @@ keyword: 灾备管理
 
 3. 点击 **开始创建灾备组**，进入 **创建灾备组** 页面：
 
-   ![](/operation/disaster_recovery/_images/basic_use_2.png)
+   ![](/operation/disaster_recovery/_images/basic_use_asynchronous_1.png)
 
 4. 配置灾备组基本信息，配置完成后，点击 **下一步**。相关参数说明如下：
 
@@ -27,7 +30,7 @@ keyword: 灾备管理
 
 5. 选择需受灾备保护的资源，然后点击 **>** 按钮：
 
-   ![](/operation/disaster_recovery/_images/basic_use_3.png)
+   ![](/operation/disaster_recovery/_images/basic_use_asynchronous_2.png)
 
    > **说明：**
    >
@@ -35,7 +38,11 @@ keyword: 灾备管理
 
 6. 点击灾备中心资源后的 **修改**，可修改配置，提交后，点击 **下一步**：
 
-   ![](/operation/disaster_recovery/_images/basic_use_10.png)
+   ![](/operation/disaster_recovery/_images/basic_use_asynchronous_3.png)
+
+   - 可配置生产中心出现故障时，灾备中心重新拉起云服务器时的规格。 
+   - RPO：数据恢复点目标，指应用发生故障时预期的数据丢失量。根据实际情况进行配置，最低配置为5。
+   - 备区副本数量：根据实际情况进行配置，可配置为1，2，3。
 
 7. 进入 **预检查** 页面，如下所示。当检查项结果均为 **通过** 时，会自动创建灾备组，点击 **完成创建**。
 
