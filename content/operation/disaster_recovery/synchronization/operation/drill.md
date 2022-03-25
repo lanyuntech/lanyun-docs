@@ -21,7 +21,7 @@ keyword: 主备演练, 灾备管理
    
    - 演练名称：配置主备演练的名称。
 
-   - 资源启动方式：可在配置策略时修改，详情请参见[配置策略](/operation/disaster_recovery/manual/view_details#配置策略)。
+   - 资源启动方式：可在配置策略时修改，详情请参见[配置策略](/operation/disaster_recovery/synchronization/operation/view_details#配置策略)。
 
 2. 返回灾备组详情页面，状态变为 **演练中**：
 

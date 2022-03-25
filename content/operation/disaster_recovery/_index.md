@@ -16,11 +16,11 @@ section2:
   children:
     - title: 产品简介
       content: 产品简介
-      url: "intro/introduction"
+      url: "introduction"
 
     - title: 操作指南
       content: 学习上手如何创建灾备组等。
-      url: "manual/basic_use"
+      url: "synchronization/operation/basic_use"
 
 
 ---
