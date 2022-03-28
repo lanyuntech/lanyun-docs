@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 工单服务
-  vice_title: 用户在使用青云产品的过程中，遇到问题或者需要帮助时可以通过工单服务，寻求青云的客户服务支持。
+  vice_title: 用户在使用产品的过程中，遇到问题或者需要帮助时可以通过工单服务，寻求云平台的客户服务支持。
   #video: ""
   #video_img: "/images/video.png"
 

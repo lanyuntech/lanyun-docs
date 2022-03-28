@@ -4,7 +4,7 @@ description: Redis Cluster 的架构
 draft: false
 weight: 5
 enableToc: false
-keyword: Redis Cluster, QingCloud, Redis 集群架构
+keyword: Redis Cluster,  Redis 集群架构
 ---
 
 Redis Cluster 基于[开源 Redis 集群](https://redis.io/topics/cluster-spec)，采用无中心架构，对服务器进行分片，每个分片都是主从结构，包含一个主节点（Master）和 N 个从节点（Slave），支持主从复制和主节点自动故障转移，保证了集群的可靠性，适用于海量数据、高并发、高可用场景。

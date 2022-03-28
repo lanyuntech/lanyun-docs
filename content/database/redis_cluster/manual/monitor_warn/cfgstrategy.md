@@ -85,4 +85,4 @@ Redis Cluster 监控告警是通过云监控服务 CloudSat 为集群服务器�
 
    > **说明**
    >
-   > 若需要删除或修改告警策略，请点击**管理告警策略**进入云监控 CloudSat 的**平台告警策略**页面进行操作，具体说明请参见**云监控 CloudSat** [告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
+   > 若需要删除或修改告警策略，请点击**管理告警策略**进入云监控 CloudSat 的**平台告警策略**页面进行操作。

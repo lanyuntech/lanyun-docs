@@ -18,8 +18,6 @@ section1:
     - title: Harbor 镜像仓库
       url: "/container/harbor/intro/introduction/"
 
-    - title: Docker 镜像仓库
-      url: "/container/dockerhub/intro/introduction/"
 
 ---
 

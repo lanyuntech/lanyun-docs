@@ -30,7 +30,7 @@ weight: 10
 
 ## 产品价格
 
-QKE 集群的基础资源费用可以通过 [价格计算器](https://www.qingcloud.com/pricing#/KubeSphere) 获取价格详情。
+QKE 集群的基础资源费用可以通过价格计算器获取价格详情。
 
 依赖的其他资源费用以产品实际公布的价格为准。
 

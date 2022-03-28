@@ -16,9 +16,6 @@ section1:
     - title: 硬盘
       url: "/storage/disk/intro/introduction"  
 
-    - title: 共享存储
-      url: "/storage/share/intro/introduction" 
-
     - title: 备份
       url: "/storage/backup/intro/introduction"   
 

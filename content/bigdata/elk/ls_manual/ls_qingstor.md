@@ -98,4 +98,3 @@ Logstash 支持从 QingStor 对象存储输入数据到 Elasticsearch，或者�
    }
    ```
 
-   关于`logstash-input/output-qingstor`插件的更多细节信息请查看[相关文档](https://docs.qingcloud.com/qingstor/third_party_integration/index.html)。

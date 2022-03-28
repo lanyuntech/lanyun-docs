@@ -11,7 +11,7 @@ collapsible: false
 
 ## API 密钥签名
 
-您需要先在控制台创建[API密钥](https://console.qingcloud.com/access_keys/)，获取 accesss_key_id 和 secret_access_key。
+您需要先在控制台创建API密钥，获取 accesss_key_id 和 secret_access_key。
 
 例如请求参数如下:
 
