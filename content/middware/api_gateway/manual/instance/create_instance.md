@@ -8,7 +8,7 @@ draft: false
 weight: 10
 ---
 
-通过青云QingCloud 云平台 API 网关服务，您可以快速创建 API 网关专享实例。
+通过云平台 API 网关服务，您可以快速创建 API 网关专享实例。
 
 本小节主要介绍如何快速创建 API 网关专享实例。
 

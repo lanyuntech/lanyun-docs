@@ -3,7 +3,7 @@ title: "消息接受配置"
 description: test
 weight: 15
 draft: false
-keyword: 消息接受配置, QingCloud, 青云, 财务, 运维消息, 配置消息, 用户服务
+keyword: 消息接受配置, 财务, 运维消息, 配置消息, 用户服务
 ---
 
 ## 消息类别介绍
@@ -62,7 +62,7 @@ keyword: 消息接受配置, QingCloud, 青云, 财务, 运维消息, 配置消�
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录管理控制台。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **消息接收配置**。
 4. 配置消息接收方式。
@@ -75,7 +75,7 @@ keyword: 消息接受配置, QingCloud, 青云, 财务, 运维消息, 配置消�
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录管理控制台。
 
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 

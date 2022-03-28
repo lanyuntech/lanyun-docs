@@ -3,7 +3,7 @@ title: "接收人管理"
 description: test
 weight: 20
 draft: false
-keyword: 接收人管理, QingCloud, 青云, 修改接收人, 删除接收人, 用户服务
+keyword: 接收人管理, 修改接收人, 删除接收人, 用户服务
 ---
 
 ## 新增接收人
@@ -12,7 +12,7 @@ keyword: 接收人管理, QingCloud, 青云, 修改接收人, 删除接收人, �
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录管理控制台。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **接收人管理**。
 4. 点击**新增接收人**。
@@ -35,7 +35,7 @@ keyword: 接收人管理, QingCloud, 青云, 修改接收人, 删除接收人, �
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录管理控制台。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **接收人管理**。
 4. 点击待修改的接收人右侧的“修改”。
@@ -56,7 +56,7 @@ keyword: 接收人管理, QingCloud, 青云, 修改接收人, 删除接收人, �
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录管理控制台。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **接收人管理**。
 4. 点击待删除的接收人右侧的**删除**。
@@ -73,7 +73,7 @@ keyword: 接收人管理, QingCloud, 青云, 修改接收人, 删除接收人, �
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录管理控制台。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **接收人管理**。
 4. 点击未验证的邮箱或手机号码右侧的三角图标重新发送验证。

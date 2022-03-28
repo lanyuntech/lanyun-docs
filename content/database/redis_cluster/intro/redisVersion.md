@@ -4,7 +4,7 @@ description: Redis 版本特性说明。
 draft: false
 weight: 9
 enableToc: false
-keyword: Redis Cluster, QingCloud, 版本
+keyword: Redis Cluster, 版本
 ---
 
 介绍 Redis Cluster 不同版本支持的新特性。

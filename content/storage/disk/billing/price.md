@@ -4,7 +4,7 @@ date: 2021-09-06T00:38:25+09:00
 description: 本小节主要介绍云硬盘的计费模式。
 draft: false
 weight: 1
-keyword: 云计算, 青云, QingCloud, 云硬盘, 计费说明
+keyword: 云计算, 云硬盘, 计费说明
 ---
 
 ## 计费模式
@@ -26,7 +26,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 计费说明
 
   - 按需计费的硬盘，在资源被删除成功后停止计费。
 
-- 价格计算：详情可参考[价格计算器](https://www.qingcloud.com/pricing#/Volume) 。
+- 价格计算：详情可参考价格计算器。
 
 ## 变更计费模式
 

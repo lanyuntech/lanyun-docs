@@ -37,7 +37,7 @@ Redis 6.* 版本提供了`多线程生产环境`、`单线程生产环境`、`�
 
 ## 产品定价
 
-Redis Cluster 的定价，请参考[详细价格信息](https://www.qingcloud.com/pricing#/RedisCluster)。
+Redis Cluster 的定价，请参考详细价格信息。
 
 更多关于价格及计费的说明，请参见[计费说明](../../billing/price/)。
 

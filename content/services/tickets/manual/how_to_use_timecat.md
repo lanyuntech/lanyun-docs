@@ -4,7 +4,7 @@ description: Test description
 weight: 60
 draft: false
 enableToc: false
-keyword: QingCloud, 青云, 添加扩展, 用户服务
+keyword: 添加扩展, 用户服务
 ---
 
 ## 安装 TimeCat 

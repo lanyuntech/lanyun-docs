@@ -13,7 +13,7 @@ collapsible: false
 
 ## 基本步骤
 
-1. 登录 [SSO](https://account.qingcloud.com/sso/oauth2) API 管理平台。
+1. 登录 SSO API 管理平台。
 2. 获取授权码 code。
 
    SaaS 实例创建时 SPI 会带上 `cloud_info` 参数，cloud_info 中是访问云环境的地址。
