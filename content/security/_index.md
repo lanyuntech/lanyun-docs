@@ -10,12 +10,6 @@ icon: "/images/icons/index/product-icon-safety.svg"
 
 section1:
   children:
-    - title: 高防IP
-      url: "/security/antiddos_ip/intro/introduction/"
-    - title: Web 应用防火墙
-      url: "/security/waf/intro/introduction/"
-    - title: 云防火墙
-      url: "/security/firewall/intro/intro/"
     - title: 安全组
       url: "/security/security_group/intro/introduction/"
     - title: 秘钥管理服务

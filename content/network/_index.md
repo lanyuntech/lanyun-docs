@@ -22,7 +22,5 @@ section1:
     - title: 边界路由器
       url: "/network/border_router/intro/border_router/"
       
-    - title: CDN 服务
-      url: "/network/cdn/intro/cdn/"
 ---
 
