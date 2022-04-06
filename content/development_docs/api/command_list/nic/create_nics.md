@@ -40,7 +40,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateNics
+https://api.xxxxx.com/iaas/?action=CreateNics
 &vxnet=vxnet_1234567
 &COMMON_PARAMS
 ```

@@ -41,7 +41,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeVpcBorders
+https://api.xxxxx.com/iaas/?action=DescribeVpcBorders
 &verbose=1
 &vpc_borders.0=irt-2zevtm67
 &zone=pek3

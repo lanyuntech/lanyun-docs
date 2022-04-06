@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeEipsBillingMode
+https://api.xxxxx.com/iaas/?action=ChangeEipsBillingMode
 &eips.1=eip-r4jnbhui
 &billing_mode=traffic
 &zone=pek3a

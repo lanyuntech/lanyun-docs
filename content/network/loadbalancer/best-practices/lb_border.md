@@ -310,7 +310,7 @@ draft: false
       <span style="color:#60D978;">北京演示云服务器1</span>
 </h1>
 <p style="text-align:center;">
-        青云@QingCloud
+        xx@xxxxx
 </p>	
 
 ```

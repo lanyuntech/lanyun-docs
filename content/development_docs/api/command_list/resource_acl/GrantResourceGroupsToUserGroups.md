@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GrantResourceGroupsToUserGroups
+https://api.xxxxx.com/iaas/?action=GrantResourceGroupsToUserGroups
 &rur_set.1.resource_group=rg-c7hmvt8u
 &rur_set.1.user_group=ug-tvj8mhxc
 &rur_set.1.group_role=gr-tirat7zw

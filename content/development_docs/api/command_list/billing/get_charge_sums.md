@@ -56,7 +56,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetChargeSums
+https://api.xxxxx.com/iaas/?action=GetChargeSums
 &user=usr-abcd1234
 &duration=total
 &zone=gd2
@@ -90,7 +90,7 @@ _Example Response_:
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetChargeSums
+https://api.xxxxx.com/iaas/?action=GetChargeSums
 &user=usr-abcd1234
 &duration=total
 &zone=gd2

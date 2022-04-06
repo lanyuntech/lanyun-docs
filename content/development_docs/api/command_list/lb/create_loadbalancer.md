@@ -37,7 +37,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateLoadBalancer
+https://api.xxxxx.com/iaas/?action=CreateLoadBalancer
 &eips.1=eip-1234abcd
 &COMMON_PARAMS
 ```

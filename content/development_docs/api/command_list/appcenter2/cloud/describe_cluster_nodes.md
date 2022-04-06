@@ -92,7 +92,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeClusterNodes
+https://api.xxxxx.com/iaas/?action=DescribeClusterNodes
 &cluster=cl-q1witcdk
 &limit=20
 &reverse=1

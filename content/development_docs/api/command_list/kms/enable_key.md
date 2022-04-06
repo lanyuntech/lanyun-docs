@@ -27,7 +27,7 @@ weight: 35
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=EnableKey
+https://kms.api.xxxxx.com/?action=EnableKey
 &key_id=
 &COMMON_PARAMS
 ```

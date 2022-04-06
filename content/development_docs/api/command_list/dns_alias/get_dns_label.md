@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetDNSLabel
+https://api.xxxxx.com/iaas/?action=GetDNSLabel
 &zone=pek3a
 &COMMON_PARAMS
 ```
@@ -41,7 +41,7 @@ _Example Response_:
 {
   "action": "GetDNSLabelResponse",
   "dns_label": "xwxjic",
-  "domain_name": "xwxjic.gd2.qingcloud.com",
+  "domain_name": "xwxjic.gd2.xxxxx.com",
   "ret_code":0
 }
 ```

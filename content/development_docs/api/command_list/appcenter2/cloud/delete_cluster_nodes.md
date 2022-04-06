@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?
+https://api.xxxxx.com/iaas/?
 action=DeleteClusterNodes
 &cluster=cl-q1witcdk
 &force=0

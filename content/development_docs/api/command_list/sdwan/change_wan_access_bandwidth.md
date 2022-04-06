@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeWanAccessBandwidth
+https://api.xxxxx.com/iaas/?action=ChangeWanAccessBandwidth
 &wan_access=wacc-fub9b1eo
 &bandwidth_type=elastic
 &bandwidth=1

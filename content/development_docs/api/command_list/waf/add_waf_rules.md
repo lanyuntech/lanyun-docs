@@ -52,7 +52,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddWAFRules
+https://api.xxxxx.com/iaas/?action=AddWAFRules
 &rule_group=wafcg-32yt310g
 &rules.1.list_name=test_waf
 &rules.1.description=test_waf_desc

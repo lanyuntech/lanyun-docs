@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateSecurityGroup
+https://api.xxxxx.com/iaas/?action=CreateSecurityGroup
 &security_group_name=specify
 &zone=pek3a
 &COMMON_PARAMS

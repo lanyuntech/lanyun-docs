@@ -50,7 +50,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2SharedTargets
+https://api.xxxxx.com/iaas/?action=DescribeS2SharedTargets
 &s2_shared_targets.1=s2st-o0lf1gqu
 &verbose=1
 &COMMON_PARAMS
@@ -68,10 +68,10 @@ _Example Response_:
       "root_user_id":"usr-cT9nUFvT",
       "s2_server_id":"s2-nx0yvxqg",
       "shared_target_id":"s2st-o0lf1gqu",
-      "export_name":"iqn.2014-12.com.qingcloud.s2:sn.test",
+      "export_name":"iqn.2014-12.com.xxxxx.s2:sn.test",
       "enabled":1,
       "target_type":"ISCSI",
-      "console_id":"qingcloud",
+      "console_id":"xxxxx",
       "controller":"self",
       "create_time":"2015-02-13T00:36:55Z",
       "volumes":{},

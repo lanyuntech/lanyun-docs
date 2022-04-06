@@ -15,7 +15,6 @@ draft: false
 | domain_policies.n | String | WAF域名防护策略ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[公共参数](https://docs.qingcloud.com/product/api/common/parameters)
 
 **Response Elements**
 
@@ -41,7 +40,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeWAFDomainPoliciesResponse
+https://api.xxxxx.com/iaas/?action=DescribeWAFDomainPoliciesResponse
 &domain_policies.1=wafdp-uv6qtfm5
 &zone=pek3a
 &COMMON_PARAMS

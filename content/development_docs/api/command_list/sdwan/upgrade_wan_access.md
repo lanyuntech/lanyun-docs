@@ -32,7 +32,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=UpgradeWanAccess
+https://api.xxxxx.com/iaas/?action=UpgradeWanAccess
 &wan_accesss.1=wacc-fub9b1eo
 &bandwidth=10
 &zone=pek3a

@@ -44,7 +44,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSubUsers
+https://api.xxxxx.com/iaas/?action=DescribeSubUsers
 &limit=20
 &offset=0
 &COMMON_PARAMS

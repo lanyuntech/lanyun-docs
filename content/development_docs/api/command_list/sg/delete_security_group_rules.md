@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSecurityGroupRules
+https://api.xxxxx.com/iaas/?action=DeleteSecurityGroupRules
 &security_group_rules.1=sgr-13cooxdd
 &security_group_rules.2=sgr-c25rz9c1
 &security_group_rules.3=sgr-191d8eb5

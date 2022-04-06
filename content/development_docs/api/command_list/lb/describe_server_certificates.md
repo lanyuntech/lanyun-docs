@@ -47,7 +47,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeServerCertificates
+https://api.xxxxx.com/iaas/?action=DescribeServerCertificates
 &server_certificates.1=sc-1234abcd
 &COMMON_PARAMS
 ```

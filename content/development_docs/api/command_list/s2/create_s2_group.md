@@ -36,7 +36,7 @@ S2 Group权限组包含可访问共享目标的一组用户，将权限组和共
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateS2Group
+https://api.xxxxx.com/iaas/?action=CreateS2Group
 &group_type=NFS_GROUP
 &group_name=nfstest
 &s2_accounts.1=s2g-m2k3r0w2

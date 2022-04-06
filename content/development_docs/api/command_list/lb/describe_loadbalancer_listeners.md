@@ -51,7 +51,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeLoadBalancerListeners
+https://api.xxxxx.com/iaas/?action=DescribeLoadBalancerListeners
 &loadbalancers.1=lb-1234abcd
 &verbose=1
 &COMMON_PARAMS

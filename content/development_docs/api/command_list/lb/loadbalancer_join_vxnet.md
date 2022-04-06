@@ -36,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=LoadBalancerJoinVxnet
+https://api.xxxxx.com/iaas/?action=LoadBalancerJoinVxnet
 &vxnet=vxnet-q8f2bu
 &loadbalancer=lb-ciy73nib
 &private_ip=192.168.131.45

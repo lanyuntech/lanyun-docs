@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyAlarmPolicyRuleAttributes
+https://api.xxxxx.com/iaas/?action=ModifyAlarmPolicyRuleAttributes
 &alarm_policy_rule=alpr-13cooxdd
 &alarm_policy_rule_name=demo_rule
 &thresholds=83

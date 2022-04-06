@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CaptureInstanceFromSnapshot
+https://api.xxxxx.com/iaas/?action=CaptureInstanceFromSnapshot
 &snapshot=ss-webd026j
 &image_name=image_from_snapshot
 &zone=gd2

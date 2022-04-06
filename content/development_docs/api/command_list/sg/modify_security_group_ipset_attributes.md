@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifySecurityGroupIPSetAttributes
+https://api.xxxxx.com/iaas/?action=ModifySecurityGroupIPSetAttributes
 &security_group_ipset=sgi-rtyv0968
 &security_group_ipset_name=sample
 &zone=pek3a

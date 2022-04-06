@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DetachFromS2SharedTarget
+https://api.xxxxx.com/iaas/?action=DetachFromS2SharedTarget
 &shared_target=s2st-eawpunuj
 &volumes.1=vol-02x95cwp
 &zone=pek3a

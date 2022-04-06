@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ApplySnapshots
+https://api.xxxxx.com/iaas/?action=ApplySnapshots
 &snapshots.1=ss-wtthl1qq
 &zone=gd2
 &COMMON_PARAMS

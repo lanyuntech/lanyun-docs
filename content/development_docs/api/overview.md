@@ -23,7 +23,7 @@ keyword: API请求, 云平台, API概述, API
 
 | Name | Description | Notes |
 | --- | --- | --- |
-| API入口 | API 调用的 webservice 入口 | 我们的API入口目前统一为：[https://api.qingcloud.com/iaas/](https://api.qingcloud.com/iaas/) |
+| API入口 | API 调用的 webservice 入口 | - |
 | 公共参数 | 每个 API 调用都需要包含公共参数 | 详情可见 [_公共参数_](../parameters/) |
 | 指令名称 | API指令的名称 ( action )，例如 DescribeInstances 等。 | 完整的指令名称列表请参见 [_API指令列表_](../command_list/instance/)。 |
 | 指令参数 | 指令参数请参见每个指令的相关文档。 |   |
@@ -33,13 +33,13 @@ keyword: API请求, 云平台, API概述, API
 一个典型的API请求如下所示，这是一个 DescribeInstances 的API请求:
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+https://api.xxxxx.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
 ```
 
 为了方便查看，我们将文档中的请求都进行换行来显示:
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
+https://api.xxxxx.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 &action=DescribeInstances
 &expires=2013-08-29T07%3A42%3A25Z
 &limit=20

@@ -44,7 +44,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeNotificationCenterUserPosts
+https://api.xxxxx.com/iaas/?action=DescribeNotificationCenterUserPosts
 &post_type.1=failures
 &status.1=new
 &COMMON_PARAMS

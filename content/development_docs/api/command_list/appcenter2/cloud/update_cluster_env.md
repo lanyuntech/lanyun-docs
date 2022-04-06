@@ -29,12 +29,12 @@ draft: false
 
 **Example**
 
-以应用[Redis Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，修改 `max-maxmemory` 和 `hash-max-ziplist-entries`
+以应用[Redis Cluster](https://appcenter.xxxxx.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20xxxxx)为例，修改 `max-maxmemory` 和 `hash-max-ziplist-entries`
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=UpdateClusterEnvironment
+https://api.xxxxx.com/iaas/?action=UpdateClusterEnvironment
 &cluster=cl-2gi2b3oc
 &env=%7B%22maxmemory-percent%22%3A60%2C%22hash-max-ziplist-entries%22%3A1024%7D
 &zone=pek3b

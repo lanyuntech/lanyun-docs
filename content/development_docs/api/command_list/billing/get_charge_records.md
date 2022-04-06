@@ -54,7 +54,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetChargeRecords
+https://api.xxxxx.com/iaas/?action=GetChargeRecords
 &resource=i-jahdgzez
 &zone=gd2
 &COMMON_PARAMS

@@ -25,7 +25,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyGroupRoleAttributes
+https://api.xxxxx.com/iaas/?action=ModifyGroupRoleAttributes
 &group_role=gr-170kkfim
 &description=X1
 &COMMON_PARAMS

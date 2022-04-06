@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateNotificationItems
+https://api.xxxxx.com/iaas/?action=CreateNotificationItems
 &notification_items.1.content=test@example.com
 &notification_items.1.notification_item_type=email
 &notification_items.1.remarks=sysadmin1

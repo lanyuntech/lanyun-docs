@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateAlarmPolicy
+https://api.xxxxx.com/iaas/?action=DissociateAlarmPolicy
 &alarm_policy=alp-hp55o9i5
 &resources.1=i-xxxxx
 &zone=pek3a

@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyImageAttributes
+https://api.xxxxx.com/iaas/?action=ModifyImageAttributes
 &image=img-rtyv0968
 &image_name=sample
 &description=staging_env

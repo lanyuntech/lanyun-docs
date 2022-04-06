@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNicAttributes
+https://api.xxxxx.com/iaas/?action=ModifyNicAttributes
 &private_ip=192.168.1.2
 &COMMON_PARAMS
 ```

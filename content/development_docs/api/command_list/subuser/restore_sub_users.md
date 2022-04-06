@@ -29,7 +29,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=RestoreSubUsers
+https://api.xxxxx.com/iaas/?action=RestoreSubUsers
 &users.1=usr-abcd1234
 &COMMON_PARAMS
 ```

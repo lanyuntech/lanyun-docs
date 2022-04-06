@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddResourceGroupItems
+https://api.xxxxx.com/iaas/?action=AddResourceGroupItems
 &resource_group=rg-c7hmvt8u
 &zone=beta
 &resources.1=i-i8wewg3l

@@ -27,7 +27,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetQuotaLeft
+https://api.xxxxx.com/iaas/?action=GetQuotaLeft
 &resource_types.1=instance
 &resource_types.2=cpu
 &resource_types.3=memory

@@ -44,7 +44,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeLoadBalancerPolicyRules
+https://api.xxxxx.com/iaas/?action=DescribeLoadBalancerPolicyRules
 &loadbalancer_policy=lbp-1234abcd
 &COMMON_PARAMS
 ```
@@ -58,7 +58,7 @@ _Example Response_:
   "loadbalancer_policy_rule_set":[
     {
       "rule_type":"domain",
-      "val":"www.qingcloud.com",
+      "val":"www.xxxxx.com",
       "loadbalancer_policy_rule_id":"lbpr-1234abcd",
       "loadbalancer_policy_rule_name":null,
       "loadbalancer_policy_id":"lbp-1234abcd"

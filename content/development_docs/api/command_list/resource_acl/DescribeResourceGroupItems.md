@@ -28,7 +28,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeResourceGroupItems
+https://api.xxxxx.com/iaas/?action=DescribeResourceGroupItems
 &COMMON_PARAMS
 ```
 

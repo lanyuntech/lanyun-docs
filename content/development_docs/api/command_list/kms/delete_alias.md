@@ -26,7 +26,7 @@ weight: 20
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=DeleteAlias
+https://kms.api.xxxxx.com/?action=DeleteAlias
 &COMMON_PARAMS
 &AliasName=
 ```

@@ -48,7 +48,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAlarmPolicyRules
+https://api.xxxxx.com/iaas/?action=DescribeAlarmPolicyRules
 &alarm_policy=alp-n43jh2pq
 &COMMON_PARAMS
 ```

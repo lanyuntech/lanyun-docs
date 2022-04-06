@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?
+https://api.xxxxx.com/iaas/?
 &action=DescribeClusterEnvironment
 &cluster_id=cl-2gi2b3oc
 &zone=pek3b

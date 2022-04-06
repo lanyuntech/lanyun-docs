@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateVolumeFromSnapshot
+https://api.xxxxx.com/iaas/?action=CreateVolumeFromSnapshot
 &snapshot=ss-zlcorbog
 &volume_name=volume_from_snapshot
 &zone=gd2

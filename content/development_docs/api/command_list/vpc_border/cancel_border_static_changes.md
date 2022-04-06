@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CancelBorderStaticChanges
+https://api.xxxxx.com/iaas/?action=CancelBorderStaticChanges
 &border=irt-2zevtm67
 &zone=pek3
 &COMMON_PARAMS

@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateWAFDomainPolicy
+https://api.xxxxx.com/iaas/?action=CreateWAFDomainPolicy
 &domain_policy_name=test
 &domain_name=*.yunify.com
 &affect_mode=0

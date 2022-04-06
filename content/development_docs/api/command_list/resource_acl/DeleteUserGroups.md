@@ -21,7 +21,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeletUserGroups
+https://api.xxxxx.com/iaas/?action=DeletUserGroups
 &user_groups.1=ug-c7f9gmc6
 &COMMON_PARAMS
 ```

@@ -46,7 +46,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateAlarmPolicy
+https://api.xxxxx.com/iaas/?action=CreateAlarmPolicy
 &alarm_policy_type=eip
 &period=5m
 &zone=pek3a

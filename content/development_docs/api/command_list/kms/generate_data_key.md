@@ -31,7 +31,7 @@ weight: 45
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=GenerateDataKey
+https://kms.api.xxxxx.com/?action=GenerateDataKey
 &COMMON_PARAMS
 &key_id=
 ```

@@ -36,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=RollbackSecurityGroup
+https://api.xxxxx.com/iaas/?action=RollbackSecurityGroup
 &security_group_snapshot=sgs-wx55xhix
 &security_group=sg-q36kwq5r
 &COMMON_PARAMS

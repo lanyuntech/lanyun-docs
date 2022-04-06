@@ -31,7 +31,7 @@ weight: 14
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteBrokers
+https://api.xxxxx.com/iaas/?action=DeleteBrokers
 &instances.1=i-1tv6ffcy
 &zone=gd2
 &COMMON_PARAMS

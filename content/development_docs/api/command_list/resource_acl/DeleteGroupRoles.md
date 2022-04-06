@@ -21,7 +21,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteGroupRoles
+https://api.xxxxx.com/iaas/?action=DeleteGroupRoles
 &group_roles.1=gr-rlj5c72r
 &COMMON_PARAMS
 ```

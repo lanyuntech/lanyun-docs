@@ -69,7 +69,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeWanAccesss
+https://api.xxxxx.com/iaas/?action=DescribeWanAccesss
 &wan_accesss.1=wacc-fub9b1eo
 &zone=pek3a
 &COMMON_PARAMS
@@ -138,7 +138,7 @@ _Example Response_:
         "tunnel_status":"",
         "agent_version":"2.2.9-16664e82"
       },
-      "console_id":"qingcloud",
+      "console_id":"xxxxx",
       "elastic_bandwidth_remote":0,
       "net_mode":1,
       "location_nation":"\u4e2d\u56fd",

@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteLoadBalancerBackends
+https://api.xxxxx.com/iaas/?action=DeleteLoadBalancerBackends
 &loadbalancer_backends.1=lbb-1234abcd
 &loadbalancer_backends.2=lbb-5678hjkl
 &zone=pek3a

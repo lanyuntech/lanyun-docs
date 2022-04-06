@@ -101,7 +101,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetLoadBalancerMonitor
+https://api.xxxxx.com/iaas/?action=GetLoadBalancerMonitor
 &resource=lbl-1234abcd
 &meters.1=request
 &start_time==2014-02-09T21%3A47%3A00.820Z
@@ -143,7 +143,7 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetLoadBalancerMonitor
+https://api.xxxxx.com/iaas/?action=GetLoadBalancerMonitor
 &resource=lbl-1234abcd
 &meters.1=request
 &start_time==2014-02-09T21%3A47%3A00.820Z

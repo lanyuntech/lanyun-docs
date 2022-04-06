@@ -29,7 +29,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteWAFDomainPolicies
+https://api.xxxxx.com/iaas/?action=DeleteWAFDomainPolicies
 &domain_policies.1=wafdp-5yzj3c39
 &zone=pek3a
 &COMMON_PARAMS

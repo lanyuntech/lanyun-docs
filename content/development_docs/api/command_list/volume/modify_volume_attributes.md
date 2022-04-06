@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyVolumeAttributes
+https://api.xxxxx.com/iaas/?action=ModifyVolumeAttributes
 &volume=vol-rtyv0968
 &volume_name=sample
 &zone=pek3a

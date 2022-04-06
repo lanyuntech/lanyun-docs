@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateSecurityGroupIPSet
+https://api.xxxxx.com/iaas/?action=CreateSecurityGroupIPSet
 &ipset_type=1
 &val=10000-15000
 &zone=pek3a

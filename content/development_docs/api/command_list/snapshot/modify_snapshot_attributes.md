@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifySnapshotAttributes
+https://api.xxxxx.com/iaas/?action=ModifySnapshotAttributes
 &snapshot=ss-ijzkgq6r
 &snapshot_name=test
 &description=test

@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyTagAttributes
+https://api.xxxxx.com/iaas/?action=ModifyTagAttributes
 &tag=tag-axbkmf21
 &tag_name=sample
 &zone=pek3a

@@ -30,7 +30,7 @@ WAF功能是依赖于负载均衡器的，所以需要通过修改负载均衡�
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerAttributes
+https://api.xxxxx.com/iaas/?action=ModifyLoadBalancerAttributes
 &loadbalancer=lb-rtyv0968
 &waf_pg=wafpg-3t1b0ldm
 &zone=pek3a

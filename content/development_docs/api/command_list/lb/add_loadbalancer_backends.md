@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddLoadBalancerBackends
+https://api.xxxxx.com/iaas/?action=AddLoadBalancerBackends
 &loadbalancer_listener=lbl-1234abcd
 &backends.1.resource_id=i-1234abcd
 &backends.1.port=80
