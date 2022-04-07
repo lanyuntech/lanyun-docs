@@ -41,7 +41,7 @@ weight: 12
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeInstanceTypes
+https://api.xxxxx.com/iaas/?action=DescribeInstanceTypes
 &instance_types.1=c1m1
 &zone=pek3a
 &COMMON_PARAMS

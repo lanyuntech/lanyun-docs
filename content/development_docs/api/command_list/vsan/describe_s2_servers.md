@@ -100,7 +100,7 @@ nic_id： 网卡ID
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2Servers
+https://api.xxxxx.com/iaas/?action=DescribeS2Servers
 &s2_servers.1=s2-lxqjtu3l
 &verbose=1
 &zone=pek3a
@@ -121,7 +121,7 @@ _Example Response_:
       "sub_code":0,
       "transition_status":"",
       "controller":"self",
-      "console_id":"qingcloud",
+      "console_id":"xxxxx",
       "instance_id":"",
       "service_type":"vsan",
       "root_user_id":"yunify",
@@ -138,7 +138,7 @@ _Example Response_:
         "vxnet_type":1,
         "vxnet_id":"vxnet-ln2mtlk",
         "controller":"self",
-        "console_id":"qingcloud",
+        "console_id":"xxxxx",
         "vxnet_name":"test_s2",
         "root_user_id":"yunify",
         "create_time":"2015-02-02T23:29:13",

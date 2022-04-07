@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=StartLoadBalancers
+https://api.xxxxx.com/iaas/?action=StartLoadBalancers
 &loadbalancers.1=lb-1234abcd
 &zone=pek3a
 &COMMON_PARAMS

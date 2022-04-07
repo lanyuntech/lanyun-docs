@@ -24,7 +24,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyUserGroupAttributes
+https://api.xxxxx.com/iaas/?action=ModifyUserGroupAttributes
 &user_group=ug-c7f9gmc6
 &status=disabled
 &COMMON_PARAMS

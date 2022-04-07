@@ -45,7 +45,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetMonitors
+https://api.xxxxx.com/iaas/?action=GetMonitors
 &resource_meters_pairs.1.resource=i-hpqfipia
 &resource_meters_pairs.1.meters=%5B%22cpu%22%2C%22memory%22%5D
 &resource_meters_pairs.2.resource=i-m39k0aoy

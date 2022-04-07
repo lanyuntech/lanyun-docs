@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=UploadUserDataAttachment
+https://api.xxxxx.com/iaas/?action=UploadUserDataAttachment
 &attachment_content=MTIxMjEyMTIxMjEyMTIxMjEy
 &attachment_name=name1
 &zone=pek3a

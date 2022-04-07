@@ -29,7 +29,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=VerifyNotificationItem
+https://api.xxxxx.com/iaas/?action=VerifyNotificationItem
 &notification_item_content=test@example.com
 &verification_code=xxxxxxxxxxxxxxx
 &COMMON_PARAMS

@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=RevokeImageFromUsers
+https://api.xxxxx.com/iaas/?action=RevokeImageFromUsers
 &image=img-rtyv0968
 &user.1=user-1234
 &zone=pek3a

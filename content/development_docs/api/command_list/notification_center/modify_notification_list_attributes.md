@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNotificationListAttributes
+https://api.xxxxx.com/iaas/?action=ModifyNotificationListAttributes
 &notification_list_id=nl-xxxxx
 &notification_list_name=new_sysadmins
 &COMMON_PARAMS

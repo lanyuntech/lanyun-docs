@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteImages
+https://api.xxxxx.com/iaas/?action=DeleteImages
 &images.1=img-uydrnlax
 &zone=pek3a
 &COMMON_PARAMS

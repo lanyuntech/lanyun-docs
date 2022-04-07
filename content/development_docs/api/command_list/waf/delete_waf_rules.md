@@ -29,7 +29,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteWAFRules
+https://api.xxxxx.com/iaas/?action=DeleteWAFRules
 &rules.1=wafri-0q7fd000
 &zone=pek3a
 &COMMON_PARAMS

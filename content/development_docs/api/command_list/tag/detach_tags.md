@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DetachTags
+https://api.xxxxx.com/iaas/?action=DetachTags
 &resource_tag_pairs.1.tag_id=tag-hp55o9i5
 &resource_tag_pairs.1.resource_type=instance
 &resource_tag_pairs.1.resource_id=i-5yn6js06

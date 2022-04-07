@@ -22,7 +22,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSharedResourceGroups
+https://api.xxxxx.com/iaas/?action=DescribeSharedResourceGroups
 &COMMON_PARAMS
 ```
 

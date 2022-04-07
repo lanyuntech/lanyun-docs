@@ -42,7 +42,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSecurityGroupSnapshots
+https://api.xxxxx.com/iaas/?action=DescribeSecurityGroupSnapshots
 &security_group=sg-n43jh2pq
 &direction=0
 &COMMON_PARAMS

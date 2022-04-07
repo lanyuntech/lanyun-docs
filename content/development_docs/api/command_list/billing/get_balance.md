@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetBalance
+https://api.xxxxx.com/iaas/?action=GetBalance
 &user=usr-abcd1234
 &COMMON_PARAMS
 ```

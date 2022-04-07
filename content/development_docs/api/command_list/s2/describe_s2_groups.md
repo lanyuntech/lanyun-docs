@@ -50,7 +50,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2Accounts
+https://api.xxxxx.com/iaas/?action=DescribeS2Accounts
 &s2_groups.1=s2g-cb7rn8rk
 &verbose=1
 &COMMON_PARAMS

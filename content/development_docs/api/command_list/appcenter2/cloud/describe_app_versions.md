@@ -56,7 +56,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAppVersions
+https://api.xxxxx.com/iaas/?action=DescribeAppVersions
 &app_ids.1=app-tg3lbp0a
 &limit=20
 &COMMON_PARAMS
@@ -78,7 +78,7 @@ _Example Response_:
       "create_time":"2017-04-21T02:34:24Z",
       "visibility":"public",
       "status_time":"2017-04-21T02:34:24Z",
-      "console_id":"qingcloud",
+      "console_id":"xxxxx",
       "name":"ZooKeeper 3.4.9"
     }
   ],

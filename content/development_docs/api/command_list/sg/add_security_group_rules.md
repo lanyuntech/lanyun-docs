@@ -51,7 +51,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddSecurityGroupRules
+https://api.xxxxx.com/iaas/?action=AddSecurityGroupRules
 &rules.1.action=accept
 &rules.1.direction=0
 &rules.1.priority=7

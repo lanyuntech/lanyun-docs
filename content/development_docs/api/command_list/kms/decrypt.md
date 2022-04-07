@@ -29,7 +29,7 @@ weight: 15
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=Decrypt
+https://kms.api.xxxxx.com/?action=Decrypt
 &COMMON_PARAMS
 ```
 

@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyGroupRoleRuleAttributes
+https://api.xxxxx.com/iaas/?action=ModifyGroupRoleRuleAttributes
 &group_role_rule=grr-613v0o2p
 &policy=all.describe
 &COMMON_PARAMS

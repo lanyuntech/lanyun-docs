@@ -32,7 +32,7 @@ keyword: 公共参数, 云平台, API
 >
 >
 >
-> [https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
+> [https://api.xxxxx.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.xxxxx.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
 >
 > &action=RunInstances
 >

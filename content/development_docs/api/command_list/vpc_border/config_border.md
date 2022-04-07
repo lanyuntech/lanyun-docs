@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ConfigBorder
+https://api.xxxxx.com/iaas/?action=ConfigBorder
 &border=irt-2zevtm67
 &operation=ConfigRoute
 &zone=pek3

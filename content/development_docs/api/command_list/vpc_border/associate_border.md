@@ -33,7 +33,7 @@ VPC 路由器关联边界路由器。
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateBorder
+https://api.xxxxx.com/iaas/?action=AssociateBorder
 &border=irt-2zevtm67
 &router=rtr-e5m6sr20
 &zone=pek3

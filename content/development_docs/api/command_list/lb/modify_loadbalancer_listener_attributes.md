@@ -39,7 +39,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerListenerAttributes
+https://api.xxxxx.com/iaas/?action=ModifyLoadBalancerListenerAttributes
 &loadbalancer_listener=lbl-1234abcd
 &balance_mode=roundrobin
 &session_sticky=insert|3600

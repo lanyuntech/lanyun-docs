@@ -35,7 +35,7 @@ qy_secret_access_key: 'QINGCLOUDSECRETACCESSKEYEXAMPLE'
 zone: 'pek3'
 ```
 
-access key 可在 [云平台控制台](https://console.qingcloud.com/access_keys/) 申请。zone 是你的资源所在的节点，可在控制台切换节点的地方查看，如 pek3, gd2, ap2a 等。
+access key 可在 云平台控制台申请。zone 是你的资源所在的节点，可在控制台切换节点的地方查看，如 pek3, gd2, ap2a 等。
 
 配置文件默认放在 ~/.qingcloud/config.yaml ，也可在每次执行命令时以参数 -f /path/to/config 方式来指定，例如:
 

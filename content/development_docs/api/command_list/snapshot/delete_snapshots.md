@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSnapshots
+https://api.xxxxx.com/iaas/?action=DeleteSnapshots
 &snapshots.1=ss-qhnolmyt
 &snapshots.2=ss-ibk50c1o
 &zone=gd2

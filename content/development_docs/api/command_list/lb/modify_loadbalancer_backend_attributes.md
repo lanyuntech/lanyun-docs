@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerBackendAttributes
+https://api.xxxxx.com/iaas/?action=ModifyLoadBalancerBackendAttributes
 &loadbalancer_backend=lbb-1234abcd
 &port=80
 &weight=5

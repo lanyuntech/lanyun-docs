@@ -43,7 +43,7 @@ weight: 3
 | need_userdata | Integer | 1: 使用 User Data 功能；0: 不使用 User Data 功能；默认为 0 。 | No |
 | userdata_type | String | User Data 类型，有效值：’plain’, ‘exec’ 或 ‘tar’。为 ‘plain’或’exec’ 时，使用一个 Base64 编码后的字符串；为 ‘tar’ 时，使用一个压缩包（种类为 zip，tar，tgz，tbz）。 | No |
 | userdata_value | String | User Data 值。当类型为 ‘plain’ 时，为字符串的 Base64 编码值，长度限制 4K；当类型为 ‘tar’，为调用 [_UploadUserDataAttachment_](../../userdata/upload_userdata_attachment/) 返回的 attachment_id。 | No |
-| userdata_path | String | User Data 和 MetaData 生成文件的存放路径。不输入或输入不合法时，为默认目录 /etc/qingcloud/userdata | No |
+| userdata_path | String | User Data 和 MetaData 生成文件的存放路径。不输入或输入不合法时，为默认目录 | No |
 | userdata_file | String | userdata_type 为 ‘exec’ 时，指定生成可执行文件的路径，默认为/etc/rc.local | No |
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |
 | dedicated_host_group_id | String | 虚机创建到指定的专属宿云服务器组中 | No |
@@ -70,7 +70,7 @@ weight: 3
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=RunInstances
+https://api.xxxxx.com/iaas/?action=RunInstances
 &vxnets.1=vxnet-0
 &instance_type=small_a
 &image_id=centos63x64

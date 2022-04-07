@@ -51,7 +51,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetQueueMonitor
+https://api.xxxxx.com/iaas/?action=GetQueueMonitor
 &resource=qn-71sgden7
 &meters.1=stats
 &start_time==2016-03-01T10%3A39%3A40.091Z

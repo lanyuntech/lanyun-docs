@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetRDBMonitor
+https://api.xxxxx.com/iaas/?action=GetRDBMonitor
 &resource=rdb-5s127ypr
 &meters.1=status
 &meters.2=slave

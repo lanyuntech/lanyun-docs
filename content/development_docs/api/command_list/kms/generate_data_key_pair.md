@@ -32,7 +32,7 @@ weight: 50
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=GenerateDataKeyPair
+https://kms.api.xxxxx.com/?action=GenerateDataKeyPair
 &COMMON_PARAMS
 &key_id=
 &key_pair_spec=

@@ -32,7 +32,7 @@ weight: 5
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=CreateAlias
+https://kms.api.xxxxx.com/?action=CreateAlias
 &alias_name=
 &key_id=
 &COMMON_PARAMS

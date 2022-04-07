@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateEipsFromLoadBalancer
+https://api.xxxxx.com/iaas/?action=DissociateEipsFromLoadBalancer
 &loadbalancer=lb-1234abcd
 &eips.1=eip-1234abcd
 &zone=pek3a

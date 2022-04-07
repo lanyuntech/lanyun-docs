@@ -26,7 +26,7 @@ weight: 1
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=CancelKeyDeletion
+https://kms.api.xxxxx.com/?action=CancelKeyDeletion
 &key_id=
 &COMMON_PARAMS
 ```

@@ -37,7 +37,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddAlarmPolicyRules
+https://api.xxxxx.com/iaas/?action=AddAlarmPolicyRules
 &rules.1.meter=cpu
 &rules.1.condition_type=gt
 &rules.1.thresholds=70

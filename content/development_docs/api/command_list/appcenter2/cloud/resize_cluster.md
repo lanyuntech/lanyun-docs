@@ -40,7 +40,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeCluster
+https://api.xxxxx.com/iaas/?action=ResizeCluster
 &cluster=cl-q1witcdk
 &cpu=2
 &memory=4096

@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSubUsers
+https://api.xxxxx.com/iaas/?action=DeleteSubUsers
 &users.1=usr-abcd1234
 &COMMON_PARAMS
 ```

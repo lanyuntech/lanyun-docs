@@ -31,7 +31,7 @@ weight: 40
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=Encrypt
+https://kms.api.xxxxx.com/?action=Encrypt
 &COMMON_PARAMS
 &key_id=
 &plain_text=

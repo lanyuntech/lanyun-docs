@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddAlarmPolicyActions
+https://api.xxxxx.com/iaas/?action=AddAlarmPolicyActions
 &actions.1.trigger_action=nl-xxxxxx
 &actions.1.trigger_status=ok
 &alarm_policy=alp-xxxxxx

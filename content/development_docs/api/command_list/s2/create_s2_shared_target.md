@@ -39,7 +39,7 @@ _Example Request_:
 ```
 创建vsan服务类型的共享目录
 
-https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
+https://api.xxxxx.com/iaas/?action=CreateS2SharedTarget
 &s2_server=s2-lxqjtu3l
 &export_name=demo
 &target_type=ISCSI
@@ -63,7 +63,7 @@ _Example Request_:
 ```
 创建vnas服务类型的共享目录（SMB)
 
-https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
+https://api.xxxxx.com/iaas/?action=CreateS2SharedTarget
 &s2_server=s2-lxqjtu3l
 &export_name=smbtest
 &target_type=SMB

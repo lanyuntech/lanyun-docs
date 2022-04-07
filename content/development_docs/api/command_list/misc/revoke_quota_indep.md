@@ -27,7 +27,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=RevokeQuotaIndep
+https://api.xxxxx.com/iaas/?action=RevokeQuotaIndep
 &user=usr-P9P3grKr
 &zone=test
 ```

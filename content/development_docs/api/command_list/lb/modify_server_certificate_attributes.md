@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyServerCertificateAttributes
+https://api.xxxxx.com/iaas/?action=ModifyServerCertificateAttributes
 &server_certificate=sc-1234abcd
 &server_certificate_name=sample
 &zone=pek3a

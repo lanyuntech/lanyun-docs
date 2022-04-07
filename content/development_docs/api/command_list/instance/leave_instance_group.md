@@ -30,7 +30,7 @@ weight: 18
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=LeaveInstanceGroup
+https://api.xxxxx.com/iaas/?action=LeaveInstanceGroup
 &instances.1=i-ipot8lz8
 &instance_group=ig-st962mj0
 &zone=gd2

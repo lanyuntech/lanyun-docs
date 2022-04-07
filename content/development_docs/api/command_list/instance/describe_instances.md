@@ -70,7 +70,7 @@ weight: 2
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeInstances
+https://api.xxxxx.com/iaas/?action=DescribeInstances
 &instances.1=i-ogbndull
 &status.1=running
 &verbose=1

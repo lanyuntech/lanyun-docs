@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSecurityGroupSnapshots
+https://api.xxxxx.com/iaas/?action=DeleteSecurityGroupSnapshots
 &security_group_snapshots.1=sgs-wx55xhix
 &COMMON_PARAMS
 ```

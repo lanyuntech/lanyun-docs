@@ -25,7 +25,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=RevokeResourceGroupsFromUserGroups
+https://api.xxxxx.com/iaas/?action=RevokeResourceGroupsFromUserGroups
 &ru_set.1.resource_group=rg-c7hmvt8u
 &ru_set.1.user_group=ug-tvj8mhxc
 &COMMON_PARAMS

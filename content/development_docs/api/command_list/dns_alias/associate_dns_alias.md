@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateDNSAlias
+https://api.xxxxx.com/iaas/?action=AssociateDNSAlias
 &prefix=database
 &resource=i-opv1n2brh
 &zone=pek3a
@@ -51,7 +51,7 @@ _Example Response_:
 {
   "action":"AssociateDNSAliasResponse",
   "dns_alias_id":"da-ivgvz1cb"
-  "domain_name":"database.xwxjic.pek3a.qingcloud.com"
+  "domain_name":"database.xwxjic.xxx.xxxxx.com"
   "job_id":"j-pp51vko0",
   "ret_code":0
 }

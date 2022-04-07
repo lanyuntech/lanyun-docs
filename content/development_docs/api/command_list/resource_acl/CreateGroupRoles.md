@@ -24,7 +24,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateGroupRoles
+https://api.xxxxx.com/iaas/?action=CreateGroupRoles
 &group_role_name=T1
 &COMMON_PARAMS
 ```

@@ -24,7 +24,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyS2SharedTarget
+https://api.xxxxx.com/iaas/?action=ModifyS2SharedTarget
 &shared_targets.1=s2st-eawpunuj
 &operation=add
 &initiator_names.1=iqn.1993-08.org.debian:01:967eaffe29d7

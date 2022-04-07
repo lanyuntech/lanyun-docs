@@ -40,7 +40,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateS2Account
+https://api.xxxxx.com/iaas/?action=CreateS2Account
 &account_type=NFS
 &account_name=nfstest
 &nfs_ipaddr=192.168.1.10

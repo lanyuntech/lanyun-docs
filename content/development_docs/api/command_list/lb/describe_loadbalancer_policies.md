@@ -45,7 +45,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeLoadBalancerPolicies
+https://api.xxxxx.com/iaas/?action=DescribeLoadBalancerPolicies
 &loadbalancer_policies.1=lbp-1234abcd
 &verbose=1
 &COMMON_PARAMS

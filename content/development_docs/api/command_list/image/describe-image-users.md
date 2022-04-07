@@ -43,7 +43,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeImageUsers&image_id=img-c5hx2ay5
+https://api.xxxxx.com/iaas/?action=DescribeImageUsers&image_id=img-c5hx2ay5
 &COMMON_PARAMS
 ```
 

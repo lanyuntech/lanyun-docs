@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateS2AccountGroup
+https://api.xxxxx.com/iaas/?action=AssociateS2AccountGroup
 &s2_group=s2g-5xmpse7o
 &s2_accounts.1=s2a-3f181hmo
 &zone=pek3a

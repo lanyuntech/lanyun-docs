@@ -38,7 +38,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeBorderStatics
+https://api.xxxxx.com/iaas/?action=DescribeBorderStatics
 &border=irt-2zevtm67
 &verbose=1
 &offset=0
@@ -61,7 +61,7 @@ _Example Response_:
             "static_type":0,
             "root_user_id":"usr-1gIBrASt",
             "owner":"usr-1gIBrASt",
-            "console_id":"qingcloud",
+            "console_id":"xxxxx",
             "disabled":0,
             "border_static_name":"r0",
             "controller":"self",

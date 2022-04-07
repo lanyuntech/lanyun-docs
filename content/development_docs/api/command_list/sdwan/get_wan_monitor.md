@@ -40,7 +40,7 @@ _Example Request_
 
 ```
 接入点为光盒示例：
-https://api.qingcloud.com/iaas/?action=GetWanMonitor
+https://api.xxxxx.com/iaas/?action=GetWanMonitor
 &resource=wacc-fub9b1eo
 &access_type=cpe
 &meters.1=traffic
@@ -55,7 +55,7 @@ https://api.qingcloud.com/iaas/?action=GetWanMonitor
 &COMMON_PARAMS
 
 接入点为网关示例：
-https://api.qingcloud.com/iaas/?action=GetWanMonitor
+https://api.xxxxx.com/iaas/?action=GetWanMonitor
 &resource=waif-6bm6mt85
 &access_type=vpc
 &meters.1=traffic

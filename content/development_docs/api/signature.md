@@ -31,7 +31,7 @@ secret_access_key = 'SECRETACCESSKEY'
   "instance_name":"demo",
   "image_id":"centos64x86a",
   "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
+  "login_passwd":"20130712",
   "version":1,
   "access_key_id":"QYACCESSKEYIDEXAMPLE",
   "action":"RunInstances",
@@ -58,7 +58,7 @@ secret_access_key = 'SECRETACCESSKEY'
   "instance_name":"demo",
   "instance_type":"small_b",
   "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
+  "login_passwd":"20130712",
   "signature_method":"HmacSHA256",
   "signature_version":1,
   "time_stamp":"2013-08-27T14:30:10Z",
@@ -81,7 +81,7 @@ secret_access_key = 'SECRETACCESSKEY'
   "instance_name":"demo",
   "instance_type":"small_b",
   "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
+  "login_passwd":"20130712",
   "signature_method":"HmacSHA256",
   "signature_version":1,
   "time_stamp":"2013-08-27T14%3A30%3A10Z",
@@ -104,7 +104,7 @@ secret_access_key = 'SECRETACCESSKEY'
 参数名和参数值之间用 “=” 号连接，参数和参数之间用 “＆” 号连接，构造后的URL请求为
 
 ```
-access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
+access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
 ```
 
 **4\. 构造被签名串**
@@ -118,7 +118,7 @@ access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64
 假设 HTTP 请求方法为 GET 请求的uri路径为 “/iaas/” , 则被签名串为
 
 ```
-GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
+GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
 ```
 
 **5\. 计算签名**
@@ -144,7 +144,7 @@ import urllib
 from hashlib import sha256
 
 # 前面生成的被签名串
-string_to_sign = 'GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a'
+string_to_sign = 'GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a'
 h = hmac.new(secret_access_key, digestmod=sha256)
 h.update(string_to_sign)
 sign = base64.b64encode(h.digest()).strip()
@@ -163,7 +163,7 @@ access_key_id=QYACCESSKEYIDEXAMPLE
 &instance_name=demo
 &instance_type=small_b
 &login_mode=passwd
-&login_passwd=QingCloud20130712
+&login_passwd=20130712
 &signature_method=HmacSHA256
 &signature_version=1
 &time_stamp=2013-08-27T14%3A30%3A10Z
@@ -176,14 +176,14 @@ access_key_id=QYACCESSKEYIDEXAMPLE
 完整的请求URL为(为了查看方便，我们人为地将参数之间用回车分隔开)
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
+https://api.xxxxx.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 &action=RunInstances
 &count=1
 &image_id=centos64x86a
 &instance_name=demo
 &instance_type=small_b
 &login_mode=passwd
-&login_passwd=QingCloud20130712
+&login_passwd=20130712
 &signature_method=HmacSHA256
 &signature_version=1
 &time_stamp=2013-08-27T14%3A30%3A10Z
@@ -196,7 +196,7 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 实际URL为
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
+https://api.xxxxx.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
 ```
 
 ## IAM 身份签名
@@ -238,7 +238,7 @@ curl -i -H "Accept: application/json" http://169.254.169.254/latest/meta-data/se
 以 DescribeInstances 为例，最后请求的 URL 为（为了查看方便，我们人为地将参数之间用回车分隔开）:
 
 ```
-https://api.qingcloud.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl
+https://api.xxxxx.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl
 &action=DescribeInstances
 &req_id=35430c022b694133a6a758b62e21067b
 &signature_method=HmacSHA256
@@ -256,5 +256,5 @@ https://api.qingcloud.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl
 实际 URL 为
 
 ```
-https://api.qingcloud.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl&action=DescribeInstances&req_id=35430c022b694133a6a758b62e21067b&signature_method=HmacSHA256&signature_version=2&status.1=running&status.2=stopped&time_stamp=2020-05-25T07%3A20%3A28Z&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4&verbose=0&version=1&zone=pekt3&signature=o8TW8DUQ3wyHz5YSkpMd9fSj4pJ24U7%2Buf7CeWKMoQw%3D
+https://api.xxxxx.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl&action=DescribeInstances&req_id=35430c022b694133a6a758b62e21067b&signature_method=HmacSHA256&signature_version=2&status.1=running&status.2=stopped&time_stamp=2020-05-25T07%3A20%3A28Z&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4&verbose=0&version=1&zone=pekt3&signature=o8TW8DUQ3wyHz5YSkpMd9fSj4pJ24U7%2Buf7CeWKMoQw%3D
 ```

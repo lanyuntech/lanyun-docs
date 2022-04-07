@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteNotificationLists
+https://api.xxxxx.com/iaas/?action=DeleteNotificationLists
 &notification_lists.1=nl-xxxxx
 &COMMON_PARAMS
 ```

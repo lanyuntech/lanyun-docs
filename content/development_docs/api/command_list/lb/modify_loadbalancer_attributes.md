@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerAttributes
+https://api.xxxxx.com/iaas/?action=ModifyLoadBalancerAttributes
 &loadbalancer=lb-rtyv0968
 &loadbalancer_name=sample
 &zone=pek3a

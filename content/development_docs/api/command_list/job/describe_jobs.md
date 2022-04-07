@@ -49,7 +49,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeJobs
+https://api.xxxxx.com/iaas/?action=DescribeJobs
 &COMMON_PARAMS
 ```
 

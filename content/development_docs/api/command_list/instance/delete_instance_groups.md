@@ -29,7 +29,7 @@ weight: 16
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteInstanceGroups
+https://api.xxxxx.com/iaas/?action=DeleteInstanceGroups
 &instance_groups.1=ig-c7v8lro1
 &zone=gd2
 &COMMON_PARAMS

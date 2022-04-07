@@ -24,7 +24,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=EnableS2SharedTargets
+https://api.xxxxx.com/iaas/?action=EnableS2SharedTargets
 &shared_targets.1=s2st-eawpunuj
 &zone=pek3a
 &COMMON_PARAMS

@@ -29,7 +29,7 @@ weight: 15
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateInstanceGroups
+https://api.xxxxx.com/iaas/?action=CreateInstanceGroups
 &relation=repel
 &zone=gd2
 &COMMON_PARAMS

@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeS2Servers
+https://api.xxxxx.com/iaas/?action=ResizeS2Servers
 &s2_servers.1=s2-lxqjtu3l
 &s2_server_type=1
 &zone=pek3a

@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerPolicyRuleAttributes
+https://api.xxxxx.com/iaas/?action=ModifyLoadBalancerPolicyRuleAttributes
 &loadbalancer_policy_rule=lbpr-1234abcd
 &val=new_regex
 &COMMON_PARAMS
