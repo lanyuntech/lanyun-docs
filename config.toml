@@ -40,8 +40,8 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.zh]
-title = "QingCloud 文档"
-description = "QingCloud 文档站点"
+title = "ExpressDocs 文档"
+description = "ExpressDocs 文档站点"
 languageName ="中文"
 contentDir = "content"
 # Weight used for sorting.
@@ -87,9 +87,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/yunify/enterprise-cloud-docs"
+github_repo = "https://github.com/yunify/express-docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/yunify/enterprise-cloud-docs"
+github_project_repo = "https://github.com/yunify/express-docs"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
