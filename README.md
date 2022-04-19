@@ -27,7 +27,7 @@ hugo server -w
 
 2. 通过浏览器输入 `http://127.0.0.1:1313/` 预览文档，可以看到与线上文档相同的效果。
 
-> 说明：接下来只需要在 [qingcloud/content/](https://github.com/yunify/express-docs/tree/master/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [qingcloud-docs 仓库](https://github.com/yunify/express-docs)。
+> 说明：接下来只需要在 [express-docs/content/](https://github.com/yunify/express-docs/tree/master/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [express-docs 仓库](https://github.com/yunify/express-docs)。
 
 ## FAQ
 
