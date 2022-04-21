@@ -1,6 +1,6 @@
-# express-docs 新版文档项目说明
+# lanyun-docs 新版文档项目说明
 
-express-docs 官方文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
+lanyun-docs 官方文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
 
 ## 第一步：安装前置工具
 
@@ -11,15 +11,15 @@ express-docs 官方文档使用了 [Hugo](https://gohugo.io/getting-started/inst
 
 ## 第二步：Fork 与 Clone 仓库
 
-请点击右上角 **Fork** 将 express-docs 仓库 Fork 至自己的　 GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
+请点击右上角 **Fork** 将 lanyun-docs 仓库 Fork 至自己的　 GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
 
 ```
-git clone https://github.com/<YOUR-GITHUB-ID>/express-docs.git
+git clone https://github.com/<YOUR-GITHUB-ID>/lanyun-docs.git
 ```
 
 ## 第三步：本地调试
 
-1. 进入上一步克隆到本地的 `express-docs` 文件目录，然后执行下面的命令在本地编译。
+1. 进入上一步克隆到本地的 `lanyun-docs` 文件目录，然后执行下面的命令在本地编译。
 
 ```
 hugo server -w
@@ -27,7 +27,7 @@ hugo server -w
 
 2. 通过浏览器输入 `http://127.0.0.1:1313/` 预览文档，可以看到与线上文档相同的效果。
 
-> 说明：接下来只需要在 [express-docs/content/](https://github.com/yunify/express-docs/tree/master/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [express-docs 仓库](https://github.com/yunify/express-docs)。
+> 说明：接下来只需要在 [lanyun-docs/content/](https://github.com/lanyuntech/lanyun-docs/tree/master/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [lanyun-docs 仓库](https://github.com/lanyuntech/lanyun-docs)。
 
 ## FAQ
 

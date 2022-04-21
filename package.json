@@ -1,5 +1,5 @@
 {
-  "name": "express-docs",
+  "name": "lanyun-docs",
   "version": "0.0.1",
   "description": "expresscloud documentation 2.0.",
   "main": "none.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yunify/express-docs.git"
+    "url": "git+https://github.com/lanyuntech/lanyun-docs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yunify/express-docs/issues"
+    "url": "https://github.com/lanyuntech/lanyun-docs/issues"
   },
-  "homepage": "https://github.com/yunify/express-docs#readme",
+  "homepage": "https://github.com/lanyuntech/lanyun-docs#readme",
   "dependencies": {
     "nodemon": "^2.0.15"
   },
