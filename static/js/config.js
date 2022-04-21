@@ -1,4 +1,4 @@
-const HIDEARR = ["计算云服务器"]; // 需要隐藏的目录名
+const HIDEARR = []; // 需要隐藏的目录名
 
 const LOCATIONURL = "/compute/vm/intro/instance/";
 
