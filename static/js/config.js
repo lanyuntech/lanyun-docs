@@ -12,4 +12,4 @@ if (window?.sessionStorage) {
   window.hideArr = HIDEARR || [];
 }
 
-console.log("window.href: ", window.location);
+console.log("window.href: ", window.LOCATIONURL);
