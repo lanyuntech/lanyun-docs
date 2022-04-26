@@ -1,5 +1,5 @@
 <div class="nav-wrapper {{ if eq .Params.LinkTitle "Document" }} nav-wrapper-index {{ end }}">
-  <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none; z-index: 1;" {{end}} >
+  <nav class="navbar navmenu" id="head-block" {{if eq .Site.Params.IsConsole true}} style="display:none; z-index: 1;" {{end}} >
     <div style="position: relative;" class="container with-no-position {{ if and (ne .Params.LinkTitle "Document" ) (ne .Params.type "product")}}doc-container-width {{ end }}">
       <div class="navbar-brand" id="search-mobile-logo">
         <a class="navbar-item logo" href="https://www.qingcloud.com">
