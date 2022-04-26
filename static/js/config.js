@@ -11,5 +11,3 @@ if (window?.sessionStorage) {
 } else {
   window.hideArr = HIDEARR || [];
 }
-
-console.log("window.href: ", window.LOCATIONURL);
