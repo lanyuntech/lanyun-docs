@@ -37,8 +37,8 @@
           <h1 class="title">{{ .title }}</h1>
         </div>
         <!--添加导出全部按钮-->
-        <a class="pdf-all-download-btn" onclick="download_all_pdf('{{ .linkTitle  }}')"><i
-            class="fa fa-download"></i>PDF</a>
+        <!-- <a class="pdf-all-download-btn" onclick="download_all_pdf('{{ .linkTitle  }}')"><i
+            class="fa fa-download"></i>PDF</a> -->
         <div class="row">
           {{ range .children }}
           <div class="col-sm-4">
@@ -54,8 +54,8 @@
                 {{ end }}
                 <a href="{{ .url }}" class="card-link">了解更多 →</a>
               </div>
-              <a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i
-                  class="fa fa-download"></i>PDF</a>
+              <!-- <a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i
+                  class="fa fa-download"></i>PDF</a> -->
             </div>
           </div>
           {{ end }}
@@ -111,8 +111,8 @@
                 <p class="card-text">{{ .content | markdownify }}</p>
                 <a href="{{ .url }}" class="card-link">了解更多 →</a>
               </div>
-              <a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i
-                  class="fa fa-download"></i>PDF</a>
+              <!-- <a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i
+                  class="fa fa-download"></i>PDF</a> -->
             </div>
           </div>
           {{ end }}
