@@ -37,7 +37,7 @@ MySQL Plus 通过启动异地灾备服务，创建**灾备集群**，同步**源
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=RunClusterCustomService
+https://api.lanyun.net/iaas/?&action=RunClusterCustomService
 &cluster=cl-ouhutv70
 &role=maininstance
 &service=start_standby

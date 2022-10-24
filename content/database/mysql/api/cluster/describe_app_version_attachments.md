@@ -43,7 +43,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DescribeAppVersionAttachments
+https://api.lanyun.net/iaas/?action=DescribeAppVersionAttachments
 &attachment_ids.1=ca-nx8rerlv
 &content_keys.1=config.json
 &content_keys.2=cluster.json.mustache

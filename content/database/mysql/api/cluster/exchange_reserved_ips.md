@@ -38,7 +38,7 @@ draft: false
 ### 请求示例
 
 ```shell
-https://api.qingcloud.com/iaas/?&action=ExchangeClusterReservedIps
+https://api.lanyun.net/iaas/?&action=ExchangeClusterReservedIps
 &cluster=cl-ouhutv70
 &remote_cluster=cl-9np7ig3g
 &zone=sh1a

@@ -42,7 +42,7 @@ MySQL Plus 通过接入支持 MaterializeMySQL 引擎的 ClickHouse 数据库，
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=RunClusterCustomService
+https://api.lanyun.net/iaas/?&action=RunClusterCustomService
 &cluster=cl-ouhutv70
 &role=analysis
 &service=add_ck_user

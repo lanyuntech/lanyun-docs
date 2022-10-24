@@ -30,7 +30,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DissociateEipFromClusterNode
+https://api.lanyun.net/iaas/?action=DissociateEipFromClusterNode
 &eips.1=eip-ek3scgap
 &zone=pek3b
 &COMMON_PARAMS

@@ -37,7 +37,7 @@ MySQL Plus 默认关闭 Caddy Server 日志服务。若需下载数据库日志�
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=RunClusterCustomService
+https://api.lanyun.net/iaas/?&action=RunClusterCustomService
 &cluster=cl-ouhutv70
 &role=maininstance
 &service=start_log_server

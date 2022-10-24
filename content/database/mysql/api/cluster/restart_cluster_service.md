@@ -32,7 +32,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=RestartClusterService
+https://api.lanyun.net/iaas/?action=RestartClusterService
 &cluster=cl-95av0jxo
 &zone=pek3b
 &COMMON_PARAMS

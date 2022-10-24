@@ -55,7 +55,7 @@ draft: false
 ### 请求示例
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAppVersions
+https://api.lanyun.net/iaas/?action=DescribeAppVersions
 &app_ids.1=app-tg3lbp0a
 &limit=20
 &COMMON_PARAMS

@@ -33,7 +33,7 @@ draft: false
 ### 请求示例
 
 ```
-https://api.qingcloud.com/iaas/?
+https://api.lanyun.net/iaas/?
 action=DeleteClusterNodes
 &cluster=cl-q1witcdk
 &force=0

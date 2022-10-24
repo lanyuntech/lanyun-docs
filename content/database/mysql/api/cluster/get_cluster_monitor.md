@@ -51,7 +51,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=GetClusterMonitor
+https://api.lanyun.net/iaas/?action=GetClusterMonitor
 &end_time=2018-03-04T07%3A44%3A06.159Z
 &meters.1=stats
 &resource=cln-veb7g8nx

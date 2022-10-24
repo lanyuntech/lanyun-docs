@@ -39,7 +39,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=AddClusterNodes
+https://api.lanyun.net/iaas/?action=AddClusterNodes
 &cluster=cl-q1witcdk
 &node_count=2
 &node_name=

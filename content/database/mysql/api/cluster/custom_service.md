@@ -37,7 +37,7 @@ MySQL Plus 通过自定义服务参数，可管理相应功能，例如存储策
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=RunClusterCustomService
+https://api.lanyun.net/iaas/?&action=RunClusterCustomService
 &cluster=cl-ouhutv70
 &role=maininstance
 &service=add_user

@@ -4,7 +4,7 @@ title: "创建 API"
 linkTitle: "创建 API"
 date: 2021-05-25T10:08:56+09:00
 description: 本小节主要介绍如何创建 API。 
-keyword: API_Gateway, QingCloud, 创建 API
+keyword: API_Gateway, LanCloud, 创建 API
 draft: false
 weight: 41
 ---
@@ -26,7 +26,7 @@ weight: 41
 
 按照以下步骤，创建 API 服务。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [LanCloud 管理控制台](https://console.lanyun.net/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API 网关** ，进入**API 网关**页面。
 

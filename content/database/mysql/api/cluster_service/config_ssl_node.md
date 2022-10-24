@@ -50,7 +50,7 @@ SSL（Secure Socket Layer，安全套接层），位于可靠的面向连接的�
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=RunClusterCustomService
+https://api.lanyun.net/iaas/?&action=RunClusterCustomService
 &cluster=cl-ouhutv70
 &role=maininstance
 &service=configuring_SSL
