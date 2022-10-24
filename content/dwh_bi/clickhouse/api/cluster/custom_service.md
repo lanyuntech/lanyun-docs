@@ -34,7 +34,7 @@ ClickHouse 通过自定义服务参数，可管理相应功能，例如存储策
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
+https://api.lanyun.net/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
 &action=RunClusterCustomService
 &cluster=cl-yxgxofd3
 &service=create_oss_policies

@@ -33,7 +33,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DeleteClusters
+https://api.lanyun.net/iaas/?action=DeleteClusters
 &clusters.1=cl-11esmufq
 &zone=pek3a
 &COMMON_PARAMS

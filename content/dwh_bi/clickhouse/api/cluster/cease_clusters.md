@@ -34,7 +34,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=CeaseClusters
+https://api.lanyun.net/iaas/?&action=CeaseClusters
 &clusters.1=cl-2gi2b3oc
 &zone=pek3b
 &COMMON_PARAMS

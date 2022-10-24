@@ -107,8 +107,8 @@ AppCenter 的镜像同时支持 kvm 和 docker，但由于需要实现配置变�
 
 ### 基础镜像
 
-1. [confd](https://github.com/yunify/docker-images/tree/master/confd)  dockerhub.qingcloud.com/qingcloud/confd:v0.13.7
-2. [jdk8](https://github.com/yunify/docker-images/tree/master/jdk) dockerhub.qingcloud.com/qingcloud/jdk8:confd-v0.13.7
+1. [confd](https://github.com/yunify/docker-images/tree/master/confd)  dockerhub.lanyun.net/lanyun/confd:v0.13.7
+2. [jdk8](https://github.com/yunify/docker-images/tree/master/jdk) dockerhub.lanyun.net/lanyun/jdk8:confd-v0.13.7
 
 ### 配置文件
 

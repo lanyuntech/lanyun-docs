@@ -37,7 +37,7 @@ draft: false
 ### 请求示例
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateEipToClusterNode
+https://api.lanyun.net/iaas/?action=AssociateEipToClusterNode
 &cluster_node=cln-jmrv7xfv
 &eip=eip-ek3scgap
 &zone=test

@@ -56,7 +56,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DescribeClusterJobs
+https://api.lanyun.net/iaas/?action=DescribeClusterJobs
 &app=app-tg3lbp0a
 &jobs.1=j-etkt94ebqra
 &limit=1

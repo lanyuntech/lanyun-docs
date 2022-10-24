@@ -33,7 +33,7 @@ ClickHouse 默认关闭 Caddy Server 日志服务。若需下载数据库日志�
 ### 请求示例
 
 ```url
- https://api.qingcloud.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
+ https://api.lanyun.net/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
  &action=RunClusterCustomService
  &cluster=cl-yxgxofd3
  &service=start_caddy

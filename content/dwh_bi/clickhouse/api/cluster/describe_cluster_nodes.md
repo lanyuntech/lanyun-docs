@@ -34,7 +34,7 @@ draft: false
 
 ### 响应项
 
-https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
+https://docs.lanyun.net/appcenter/docs/specifications/specifications.html
 
 |<span style="display:inline-block;width:100px">参数</span> |<span style="display:inline-block;width:100px">类型</span>|<span style="display:inline-block;width:380px">描述</span>|
 | :--- | :--- | :--- | 
@@ -91,7 +91,7 @@ https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DescribeClusterNodes
+https://api.lanyun.net/iaas/?action=DescribeClusterNodes
 &cluster=cl-q1witcdk
 &limit=20
 &reverse=1

@@ -55,8 +55,8 @@ curl http://metadata/self
 App有以下几种日志信息需要开发者关注。
 
 1. 集群云服务器里的 confd的日志     
-    启动时的 log： /opt/qingcloud/app-agent/log/confd-onetime.log   
-    其他操作修改时的 log： /opt/qingcloud/app-agent/log/confd.log  
+    启动时的 log： /opt/lanyun/app-agent/log/confd-onetime.log   
+    其他操作修改时的 log： /opt/lanyun/app-agent/log/confd.log  
     > 其他操作是指修改了 confd 相关的 .toml 和 .tmpl 文件后,执行了 service confd restart 命令之后重新生成新的 confd 相关的日志。
 
 2. 应用本身服务调用的日志     

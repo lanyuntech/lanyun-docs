@@ -38,7 +38,7 @@ ClickHouse 通过创建对象存储策略，并在创建表时添加语句指定
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
+https://api.lanyun.net/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
 &action=RunClusterCustomService
 &cluster=cl-yxgxofd3
 &service=create_oss_policies

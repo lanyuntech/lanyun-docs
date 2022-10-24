@@ -88,7 +88,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DescribeClusters
+https://api.lanyun.net/iaas/?action=DescribeClusters
 &clusters.1=cl-q1witcdk
 &limit=20
 &reverse=1

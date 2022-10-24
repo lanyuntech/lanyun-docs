@@ -37,7 +37,7 @@ draft: false
 ### 请求示例
 
 ```shell
-https://api.qingcloud.com/iaas/?action=ChangeClusterVxnet
+https://api.lanyun.net/iaas/?action=ChangeClusterVxnet
 &cluster=cl-q1witcdk
 &vxnet=vxnet-iuy3lnd
 &private_ips.1.node_id=cln-nqop00oj
