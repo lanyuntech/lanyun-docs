@@ -15,7 +15,7 @@ draft: false
 
    > **说明**
    >
-   > `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本请继续输入命令 `sudo su` 切换到 root 用户。
+   > `ELK 5.6.16 - LanCloud 1.5.0` 之前的版本请继续输入命令 `sudo su` 切换到 root 用户。
 
 2. 用如下命令创建自定义插件，其中 `filter` 可替换为您想要定制的插件的类型，类型包括 `{input, filter, codec, output}` ，`abcd` 可替换为您要开发的插件的名称，更多详情请参考 [官方文档](https://www.elastic.co/guide/en/logstash/master/contributing-to-logstash.html)：
 
@@ -25,7 +25,7 @@ draft: false
 
    > **说明**
    >
-   > `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本请使用如下命令：
+   > `ELK 5.5.1 - LanCloud 1.2.0` 及以前版本请使用如下命令：
    
    ```bash
    sudo docker exec -it $(docker ps -q) logstash-plugin generate --type filter --name abcd --path /data/logstash/plugins
@@ -48,9 +48,9 @@ draft: false
 6. 参考 **Logstash 基本用法** 发送一条数。
 
    ```bash
-   curl -d "qingcloud" $LS_IP:9700
+   curl -d "Lancloud" $LS_IP:9700
    ```
 
-   参照 **Kibana 基本用法** 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `qingcloud` 替换为了 `Hello World!` ，说明插件配置生效。
+   参照 **Kibana 基本用法** 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `Lancloud` 替换为了 `Hello World!` ，说明插件配置生效。
 
    ![log_display](../../_images/log_display.png)

@@ -11,12 +11,12 @@ draft: false
 
 > **说明**
 >
-> 从版本 `ELK 5.6.16 - QingCloud 1.5.0` 起已内置用于指定 ik 分词器的模板文件，用户可以直接使用（在 Logstash 节点的 /data/elasticsearch/dicts 目录下）。
+> 从版本 `ELK 5.6.16 - LanCloud 1.5.0` 起已内置用于指定 ik 分词器的模板文件，用户可以直接使用（在 Logstash 节点的 /data/elasticsearch/dicts 目录下）。
 >
 > 如果是以前的版本，需要事先把 **模板文件** 下载到 Logstash 节点的 `/data/elasticserach/dicts/` 目录下再进行后面的操作，否则 Logstash 会因找不到模板文件而无法启动（可以直接登录到节点下载，也可以通过如下命令上传，注意 URL 最后的 `/` 不能省略。
 
 ```bash
-curl -sL https://docs.qingcloud.com/product/big_data/elk/logstash.json |
+curl -sL https://docs.lanyun.net/product/big_data/elk/logstash.json |
 curl -F "file=@-;filename=logstash.json" $LS_IP/dicts/
 ```
 

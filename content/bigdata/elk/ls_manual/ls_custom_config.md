@@ -23,6 +23,6 @@ draft: false
 
 > **说明**
 >
-> `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本请使用如下命令：
+> `ELK 5.5.1 - LanCloud 1.2.0` 及以前版本请使用如下命令：
 >
 > `sudo docker exec -it $(docker ps -q) restart.sh`

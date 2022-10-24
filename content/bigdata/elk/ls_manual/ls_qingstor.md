@@ -37,7 +37,7 @@ Logstash 支持从 QingStor 对象存储输入数据到 Elasticsearch，或者�
 
    请根据实际情况调整上面的参数，比如按区域就近指定 endpoint 地址等，关于参数的详情可参考其 [官方文档](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-s3.html)
 
-   `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本请使用 Logstash Inputs QingStor 插件参考如下示例进行配置：
+   `ELK 5.6.16 - LanCloud 1.5.0` 之前的版本请使用 Logstash Inputs QingStor 插件参考如下示例进行配置：
 
    ```ruby
     qingstor {
@@ -82,7 +82,7 @@ Logstash 支持从 QingStor 对象存储输入数据到 Elasticsearch，或者�
 
    更多参数详情可参考其 [官方文档](https://www.elastic.co/guide/en/logstash/6.7/plugins-outputs-s3.html)。
 
-   `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本请使用 Logstash Outputs QingStor 插件参考如下示例进行配置：
+   `ELK 5.6.16 - LanCloud 1.5.0` 之前的版本请使用 Logstash Outputs QingStor 插件参考如下示例进行配置：
    
    ```ruby
    qingstor {

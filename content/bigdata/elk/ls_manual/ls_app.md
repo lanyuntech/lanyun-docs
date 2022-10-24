@@ -11,7 +11,7 @@ draft: false
 
 > **说明**
 >
-> `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本的 Logstash 运行在 Docker 容器的 `/opt/logstash` 目录下，用户需先进入 Docker 容器查看 Logstash 文件：
+> `ELK 5.5.1 - LanCloud 1.2.0` 及以前版本的 Logstash 运行在 Docker 容器的 `/opt/logstash` 目录下，用户需先进入 Docker 容器查看 Logstash 文件：
 
 ```bash
 # 执行如下命令进入运行中的 CONTAINER 中
