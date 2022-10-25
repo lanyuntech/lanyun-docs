@@ -48,7 +48,7 @@ weight: 3
 开发一些必须的模板文件，这些文件会监听 metadata service 的变化从而更新自己应用的配置文件。
 这些文件后缀名为 toml 和 tmpl，例如，ZooKeeper 有两个配置文件 zoo.cfg 和 myid，
 每个配置文件需要一套相应的 toml 和 tmpl 模板对应，
-详情请见[nextcloud](https://github.com/QingCloudAppcenter/nextcloud/tree/master/nextcloud-nodes/code/conf.d/)。
+详情请见[nextcloud](https://github.com/lanyunAppcenter/nextcloud/tree/master/nextcloud-nodes/code/conf.d/)。
 
 #### /etc/confd/conf.d/zoo.cfg.toml
 
@@ -93,7 +93,7 @@ AppCenter 的镜像同时支持 kvm 和 docker，但由于需要实现配置变�
 
 ### 镜像仓库
 
-为了方便开发者存储自己的 docker 镜像，平台提供了 docker 镜像仓库。当前镜像仓库的控制台管理功能尚未完成，所以如果需要使用 docker 镜像仓库，请先提工单申请。为了保证用户安装程序时的体验，应用如果使用 docker 镜像，镜像需要放置到云平台的镜像仓库，以保证拉取速度。镜像仓库域名：dockerhub.qingcloud.com
+为了方便开发者存储自己的 docker 镜像，平台提供了 docker 镜像仓库。当前镜像仓库的控制台管理功能尚未完成，所以如果需要使用 docker 镜像仓库，请先提工单申请。为了保证用户安装程序时的体验，应用如果使用 docker 镜像，镜像需要放置到云平台的镜像仓库，以保证拉取速度。镜像仓库域名：dockerhub.lanyun.net
 
 ### 镜像制作
 

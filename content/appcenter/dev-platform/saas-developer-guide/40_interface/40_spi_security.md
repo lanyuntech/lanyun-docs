@@ -28,12 +28,12 @@ AppCenter 平台会在每次请求中附上 signature、SPI 接口需对 signatu
 
 ### 示例
 
-用户填写的通知 URL 为：[http://www.isvwebsite.com](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=qingcloud-app-token)
+用户填写的通知 URL 为：[http://www.isvwebsite.com](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=lanyun-app-token)
 
 SPI 请求：
 
-headers: {'app_signature':'qingcloud-app-token'}
-url: [http://www.isvwebsite.com?p1=1&p2=2&p3=3&signature=qingcloud-app-token](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=qingcloud-app-token)
+headers: {'app_signature':'lanyun-app-token'}
+url: [http://www.isvwebsite.com?p1=1&p2=2&p3=3&signature=lanyun-app-token](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=lanyun-app-token)
 
-若填写的通知 URL 中本身就含有参数，如：[http://www.isvwebsite.com?platform](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=qingcloud-app-token)=qingcloud ，那么[platform](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=qingcloud-app-token)也将参与签名。
+若填写的通知 URL 中本身就含有参数，如：[http://www.isvwebsite.com?platform](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=lanyun-app-token)=lanyun ，那么[platform](http://www.isvwebsite.com/?p1=1&p2=2&p3=3&signature=lanyun-app-token)也将参与签名。
 

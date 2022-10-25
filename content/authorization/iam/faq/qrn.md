@@ -24,7 +24,7 @@ weight: 42
 
 - **全局资源名称(qrn)**：表示是云平台的云资源。该字段是必填项，且固定为"qrn"。
   
-- **平台分区(partition)**：目前作为保留字段。该字段是必填项，且固定为"qingcloud"。
+- **平台分区(partition)**：目前作为保留字段。该字段是必填项，且固定为"lanyun"。
 
 - **服务(service)**：云平台（例如：弹性云服务器[ecm]、虚机私有云[vpc] 等）的产品命名空间。该字段是必填项，相关服务列表请参阅[服务类别](../supported_services#服务类别)。
 
@@ -48,32 +48,32 @@ weight: 42
 >
 > 4.`特殊情况`  
 >
-> 如 `qrn:qingcloud:iam::usr-xxxxxx:root` 用来表示该账号。
+> 如 `qrn:lanyun:iam::usr-xxxxxx:root` 用来表示该账号。
 
 ### 示例
 
 账户 id 为`usr-xxxxxx`的账户：
 
 ```txt
-qrn:qingcloud:iam::usr-xxxxxx:root
+qrn:lanyun:iam::usr-xxxxxx:root
 ```
 
 资源 id 为`i-xxxxxx`的云服务器实例：
 
 ```txt
-qrn:qingcloud:ecm:pek3:usr-xxxxxx:instance/i-xxxxxx
+qrn:lanyun:ecm:pek3:usr-xxxxxx:instance/i-xxxxxx
 ```
 
 资源 id 为`iamp-xxxxxx`的策略：
 
 ```txt
-qrn:qingcloud:iam::usr-xxxxxx:policy/iamp-xxxxxx
+qrn:lanyun:iam::usr-xxxxxx:policy/iamp-xxxxxx
 ```
 
 资源 id 为`iamr-xxxxxx`的身份：
 
 ```txt
-qrn:qingcloud:iam::usr-xxxxxx:role/iamr-xxxxxx
+qrn:lanyun:iam::usr-xxxxxx:role/iamr-xxxxxx
 ```
 
 ## QRN 生成器

@@ -62,7 +62,7 @@ weight: 43
     资源是用六段式 qrn 描述，每款产品的资源定义详情会有所区别。具体描述方式请参阅：[资源标识符 QRN](../../faq/qrn) 。
 
     ```json
-    "resource": "qrn:qingcloud:ecm:test:usr-XXXXX:instance/i-123456"
+    "resource": "qrn:lanyun:ecm:test:usr-XXXXX:instance/i-123456"
     ```
 
 4. 效力（effect）

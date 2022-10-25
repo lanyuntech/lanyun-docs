@@ -17,13 +17,13 @@ weight: 11
 
 ### 刷新配置
 
-在云服务器里修改 toml 或 tmpl 文件后，可以通过 service confd restart 重启服务刷新配置或 执行 /opt/qingcloud/app-agent/bin/confd -onetime 刷新配置。
+在云服务器里修改 toml 或 tmpl 文件后，可以通过 service confd restart 重启服务刷新配置或 执行 /opt/lanyun/app-agent/bin/confd -onetime 刷新配置。
 
 > 注：用户的实例默认情况下开发者是没有权限通过 vnc 登录的，需要用户授权。
 
 ## 日志查看
 
-日志放置在 /opt/qingcloud/app-agent/log 下面，几个最有用的日志如下：
+日志放置在 /opt/lanyun/app-agent/log 下面，几个最有用的日志如下：
 
 - **confd.log**  自动配置守护进程 confd 输出的日志信息，可以从这个文件查看配置文件 (toml，tmpl) 是否配置正确。
 
