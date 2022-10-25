@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddRouterStaticEntries
+https://api.lanyun.net/iaas/?action=AddRouterStaticEntries
 &router_static=rtrs-hcnwdfwc
 &entries.1.val1=admin
 &entries.1.val2=passwOrd

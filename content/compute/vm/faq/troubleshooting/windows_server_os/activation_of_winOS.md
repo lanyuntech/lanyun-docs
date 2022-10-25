@@ -30,7 +30,7 @@ keyword: 云计算, 云服务器，Windows，激活
 
 ### 获取云服务器所在大区的 KMS 服务器的 IP 地址
 
-cmd 中执行`ping windows-kms-server.ks.qingcloud.com`命令来获取返回的基础网络，例如：10.130.1.13
+cmd 中执行`ping windows-kms-server.ks.lanyun.net`命令来获取返回的基础网络，例如：10.130.1.13
 >**说明**
 >返回的 IP 地址会根据大区的不同会有差别，实际操作中请以实际返回结果为准。
 
@@ -38,12 +38,12 @@ cmd 中执行`ping windows-kms-server.ks.qingcloud.com`命令来获取返回的�
 
 ### 修改 hosts 文件
 
-1. 将这个 IP 地址及 windows-kms-server.ks.qingcloud.com 域名写到C:\Windows\System32\drivers\etc\hosts文件的最后边，保存退出
+1. 将这个 IP 地址及 windows-kms-server.ks.lanyun.net 域名写到C:\Windows\System32\drivers\etc\hosts文件的最后边，保存退出
 
    ![修改hosts文件](/compute/vm/_images/activation_of_winOS_6.png)
 
 2. 再次打开 Windows 的 cmd 窗口，然后输入 slmgr /ato 就可以激活了
 
-3. 如果执行slmgr /ato还是提示0xC004F074，先执行slmgr /skms windows-kms-server.ks.qingcloud.com设置kms服务器，然后再执行slmgr /ato 就可以激活了。
+3. 如果执行slmgr /ato还是提示0xC004F074，先执行slmgr /skms windows-kms-server.ks.lanyun.net设置kms服务器，然后再执行slmgr /ato 就可以激活了。
 
 如果仍然无法激活 Windows 云服务器，可以通过工单系统联系我们的工程师，我们会竭诚为您服务。

@@ -36,7 +36,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, 监控
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetNFVMonitor
+https://api.lanyun.net/iaas/?action=GetNFVMonitor
 &resource=nfv-1234abcd
 &meters.1=traffic
 &meters.2=interface

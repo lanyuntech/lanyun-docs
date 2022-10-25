@@ -10,7 +10,7 @@ weight: 5
 
 客户业务在往云平台迁移的过程中，因为两边的数据需要同步，所以需要建立站点到站点ipsec隧道，由于本地IDC设备不支持vpn服务，所以采用自建ipsec的方式互联，采用的是strongswan的方式，以下是模拟客户业务环境，成功搭建ipsec隧道的案例，供参考。
 
-### qingcloud ap2a （vpc自身具备ipsec服务）
+### lanyun ap2a （vpc自身具备ipsec服务）
 
 私有网络  172.25.100.0/24
 
@@ -79,7 +79,7 @@ root@i-y862i3l9:~# cat /etc/ipsec.secrets
 #### <2、配置 ipsec.conf的配置
 
 ```
-# defined by QingCloud
+# defined by lanyun
  
 version 2.0
 include /etc/ipsec.d/*.conf
@@ -127,7 +127,7 @@ https://www.strongswan.org/testing/testresults/ikev2/net2net-cert/moon.ipsec.con
 ipsec.conf的配置如下
 
 ```
-# defined by QingCloud
+# defined by lanyun
  
 version 2.0
 include /etc/ipsec.d/*.conf

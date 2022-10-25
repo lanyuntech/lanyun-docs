@@ -33,7 +33,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, 私有网络
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=NFVLeaveVxnets
+https://api.lanyun.net/iaas/?action=NFVLeaveVxnets
 &nfv=nfv-1234abcd
 &vxnets.1=vxnet-123
 &vxnets.2=vxnet-234

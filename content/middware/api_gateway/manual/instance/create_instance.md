@@ -3,7 +3,7 @@ title: "创建专享实例"
 linkTitle: "创建专享实例"
 date: 2021-05-18T10:08:56+09:00
 description: 本小节主要介绍如何创建专享实例。 
-keyword: API_Gateway, QingCloud, 专享实例
+keyword: API_Gateway, lanyun, 专享实例
 draft: false
 weight: 10
 ---
@@ -18,7 +18,7 @@ weight: 10
 
 按照以下操作，创建 API 网关专享实例。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [lanyun 管理控制台](https://console.lanyun.net/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API Gateway** ，进入**API 网关**页面。
 
@@ -40,7 +40,7 @@ weight: 10
 
 5. 配置实例规格。
 
-   QingCloud API 网关服务提供`基础版`、`专业版`、`企业版`、`企业高级版`、`企业铂金版`、`企业钻石版`六种专享实例规格。不同版本的最大请求数、SLA、最大连接数以及费用都不同，配置越高，费用越高。
+   lanyun API 网关服务提供`基础版`、`专业版`、`企业版`、`企业高级版`、`企业铂金版`、`企业钻石版`六种专享实例规格。不同版本的最大请求数、SLA、最大连接数以及费用都不同，配置越高，费用越高。
 
 6. 配置实例信息。
 

@@ -4,7 +4,7 @@ title: "密钥管理"
 linkTitle: "密钥管理"
 date: 2021-05-25T10:08:56+09:00
 description: 本小节主要介绍 API 网关密钥管理流程。 
-keyword: API_Gateway, QingCloud, 密钥管理
+keyword: API_Gateway, lanyun, 密钥管理
 draft: false
 weight: 60
 ---
@@ -15,7 +15,7 @@ API 密钥用于 API 网关验证用户的身份，保障服务访问安全。�
 
 按照以下操作，新建密钥。
 
-1. 登录 [LanCloud 管理控制台](https://console.lanyun.net/login)。
+1. 登录 [Lanyun 管理控制台](https://console.lanyun.net/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API 网关** ，进入**API 网关**页面。
 
@@ -55,7 +55,7 @@ API 密钥用于 API 网关验证用户的身份，保障服务访问安全。�
 >
 > 已绑定 API 不可选。
 >
-> 若 API 鉴权类型为免鉴权无法绑定，弹窗上方显示黄条将提示需要先开通 API 鉴权。若 API 鉴权类型为 QingCloud-Auth，则绑定成功。
+> 若 API 鉴权类型为免鉴权无法绑定，弹窗上方显示黄条将提示需要先开通 API 鉴权。若 API 鉴权类型为 lanyun-Auth，则绑定成功。
 
 ![secretkey5](../_images/secretkey5.png)
 

@@ -58,7 +58,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRouters
+https://api.lanyun.net/iaas/?action=DescribeRouters
 &routers.1=rtr-b0u6sdj6
 &verbose=1
 &COMMON_PARAMS

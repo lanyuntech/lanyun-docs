@@ -4,7 +4,7 @@ title: "管理 API"
 linkTitle: "管理 API"
 date: 2021-05-25T10:08:56+09:00
 description: 本小节主要介绍如何管理 API。 
-keyword: API_Gateway, LanCloud, 管理 API
+keyword: API_Gateway, Lanyun, 管理 API
 draft: false
 weight: 44
 ---
@@ -67,7 +67,7 @@ API 管理可通过以下三种途径找到对应的按钮进行操作：
 
    ![manage_api8](../_images/manage_api8.png)
 
-3. 选择密钥，点击弹窗中的**绑定**，密钥绑定成功。若当前 API 鉴权类型为免鉴权，绑定密钥后，API 鉴权类型自动修改为 QingCloud-Auth，且页面出现发布弹窗。若当前 API 鉴权类型为 QingCloud-Auth，绑定密钥后，直接绑定成功，无需再次发布。
+3. 选择密钥，点击弹窗中的**绑定**，密钥绑定成功。若当前 API 鉴权类型为免鉴权，绑定密钥后，API 鉴权类型自动修改为 lanyun-Auth，且页面出现发布弹窗。若当前 API 鉴权类型为 lanyun-Auth，绑定密钥后，直接绑定成功，无需再次发布。
 
    ![manage_api9](../_images/manage_api9.png)
 

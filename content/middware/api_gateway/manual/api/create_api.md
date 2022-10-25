@@ -4,7 +4,7 @@ title: "创建 API"
 linkTitle: "创建 API"
 date: 2021-05-25T10:08:56+09:00
 description: 本小节主要介绍如何创建 API。 
-keyword: API_Gateway, LanCloud, 创建 API
+keyword: API_Gateway, Lanyun, 创建 API
 draft: false
 weight: 41
 ---
@@ -58,7 +58,7 @@ weight: 41
 
    2. 填写 API 请求配置，包括鉴权类型、请求协议、请求路径、节点 IP、服务参数。
 
-      **鉴权类型**：有免鉴权和 QingCloud-Auth。若选择 QingCloud-Auth，API 创建成功后需要绑定密钥，在请求该 API 时需要同时传递密钥。
+      **鉴权类型**：有免鉴权和 lanyun-Auth。若选择 lanyun-Auth，API 创建成功后需要绑定密钥，在请求该 API 时需要同时传递密钥。
 
       **请求协议**：目前支持 HTTP、HTTPS、WEBSOCKET。
 

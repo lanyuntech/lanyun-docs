@@ -44,7 +44,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateNFV
+https://api.lanyun.net/iaas/?action=CreateNFV
 &nfv_type=1
 &nfv_spec=1
 &COMMON_PARAMS

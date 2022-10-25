@@ -4,7 +4,7 @@ title: "调试 API"
 linkTitle: "调试 API"
 date: 2021-05-25T10:08:56+09:00
 description: 本小节主要介绍如何调试 API。 
-keyword: API_Gateway, LanCloud, 调试 API
+keyword: API_Gateway, Lanyun, 调试 API
 draft: false
 weight: 43
 ---
@@ -28,7 +28,7 @@ API 调试可通过以下三种途径找到调试按钮进行操作：
 > ![manage_api1](../_images/manage_api1.png)
 
 1. 在发送请求之前，请先填写请求参数。
-2. 若 API 的鉴权类型为 QingCloud-Auth，调试时会显示密钥栏位，要求用户填写绑定的密钥信息。若绑定多个密钥，填写绑定的一个即可。
+2. 若 API 的鉴权类型为 lanyun-Auth，调试时会显示密钥栏位，要求用户填写绑定的密钥信息。若绑定多个密钥，填写绑定的一个即可。
 3. 若 API 创建时在步骤 3 中填写了示例信息，调试页面右侧会显示示例内容。
 4. 信息配置完成后，点击**发送请求**，请求返回结果会显示在右侧的返回结果栏位。
 

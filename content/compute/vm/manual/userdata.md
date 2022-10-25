@@ -56,7 +56,7 @@ ENV 格式的 MetaData，大部分与 JSON 格式的定义相同。唯有 vxnets
 用户可以在任何时间通过内网的 Metadata Server 获取本机的信息，方式如下:
 
 ```
-curl http://metadata.ks.qingcloud.com/i-xxxxxxxx/
+curl http://metadata.ks.lanyun.net/i-xxxxxxxx/
 ```
 
 其中 ```i-xxxxxxxx``` 是本机的 ID ，可以从 ```hostname``` 得到。数据返回 JSON 格式，信息与前面描述相同。

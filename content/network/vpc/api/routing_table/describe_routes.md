@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRoutes
+https://api.lanyun.net/iaas/?action=DescribeRoutes
 &routing_table=rt-w7xy0bq0
 &COMMON_PARAMS
 ```

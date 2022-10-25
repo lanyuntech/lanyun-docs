@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyRouteTableAtrributes
+https://api.lanyun.net/iaas/?action=ModifyRouteTableAtrributes
 &routing_table=rt-w7xy0bq0
 &routing_table.name=Test1
 &COMMON_PARAMS

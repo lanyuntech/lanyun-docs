@@ -3,12 +3,12 @@ title: "运维监控"
 linkTitle: "运维监控"
 date: 2021-05-18T10:08:56+09:00
 description: 本小节主要介绍 API 网关运维监控流程。 
-keyword: API_Gateway, LanCloud, 运维监控
+keyword: API_Gateway, Lanyun, 运维监控
 draft: false
 weight: 10
 ---
 
-QingCloud API 网关提供集群服务和 API 资源性能监控指标，包含：服务统计、服务数据监控、近 24 小时服务运行情况、最近更新 API。
+lanyun API 网关提供集群服务和 API 资源性能监控指标，包含：服务统计、服务数据监控、近 24 小时服务运行情况、最近更新 API。
 
 ## 操作步骤
 

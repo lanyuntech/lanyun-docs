@@ -179,7 +179,7 @@ fmt.Println(qs.IntValue(bACLOutput.StatusCode))
 
 ``` go
 initOutput, err := bucket.InitiateMultipartUpload(
-    "QingCloudInsight.mov",
+    "lanyunInsight.mov",
     &service.InitiateMultipartUploadInput{
         ContentType: qs.String("video/quicktime"),
     },
@@ -198,7 +198,7 @@ fmt.Println(qs.StringValue(initOutput.UploadID))
 
 ``` go
 uploadOutput, err := bucket.UploadMultipart(
-    "QingCloudInsight.mov",
+    "lanyunInsight.mov",
     &service.UploadMultipartInput{
         UploadID:   qs.String(initOutput.UploadID),
         PartNumber: qs.Int(0),
@@ -212,7 +212,7 @@ uploadOutput, err := bucket.UploadMultipart(
 fmt.Println(qs.IntValue(uploadOutput.StatusCode))
 
 uploadOutput, err = bucket.UploadMultipart(
-    "QingCloudInsight.mov",
+    "lanyunInsight.mov",
     &service.UploadMultipartInput{
         UploadID:   qs.String(initOutput.UploadID),
         PartNumber: qs.Int(1),
@@ -227,7 +227,7 @@ uploadOutput, err = bucket.UploadMultipart(
 
 ``` go
 completeOutput, err := bucket.CompleteMultipartUpload(
-    "QingCloudInsight.mov",
+    "lanyunInsight.mov",
     &service.CompleteMultipartUploadInput{
         UploadID:    qs.String(initOutput.UploadID),
         ObjectParts: []*service.ObjectPart{
@@ -246,7 +246,7 @@ fmt.Println(qs.IntValue(completeOutput.StatusCode))
 
 ``` go
 abrtOutput, err := bucket.AbortMultipartUpload(
-    "QingCloudInsight.mov"
+    "lanyunInsight.mov"
     &service.AbortMultipartUploadInput{
         UploadID:  qs.String(initOutput.UploadID),
     },

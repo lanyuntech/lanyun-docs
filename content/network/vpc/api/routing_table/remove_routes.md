@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=RemoveRoutes
+https://api.lanyun.net/iaas/?action=RemoveRoutes
 &routing_table_rules.1=r-qdkyht01
 &COMMON_PARAMS
 ```

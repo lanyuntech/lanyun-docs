@@ -65,7 +65,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeVxnets
+https://api.lanyun.net/iaas/?action=DescribeVxnets
 &vxnets.1=vxnet-ytuyg2q
 &COMMON_PARAMS
 ```
@@ -101,7 +101,7 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeVxnets
+https://api.lanyun.net/iaas/?action=DescribeVxnets
 &vxnets.1=vxnet-ytuyg2q
 &verbose=1
 &COMMON_PARAMS

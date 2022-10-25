@@ -57,7 +57,7 @@ mysql -u root -p
 登录MySQL后，需要重置root用户密码，否则无法继续操作。
 
 ```mysql
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'QingCloud1234';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'lanyun1234';
 ```
 
 开启root用户远程访问。
@@ -257,7 +257,7 @@ mysql -u root -p
 登录后需要重置密码，参考命令。
 
 ```mysql
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'QingCloud1234';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'lanyun1234';
 ```
 
 ### 3. 开启远程访问

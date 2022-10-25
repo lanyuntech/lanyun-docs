@@ -40,7 +40,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateVxnets
+https://api.lanyun.net/iaas/?action=CreateVxnets
 &vxnet_name=demo
 &vxnet_type=1
 &zone=pek3a
