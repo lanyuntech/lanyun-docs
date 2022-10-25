@@ -35,7 +35,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DescribeProjectResourceZones
+https://api.lanyun.net/iaas/?action=DescribeProjectResourceZones
 &owner=usr-WantwZJ8
 &zone=test
 &project_id=pj-xzvlxlb5

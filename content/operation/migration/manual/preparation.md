@@ -21,7 +21,7 @@ keyword: 云计算, 迁移中心, V2V
 
 步骤1：获取 MergeIDE.zip 安装包。
 
-`  https://yunify.anybox.qingcloud.com/s/Q1GwzAwsKA3Xf9sOSGhpRNqu2UrwtJZ7  `
+`  https://yunify.anybox.lanyun.net/s/Q1GwzAwsKA3Xf9sOSGhpRNqu2UrwtJZ7  `
 
 步骤2：拷贝 MergeIDE.zip 到 Windows server 2003 虚拟机中，进行解压。
 

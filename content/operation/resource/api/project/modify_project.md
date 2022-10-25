@@ -39,7 +39,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=ModifyProjectAttributes
+https://api.lanyun.net/iaas/?action=ModifyProjectAttributes
 &project_name=T1a
 &description=
 &meta=[{"color":"#324558"}]

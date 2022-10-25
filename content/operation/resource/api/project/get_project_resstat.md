@@ -55,7 +55,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?owner=usr-WantwZJ8
+https://api.lanyun.net/iaas/?owner=usr-WantwZJ8
 &project_id=pj-xzvlxlb5
 &action=GetProjectResourceStat
 &offset=0

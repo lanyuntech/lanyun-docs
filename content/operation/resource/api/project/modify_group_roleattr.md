@@ -37,7 +37,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?group_role_name=test
+https://api.lanyun.net/iaas/?group_role_name=test
 &description=test
 &action=ModifyGroupRoleAttributes
 &group_role=gr-5590xkq2

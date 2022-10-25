@@ -43,7 +43,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DeleteProjects
+https://api.lanyun.net/iaas/?action=DeleteProjects
 &project_ids=["pj-zqtfs0ao"]
 &owner=usr-g8ZyBo6l
 &zone=testing

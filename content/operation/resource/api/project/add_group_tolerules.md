@@ -42,7 +42,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=AddGroupRoleRules
+https://api.lanyun.net/iaas/?action=AddGroupRoleRules
 &principle=[{"resource_type":"instance","actions":["CreateBrokers","DeleteBrokers","DescribeInstances"]}]&policy=action&group_role=gr-5590xkq2&owner=usr-WantwZJ8
 &zone=test
 &project_id=pj-xzvlxlb5
