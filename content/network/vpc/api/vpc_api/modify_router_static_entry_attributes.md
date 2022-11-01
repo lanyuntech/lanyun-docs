@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyRouterStaticEntryAttributes
+https://api.lanyun.net/iaas/?action=ModifyRouterStaticEntryAttributes
 &router_static_entry=rse-c173g36a
 &router_static_entry_name=new_name,
 &val1=192.168.100.0/24

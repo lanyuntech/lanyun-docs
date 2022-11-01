@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSpans
+https://api.lanyun/iaas/?action=DeleteSpans
 &spans.1=span-1234abcd
 &zone=pek3a
 &COMMON_PARAMS

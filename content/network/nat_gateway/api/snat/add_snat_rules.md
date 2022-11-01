@@ -33,7 +33,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddSnatRules
+https://api.lanyun.net/iaas/?action=AddSnatRules
 &natgw_id=nfv-1234abcd
 &name=test_snat
 &target_id=vxnet-xxxxcccc

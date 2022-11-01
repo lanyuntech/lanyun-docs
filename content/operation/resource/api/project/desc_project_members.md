@@ -55,7 +55,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?project_member_ids=["pm-ktheaopu"]
+https://api.lanyun.net/iaas/?project_member_ids=["pm-ktheaopu"]
 &action=DescribeProjectMembers
 &owner=usr-WantwZJ8&zone=test
 &offset=0

@@ -43,7 +43,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?project_id=pj-xzvlxlb5
+https://api.lanyun.net/iaas/?project_id=pj-xzvlxlb5
 &action=GetTotalEstimatedConsumption
 &offset=0
 &limit=100

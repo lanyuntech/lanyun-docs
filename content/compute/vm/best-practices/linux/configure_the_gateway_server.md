@@ -96,6 +96,6 @@ ping 114.114.114.114
 测试域名解析：
 
 ```bash
-ping www.qingcloud.com
+ping www.lanyun.net
 ```
 

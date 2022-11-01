@@ -18,7 +18,7 @@ draft: false
 
 ## 下载 Demo
 
-[下载 Demo](https://github.com/QingCloudAppcenter/Kafka/tree/dev/example/kafka-sdk)。Demo 包含如下文件：
+[下载 Demo](https://github.com/lanyunAppcenter/Kafka/tree/dev/example/kafka-sdk)。Demo 包含如下文件：
 
 | <span style="display:inline-block;width:140px">文件名</span> | <span style="display:inline-block;width:200px">文件路径</span> | <span style="display:inline-block;width:320px">说明</span> |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |

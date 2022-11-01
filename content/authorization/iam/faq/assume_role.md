@@ -31,13 +31,13 @@ weight: 45
 3. 访问该云服务器终端，可使用 pip 安装 SDK: （[点此了解更多 SDK 文档信息](../../../../development_docs/sdk/intro/intro/)）
 
    ```bash
-   pip install qingcloud-sdk
+   pip install lanyun-sdk
    ```
 
-   如果你已安装 qingcloud-sdk 并需要更新到最新版本，则可以:
+   如果你已安装 lanyun-sdk 并需要更新到最新版本，则可以:
 
    ```bash
-   pip install --upgrade qingcloud-sdk
+   pip install --upgrade lanyun-sdk
    ```
 
 4. 使用 SDK ，以 Python 语言为例 (无需提供 access key id 和 secret access key)：
@@ -46,8 +46,8 @@ weight: 45
 
     ```python
     #API Connection
-    from qingcloud.iaas import APIConnection
-    conn = qingcloud.iaas.connect_to_zone(
+    from lanyun.iaas import APIConnection
+    conn = lanyun.iaas.connect_to_zone(
     'pek3', # 你的资源所在的节点ID，可在控制台切换节点的地方查看，如 'pek3', 'ap2a', 'gd2' 等
      None,
      None

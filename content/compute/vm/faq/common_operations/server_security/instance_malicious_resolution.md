@@ -92,7 +92,7 @@ Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而
 
 ```shell
 <VirtualHost *:80>
-      DocumentRoot /home/qingcloud #域名对应的-项目目录
+      DocumentRoot /home/lanyun #域名对应的-项目目录
       ServerName blog.com	#项目目录对应的-域名
 </VirtualHost>
 ```

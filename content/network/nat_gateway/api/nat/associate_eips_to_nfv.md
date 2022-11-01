@@ -31,7 +31,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, 公网 IP
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateEipsToNFV
+https://api.lanyun.net/iaas/?action=AssociateEipsToNFV
 &nfv=nfv-1234abcd
 &eips.1=eip-1234abcd
 &COMMON_PARAMS

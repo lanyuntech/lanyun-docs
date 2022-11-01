@@ -37,7 +37,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyRouterStaticAttributes
+https://api.lanyun.net/iaas/?action=ModifyRouterStaticAttributes
 &router_static=rtrs-c173g36a
 &router_static_name=new_name,
 &val1=8080

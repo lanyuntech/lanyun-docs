@@ -38,7 +38,7 @@ weight: 39
 
 ## 对象存储的 Bucket 能否像 AWS S3 一样 Mount 到云服务器上？
 
-可以使用 s3fs 挂载对象存储的 Bucket 作为后端存储，具体内容可参考[兼容 AWS S3 接口](https://log.qingcloud.com/?p=1676) 。
+可以使用 s3fs 挂载对象存储的 Bucket 作为后端存储，具体内容可参考[兼容 AWS S3 接口](https://log.lanyun.net/?p=1676) 。
 
 ## qsctl 的同步操作为什么有时不会覆盖文件？
 

@@ -32,7 +32,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateRouteTable
+https://api.lanyun.net.net/iaas/?action=CreateRouteTable
 &routing_table_name=Test
 &routing_table_type=0
 &rtable_rtype=1

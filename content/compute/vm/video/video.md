@@ -11,7 +11,7 @@ section1:
     - title: 创建一个新的Bucket
       time_duration: 01:02
       # poster: "https://s6.jpg.cm/2021/11/0K1qV.png"
-      url: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_domain_name.mp4"
+      url: "https://pek3b.qingstor.com/yunify-lanyun-docs/video/qs_lanyun_domain_name.mp4"
       description: 创建一个新的Bucket 创建一个新的Bucket
 
     - title: ECS+OSS

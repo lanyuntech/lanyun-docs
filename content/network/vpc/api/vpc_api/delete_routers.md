@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteRouters
+https://api.lanyun.net/iaas/?action=DeleteRouters
 &routers.1=rtr-s5nqo8mr
 &zone=pek3a
 &COMMON_PARAMS

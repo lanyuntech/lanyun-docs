@@ -33,7 +33,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeNFV
+https://api.lanyun.net/iaas/?action=ResizeNFV
 &nfvs.1=nfv-1234abcd
 &nfv_spec=2
 &COMMON_PARAMS

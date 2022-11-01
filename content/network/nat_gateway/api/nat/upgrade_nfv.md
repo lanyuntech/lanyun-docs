@@ -30,7 +30,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, 升级版本
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=UpgradeNFV
+https://api.lanyun.net/iaas/?action=UpgradeNFV
 &nfvs.1=nfv-1234abcd
 &COMMON_PARAMS
 ```

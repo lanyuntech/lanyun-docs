@@ -18,7 +18,7 @@ keyword: 自定义监控, 自定义监控上报数据规范, CloudSat
 **构造前 url**:
 
 ```
-http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData
+http://cloudsat.lanyun.net/api/:zone/v1/custom/UploadMonitorData
 ```
 注：构造完成之后请求 url 即最终 UploadMonitorData 接口请求 url，url 里面:zone，请根据具体分区信息填写，如上海 1 区 sh1，文中其他地方类似。
 
@@ -38,14 +38,14 @@ access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA
 **最终构造完成之后请求 url 示例为**：
 
 ```
-http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
+http://cloudsat.lanyun.net/api/:zone/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
 ```
 
 
 下面为在上海 1 区，完成构建验证请求串之后拼接生成的一个最终 api 请求 url 实例，请根据实际分区信息和构造的验证串拼接构造相应的最终 api 请求 url。
 
 ```
-http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
+http://cloudsat.lanyun.net/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
 ```
 
 
@@ -58,7 +58,7 @@ http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=
 **请求 url**：
 
 ```
-http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+http://cloudsat.lanyun.net/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
 ```
 注：请仔细阅读上文说明，根据实际情况构造验证请求串，拼接成最终 api 请求 url 并替换:zone信息。
 
@@ -514,7 +514,7 @@ func Verify(url string) int {
 
 func main() {
 	result := "access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T14%3A03%3A44Z&version=1&zone=sh1&signature=d6eMFDgO3E6wBqbbn2AydX%2BxQws7iD%2BtSgfGF6Lq7Uo%3D"
-	url := "https://api.qingcloud.com/iaas/" + "?" + result
+	url := "https://api.lanyun.net/iaas/" + "?" + result
 	fmt.Println(Verify(url))
 }
 ```
@@ -644,7 +644,7 @@ func main() {
 		}
 		var r ret
 
-		url := `http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T09%3A52%3A10Z&version=1&zone=sh1&signature=vorfODyQzKD0v4En7y5mdwkvUe4OZGQcDdQU5xBSjio%3D`
+		url := `http://cloudsat.lanyun.net/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T09%3A52%3A10Z&version=1&zone=sh1&signature=vorfODyQzKD0v4En7y5mdwkvUe4OZGQcDdQU5xBSjio%3D`
 		err := HttpPostJson(url,p,r)
 		if err != nil {
 			fmt.Println(err)
@@ -694,8 +694,8 @@ class UploadMonitorData(object):
 
         self.time_stamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         self.time = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-        self.url = "https://api.qingcloud.com/iaas/"
-        self.CloudSatUrl = "http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData"
+        self.url = "https://api.lanyun.net/iaas/"
+        self.CloudSatUrl = "http://cloudsat.lanyun.net/api/sh1/v1/custom/UploadMonitorData"
         self.url_path = '/iaas/'
         self.methods = 'GET'
 

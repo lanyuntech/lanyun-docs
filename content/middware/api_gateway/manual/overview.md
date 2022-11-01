@@ -3,24 +3,24 @@ title: "运维监控"
 linkTitle: "运维监控"
 date: 2021-05-18T10:08:56+09:00
 description: 本小节主要介绍 API 网关运维监控流程。 
-keyword: API_Gateway, QingCloud, 运维监控
+keyword: API_Gateway, Lanyun, 运维监控
 draft: false
 weight: 10
 ---
 
-QingCloud API 网关提供集群服务和 API 资源性能监控指标，包含：服务统计、服务数据监控、近 24 小时服务运行情况、最近更新 API。
+lanyun API 网关提供集群服务和 API 资源性能监控指标，包含：服务统计、服务数据监控、近 24 小时服务运行情况、最近更新 API。
 
 ## 操作步骤
 
 按照以下操作，查看当前用户所有服务或 API 相关的监控信息。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [LanCloud 管理控制台](https://console.lanyun.net/login)。
 2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API 网关** ，进入**API 网关**页面。
 3. 点击**概览**，查看当前用户所有服务或 API 相关的监控信息。
 
 > **说明**
 >
-> API 网关使用 QingCloud 管理控制台的默认区域，若需要切换，请返回控制台的主界面进行切换。
+> API 网关使用 LanCloud 管理控制台的默认区域，若需要切换，请返回控制台的主界面进行切换。
 
 ## 查看服务统计
 

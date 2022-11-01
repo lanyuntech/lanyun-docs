@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateRouteTable
+https://api.lanyun.net/iaas/?action=DissociateRouteTable
 &routing_table=rt-h5nqxml7
 &resource=lb-wkkqhohe
 &COMMON_PARAMS

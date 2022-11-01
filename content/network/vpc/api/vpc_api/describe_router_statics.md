@@ -39,7 +39,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRouterStatics
+https://api.lanyun.net/iaas/?action=DescribeRouterStatics
 &router=rtr-9iy0lt3s
 &COMMON_PARAMS
 ```

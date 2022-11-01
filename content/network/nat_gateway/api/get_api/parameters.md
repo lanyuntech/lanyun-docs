@@ -24,7 +24,7 @@ weight: 20
 ## 请求示例
 
 ```url
-[https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
+[https://api.lanyun.net/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.lanyun.net/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
 &action=RunInstances
 &count=1
 &time_stamp=2013-08-27T13%3A58%3A35Z

@@ -18,13 +18,13 @@ draft: false
 
 ## 下载 Demo
 
-[下载 Demo](https://github.com/QingCloudAppcenter/Kafka/tree/dev/example/kafka-spring-cloud)。将 Demo 上传至准备好的 Linux 服务器上， Demo 包含如下文件：
+[下载 Demo](https://github.com/lanyunAppcenter/Kafka/tree/dev/example/kafka-spring-cloud)。将 Demo 上传至准备好的 Linux 服务器上， Demo 包含如下文件：
    
 | <span style="display:inline-block;width:140px">文件名</span> | <span style="display:inline-block;width:200px">文件路径</span> | <span style="display:inline-block;width:320px">说明</span> |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
-| KafkaDemoApplication.java                                    | /src/main/java/com/qingcloud/                                | Kafka demo 应用程序。                                      |
-| MyInput.java                                                 | /src/main/java/com/qingcloud/                                | 消费消息的 API。                                           |
-| MyOutput.java                                                | /src/main/java/com/qingcloud/                                | 生产消息的 API。                                           |
+| KafkaDemoApplication.java                                    | /src/main/java/com/lanyun/                                | Kafka demo 应用程序。                                      |
+| MyInput.java                                                 | /src/main/java/com/lanyun/                                | 消费消息的 API。                                           |
+| MyOutput.java                                                | /src/main/java/com/lanyun/                                | 生产消息的 API。                                           |
 | application.properties                                       | /src/main/resources/                                         | Kafka demo 配置文件，用于配置 Kafka 的连接信息。           |
 | package.xml                                                  | /src/main/resources/                                         | Maven 基本信息。           |
 | pom.xml                                                      | /                                                            | Maven 配置文件。                    |

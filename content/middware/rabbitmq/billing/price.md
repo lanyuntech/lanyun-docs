@@ -30,4 +30,4 @@ RabbitMQ创建页面上的**费用预览**计费仅包括集群基础资源（CP
 
 ## 价格计算
 
-可以通过 [价格计算器](https://www.qingcloud.com/pricing#/Kafka) 获取价格详情。
+可以通过 [价格计算器](https://www.lanyun.net/pricing#/Kafka) 获取价格详情。

@@ -83,7 +83,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     "resp_vary": "enable",
     "cors_rules": [
         {
-            "allowed_origin": "http://*.qingcloud.com",
+            "allowed_origin": "http://*.lanyun.net",
             "allowed_methods": [
                 "PUT",
                 "GET",
