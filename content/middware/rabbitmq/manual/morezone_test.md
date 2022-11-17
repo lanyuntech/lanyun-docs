@@ -9,7 +9,7 @@ draft: false
 
 ## 背景
 
-[升级区域（Region）架构 轻松实现同城多活](https://log.qingcloud.com/archives/3981)
+[升级区域（Region）架构 轻松实现同城多活](https://log.lanyun.net/archives/3981)
 
 ## 测试结果
 

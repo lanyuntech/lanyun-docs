@@ -111,7 +111,7 @@ secret_access_key：
 
 - qsctl v2.4.3 不再从如下路径读取配置文件：
 ```bash
-~/.qingcloud/config.yaml
+~/.lanyun/config.yaml
 ```
 
 - 对相关命令做出的变更说明如下：

@@ -33,7 +33,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteNFVs
+https://api.lanyun.net/iaas/?action=DeleteNFVs
 &nfvs.1=nfv-1234abcd
 &COMMON_PARAMS
 ```

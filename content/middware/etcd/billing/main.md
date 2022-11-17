@@ -15,7 +15,7 @@ etcd  集群目前仅支持按小时计费。
 
 ## 价格计算
 
-etcd  集群基础资源费用可通过 [价格计算器](https://www.qingcloud.com/pricing#/Etcd) 获取价格详情。
+etcd  集群基础资源费用可通过 [价格计算器](https://www.lanyun.net/pricing#/Etcd) 获取价格详情。
 
 依赖的其他资源费用以产品实际公布的价格为准。
 

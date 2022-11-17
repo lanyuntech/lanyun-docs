@@ -41,7 +41,7 @@ $ /opt/apache-rocketmq/current/bin/tools.sh org.apache.rocketmq.example.quicksta
 ## 创建Topic
 
 ```
-$ /opt/apache-rocketmq/current/bin/mqadmin updateTopic -c DefaultCluster -b 192.168.2.26:10911 -n 192.168.2.29:9876 -t qingcloud
+$ /opt/apache-rocketmq/current/bin/mqadmin updateTopic -c DefaultCluster -b 192.168.2.26:10911 -n 192.168.2.29:9876 -t lanyun
 ```
 
 > **说明**
@@ -53,7 +53,7 @@ $ /opt/apache-rocketmq/current/bin/mqadmin updateTopic -c DefaultCluster -b 192.
 ## 删除Topic
 
 ```
-$ /opt/apache-rocketmq/current/bin/mqadmin deleteTopic -c DefaultCluster -n 192.168.2.29:9876 -t qingcloud
+$ /opt/apache-rocketmq/current/bin/mqadmin deleteTopic -c DefaultCluster -n 192.168.2.29:9876 -t lanyun
 ```
 
 > **说明**

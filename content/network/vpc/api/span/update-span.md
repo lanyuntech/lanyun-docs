@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=UpdateSpanMembers
+https://api.lanyun/iaas/?action=UpdateSpanMembers
 &span=span-1234abcd
 &COMMON_PARAMS
 ```

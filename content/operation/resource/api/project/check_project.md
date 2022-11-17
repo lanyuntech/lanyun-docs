@@ -62,7 +62,7 @@ draft: false
 ### 请求示例-1
 
 ```url
-https://api.qingcloud.com/iaas/?owner=usr-g8ZyBo6l&action=DescribeProjects
+https://api.lanyun.net/iaas/?owner=usr-g8ZyBo6l&action=DescribeProjects
 &offset=0
 &limit=100
 &sort_key=create_time
@@ -72,7 +72,7 @@ https://api.qingcloud.com/iaas/?owner=usr-g8ZyBo6l&action=DescribeProjects
 ### 请求示例-2
 
 ```url
-https://api.qingcloud.com/iaas/?project_ids=["pj-zqtfs0ao","pj-wijjziy3"]&action=DescribeProjects
+https://api.lanyun.net/iaas/?project_ids=["pj-zqtfs0ao","pj-wijjziy3"]&action=DescribeProjects
 &owner=usr-g8ZyBo6l
 &zone=testing
 &project_id=pj-zqtfs0ao

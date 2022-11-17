@@ -41,7 +41,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddRouterStatics
+https://api.lanyun.net/iaas/?action=AddRouterStatics
 &statics.1.static_type=1
 &statics.1.val1=8080
 &statics.1.val2=192.168.1.12

@@ -36,7 +36,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DeleteProjectMembers
+https://api.lanyun.net/iaas/?action=DeleteProjectMembers
 &project_member_ids=["pm-87jtapek"]
 &user_group_id=ug-vl9b6c7b
 &owner=usr-WantwZJ8

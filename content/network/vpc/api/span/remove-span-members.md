@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=RemoveSpanMembers
+https://api.lanyun/iaas/?action=RemoveSpanMembers
 &span=span-1234abcd
 &resources.1=i-1234abcd
 &COMMON_PARAMS

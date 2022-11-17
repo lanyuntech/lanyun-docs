@@ -33,7 +33,7 @@ draft: false
 
    > **说明**：
    >
-   > 带宽上限是指云服务器互联网访问的带宽，云服务器与云服务器之间的内网带宽与云服务器规格有关，云服务器规格越高，内网带宽越高，详情请参阅 [云服务器](https://docs.qingcloud.com/product/computing/instance)。
+   > 带宽上限是指云服务器互联网访问的带宽，云服务器与云服务器之间的内网带宽与云服务器规格有关，云服务器规格越高，内网带宽越高，详情请参阅 [云服务器](https://docs.lanyun.net/product/computing/instance)。
   
 
 4. 点击 **提交** 即可完成公网 IP 的申请。

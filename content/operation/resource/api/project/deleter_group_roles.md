@@ -34,7 +34,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DeleteGroupRoles
+https://api.lanyun.net/iaas/?action=DeleteGroupRoles
 &group_roles=["gr-gg5l0faz"]
 &owner=usr-WantwZJ8
 &zone=test

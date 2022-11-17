@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CopyRouterStatics
+https://api.lanyun.net/iaas/?action=CopyRouterStatics
 &source_router=rtr-srcsrc11
 &dest_router=rtr-destdest
 &dest_zone=dest

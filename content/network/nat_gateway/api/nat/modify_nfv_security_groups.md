@@ -34,7 +34,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, 安全组
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNFVSecurityGroups
+https://api.lanyun.net/iaas/?action=ModifyNFVSecurityGroups
 &vxnets.1=vxnet-123
 &vxnets.2=vxnet-234
 &security_group=sg-123cdtrt

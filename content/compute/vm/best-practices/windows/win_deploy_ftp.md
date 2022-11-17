@@ -9,11 +9,11 @@ keyword: 云计算, 云服务器，Windows，FTP
 
 **ftp server下载地址**
 
-https://yunify.anybox.qingcloud.com/s/g3yXfHGZ9V9ZtZgGIFfLHeXlSSSE2Klf
+https://yunify.anybox.lanyun.net/s/g3yXfHGZ9V9ZtZgGIFfLHeXlSSSE2Klf
 
 **ftp_client下载地址**
 
-https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
+https://yunify.anybox.lanyun.net/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
  1、安装ftp server，按照提示操作即可
 

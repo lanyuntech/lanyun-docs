@@ -37,7 +37,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNFVAttributes
+https://api.lanyun.net/iaas/?action=ModifyNFVAttributes
 &nfv=nfv-1234abcd
 &zone=pek3a
 &COMMON_PARAMS

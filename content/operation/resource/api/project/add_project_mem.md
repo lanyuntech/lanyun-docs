@@ -39,7 +39,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=AddProjectMember
+https://api.lanyun.net/iaas/?action=AddProjectMember
 &project_members=[{"project_member_name":"mrwel","project_member_info":"mrwel@qq.com","project_member_type":"user","role":"gr-yorri8fd"}]
 &owner=usr-WantwZJ8
 &zone=test

@@ -38,7 +38,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=ModifyProjectMemberAtrributes
+https://api.lanyun.net/iaas/?action=ModifyProjectMemberAtrributes
 &project_member_id=pm-ktheaopu
 &project_member_name=mrwel
 &role=gr-2je0hh8l

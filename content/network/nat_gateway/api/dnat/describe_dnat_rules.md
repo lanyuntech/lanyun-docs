@@ -37,7 +37,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeDnatRules
+https://api.lanyun.net/iaas/?action=DescribeDnatRules
 &natgw_ids.1=nfv-1234abcd
 &status.1=1
 &reverse=0

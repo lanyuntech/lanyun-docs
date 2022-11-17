@@ -51,7 +51,7 @@ section3:
 section4:
   children:
     - title: 了解
-      content: QingCloud API 网关（API Gateway）提供 API 托管服务，包括 API 的创建、维护、发布、运行、下线等完整生命周期管理，帮助您快速构建以 API 为核心的系统架构，将自身的数据、业务逻辑或功能安全可靠的开放出来。
+      content: lanyun API 网关（API Gateway）提供 API 托管服务，包括 API 的创建、维护、发布、运行、下线等完整生命周期管理，帮助您快速构建以 API 为核心的系统架构，将自身的数据、业务逻辑或功能安全可靠的开放出来。
       vice_title: 了解的第一步
       children:
         - title: 产品简介

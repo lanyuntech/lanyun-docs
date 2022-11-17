@@ -44,7 +44,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?zone=test&project_id=pj-xzvlxlb5&action=DescribeGroupRoles&offset=0&limit=100
+https://api.lanyun.net/iaas/?zone=test&project_id=pj-xzvlxlb5&action=DescribeGroupRoles&offset=0&limit=100
 ```
 
 ### 响应示例
@@ -132,7 +132,7 @@ https://api.qingcloud.com/iaas/?zone=test&project_id=pj-xzvlxlb5&action=Describe
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?status=[]
+https://api.lanyun.net/iaas/?status=[]
 &verbose=1
 &group_roles=["gr-5590xkq2"]
 &action=DescribeGroupRoles

@@ -34,13 +34,13 @@ collapsible: false
 一个典型的API请求如下所示，这是一个 DescribeInstances 的API请求:
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+https://api.lanyun.net/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
 ```
 
 为了方便查看，我们将文档中的请求都进行换行来显示:
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
+https://api.lanyun.net/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 &action=DescribeInstances
 &expires=2013-08-29T07%3A42%3A25Z
 &limit=20

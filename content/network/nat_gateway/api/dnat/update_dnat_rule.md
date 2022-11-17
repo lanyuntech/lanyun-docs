@@ -34,7 +34,7 @@ keyword: 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=UpdateDnatRule
+https://api.lanyun.net/iaas/?action=UpdateDnatRule
 &natgw_id=nfv-1234abcd
 &name=natgw1
 &public_port=80-85

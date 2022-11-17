@@ -45,7 +45,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=ModifyGroupRoleRuleAttributes
+https://api.lanyun.net/iaas/?action=ModifyGroupRoleRuleAttributes
 &group_role_rule=grr-opgcd9te
 &policy=all.describe
 &principle=

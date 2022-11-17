@@ -2,7 +2,7 @@
 title: "SSL 证书"
 linkTitle: "SSL 证书"
 description: 本小节主要介绍 API 网关的 SSL 证书。 
-keyword: API_Gateway, QingCloud, SSL 证书
+keyword: API_Gateway, lanyun, SSL 证书
 date: 2021-05-25T10:08:56+09:00
 description:
 draft: false
@@ -15,7 +15,7 @@ weight: 70
 
 按照以下操作，新建密钥。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [Lanyun 管理控制台](https://console.lanyun.net/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API 网关** ，进入**API 网关**页面。
 

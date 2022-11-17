@@ -104,14 +104,14 @@ DPDDelay:           15s
 
 ```
 ASA(config)# access-list my_nat extended permit ip 192.168.1.0 255.255.255.0 192.168.100.0 255.255.255.0
-ASA(config)# access-list cisco-to-qingcloud extended permit ip 192.168.1.0 255.255.255.0 192.168.100.0 255.255.255.0
+ASA(config)# access-list cisco-to-lanyun extended permit ip 192.168.1.0 255.255.255.0 192.168.100.0 255.255.255.0
 ASA(config)# nat (inside) 0 access-list my_nat
 
 ASA(config)# crypto ipsec transform-set ESP-3DES-MD5 esp-3des esp-md5-hmac
 ASA(config)# crypto ipsec security-association lifetime seconds 28800
 ASA(config)# crypto ipsec security-association lifetime kilobytes 4608000
 
-ASA(config)# crypto map my_map 1 match address cisco-to-qingcloud
+ASA(config)# crypto map my_map 1 match address cisco-to-lanyun
 ASA(config)# crypto map my_map 1 set pfs
 ASA(config)# crypto map my_map 1 set peer 99.99.99.99
 ASA(config)# crypto map my_map 1 set transform-set ESP-3DES-MD5
