@@ -1,38 +1,38 @@
 ---
-title: "Elasticsearch 与 QingStor 对象存储集成"
-description: 本小节主要介绍 Elasticsearch  与 QingStor 对象存储集成。
-keyword: Elasticsearch 对象存储,QingStor
+title: "Elasticsearch 与 LanyunStor 对象存储集成"
+description: 本小节主要介绍 Elasticsearch  与 LanyunStor 对象存储集成。
+keyword: Elasticsearch 对象存储,LanyunStor
 weight: 25
 collapsible: false
 draft: false
 ---
 
-Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 cluster 的数据存储到某远端仓库（repository）, 并能从该远端仓库存储的快照中恢复数据。本应用的 Elasticsearch 可以通过 S3 Repository Plugin 与 QingStor 对象存储集成以便生成快照将数据存储到 QingStor 中，并可以在必要时从中恢复。
+Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 cluster 的数据存储到某远端仓库（repository）, 并能从该远端仓库存储的快照中恢复数据。本应用的 Elasticsearch 可以通过 S3 Repository Plugin 与 LanyunStor 对象存储集成以便生成快照将数据存储到 LanyunStor 中，并可以在必要时从中恢复。
 
 ## 操作步骤
 
 1. 创建一个 repository：
 
    ```bash
-   PUT _snapshot/repo-qingstor
+   PUT _snapshot/repo-LanyunStor
    {
      "type": "s3",
      "settings": {
-       "endpoint": "s3.pek3a.qingstor.com",
+       "endpoint": "s3.pek3a.LanyunStor.com",
        "access_key": "<YourAccessKey>",
        "secret_key": "<YourSecretKey>",
-       "bucket": "my_qingstor_bucket"
+       "bucket": "my_LanyunStor_bucket"
      }
    }
    ```
 
 | 参数       | 说明                                                         |
 | ---------- | ------------------------------------------------------------ |
-| repository | 名称，如示例中的 repo-qingstor                               |
-| endpoint   | s3.[region].qingstor.com （请根据实际情况就近选择，目前支持：pek3a, pek3b, sh1a，gd2。 |
-| access_key | 云平台账号关联的access_key                                     |
-| secret_key | 云平台账号关联的secret_key                                     |
-| bucket     | QingStor上bucket名称my_qingstor_bucket(如果不存在将创建出来) |
+| repository | 名称，如示例中的 repo-LanyunStor                             |
+| endpoint   | s3.[region].LanyunStor.com （请根据实际情况就近选择，目前支持：pek3a, pek3b, sh1a，gd2。 |
+| access_key | 云平台账号关联的access_key                                   |
+| secret_key | 云平台账号关联的secret_key                                   |
+| bucket     | LanyunStor上bucket名称my_LanyunStor_bucket(如果不存在将创建出来) |
 
 > **说明**
 >
@@ -41,23 +41,23 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
 1. 通过如下命令查看、删除已有的 repository：
 
    ```bash
-   curl $ES_IP:9200/_snapshot/repo-qingstor    # 获取指定repository信息
+   curl $ES_IP:9200/_snapshot/repo-LanyunStor    # 获取指定repository信息
    
    curl "$ES_IP:9200/_snapshot/repo*,*backup*" # 获取所有满足特定条件的repository信息
    
    curl $ES_IP:9200/_snapshot/_all             # 获取所有repository信息
    
-   curl -XDELETE $ES_IP:9200/_snapshot/repo-qingstor # 删除repository
+   curl -XDELETE $ES_IP:9200/_snapshot/repo-LanyunStor # 删除repository
    ```
 
-2. 用如下命令创建快照（该快照将会存放在之前指定的 QingStor 的 bucket  `my_qingstor_bucket` 中）：
+2. 用如下命令创建快照（该快照将会存放在之前指定的 LanyunStor 的 bucket  `my_LanyunStor_bucket` 中）：
 
    ```bash
    # 创建包含集群所有index的snapshot
-   curl -H "Content-Type: application/json" -XPUT "$ES_IP:9200/_snapshot/repo-qingstor/backup-2019.05.13?wait_for_completion=true"
+   curl -H "Content-Type: application/json" -XPUT "$ES_IP:9200/_snapshot/repo-LanyunStor/backup-2019.05.13?wait_for_completion=true"
    
    # 创建包含集群指定index(此处为index_1,index_2)的snapshot
-   curl -H "Content-Type: application/json" -XPUT "$ES_IP:9200/_snapshot/repo-qingstor/backup-2019.05.13?wait_for_completion=true" -d'
+   curl -H "Content-Type: application/json" -XPUT "$ES_IP:9200/_snapshot/repo-LanyunStor/backup-2019.05.13?wait_for_completion=true" -d'
    {
      "indices": "index_1,index_2",
      "ignore_unavailable": true,
@@ -73,21 +73,21 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
 3. 通过如下命令查看、删除快照：
 
    ```bash
-   curl "$ES_IP:9200/_snapshot/repo-qingstor/backup-2019.05.13" # 查看指定repository中某snapshot信息
+   curl "$ES_IP:9200/_snapshot/repo-LanyunStor/backup-2019.05.13" # 查看指定repository中某snapshot信息
    
-   curl "$ES_IP:9200/_snapshot/repo-qingstor/_all"              # 查看指定repository中所有snapshot信息
+   curl "$ES_IP:9200/_snapshot/repo-LanyunStor/_all"              # 查看指定repository中所有snapshot信息
    
-   curl -XDELETE "$ES_IP:9200/_snapshot/repo-qingstor/backup-2019.05.13" # 删除snapshot
+   curl -XDELETE "$ES_IP:9200/_snapshot/repo-LanyunStor/backup-2019.05.13" # 删除snapshot
    ```
 
-4. 通过如下命令恢复存储在 QingStor 的快照到 Elasticsearch 集群：
+4. 通过如下命令恢复存储在 LanyunStor 的快照到 Elasticsearch 集群：
 
    ```bash
    # 恢复包含集群所有index的snapshot
-   curl -H "Content-Type: application/json" -XPOST "$ES_IP:9200/_snapshot/repo-qingstor/backup-2019.05.13/_restore"
+   curl -H "Content-Type: application/json" -XPOST "$ES_IP:9200/_snapshot/repo-LanyunStor/backup-2019.05.13/_restore"
    
    # 恢复包含集群指定index(此处为index_1,index_2)的snapshot
-   curl -H "Content-Type: application/json" -XPOST "$ES_IP:9200/_snapshot/repo-qingstor/backup-2019.05.13/_restore" -d'
+   curl -H "Content-Type: application/json" -XPOST "$ES_IP:9200/_snapshot/repo-LanyunStor/backup-2019.05.13/_restore" -d'
    {
      "indices": "index_1,index_2",
      "ignore_unavailable": true,
@@ -102,7 +102,7 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
    >
    > 要恢复的 index 必须是集群中处于关闭状态的 index, 处于打开状态的 index 将会提示无法恢复。
 
-5. 快照由于并没有和具体的集群信息绑定，所以也可以恢复到另一个不同的集群，用户可以用这种方法在不同集群之间通过 QingStor 导入导出数据。
+5. 快照由于并没有和具体的集群信息绑定，所以也可以恢复到另一个不同的集群，用户可以用这种方法在不同集群之间通过 LanyunStor 导入导出数据。
 
    > **说明**
    >
@@ -115,4 +115,4 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
    >
    > 更详细的有关集群快照的生成和恢复的信息请参考 [Elasticsearch 官方文档](https://www.elastic.co/guide/en/elasticsearch/reference/master/modules-snapshots.html)。
    >
-   > 如果 ES 集群和 QingStor 位于同一区域进行数据迁移耗公网流量，如果不在同一区域则需要消耗公网流量，比如位于 北京3区-A 的 ES 集群可以选择同一区域的 QingStor 避免产生公网流量。
+   > 如果 ES 集群和 LanyunStor 位于同一区域进行数据迁移耗公网流量，如果不在同一区域则需要消耗公网流量，比如位于 北京3区-A 的 ES 集群可以选择同一区域的 LanyunStor 避免产生公网流量。
