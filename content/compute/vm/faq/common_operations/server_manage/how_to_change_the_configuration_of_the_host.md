@@ -20,7 +20,7 @@ keyword: 云计算, 云服务器，配置
    
    <img src="../../../_images/homer/vm_pic_01.png" width="80%" height="60%">
 
-3. 待云服务器关机后，选择 **更多操作** > **更改配置**：
+3. 待云服务器关机后，选择 **更多操作** > **调整规格**：
 
    <img src="../../../_images/homer/vm_pic_02.png" width="80%" height="60%">
 
